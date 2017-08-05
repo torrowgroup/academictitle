@@ -19,8 +19,8 @@
 				<td><input type="text" name="password" id="inputPassword"/></td>
 			</tr>
 			<tr align="center"> 
-				<td><input type="submit"/></td>
-				<td><input type="reset"/></td>
+				<td><input type="submit" value="登录"/></td>
+				<td><input type="reset" value=“重置”/></td>
 			</tr>
 		</table>
 	</form>
