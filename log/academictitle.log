@@ -2959,3 +2959,220 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 [INFO][2017-08-14 17:33:22,478][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
 [INFO][2017-08-14 17:33:22,479][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
 [INFO][2017-08-14 17:47:04,092][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Mon Aug 14 17:33:16 CST 2017]; root of context hierarchy
+[INFO][2017-08-14 21:36:05,511][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-14 21:36:05,626][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Aug 14 21:36:05 CST 2017]; root of context hierarchy
+[INFO][2017-08-14 21:36:05,666][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-14 21:36:06,410][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-14 21:36:06,423][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[WARN][2017-08-14 21:36:06,510][org.springframework.web.context.support.XmlWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'managerDao' defined in file [/home/zjg/workspace/academictitle/target/classes/com/torrow/title/dao/ManagerDao.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+[ERROR][2017-08-14 21:36:06,519][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'managerDao' defined in file [/home/zjg/workspace/academictitle/target/classes/com/torrow/title/dao/ManagerDao.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 35 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 40 more
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	... 52 more
+[INFO][2017-08-14 21:37:35,345][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-14 21:37:35,448][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Aug 14 21:37:35 CST 2017]; root of context hierarchy
+[INFO][2017-08-14 21:37:35,488][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-14 21:37:35,908][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-14 21:37:35,920][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[WARN][2017-08-14 21:37:35,988][org.springframework.web.context.support.XmlWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'managerDao' defined in file [/home/zjg/workspace/academictitle/target/classes/com/torrow/title/dao/ManagerDao.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+[ERROR][2017-08-14 21:37:36,003][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'managerDao' defined in file [/home/zjg/workspace/academictitle/target/classes/com/torrow/title/dao/ManagerDao.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean name 'txAdvice' in bean reference for bean property 'adviceBeanName'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	... 31 more
+[INFO][2017-08-14 21:38:50,111][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-14 21:38:50,316][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Aug 14 21:38:50 CST 2017]; root of context hierarchy
+[INFO][2017-08-14 21:38:50,364][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-14 21:38:51,154][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-14 21:38:51,165][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-14 21:38:51,808][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-14 21:38:51,816][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-14 21:38:51,820][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-14 21:38:51,851][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-14 21:38:52,506][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-14 21:38:52,784][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-14 21:38:52,799][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-14 21:38:53,150][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-14 21:38:53,150][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-14 21:38:53,157][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-14 21:38:53,163][java.sql.DatabaseMetaData]HHH000262: Table not found: t_discuss
+[INFO][2017-08-14 21:38:53,170][java.sql.DatabaseMetaData]HHH000262: Table not found: t_expert
+[INFO][2017-08-14 21:38:53,173][java.sql.DatabaseMetaData]HHH000262: Table not found: t_majors
+[INFO][2017-08-14 21:38:53,175][java.sql.DatabaseMetaData]HHH000262: Table not found: t_manager
+[INFO][2017-08-14 21:38:53,179][java.sql.DatabaseMetaData]HHH000262: Table not found: t_participator
+[INFO][2017-08-14 21:38:53,181][java.sql.DatabaseMetaData]HHH000262: Table not found: t_record
+[INFO][2017-08-14 21:38:53,185][java.sql.DatabaseMetaData]HHH000262: Table not found: t_require
+[INFO][2017-08-14 21:38:53,187][java.sql.DatabaseMetaData]HHH000262: Table not found: t_title
+[INFO][2017-08-14 21:38:53,190][java.sql.DatabaseMetaData]HHH000262: Table not found: t_unit
+[INFO][2017-08-14 21:38:53,192][java.sql.DatabaseMetaData]HHH000262: Table not found: t_discuss
+[INFO][2017-08-14 21:38:53,199][java.sql.DatabaseMetaData]HHH000262: Table not found: t_expert
+[INFO][2017-08-14 21:38:53,200][java.sql.DatabaseMetaData]HHH000262: Table not found: t_majors
+[INFO][2017-08-14 21:38:53,203][java.sql.DatabaseMetaData]HHH000262: Table not found: t_manager
+[INFO][2017-08-14 21:38:53,205][java.sql.DatabaseMetaData]HHH000262: Table not found: t_participator
+[INFO][2017-08-14 21:38:53,206][java.sql.DatabaseMetaData]HHH000262: Table not found: t_record
+[INFO][2017-08-14 21:38:53,208][java.sql.DatabaseMetaData]HHH000262: Table not found: t_require
+[INFO][2017-08-14 21:38:53,210][java.sql.DatabaseMetaData]HHH000262: Table not found: t_title
+[INFO][2017-08-14 21:38:53,213][java.sql.DatabaseMetaData]HHH000262: Table not found: t_unit
+[INFO][2017-08-14 21:38:53,214][java.sql.DatabaseMetaData]HHH000262: Table not found: t_discuss
+[INFO][2017-08-14 21:38:53,217][java.sql.DatabaseMetaData]HHH000262: Table not found: t_expert
+[INFO][2017-08-14 21:38:53,218][java.sql.DatabaseMetaData]HHH000262: Table not found: t_majors
+[INFO][2017-08-14 21:38:53,220][java.sql.DatabaseMetaData]HHH000262: Table not found: t_manager
+[INFO][2017-08-14 21:38:53,221][java.sql.DatabaseMetaData]HHH000262: Table not found: t_participator
+[INFO][2017-08-14 21:38:53,224][java.sql.DatabaseMetaData]HHH000262: Table not found: t_record
+[INFO][2017-08-14 21:38:53,224][java.sql.DatabaseMetaData]HHH000262: Table not found: t_require
+[INFO][2017-08-14 21:38:53,227][java.sql.DatabaseMetaData]HHH000262: Table not found: t_title
+[INFO][2017-08-14 21:38:53,228][java.sql.DatabaseMetaData]HHH000262: Table not found: t_unit
+[INFO][2017-08-14 21:38:54,683][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-14 21:38:54,776][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@4ebfbc57] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-14 21:38:54,865][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4752 ms
+[INFO][2017-08-14 21:38:55,192][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-14 21:38:55,316][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-14 21:38:55,350][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Unable to locate configuration files of the name manage-struts.xml, skipping
+[INFO][2017-08-14 21:38:55,350][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-14 21:38:55,352][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-14 21:38:55,355][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-14 21:38:55,355][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-14 21:38:55,356][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-14 21:38:55,356][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-14 21:38:55,356][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-14 21:38:55,356][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-14 21:38:55,356][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-14 21:38:55,356][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-14 21:38:55,357][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-14 21:38:55,357][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-14 21:38:55,358][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-14 21:38:55,358][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-14 21:38:55,358][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-14 21:38:55,358][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-14 21:38:55,358][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-14 21:38:55,358][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-14 21:38:55,359][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-14 21:38:55,359][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-14 21:38:55,359][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-14 21:38:55,360][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-14 21:38:55,360][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-14 21:38:55,360][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-14 21:38:55,361][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-14 21:38:55,361][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-14 21:38:55,361][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-14 21:38:55,364][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-14 21:38:55,365][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-14 21:38:55,365][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-14 21:38:55,365][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-14 21:38:55,365][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-14 21:38:55,366][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-14 21:38:55,366][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-14 21:38:55,366][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-14 21:38:55,367][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-14 21:38:55,367][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-14 21:38:55,367][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-14 21:38:55,368][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-14 21:38:55,368][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-14 21:38:55,368][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-14 21:38:55,402][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-14 21:38:55,402][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-14 21:38:55,402][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully

@@ -88,14 +88,14 @@
 		
 	<!--2.配置事务属性  -->
 	<!--2.配置事务属性:--><!-- 暂时不要事务， -->
-<!-- 	<tx:advice id="txAdvice" transaction-manager="transactionManager"> -->
-<!-- 		<tx:attributes> -->
-<!-- 			 <tx:method name="add*" propagation="REQUIRED" rollback-for = "Exception"/>    -->
-<!-- 	         <tx:method name="delete*" propagation="REQUIRED" rollback-for = "Exception"/>  -->
-<!-- 	         <tx:method name="update*" propagation="REQUIRED" rollback-for = "Exception"/>  -->
-<!-- 	         <tx:method name="*" read-only="false" />  -->
-<!-- 		</tx:attributes> -->
-<!-- 	</tx:advice> -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			 <tx:method name="add*" propagation="REQUIRED" rollback-for = "Exception"/>   
+	         <tx:method name="delete*" propagation="REQUIRED" rollback-for = "Exception"/> 
+	         <tx:method name="update*" propagation="REQUIRED" rollback-for = "Exception"/> 
+	         <tx:method name="*" read-only="false" /> 
+		</tx:attributes>
+	</tx:advice>
 	<!-- 基于AOP的声明事务配置完成 -->
 	<!--aop配置：-->
 	<aop:config>

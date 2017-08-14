@@ -3,6 +3,7 @@ com/torrow/title/entity/Record.class
 com/torrow/title/dao/ManagerDao.class
 com/torrow/title/entity/Participator.class
 com/torrow/title/action/LoginAction.class
+com/torrow/title/entity/Majors.class
 com/torrow/title/base/BaseDao.class
 com/torrow/title/util/PageCut.class
 com/torrow/title/listener/TitleListener.class
@@ -13,5 +14,4 @@ com/torrow/title/entity/Expert.class
 com/torrow/title/entity/Discuss.class
 com/torrow/title/entity/Title.class
 com/torrow/title/base/BaseAction.class
-com/torrow/title/entity/Major.class
 com/torrow/title/filter/AllFilter.class
