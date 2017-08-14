@@ -3,16 +3,20 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-	<constant name="struts.configuration.xml.reload" value="true" /><!-- 设置成开发者模式 -->
+	<!-- 指定由spring负责action对象的创建 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.objectFactory.spring.autoWire" value="name" />
+	<!-- 设置成开发者模式 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
 	<constant name="struts.multipart.saveDir" value="/temp"/>
 	<constant name="struts.i18n.encoding" value="utf8"></constant>
-	<constant name="struts.objectFactory" value="spring" />
 	<!--引入其他xml文件-->
 	<include file="manage-struts.xml"></include>
 	
-
 	<package name="default" extends="struts-default,json-default" namespace="/"  strict-method-invocation="false">
-		<!-- 这里放全局的映射 -->
-		
+		<action name="loginAction_*" method="{1}" class="com.torrow.title.action.LoginAction">
+			<result>/WEB-INF/index.jsp</result>
+			<result name="login">/index.jsp</result>
+		</action>
 	</package>
 </struts>

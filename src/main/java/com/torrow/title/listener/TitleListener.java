@@ -11,12 +11,12 @@ import javax.servlet.ServletContextListener;
  * Application Lifecycle Listener implementation class AppStartListener
  *
  */
-public class AppStartListener implements ServletContextListener {
+public class TitleListener implements ServletContextListener {
 
     /**
      * Default constructor. 
      */
-    public AppStartListener() {
+    public TitleListener() {
         // TODO Auto-generated constructor stub
     }
 

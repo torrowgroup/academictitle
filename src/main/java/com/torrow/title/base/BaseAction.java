@@ -13,17 +13,13 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class BaseAction extends ActionSupport implements SessionAware, RequestAware {
 
-	/**
-	 * 这是一些对于session、request的一种定义以便在后来对其直接的引用
-	 */
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * 对于session、request的一种定义
+	 */
 	protected Map<String, Object> session;
 	protected Map<String, Object> request;
-	// service 注入
-	
-//	@Resource
-//	protected IPaymentService paymentService;
 
 	protected HttpServletResponse getResponse() {
 		return ServletActionContext.getResponse();
@@ -41,12 +37,12 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 		return request;
 	}
 
-//	@Override
+	@Override
 	public void setRequest(Map<String, Object> request) {
 		this.request = request;
 	}
 	
-//	@Override
+	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
 	}

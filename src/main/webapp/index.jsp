@@ -8,19 +8,22 @@
 </head>
 <body>
 <center>
-	<form action="">
+	<form action="${rootPath}loginAction_login">
 		<table>
 			<tr>
 				<td>用户名：</td>
-				<td><input type="text" name="username" id="inputText"/></td>
+				<td><input type="text" name="userName" id="inputText"/></td>
 			</tr>
 			<tr>
 				<td>密码</td>
 				<td><input type="text" name="password" id="inputPassword"/></td>
 			</tr>
+			<tr>
+				<td colspan="2">${message}</td>
+			</tr>
 			<tr align="center"> 
 				<td><input type="submit" value="登录"/></td>
-				<td><input type="reset" value=“重置”/></td>
+				<td><input type="reset" value="重置"/></td>
 			</tr>
 		</table>
 	</form>

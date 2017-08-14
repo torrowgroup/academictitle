@@ -1,0 +1,119 @@
+/**
+ * 
+ */
+package com.torrow.title.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+/**
+ * @author 张金高
+ *
+ * @2017年8月14日下午4:18:48
+ */
+/*
+ * 参评人类
+ */
+@Entity
+@Table(name="t_participator")
+public class Participator {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(length=11)
+	private int pa_id;
+	@Column(length=11)
+	private String pa_name; //参评人姓名
+	@OneToOne
+	@JoinColumn(name="maj_id")
+	private Major pa_major; //关联专业
+	@OneToOne
+	@JoinColumn(name="un_id")
+	private Unit pa_unit; //关联单位
+	@OneToOne
+	@JoinColumn(name="ti_id")
+	private Title pa_title; //关联职称
+	@Column(length=255)
+	private String pa_imageUrl; //图片地址
+	@Column(length=255)
+	private String pa_introduce; //简介
+	@Column(length=255)
+	private String pa_spare; //备用
+	
+	public Participator(int pa_id, String pa_name, Major pa_major, Unit pa_unit, Title pa_title, String pa_imageUrl,
+			String pa_introduce, String pa_spare) {
+		super();
+		this.pa_id = pa_id;
+		this.pa_name = pa_name;
+		this.pa_major = pa_major;
+		this.pa_unit = pa_unit;
+		this.pa_title = pa_title;
+		this.pa_imageUrl = pa_imageUrl;
+		this.pa_introduce = pa_introduce;
+		this.pa_spare = pa_spare;
+	}
+	public Participator() {
+		super();
+	}
+	public final int getPa_id() {
+		return pa_id;
+	}
+	public final void setPa_id(int pa_id) {
+		this.pa_id = pa_id;
+	}
+	public final String getPa_name() {
+		return pa_name;
+	}
+	public final void setPa_name(String pa_name) {
+		this.pa_name = pa_name;
+	}
+	public final Major getPa_major() {
+		return pa_major;
+	}
+	public final void setPa_major(Major pa_major) {
+		this.pa_major = pa_major;
+	}
+	public final Unit getPa_unit() {
+		return pa_unit;
+	}
+	public final void setPa_unit(Unit pa_unit) {
+		this.pa_unit = pa_unit;
+	}
+	public final Title getPa_title() {
+		return pa_title;
+	}
+	public final void setPa_title(Title pa_title) {
+		this.pa_title = pa_title;
+	}
+	public final String getPa_imageUrl() {
+		return pa_imageUrl;
+	}
+	public final void setPa_imageUrl(String pa_imageUrl) {
+		this.pa_imageUrl = pa_imageUrl;
+	}
+	public final String getPa_introduce() {
+		return pa_introduce;
+	}
+	public final void setPa_introduce(String pa_introduce) {
+		this.pa_introduce = pa_introduce;
+	}
+	public final String getPa_spare() {
+		return pa_spare;
+	}
+	public final void setPa_spare(String pa_spare) {
+		this.pa_spare = pa_spare;
+	}
+	@Override
+	public String toString() {
+		return "Participator [pa_id=" + pa_id + ", pa_name=" + pa_name + ", pa_major=" + pa_major + ", pa_unit="
+				+ pa_unit + ", pa_title=" + pa_title + ", pa_imageUrl=" + pa_imageUrl + ", pa_introduce=" + pa_introduce
+				+ ", pa_spare=" + pa_spare + "]";
+	}
+	
+}
