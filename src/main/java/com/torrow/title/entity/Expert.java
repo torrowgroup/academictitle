@@ -37,7 +37,7 @@ public class Expert {
 	private String ex_name; //姓名
 	@OneToOne
 	@JoinColumn(name="maj_id")
-	private Major ex_major; //关联专业
+	private Majors ex_majors; //关联专业
 	@OneToOne
 	@JoinColumn(name="un_id")
 	private Unit ex_unit; //关联单位
@@ -53,14 +53,14 @@ public class Expert {
 		super();
 	}
 
-	public Expert(int ex_id, String ex_userName, String ex_password, String ex_name, Major ex_major, Unit ex_unit,
+	public Expert(int ex_id, String ex_userName, String ex_password, String ex_name, Majors ex_majors, Unit ex_unit,
 			Title ex_title, String ex_education, String ex_spare) {
 		super();
 		this.ex_id = ex_id;
 		this.ex_userName = ex_userName;
 		this.ex_password = ex_password;
 		this.ex_name = ex_name;
-		this.ex_major = ex_major;
+		this.ex_majors = ex_majors;
 		this.ex_unit = ex_unit;
 		this.ex_title = ex_title;
 		this.ex_education = ex_education;
@@ -99,12 +99,12 @@ public class Expert {
 		this.ex_name = ex_name;
 	}
 
-	public final Major getEx_major() {
-		return ex_major;
+	public final Majors getEx_majors() {
+		return ex_majors;
 	}
 
-	public final void setEx_major(Major ex_major) {
-		this.ex_major = ex_major;
+	public final void setEx_major(Majors ex_majors) {
+		this.ex_majors = ex_majors;
 	}
 
 	public final Unit getEx_unit() {
@@ -142,7 +142,7 @@ public class Expert {
 	@Override
 	public String toString() {
 		return "Expert [ex_id=" + ex_id + ", ex_userName=" + ex_userName + ", ex_password=" + ex_password + ", ex_name="
-				+ ex_name + ", ex_major=" + ex_major + ", ex_unit=" + ex_unit + ", ex_title=" + ex_title
+				+ ex_name + ", ex_majors=" + ex_majors + ", ex_unit=" + ex_unit + ", ex_title=" + ex_title
 				+ ", ex_education=" + ex_education + ", ex_spare=" + ex_spare + "]";
 	}
 	

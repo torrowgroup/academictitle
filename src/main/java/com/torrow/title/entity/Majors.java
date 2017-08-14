@@ -16,8 +16,8 @@ import javax.persistence.Table;
  * @2017年8月14日下午2:59:02
  */
 @Entity
-@Table(name="t_major")
-public class Major {
+@Table(name="t_majors")
+public class Majors {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,11 +28,11 @@ public class Major {
 	@Column(length=255)
 	private String maj_spare; //备用
 	
-	public Major() {
+	public Majors() {
 		super();
 	}
 
-	public Major(int maj_id, String maj_majorName, String maj_spare) {
+	public Majors(int maj_id, String maj_majorName, String maj_spare) {
 		super();
 		this.maj_id = maj_id;
 		this.maj_majorName = maj_majorName;

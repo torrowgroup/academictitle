@@ -2958,3 +2958,4 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 [INFO][2017-08-14 17:33:22,478][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
 [INFO][2017-08-14 17:33:22,478][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
 [INFO][2017-08-14 17:33:22,479][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-14 17:47:04,092][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Mon Aug 14 17:33:16 CST 2017]; root of context hierarchy

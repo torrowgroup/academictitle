@@ -32,7 +32,7 @@ public class Participator {
 	private String pa_name; //参评人姓名
 	@OneToOne
 	@JoinColumn(name="maj_id")
-	private Major pa_major; //关联专业
+	private Majors pa_majors; //关联专业
 	@OneToOne
 	@JoinColumn(name="un_id")
 	private Unit pa_unit; //关联单位
@@ -46,12 +46,12 @@ public class Participator {
 	@Column(length=255)
 	private String pa_spare; //备用
 	
-	public Participator(int pa_id, String pa_name, Major pa_major, Unit pa_unit, Title pa_title, String pa_imageUrl,
+	public Participator(int pa_id, String pa_name, Majors pa_majors, Unit pa_unit, Title pa_title, String pa_imageUrl,
 			String pa_introduce, String pa_spare) {
 		super();
 		this.pa_id = pa_id;
 		this.pa_name = pa_name;
-		this.pa_major = pa_major;
+		this.pa_majors = pa_majors;
 		this.pa_unit = pa_unit;
 		this.pa_title = pa_title;
 		this.pa_imageUrl = pa_imageUrl;
@@ -73,11 +73,11 @@ public class Participator {
 	public final void setPa_name(String pa_name) {
 		this.pa_name = pa_name;
 	}
-	public final Major getPa_major() {
-		return pa_major;
+	public final Majors getPa_majors() {
+		return pa_majors;
 	}
-	public final void setPa_major(Major pa_major) {
-		this.pa_major = pa_major;
+	public final void setPa_majors(Majors pa_majors) {
+		this.pa_majors = pa_majors;
 	}
 	public final Unit getPa_unit() {
 		return pa_unit;
@@ -111,7 +111,7 @@ public class Participator {
 	}
 	@Override
 	public String toString() {
-		return "Participator [pa_id=" + pa_id + ", pa_name=" + pa_name + ", pa_major=" + pa_major + ", pa_unit="
+		return "Participator [pa_id=" + pa_id + ", pa_name=" + pa_name + ", pa_majors=" + pa_majors + ", pa_unit="
 				+ pa_unit + ", pa_title=" + pa_title + ", pa_imageUrl=" + pa_imageUrl + ", pa_introduce=" + pa_introduce
 				+ ", pa_spare=" + pa_spare + "]";
 	}
