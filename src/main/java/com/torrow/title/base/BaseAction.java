@@ -36,19 +36,19 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	@Resource
 	protected ExpertService expertService; // 调用expertService接口
 	@Resource
-	private DiscussService discussService;// 调用DiscussService接口
+	protected DiscussService discussService;// 调用DiscussService接口
 	@Resource
-	private MajorsService majorsService;// 调用MajorsService接口
+	protected MajorsService majorsService;// 调用MajorsService接口
 	@Resource
 	protected ParticipatorService participatorService;// 调用ParticipatorService接口
 	@Resource
-	private RecordService recordService;// 调用RecordService接口
+	protected RecordService recordService;// 调用RecordService接口
 	@Resource
-	private RequireService requireService;// 调用RequireService接口
+	protected RequireService requireService;// 调用RequireService接口
 	@Resource
-	private TitleService titleService;// 调用TitleService接口
+	protected TitleService titleService;// 调用TitleService接口
 	@Resource
-	private UnitService unitService;// 调用UnitService接口
+	protected UnitService unitService;// 调用UnitService接口
 
 	protected HttpServletResponse getResponse() {
 		return ServletActionContext.getResponse();
