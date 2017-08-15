@@ -11,8 +11,15 @@ import org.apache.struts2.interceptor.RequestAware;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.torrow.title.services.DiscussService;
 import com.torrow.title.services.ExpertService;
+import com.torrow.title.services.MajorsService;
 import com.torrow.title.services.ManagerService;
+import com.torrow.title.services.ParticipatorService;
+import com.torrow.title.services.RecordService;
+import com.torrow.title.services.RequireService;
+import com.torrow.title.services.TitleService;
+import com.torrow.title.services.UnitService;
 
 public class BaseAction extends ActionSupport implements SessionAware, RequestAware {
 
@@ -25,10 +32,24 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	protected Map<String, Object> request;
 
 	@Resource
-	protected ManagerService managerService;	//调用managerSevice接口
+	protected ManagerService managerService; // 调用managerSevice接口
 	@Resource
-	protected ExpertService expertService; //调用expertService接口
-	
+	protected ExpertService expertService; // 调用expertService接口
+	@Resource
+	private DiscussService discussService;// 调用DiscussService接口
+	@Resource
+	private MajorsService majorsService;// 调用MajorsService接口
+	@Resource
+	private ParticipatorService participatorService;// 调用ParticipatorService接口
+	@Resource
+	private RecordService recordService;// 调用RecordService接口
+	@Resource
+	private RequireService requireService;// 调用RequireService接口
+	@Resource
+	private TitleService titleService;// 调用TitleService接口
+	@Resource
+	private UnitService unitService;// 调用UnitService接口
+
 	protected HttpServletResponse getResponse() {
 		return ServletActionContext.getResponse();
 	}
@@ -36,7 +57,7 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	protected ServletContext getContext() {
 		return ServletActionContext.getServletContext();
 	}
-	
+
 	public Map<String, Object> getSession() {
 		return session;
 	}
@@ -49,7 +70,7 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	public void setRequest(Map<String, Object> request) {
 		this.request = request;
 	}
-	
+
 	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
