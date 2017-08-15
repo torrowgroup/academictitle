@@ -40,7 +40,7 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	@Resource
 	private MajorsService majorsService;// 调用MajorsService接口
 	@Resource
-	private ParticipatorService participatorService;// 调用ParticipatorService接口
+	protected ParticipatorService participatorService;// 调用ParticipatorService接口
 	@Resource
 	private RecordService recordService;// 调用RecordService接口
 	@Resource
