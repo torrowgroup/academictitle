@@ -1,5 +1,7 @@
 package com.torrow.title.dao;
 
+import org.springframework.stereotype.Service;
+
 import com.torrow.title.base.BaseDao;
 import com.torrow.title.entity.Majors;
 import com.torrow.title.services.MajorsService;
@@ -9,6 +11,7 @@ import com.torrow.title.services.MajorsService;
  *
  * 2017年8月15日上午11:01:12
  */
+@Service
 public class MajorsDao extends BaseDao<Majors> implements MajorsService{
 
 }

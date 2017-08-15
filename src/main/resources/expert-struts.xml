@@ -10,8 +10,8 @@
 	<constant name="struts.objectFactory" value="spring" />
 	<!-- 专家 -->
 	<package name="expert" extends="struts-default,json-default" namespace="/expert"  strict-method-invocation="false">
-		<action name="">
-			
+		<action name="ExpertDiscussAction_*" method="{1}" class="com.torrow.title.action.expert.ExpertDiscussAction">
+			<result name="getAlreadyDiscuss">/WEB-INF/expert/alreadtdiscuss.jsp</result>
 		</action>
 	</package>
 
