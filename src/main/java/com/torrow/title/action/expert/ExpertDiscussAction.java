@@ -3,8 +3,10 @@
  */
 package com.torrow.title.action.expert;
 
-import com.opensymphony.xwork2.ModelDriven;
+import java.util.List;
+
 import com.torrow.title.base.BaseAction;
+import com.torrow.title.entity.Participator;
 
 /**
  * @author 张金高
@@ -20,7 +22,7 @@ public class ExpertDiscussAction extends BaseAction /*implements ModelDriven<T> 
 
 	//查看未评参评人
 	public String getNoDiscuss(){
-		
+		List<Participator> list = participatorService.getAllParticipator();
 		return "";
 	}
 }
