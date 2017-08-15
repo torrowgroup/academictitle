@@ -18,7 +18,8 @@ import javax.persistence.Table;
  * @2017年8月14日下午4:51:23
  */
 /*
- *评议记录类 ,关联参评人，专家
+ *评议记录表,
+ *关联评仪表，参评人，专家
  */
 @Entity
 @Table(name="t_record")
@@ -28,6 +29,9 @@ public class Record {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length=11)
 	private int re_id;
+	@OneToOne
+	@JoinColumn(name="di_id")
+	private Discuss re_discuss; //关联评议表
 	@OneToOne
 	@JoinColumn(name="pa_id")
 	private Participator re_participator; //关联参评人
@@ -42,6 +46,8 @@ public class Record {
 	private int re_scientific; //科研方面的分数
 	@Column(length=5)
 	private int re_morality; //师德方面的分数
+	@Column(length=5)
+	private int re_score;	//该专家总评分
 	@Column(length=255)
 	private String re_spare; //备用
 	
@@ -49,9 +55,10 @@ public class Record {
 		super();
 	}
 
-	public Record(int re_id, Participator re_participator, Expert re_expert, String re_unfm, int re_educate,
-			int re_scientific, int re_morality, String re_spare) {
+	public Record(Discuss re_discuss, int re_id, Participator re_participator, Expert re_expert, String re_unfm,
+			int re_educate, int re_scientific, int re_morality, int re_score, String re_spare) {
 		super();
+		this.re_discuss = re_discuss;
 		this.re_id = re_id;
 		this.re_participator = re_participator;
 		this.re_expert = re_expert;
@@ -59,6 +66,7 @@ public class Record {
 		this.re_educate = re_educate;
 		this.re_scientific = re_scientific;
 		this.re_morality = re_morality;
+		this.re_score = re_score;
 		this.re_spare = re_spare;
 	}
 
@@ -68,6 +76,14 @@ public class Record {
 
 	public final void setRe_id(int re_id) {
 		this.re_id = re_id;
+	}
+
+	public final Discuss getRe_discuss() {
+		return re_discuss;
+	}
+
+	public final void setRe_discuss(Discuss re_discuss) {
+		this.re_discuss = re_discuss;
 	}
 
 	public final Participator getRe_participator() {
@@ -118,6 +134,14 @@ public class Record {
 		this.re_morality = re_morality;
 	}
 
+	public final int getRe_score() {
+		return re_score;
+	}
+
+	public final void setRe_score(int re_score) {
+		this.re_score = re_score;
+	}
+
 	public final String getRe_spare() {
 		return re_spare;
 	}
@@ -128,8 +152,10 @@ public class Record {
 
 	@Override
 	public String toString() {
-		return "Record [re_id=" + re_id + ", re_participator=" + re_participator + ", re_expert=" + re_expert
-				+ ", re_unfm=" + re_unfm + ", re_educate=" + re_educate + ", re_scientific=" + re_scientific
-				+ ", re_morality=" + re_morality + ", re_spare=" + re_spare + "]";
+		return "Record [re_id=" + re_id + ", re_discuss=" + re_discuss + ", re_participator=" + re_participator
+				+ ", re_expert=" + re_expert + ", re_unfm=" + re_unfm + ", re_educate=" + re_educate
+				+ ", re_scientific=" + re_scientific + ", re_morality=" + re_morality + ", re_score=" + re_score
+				+ ", re_spare=" + re_spare + "]";
 	}
+
 }

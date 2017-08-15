@@ -13,6 +13,9 @@
 			<td>参评人</td>
 		</tr>
 		<tr>
+			<td>熟悉程度</td>
+		</tr>
+		<tr>
 			<td>教育</td>
 		</tr>
 		<tr>
@@ -32,16 +35,16 @@
 				<td>${allRecord.re_participator.pa_name}</td>
 			</tr>
 			<tr>
-				<td>${allRecord.re_participator.pa_name}</td>
+				<td>${allRecord.re_unfm}</td>
 			</tr>
 			<tr>
-				<td>${allRecord.re_participator.pa_name}</td>
+				<td>${allRecord.re_educate}</td>
 			</tr>
 			<tr>
-				<td>${allRecord.re_participator.pa_name}</td>
+				<td>${allRecord.re_scientific}</td>
 			</tr>
 			<tr>
-				<td>${allRecord.re_participator.pa_name}</td>
+				<td>${allRecord.re_morality}</td>
 			</tr>
 			<tr>
 				<td>${allRecord.re_participator.pa_name}</td>
