@@ -18,7 +18,7 @@ import javax.persistence.Table;
  * @2017年8月14日下午4:13:22
  */
 /*
- * 评议要求类
+ * 评议要求类,关联职称
  */
 @Entity
 @Table(name="t_require")

@@ -18,7 +18,7 @@ import javax.persistence.Table;
  * @2017年8月14日下午4:18:48
  */
 /*
- * 参评人类
+ * 参评人类,关联专业，单位，职称
  */
 @Entity
 @Table(name="t_participator")
