@@ -22,7 +22,7 @@ public class ExpertDiscussAction extends BaseAction /*implements ModelDriven<T> 
 
 	//查看未评参评人
 	public String getNoDiscuss(){
-		List<Participator> list = participatorService.getAllParticipator();
+//		List<Participator> list = participatorService.getAllParticipator();
 		return "";
 	}
 }
