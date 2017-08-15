@@ -15,6 +15,9 @@ import javax.persistence.Table;
  *
  * @2017年8月14日下午3:07:13
  */
+/*
+ * 单位类
+ */
 @Entity
 @Table(name="t_unit")
 public class Unit {
