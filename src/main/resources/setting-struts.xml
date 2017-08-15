@@ -7,9 +7,23 @@
 	<constant name="struts.i18n.encoding" value="utf8"></constant>
 	<constant name="struts.objectFactory" value="spring" />
 	<!-- 专业，单位，职称，评议要求，评审情况等方面的xml -->
-	<package name="setting" extends="struts-default,json-default" namespace="/setting"  strict-method-invocation="false">
-		<action name="">
-			
+	
+	<package name="major" extends="struts-default,json-default" namespace="/setting"  strict-method-invocation="false">
+		<!-- 专业管理 -->
+		<action name="MajorsManager_*" method="{1}" class="com.torrow.title.action.setting.MajorsManagerAction">
+			<result name="view">/WEB-INF/setting/viewmaior.jsp</result>
+		</action>
+		<!-- 单位管理 -->
+		<action name="DepartmentManage_*" method="{1}" class="com.torrow.title.action.setting.DepartmentManageAction">
+			<result name="view">/WEB-INF/setting/viewdepartment.jsp</result>
+		</action>
+		<!-- 职称管理 -->
+		<action name="TitleManage_*" method="{1}" class="com.torrow.title.action.setting.TitleManageAction">
+			<result name="view">/WEB-INF/setting/viewdetitle.jsp</result>
+		</action>
+		<!-- 评议要求管理 -->
+		<action name="ReviewRequirementsManage_*" method="{1}" class="com.torrow.title.action.setting.ReviewRequirementsManageAction">
+			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp</result>
 		</action>
 	</package>
 </struts>
