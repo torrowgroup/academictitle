@@ -21,14 +21,13 @@ import com.torrow.title.services.ManagerService;
 public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 
 	@Override
-	public boolean login(String userName, String password) {
-		String hql = "from Manager m where m.userName = "+userName+"";
+	public Manager login(String userName, String password) {
+		String hql = "from Manager m where m.ma_userName = "+userName+"";
 		Manager manager =(Manager)this.uniqueResult(hql);
-		if(manager!=null&&manager.getMa_userName().equals(userName)
-					&&manager.getMa_password().equals(password)){
-			return true;
+		if(manager!=null&&manager.getMa_password().equals(password)){
+			return manager;
 		}
-		return false;
+		return null;
 	}
 
 	

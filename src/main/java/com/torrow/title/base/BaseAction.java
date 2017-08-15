@@ -2,6 +2,7 @@ package com.torrow.title.base;
 
 import java.util.Map;
 
+import javax.annotation.Resource;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 
@@ -10,6 +11,8 @@ import org.apache.struts2.interceptor.RequestAware;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.torrow.title.services.ExpertService;
+import com.torrow.title.services.ManagerService;
 
 public class BaseAction extends ActionSupport implements SessionAware, RequestAware {
 
@@ -21,6 +24,11 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	protected Map<String, Object> session;
 	protected Map<String, Object> request;
 
+	@Resource
+	protected ManagerService managerService;	//调用managerSevice接口
+	@Resource
+	protected ExpertService expertService; //调用expertService接口
+	
 	protected HttpServletResponse getResponse() {
 		return ServletActionContext.getResponse();
 	}

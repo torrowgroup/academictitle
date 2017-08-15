@@ -1,3 +1,4 @@
+com/torrow/title/dao/ExpertDao.class
 com/torrow/title/entity/Require.class
 com/torrow/title/entity/Record.class
 com/torrow/title/dao/ManagerDao.class
@@ -15,3 +16,4 @@ com/torrow/title/entity/Discuss.class
 com/torrow/title/entity/Title.class
 com/torrow/title/base/BaseAction.class
 com/torrow/title/filter/AllFilter.class
+com/torrow/title/services/ExpertService.class

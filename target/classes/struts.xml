@@ -11,11 +11,14 @@
 	<constant name="struts.multipart.saveDir" value="/temp"/>
 	<constant name="struts.i18n.encoding" value="utf8"></constant>
 	<!--引入其他xml文件-->
-	<include file="manage-struts.xml"></include>
+	<include file="user-struts.xml"></include>
+	<include file="expert-struts.xml"></include>
+	<include file="setting-struts.xml"></include>
 	
 	<package name="default" extends="struts-default,json-default" namespace="/"  strict-method-invocation="false">
 		<action name="loginAction_*" method="{1}" class="com.torrow.title.action.LoginAction">
-			<result>/WEB-INF/index.jsp</result>
+			<result name="managerIndex">/WEB-INF/index.jsp</result>
+			<result name="expertIndex">/WEB-INF/expert/index.jsp</result>
 			<result name="login">/index.jsp</result>
 		</action>
 	</package>

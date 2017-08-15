@@ -3,6 +3,8 @@
  */
 package com.torrow.title.services;
 
+import com.torrow.title.entity.Manager;
+
 /**
  * @author 张金高
  *
@@ -13,6 +15,6 @@ package com.torrow.title.services;
  */
 public interface ManagerService {
 
-	//登录
-	public boolean login(String userName,String password);
+	//管理员登录
+	public Manager login(String userName,String password);
 }
