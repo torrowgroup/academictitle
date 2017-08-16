@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
 import com.torrow.title.entity.Require;
+import com.torrow.title.entity.Title;
 import com.torrow.title.services.RequireService;
 /**
  * 
@@ -13,5 +14,11 @@ import com.torrow.title.services.RequireService;
  */
 @Service
 public class RequireDao extends BaseDao<Require> implements RequireService{
+
+	@Override
+	public Require getByTitleId(int ti_id) {
+		String hql = "from Require r where r.re_title.ti_id = "+ti_id+"";
+		return (Require)this.uniqueResult(hql);
+	}
 
 }

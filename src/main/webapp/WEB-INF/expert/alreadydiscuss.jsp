@@ -8,49 +8,30 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table>
+<center>${message }</center>
+<center>
+	<table border="1">
 		<tr>
 			<td>参评人</td>
-		</tr>
-		<tr>
 			<td>熟悉程度</td>
-		</tr>
-		<tr>
 			<td>教育</td>
-		</tr>
-		<tr>
 			<td>科研</td>
-		</tr>
-		<tr>
 			<td>师德</td>
-		</tr>
-		<tr>
 			<td>总分</td>
+			<td>操作</td>
 		</tr>
-		<tr>
-			<td>参评人</td>
-		</tr>
-		<c:forEach items="${allRecord}" var="allRecord">
+		<c:forEach items="${alreadyDiscuss}" var="alreadyDiscuss">
 			<tr>
-				<td>${allRecord.re_participator.pa_name}</td>
-			</tr>
-			<tr>
-				<td>${allRecord.re_unfm}</td>
-			</tr>
-			<tr>
-				<td>${allRecord.re_educate}</td>
-			</tr>
-			<tr>
-				<td>${allRecord.re_scientific}</td>
-			</tr>
-			<tr>
-				<td>${allRecord.re_morality}</td>
-			</tr>
-			<tr>
-				<td>${allRecord.re_participator.pa_name}</td>
+				<td>${alreadyDiscuss.re_participator.pa_name}</td>
+				<td>${alreadyDiscuss.re_unfm}</td>
+				<td>${alreadyDiscuss.re_educate}</td>
+				<td>${alreadyDiscuss.re_scientific}</td>
+				<td>${alreadyDiscuss.re_morality}</td>
+				<td>${alreadyDiscuss.re_score}</td>
+				<td><a href="">修改</a></td>
 			</tr>
 		</c:forEach>
 	</table>
-	
+	</center>
 </body>
 </html>

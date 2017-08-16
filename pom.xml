@@ -94,7 +94,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.38</version>
+			<version>5.1.8</version>
 		</dependency>
 
 		<!-- Druid 1.0.16 -->

@@ -3,15 +3,16 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-	<constant name="struts.configuration.xml.reload" value="true" /><!-- 
-		设置成开发者模式 -->
+	<constant name="struts.configuration.xml.reload" value="true" /><!-- 设置成开发者模式 -->
 
 	<constant name="struts.i18n.encoding" value="utf8"></constant>
 	<constant name="struts.objectFactory" value="spring" />
 	<!-- 专家 -->
 	<package name="expert" extends="struts-default,json-default" namespace="/expert"  strict-method-invocation="false">
 		<action name="ExpertDiscussAction_*" method="{1}" class="com.torrow.title.action.expert.ExpertDiscussAction">
-			<result name="getAlreadyDiscuss">/WEB-INF/expert/alreadtdiscuss.jsp</result>
+			<result name="getAlreadyDiscuss">/WEB-INF/expert/alreadydiscuss.jsp</result>
+			<result name="getNoDiscuss">/WEB-INF/expert/nodiscuss.jsp</result>
+			<result name="toDiscuss">/WEB-INF/expert/discuss.jsp</result>
 		</action>
 	</package>
 

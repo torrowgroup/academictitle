@@ -15,5 +15,7 @@ public interface RecordService {
 	//张金高
 	//得到全部参评记录
 	public List<Record> getAllRecord();
+	//得到该参评人的所有评议记录
+	public List<Record> getByParticipatorId(int pa_id);
 
 }

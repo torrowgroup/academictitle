@@ -14,4 +14,10 @@ import com.torrow.title.services.DiscussService;
 @Service
 public class DiscussDao extends BaseDao<Discuss> implements DiscussService{
 
+	@Override
+	public Discuss getByParticipatorId(int pa_id) {
+		String hql = "from Discuss d where d.di_participator.pa_id = "+pa_id+"";
+		return (Discuss)this.uniqueResult(hql);
+	}
+
 }

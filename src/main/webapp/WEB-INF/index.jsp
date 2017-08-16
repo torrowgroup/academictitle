@@ -21,6 +21,8 @@
 		<summary>职称管理</summary>
 		<a href="${rootPath}setting/TitleManage_view" target="mainiframe">查看职称</a><br> 
 		<a href="${rootPath}setting/TitleManage_add" target="mainiframe">添加职称</a><br>     
+		<a href="${rootPath}user/Manager_relay" target="in">添加管理员</a><br>
+		<a href="${rootPath}user/Manager_select" target="in">添加管理员</a><br>
      </details>
 </body>
 <iframe id="ifr" width="1500px" height="600px" style="margin-left:100px; margin-top:-60px;"  name="mainiframe"></iframe>
