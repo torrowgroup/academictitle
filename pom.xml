@@ -147,7 +147,13 @@
 			<artifactId>spring-orm</artifactId>
 			<version>4.2.4.RELEASE</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
 		<!-- 用来自动生成注解配置的jar包 -->
 		<dependency>
 			<groupId>xdoclet</groupId>

@@ -10,7 +10,7 @@
 	
 	<package name="major" extends="struts-default,json-default" namespace="/setting"  strict-method-invocation="false">
 		<!-- 专业管理 -->
-		<action name="MajorsManager_*" method="{1}" class="com.torrow.title.action.setting.MajorsManagerAction">
+		<action name="MajorsManage_*" method="{1}" class="com.torrow.title.action.setting.MajorsManageAction">
 			<result name="view">/WEB-INF/setting/viewmaior.jsp</result>
 		</action>
 		<!-- 单位管理 -->
@@ -24,6 +24,10 @@
 		<!-- 评议要求管理 -->
 		<action name="ReviewRequirementsManage_*" method="{1}" class="com.torrow.title.action.setting.ReviewRequirementsManageAction">
 			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp</result>
+		</action>
+		<!-- jsp中转 -->
+		<action name="Transfer_*" method="{1}" class="com.torrow.title.action.setting.TransferAction">
+			<result name="addMajors">/WEB-INF/setting/addmajors.jsp</result>
 		</action>
 	</package>
 </struts>

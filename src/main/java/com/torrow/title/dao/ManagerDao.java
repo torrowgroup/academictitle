@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.torrow.title.base.BaseDao;
 import com.torrow.title.entity.Manager;
 import com.torrow.title.services.ManagerService;
+import com.torrow.title.util.PageCut;
 
 /**
  * @author 张金高
@@ -27,6 +28,12 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 		if(manager!=null&&manager.getMa_password().equals(password)){
 			return manager;
 		}
+		return null;
+	}
+
+	@Override
+	public PageCut<Manager> getManager(int page, int pageSize) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 

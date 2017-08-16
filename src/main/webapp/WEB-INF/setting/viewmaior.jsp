@@ -6,6 +6,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>专业管理</title>
+<style >
+
+.pag {
+	float: right;
+	margin-top: 30px;
+	margin-right: 0px;
+}
+</style>
 </head>
 <body>
 	<table>
@@ -22,14 +30,35 @@
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
-					<td>${item.id}</td>
-					<td>${item.maiorname}</td>
-					<td><a href="${rootPath}setting/MajorsManager_update?majorId=item.id">修改</a>
-						<a href="${rootPath}setting/MajorsManager_delete?majorId=item.id">删除</a>
+					<td>${item.maj_id}</td>
+					<td>${item.maj_majorName}</td>
+					<td><a href="${rootPath}setting/MajorsManage_update?majorId=item.id">修改</a>
+						<a href="${rootPath}setting/MajorsManage_delete?majorId=item.id">删除</a>
 					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
+	<div class="pag">
+			<ul class="pagination">
+				<li><a href="?page=${paCut.prePage}">上一页</a></li>
+				<c:forEach var="i" begin="${paCut.currentPage-3>0?paCut.currentPage-3:1 }"
+					end="${paCut.currentPage+3>paCut.pageNum?paCut.pageNum:paCut.currentPage+3  }">
+					<c:choose>
+						<c:when test="${i>0 && i == paCut.currentPage &&i<=3}">
+							<li class="active"><a
+								href="?page=${i}">${i}</a></li>
+						</c:when>
+
+						<c:when test="${i>0 && i != paCut.currentPage &&i<=3}">
+							<li><a
+								href="?page=${i}">${i}</a></li>
+						</c:when>
+					</c:choose>
+				</c:forEach>
+
+				<li><a href="?page=${paCut.nextPage}">下一页</a></li>
+			</ul>
+		</div>
 </body>
 </html>
