@@ -21,4 +21,9 @@ public class ParticipatorDao extends BaseDao<Participator> implements Participat
 		return this.selectAll();
 	}
 
+	@Override
+	public Participator getParticipatorById(int pa_id) {
+		return this.getEntity(pa_id);
+	}
+
 }

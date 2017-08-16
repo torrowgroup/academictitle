@@ -38,9 +38,7 @@ public class Discuss {
 	@Column(length=255)
 	private String di_spare; //备用
 	
-	public Discuss(int di_id, Participator di_participator, double di_score, int di_rank, String di_spare) {
-		super();
-		this.di_id = di_id;
+	public Discuss(Participator di_participator, double di_score, int di_rank, String di_spare) {
 		this.di_participator = di_participator;
 		this.di_score = di_score;
 		this.di_rank = di_rank;

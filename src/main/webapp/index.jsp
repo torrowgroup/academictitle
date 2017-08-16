@@ -8,7 +8,7 @@
 </head>
 <body>
 <center>
-	<form action="${rootPath}loginAction_login">
+	<form action="${rootPath}loginAction_login" method="post">
 		<table>
 			<tr>
 				<td>用户名：</td>
