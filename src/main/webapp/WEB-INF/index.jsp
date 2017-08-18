@@ -7,22 +7,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<details >
+	<details style="width:200px"> 
 		<summary>专业管理</summary>
-		<a href="${path}/setting/MajorManage_view" target="in">查看专业</a><br> 
-		<a href="${path}/setting/MajorManage_add" target="in">添加专业</a><br>     
+		<a href="${rootPath}setting/MajorsManage_view" target="mainiframe">查看专业</a><br> 
+		<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">添加专业</a><br>     
      </details>
-     <details >
+     <details style="width:200px" >
 		<summary>单位管理</summary>
-		<a href="${path}/setting/DepartmentManage_view" target="in">查看单位</a><br> 
-		<a href="${path}/setting/DepartmentManage_add" target="in">添加单位</a><br>     
+		<a href="${rootPath}setting/DepartmentManage_view" target="mainiframe">查看单位</a><br> 
+		<a href="${rootPath}setting/DepartmentManage_add" target="mainiframe">添加单位</a><br>     
      </details>
-     <details >
+     <details  style="width:200px">
 		<summary>职称管理</summary>
 		<a href="${path}/setting/TitleManage_view" target="in">查看职称</a><br> 
 		<a href="${path}/setting/TitleManage_add" target="in">添加职称</a><br>
 		<a href="${rootPath}user/Manager_relay" target="in">添加管理员</a><br>
-		<a href="${rootPath}user/Manager_select" target="in">添加管理员</a><br>
+		<a href="${rootPath}user/Manager_select?ask=all" target="in">添加管理员</a><br>
      </details>
 </body>
+<iframe id="ifr" width="1500px" height="600px" style="margin-left:100px; margin-top:-60px;"  name="mainiframe"></iframe>
 </html>

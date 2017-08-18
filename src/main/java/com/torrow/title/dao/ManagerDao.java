@@ -34,15 +34,22 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 	}
 
 	@Override
-	public PageCut<Manager> getManager(int page, int pageSize) {
-		String hql;
+	public PageCut<Manager> getManager(int page, int pageSize, String ask, String inquiry) {
+		String hql = null;
+		String selecthql = null;
+		if(ask==null&&inquiry==null){
+			hql = "select count(*) from Manager";
+			selecthql = "from Manager";
+		} else {
+			hql = "select count(*) from Manager where " + ask + "='" + inquiry + "'";
+			selecthql = "from Manager where " + ask + "='" + inquiry + "'";
+		}
 		int count = 0;
-		hql = "select count(*) from Manager";
 		count = ((Long) this.uniqueResult(hql)).intValue();
 		PageCut<Manager> pc = new PageCut<Manager>(page, pageSize, count);
-		pc.setData(this.getEntityLimitList("from Manager", (page - 1) * pageSize, pageSize));
+		pc.setData(this.getEntityLimitList(selecthql, (page - 1) * pageSize, pageSize));
 		return pc;
-	}
+		}
 
 	@Override
 	public boolean addManager(Manager manager) {
@@ -51,13 +58,31 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 
 	@Override
 	public Manager selectManager(int ma_id) {
-		String hql = "from Manager where ma_id='"+ma_id+"'";
+		String hql = "from Manager where ma_id='" + ma_id + "'";
 		return (Manager) uniqueResult(hql);
 	}
 
 	@Override
 	public List<Manager> getAllManager() {
 		return selectAll();
+	}
+
+	@Override
+	public boolean updateManager(Manager manager) {
+		return updateEntity(manager);
+	}
+
+	@Override
+	public boolean deletManager(int ma_id) {
+		boolean sign = false;
+		String hql = "delete from Manager where ma_id='" + ma_id + "'";
+		int mark = this.executeUpdate(hql);
+		if (mark == 1) {
+			sign = true;
+		} else {
+			sign = false;
+		}
+		return sign;
 	}
 
 }
