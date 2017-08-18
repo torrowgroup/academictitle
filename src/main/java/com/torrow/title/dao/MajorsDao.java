@@ -1,5 +1,7 @@
 package com.torrow.title.dao;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
@@ -13,5 +15,10 @@ import com.torrow.title.services.MajorsService;
  */
 @Service
 public class MajorsDao extends BaseDao<Majors> implements MajorsService{
+
+	@Override
+	public List<Majors> selectMajors() {
+		return selectAll();
+	}
 
 }

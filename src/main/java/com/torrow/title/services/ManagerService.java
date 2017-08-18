@@ -3,6 +3,8 @@
  */
 package com.torrow.title.services;
 
+import java.util.List;
+
 import com.torrow.title.entity.Manager;
 import com.torrow.title.util.PageCut;
 
@@ -20,5 +22,20 @@ public interface ManagerService {
 	public Manager login(String userName, String password);
 
 	// 查看管理员，分页 马黎明
-	public PageCut<Manager> getManager(int page, int pageSize);
+	public PageCut<Manager> getManager(int page, int pageSize, String ask, String inquiry);
+	
+	//添加管理员  马黎明
+	public boolean addManager(Manager manager);
+	
+	//根据ID获取管理员的信息
+	public Manager selectManager(int ma_id);
+	
+	//获取所有的管理员信息，用于添加账号的对比
+	public List<Manager> getAllManager();
+	
+	//更改管理员信息
+	public boolean updateManager(Manager manager);
+
+	//删除管理员信息
+	public boolean deletManager(int ma_id);
 }
