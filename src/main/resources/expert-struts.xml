@@ -13,6 +13,7 @@
 			<result name="getAlreadyDiscuss">/WEB-INF/expert/alreadydiscuss.jsp</result>
 			<result name="getNoDiscuss">/WEB-INF/expert/nodiscuss.jsp</result>
 			<result name="toDiscuss">/WEB-INF/expert/discuss.jsp</result>
+			<result name="toUpdateRecord">/WEB-INF/expert/updatediscuss.jsp</result>
 		</action>
 	</package>
 

@@ -1,5 +1,7 @@
 package com.torrow.title.services;
 
+import java.util.List;
+
 import com.torrow.title.entity.Discuss;
 
 /**
@@ -10,7 +12,16 @@ import com.torrow.title.entity.Discuss;
  */
 public interface DiscussService {
 
+	//张金高
 	//由参评人id得到评议类
 	public Discuss getByParticipatorId(int pa_id);
+	//得到所有的评议类
+	public List<Discuss> getAllDiscuss();
+	//保存评议类
+	public void saveDiscuss(Discuss discuss);
+	//修改评议类
+	public void updateDiscuss(Discuss discussDown);
+	//对所有评议以所申请职称和A类专家平均分高低进行排序
+	public List<Discuss> rankDiscuss(String titleName);
 
 }

@@ -27,4 +27,19 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 		return this.getEntityList(hql);
 	}
 
+	@Override
+	public void save(Record record) {
+		this.saveEntity(record);
+	}
+
+	@Override
+	public Record getByRecordId(int re_id) {
+		return this.getEntity(re_id);
+	}
+
+	@Override
+	public void updateRecord(Record record) {
+		this.updateEntity(record);
+	}
+
 }

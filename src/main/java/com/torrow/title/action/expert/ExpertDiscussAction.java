@@ -18,24 +18,27 @@ import com.torrow.title.entity.Require;
  *
  * @2017年8月15日上午11:01:52
  */
-public class ExpertDiscussAction
-		extends BaseAction  implements ModelDriven<Record> {
+public class ExpertDiscussAction extends BaseAction implements ModelDriven<Record> {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int pa_id; //得到参评人员id
-	private Record record; //得到评议记录
-	
+	private int pa_id; // 得到参评人员id
+	private Record record; // 得到评议记录
+
 	// 查看该专家未评的参评人
 	public String noDiscuss() {
 		List<Participator> allParticipator = participatorService.getAllParticipator();
 		List<Record> allRecord = recordService.getAllRecord();
 		Expert expert = (Expert) session.get("expert");
 		for (int i = 0; i < allRecord.size(); i++) {
-			if (allRecord.get(i).getRe_expert().equals(expert)) {// 如果评议记录里有这个专家的评议记录，就将这次评议记录里的参评人从全部参评人里删除
-				allParticipator.remove(allRecord.get(i).getRe_participator());
+			if (allRecord.get(i).getRe_expert().getEx_id() == expert.getEx_id()) {// 如果评议记录里有这个专家的评议记录，就将这次评议记录里的参评人从全部参评人里删除
+				for (int j = 0; j < allParticipator.size(); j++) {
+					if (allParticipator.get(j).getPa_id() == allRecord.get(i).getRe_participator().getPa_id()) {
+						allParticipator.remove(j);
+					}
+				}
 			}
 		}
 		if (allParticipator.isEmpty()) {
@@ -50,7 +53,7 @@ public class ExpertDiscussAction
 		List<Record> allRecord = recordService.getAllRecord();
 		Expert expert = (Expert) session.get("expert"); // 得到登录专家的对象
 		for (int i = 0; i < allRecord.size(); i++) {
-			if (!(allRecord.get(i).getRe_expert()).equals(expert)) {
+			if (allRecord.get(i).getRe_expert().getEx_id() != expert.getEx_id()) {
 				allRecord.remove(i);
 				i--;
 			}
@@ -61,7 +64,8 @@ public class ExpertDiscussAction
 		request.put("alreadyDiscuss", allRecord);
 		return "getAlreadyDiscuss";
 	}
-	//到达评议界面
+
+	// 到达评议界面
 	public String toDiscuss() {
 		Participator participator = participatorService.getParticipatorById(pa_id);
 		Require require = requireService.getByTitleId(participator.getPa_title().getTi_id());
@@ -69,43 +73,106 @@ public class ExpertDiscussAction
 		request.put("participator", participator);
 		return "toDiscuss";
 	}
-	//专家对参评人评议
-	public String discuss(){
+
+	// 专家对参评人评议
+	public String discuss() {
 		Discuss discuss = discussService.getByParticipatorId(pa_id);
-		Participator participator = participatorService.getParticipatorById(pa_id);
-		if(discuss==null){	//如果还没有专家对该参评人评议过，就先生成discuss
+		Participator participator = participatorService.getParticipatorById(pa_id);// 获得参评人
+		record.setRe_expert((Expert) (session.get("expert")));
+		record.setRe_participator(participator);
+		if (discuss == null) { // 如果还没有专家对该参评人评议过，就先生成discuss
+			discuss = new Discuss();
 			discuss.setDi_participator(participator);
-//			discussService.saveDiscuss(discuss);//先保存discuss，以便于record//////////////////
+			discussService.saveDiscuss(discuss);
 		}
-		int score = record.getRe_educate()+record.getRe_scientific()+record.getRe_morality();
+		re_score(); // 调用计算专家给这位参评人分数方法
+		List<Record> allRecord = recordService.getByParticipatorId(pa_id);// 得到该评议人的所有评议记录，计算总分，排名
+		allRecord.add(record);
+		discuss = di_average(allRecord, discuss);
+		discussService.updateDiscuss(discuss);
+		di_rank(discuss); // 调用方法对所有参评人进行排名，并保存评议
+		Discuss discussDb = discussService.getByParticipatorId(pa_id);
+		record.setRe_discuss(discussDb);
+		recordService.save(record);
+		noDiscuss(); // 调用未评方法，到未评界面
+		return "getNoDiscuss"; // 调用查看未评方法
+	}
+
+	// 计算专家给的评分，该专家首次对参评人评议或修改评议记录
+	public void re_score() {
+		int score = record.getRe_educate() + record.getRe_scientific() + record.getRe_morality();
 		double unfm = 0.6;
-		if(record.getRe_unfm().equals("B")){
+		if (record.getRe_unfm().equals("B")) {
 			unfm = 0.3;
-		} else if(record.getRe_unfm().equals("C")) {
+		} else if (record.getRe_unfm().equals("C")) {
 			unfm = 0.1;
 		}
-		record.setRe_score((int)(score*unfm));
-		List<Record> allRecord = recordService.getByParticipatorId(pa_id);//得到该评议人的所有评议记录，计算总分，排名 familiarize
-		allRecord.add(record);
-		double familiarize=0,littleFamiliarize=0,noFamiliarize=0;//记录熟悉的，比较熟悉的，不太熟悉的人数
-		double fScore = 0,lFScore = 0,nFScore = 0; //记录熟悉的，比较熟悉的，不太熟悉的总分
-		for(int i=0;i<allRecord.size();i++){
-			if(allRecord.get(i).getRe_unfm().equals("A")){
+		record.setRe_score((int) (score * unfm));
+	}
+
+	// 计算该参评人熟悉型专家评分平均分，该专家首次对参评人评议或修改评议记录
+	public Discuss di_average(List<Record> allRecord, Discuss discussTemp) {
+		double familiarize = 1, littleFamiliarize = 1, noFamiliarize = 1;// 记录熟悉的人数
+		double fScore = 0, lFScore = 0, nFScore = 0; // 记录熟悉的总分
+		double di_averageA = 0, di_averageB = 0, di_averageC = 0;// 平均分
+		for (int i = 0; i < allRecord.size(); i++) {
+			if (allRecord.get(i).getRe_unfm().equals("A")) {
 				familiarize++;
 				fScore += allRecord.get(i).getRe_score();
-			} else if(allRecord.get(i).getRe_unfm().equals("B")){
+				di_averageA = fScore / (familiarize - 1);
+			} else if (allRecord.get(i).getRe_unfm().equals("B")) {
 				littleFamiliarize++;
 				lFScore += allRecord.get(i).getRe_score();
-			} else {
+				di_averageB = lFScore / (littleFamiliarize - 1);
+			} else if (allRecord.get(i).getRe_unfm().equals("C")) {
 				noFamiliarize++;
 				nFScore += allRecord.get(i).getRe_score();
+				di_averageC = nFScore / (noFamiliarize - 1);
 			}
 		}
-		double di_score = (fScore/familiarize)+(lFScore/littleFamiliarize)+(nFScore/noFamiliarize);
-		discuss.setDi_score(di_score);
-		return "";
+		discussTemp.setDi_averageA(di_averageA);
+		discussTemp.setDi_averageB(di_averageB);
+		discussTemp.setDi_averageC(di_averageC);
+		return discussTemp;
 	}
-	
+
+	// 对参评人进行排名，按照a型专家平均分
+	public void di_rank(Discuss discuss) {
+		String titleName = discuss.getDi_participator().getPa_title().getTi_titleName();// 得到评议人申请职称
+		List<Discuss> allDiscuss = discussService.rankDiscuss(titleName);// 以评议人所申请职称和A类专家平均分数排序
+		for (int i = 0; i < allDiscuss.size(); i++) {
+			allDiscuss.get(i).setDi_rank(i + 1);
+			discussService.updateDiscuss(allDiscuss.get(i));
+		}
+	}
+
+	// 到达修改评议记录界面
+	public String toUpdateRecord() {
+		record = recordService.getByRecordId(record.getRe_id());
+		int titleId = record.getRe_participator().getPa_title().getTi_id();
+		Require require = requireService.getByTitleId(titleId);
+		request.put("require", require);// 将评议要求封装进request
+		request.put("record", record);
+		return "toUpdateRecord";
+	}
+
+	// 修改评议记录
+	public String updateRecord() {
+		Record recordDb = recordService.getByRecordId(record.getRe_id());// 得到评议记录，将评议类，参评人，专家set进前台传来的评议记录里
+		record.setRe_discuss(recordDb.getRe_discuss());
+		record.setRe_participator(recordDb.getRe_participator());
+		record.setRe_expert(recordDb.getRe_expert());
+		re_score();// 计算专家修改后的评分
+		recordService.updateRecord(record);
+		Discuss discuss = recordDb.getRe_discuss();
+		List<Record> allRecord = recordService.getByParticipatorId(record.getRe_participator().getPa_id());// 得到该评议人的所有评议记录，计算总分，排名
+		discuss = di_average(allRecord, discuss);
+		discussService.updateDiscuss(discuss);
+		di_rank(discuss);
+		alreadyDiscuss();// 调用已评方法，到达已评界面
+		return "getAlreadyDiscuss";
+	}
+
 	public final int getPa_id() {
 		return pa_id;
 	}
@@ -116,7 +183,7 @@ public class ExpertDiscussAction
 
 	@Override
 	public Record getModel() {
-		if(record==null){
+		if (record == null) {
 			record = new Record();
 		}
 		return record;
