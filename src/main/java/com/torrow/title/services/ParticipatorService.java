@@ -14,5 +14,7 @@ public interface ParticipatorService {
 	//张金高
 	//得到全部的参评人员
 	public List<Participator> getAllParticipator();
+	//根据id得到参评人
+	public Participator getParticipatorById(int pa_id);
 
 }

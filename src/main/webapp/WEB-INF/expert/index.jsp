@@ -9,8 +9,8 @@
 <body>
 <details>
 	<summary>参评</summary>
-	<a href="">未评</a><br>
-	<a href="">已评</a>
+	<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss" target="mainFrame">未评</a><br>
+	<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss" target="mainFrame">已评</a>
 </details>
 <details>
 	<summary><a href="">查看通知</a></summary>
@@ -20,6 +20,6 @@
 	<a href="">个人资料</a><br>
 	<a href="">退出登录</a>	
 </details>
-<iframe id="ifr" width="1500px" height="500" name="mainFrame"></iframe>
+<iframe id="ifr" width="1500px" height="500px" name="mainFrame"></iframe>
 </body>
 </html>

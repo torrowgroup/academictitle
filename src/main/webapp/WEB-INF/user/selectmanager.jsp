@@ -48,8 +48,7 @@
 	</table>
 	<div>
 			<ul >
-				<li><a
-					href="${rootPath}user/Manager_select?page=${messagenews.prePage}">上一页</a></li>
+				<li><a href="${rootPath}user/Manager_select?page=${messagenews.prePage}">上一页</a></li>
 				<c:forEach var="i" begin="${messagenews.currentPage-3>0?messagenews.currentPage-3:1 }"
 					end="${messagenews.currentPage+3>messagenews.pageNum?messagenews.pageNum:messagenews.currentPage+3  }">
 

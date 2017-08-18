@@ -21,4 +21,10 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 		return this.selectAll();
 	}
 
+	@Override
+	public List<Record> getByParticipatorId(int pa_id) {
+		String hql = "from Record r where r.re_participator.pa_id = "+pa_id+"";
+		return this.getEntityList(hql);
+	}
+
 }

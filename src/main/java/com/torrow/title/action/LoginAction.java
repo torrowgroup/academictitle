@@ -4,8 +4,6 @@
 package com.torrow.title.action;
 
 
-import javax.annotation.Resource;
-
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Manager;
@@ -24,7 +22,7 @@ public class LoginAction extends BaseAction{
 	private String userName;//用户名
 	private String password;//密码
 
-	//登录
+	//专家和管理员登录
 	public String login(){
 		Manager manager = managerService.login(userName, password);
 		Expert expert = expertService.login(userName, password);

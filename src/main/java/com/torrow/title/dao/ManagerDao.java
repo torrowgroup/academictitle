@@ -49,7 +49,7 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 		PageCut<Manager> pc = new PageCut<Manager>(page, pageSize, count);
 		pc.setData(this.getEntityLimitList(selecthql, (page - 1) * pageSize, pageSize));
 		return pc;
-	}
+		}
 
 	@Override
 	public boolean addManager(Manager manager) {

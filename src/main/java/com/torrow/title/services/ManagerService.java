@@ -38,4 +38,5 @@ public interface ManagerService {
 
 	//删除管理员信息
 	public boolean deletManager(int ma_id);
+	
 }

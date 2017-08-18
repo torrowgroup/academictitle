@@ -95,6 +95,7 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 		}
 		return select();
 	}
+	
 
 	public int getPage() {
 		return page;

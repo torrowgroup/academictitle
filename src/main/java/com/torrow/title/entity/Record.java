@@ -47,7 +47,7 @@ public class Record {
 	@Column(length=5)
 	private int re_morality; //师德方面的分数
 	@Column(length=5)
-	private int re_score;	//该专家总评分
+	private int re_score;	//该专家总评分,A类评委分数×60%，B类评委分数×30%，C类评委分数×10%
 	@Column(length=255)
 	private String re_spare; //备用
 	
