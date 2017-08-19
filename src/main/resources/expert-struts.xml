@@ -17,7 +17,8 @@
 		</action>
 		
 		<action name="ExpertNotice_*" method="{1}" class="com.torrow.title.action.expert.ExpertNoticeAction">
-		
+			<result name="allNotice">/WEB-INF/expert/viewnotice.jsp</result>
+			<result name="noticeDetail">/WEB-INF/expert/noticedetail.jsp</result>
 		</action>
 	</package>
 

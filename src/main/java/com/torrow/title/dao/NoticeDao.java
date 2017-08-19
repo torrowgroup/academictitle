@@ -24,5 +24,10 @@ public class NoticeDao extends BaseDao<Notice> implements NoticeService {
 		return this.selectAll();
 	}
 
+	@Override
+	public Notice getById(int no_id) {
+		return this.getEntity(no_id);
+	}
+
 	
 }

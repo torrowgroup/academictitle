@@ -22,11 +22,23 @@ public class ExpertNoticeAction extends BaseAction implements ModelDriven<Notice
 	private static final long serialVersionUID = -2602901656187684334L;
 	private Notice notice;
 	
+	//查看所有的通知
 	public String allNotice(){
 		List<Notice> allNotice = noticeService.allNotice();
+		if(allNotice.isEmpty()){
+			request.put("message", "没有发布通知");
+		}
 		request.put("allNotice",allNotice);
 		return "allNotice";
 	}
+	//查看通知详情
+	public String noticeDetail(){
+		Notice noticeDb = noticeService.getById(notice.getNo_id());
+		request.put("notice", noticeDb);
+		return "noticeDetail";
+	}
+	
+	
 	
 	@Override
 	public Notice getModel() {

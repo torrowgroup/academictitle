@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,20 +8,19 @@
 </head>
 <body>
 <center>
-	${message}
 	<table>
 		<tr>
 			<td>标题</td>
-			<td>发布时间</td>
-			<td>操作</td>
+			<td>${notice.no_head}</td>
 		</tr>
-		<c:forEach items="${allNotice}" var="allNotice">
-			<tr>
-				<td>${allNotice.no_head}</td>
-				<td>${allNotice.no_issueData}</td>
-				<td><a href="${rootPath}expert/ExpertDotice_noticeDetail?no_id=${allNotice.no_id}">查看详情</a></td>
-			</tr>
-		</c:forEach>
+		<tr>
+			<td>内容</td>
+			<td>${notice.no_content}</td>
+		</tr>
+		<tr>
+			<td>发布时间</td>
+			<td>${notice.no_issueData}</td>
+		</tr>
 	</table>
 </center>
 </body>

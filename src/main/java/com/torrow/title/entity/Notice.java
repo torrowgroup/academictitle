@@ -3,6 +3,8 @@
  */
 package com.torrow.title.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,11 +38,11 @@ public class Notice {
 	@OneToOne
 	@JoinColumn(name="ma_id")
 	private Manager no_manager; //发布人，关联管理员
-	@Column(length=20)
-	private String no_issueData;//发布时间
+	private Date no_issueData;//发布时间
 	@Column(length=255)
 	private String no_spare; //备用
-	public Notice(int no_id, String no_head, String no_content, Manager no_manager, String no_issueData,
+	
+	public Notice(int no_id, String no_head, String no_content, Manager no_manager, Date no_issueData,
 			String no_spare) {
 		super();
 		this.no_id = no_id;
@@ -77,10 +79,10 @@ public class Notice {
 	public final void setNo_manager(Manager no_manager) {
 		this.no_manager = no_manager;
 	}
-	public final String getNo_issueData() {
+	public final Date getNo_issueData() {
 		return no_issueData;
 	}
-	public final void setNo_issueData(String no_issueData) {
+	public final void setNo_issueData(Date no_issueData) {
 		this.no_issueData = no_issueData;
 	}
 	public final String getNo_spare() {
