@@ -38,5 +38,11 @@ public class MajorsDao extends BaseDao<Majors> implements MajorsService {
 	public boolean add(Majors majors) {
 			return this.saveEntity(majors);
 	}
+
+	@Override
+	public Majors getByName(String majorName) {
+		String hql = "from Majors m where m.maj_majorName = "+majorName+"";
+		return (Majors)this.uniqueResult(hql);
+	}
 			
 }

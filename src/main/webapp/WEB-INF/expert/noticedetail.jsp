@@ -8,7 +8,7 @@
 </head>
 <body>
 <center>
-	<table>
+	<table border="1">
 		<tr>
 			<td>标题</td>
 			<td>${notice.no_head}</td>

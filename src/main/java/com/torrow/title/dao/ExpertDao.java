@@ -51,5 +51,10 @@ public class ExpertDao extends BaseDao<Expert> implements ExpertService {
 		return pc;
 	}
 
+	@Override
+	public boolean updateExpert(Expert expert) {
+		return this.updateEntity(expert);
+	}
+
 	
 }
