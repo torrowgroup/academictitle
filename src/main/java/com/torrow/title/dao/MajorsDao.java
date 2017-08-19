@@ -31,7 +31,7 @@ public class MajorsDao extends BaseDao<Majors> implements MajorsService {
 	@Override
 	public List<Majors> checkAll(){
 		List<Majors> list = new ArrayList<Majors>();
-		String hql = "form Majors";
+		String hql = "from Majors";
 		list=this.getEntityList(hql);
 		return list;
 	}

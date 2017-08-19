@@ -32,7 +32,7 @@
 					<td>${item.ti_id}</td>
 					<td>${item.ti_titleName}</td>
 					<td><a href="${rootPath}setting/Transfer_updateTitle?titleId=${ item.ti_id}">修改</a>
-						<a href="${rootPath}setting/TitleManage_delete?titleId=${ item.ti_id}">删除</a>
+						<a href="${rootPath}setting/TitleManage_delete?titleId=${item.ti_id}">删除</a>
 					</td>
 				</tr>
 			</c:forEach>
