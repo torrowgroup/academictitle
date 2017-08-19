@@ -29,10 +29,10 @@
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
-					<td>${item.maj_id}</td>
-					<td>${item.maj_majorName}</td>
-					<td><a href="${rootPath}setting/MajorsManage_update?majorId=item.id">修改</a>
-						<a href="${rootPath}setting/MajorsManage_delete?majorId=item.id">删除</a>
+					<td>${item.ti_id}</td>
+					<td>${item.ti_titleName}</td>
+					<td><a href="${rootPath}setting/Transfer_updateTitle?titleId=${ item.ti_id}">修改</a>
+						<a href="${rootPath}setting/TitleManage_delete?titleId=${ item.ti_id}">删除</a>
 					</td>
 				</tr>
 			</c:forEach>

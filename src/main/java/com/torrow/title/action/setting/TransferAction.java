@@ -1,11 +1,81 @@
 package com.torrow.title.action.setting;
 
-import com.torrow.title.base.BaseAction;
+import java.util.List;
 
-public class TransferAction extends BaseAction{
+import com.torrow.title.base.BaseAction;
+import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Title;
+import com.torrow.title.entity.Unit;
+
+public class TransferAction extends BaseAction {
+	private int majorsId;
+	private int titleId;
+	private int unitId;
+	private int requireId;
+
+	public int getUnitId() {
+		return unitId;
+	}
+
+	public void setUnitId(int unitId) {
+		this.unitId = unitId;
+	}
+
+	public int getRequireId() {
+		return requireId;
+	}
+
+	public void setRequireId(int requireId) {
+		this.requireId = requireId;
+	}
+
+	public int getTitleId() {
+		return titleId;
+	}
+
+	public void setTitleId(int titleId) {
+		this.titleId = titleId;
+	}
+
+	public int getMajorsId() {
+		return majorsId;
+	}
+
+	public void setMajorsId(int majorsId) {
+		this.majorsId = majorsId;
+	}
+
 	public String addMajors() {
 		return "addMajors";
 	}
-	
 
+	public String addTitle() {
+		return "addTitle";
+	}
+
+	public String addReviewRequirements() {
+		List list = majorsService.checkAll();
+		request.put("reqlist", list);
+		return "addReviewRequirements";
+	}
+
+	public String addUnit() {
+		return "addUnit";
+	}
+
+	public String updateMajors() {
+		Majors majors = majorsService.checkById(majorsId);
+		request.put("majors", majors);
+		return "updateMajors";
+	}
+	public String updateTitle() {
+		Title title = titleService.checkById(titleId);
+		request.put("title", title);
+		return "updateTitle";
+	}
+	public String updateUnit() {
+		Unit unit = unitService.checkById(unitId);
+		request.put("unit", unit);
+		return "updateUnit";
+	}
 }

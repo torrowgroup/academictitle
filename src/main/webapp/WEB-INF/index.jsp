@@ -15,14 +15,19 @@
      <details style="width:200px" >
 		<summary>单位管理</summary>
 		<a href="${rootPath}setting/DepartmentManage_view" target="mainiframe">查看单位</a><br> 
-		<a href="${rootPath}setting/DepartmentManage_add" target="mainiframe">添加单位</a><br>     
+		<a href="${rootPath}setting/Transfer_addUnit" target="mainiframe">添加单位</a><br>     
      </details>
      <details  style="width:200px">
 		<summary>职称管理</summary>
 		<a href="${rootPath}setting/TitleManage_view" target="mainiframe">查看职称</a><br> 
-		<a href="${rootPath}setting/TitleManage_add" target="mainiframe">添加职称</a><br>     
+		<a href="${rootPath}setting/Transfer_addTitle" target="mainiframe">添加职称</a><br>     
 		<a href="${rootPath}user/Manager_relay" target="in">添加管理员</a><br>
 		<a href="${rootPath}user/Manager_select" target="in">添加管理员</a><br>
+     </details>
+     <details  style="width:200px">
+		<summary>评议要求管理</summary>
+		<a href="${rootPath}setting/ReviewRequirementsManage_view" target="mainiframe">查看评议要求</a><br> 
+		<a href="${rootPath}setting/Transfer_addReviewRequirements" target="mainiframe">添加评议要求</a><br>     
      </details>
 </body>
 <iframe id="ifr" width="1500px" height="600px" style="margin-left:100px; margin-top:-60px;"  name="mainiframe"></iframe>

@@ -17,4 +17,14 @@ public interface MajorsService {
 
 	public boolean add(Majors majors);//wqj 添加专业
 
+	public List<Majors> checkAll();
+
+	public boolean update(Majors majors);
+
+	public  Majors checkById(int id);
+
+	public boolean deleteById(int id);
+
+	
+
 }

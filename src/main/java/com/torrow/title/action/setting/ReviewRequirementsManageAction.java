@@ -1,5 +1,8 @@
 package com.torrow.title.action.setting;
 
-public class ReviewRequirementsManageAction {
+import com.torrow.title.base.BaseAction;
+
+public class ReviewRequirementsManageAction extends BaseAction {
+	
 
 }
