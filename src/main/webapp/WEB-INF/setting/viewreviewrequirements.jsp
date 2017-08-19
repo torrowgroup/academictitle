@@ -31,11 +31,11 @@
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
-					<td>${item.re_title}</td>
+					<td>${item.re_title.ti_titleName}</td>
 					<td>${item.re_educate}</td>
 					<td>${item.re_scientific}</td>
-					<td><a href="${rootPath}setting/ReviewRequirementsManage_update?majorId=item.id">修改</a>
-							<a href="${rootPath}setting/ReviewRequirementsManage_delete?majorId=item.id">删除</a>
+					<td><a href="${rootPath}setting/Transfer_updateRequire?majorId=item.id">修改</a>
+							<%-- <a href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">删除</a> --%>
 					</td>
 				</tr>
 			</c:forEach>

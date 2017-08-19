@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Require;
 import com.torrow.title.entity.Title;
 import com.torrow.title.entity.Unit;
 
@@ -54,7 +55,7 @@ public class TransferAction extends BaseAction {
 	}
 
 	public String addReviewRequirements() {
-		List list = majorsService.checkAll();
+		List list = titleService.selectTitle();
 		request.put("reqlist", list);
 		return "addReviewRequirements";
 	}
@@ -77,5 +78,11 @@ public class TransferAction extends BaseAction {
 		Unit unit = unitService.checkById(unitId);
 		request.put("unit", unit);
 		return "updateUnit";
+	}
+	public String updateRequire() {
+		Require req = requireService.checkById(requireId);
+		request.put("req",req);
+		return "updateRequire";
+		
 	}
 }
