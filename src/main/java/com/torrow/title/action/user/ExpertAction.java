@@ -17,9 +17,9 @@ public class ExpertAction extends BaseAction implements ModelDriven<Expert> {
 	private Expert expert;
 	private String ask;// 查询的条件
 	private String inquiry;// 查询的内容
-	private String unitName;
-	private String majorName;
-	private String titleName;
+	private int majorid;
+	private int titleid;
+	private int unitid;
 
 	// 查看所有的专家信息
 	public String select() {
@@ -72,21 +72,12 @@ public class ExpertAction extends BaseAction implements ModelDriven<Expert> {
 			}
 		}
 		if (allsign) {
-			for (int i = 0; i < majors.size(); i++) {
-				if (majors.get(i).getMaj_majorName().equals(majorName)) {
-					expert.setEx_major(majors.get(i));
-				}
-			}
-			for (int i = 0; i < unit.size(); i++) {
-				if (unit.get(i).getUn_unitName().equals(unitName)) {
-					expert.setEx_unit(unit.get(i));
-				}
-			}
-			for (int i = 0; i < title.size(); i++) {
-				if (title.get(i).getTi_titleName().equals(titleName)) {
-					expert.setEx_title(title.get(i));
-				}
-			}
+			Majors major = majorsService.checkById(majorid);
+			expert.setEx_major(major);
+			Unit units = unitService.checkById(unitid);
+			expert.setEx_unit(units);
+			Title titles = titleService.checkById(titleid);
+			expert.setEx_title(titles);
 			boolean sign = expertService.addExpert(expert);
 			if (sign) {
 				request.put("message", "添加成功");
@@ -118,29 +109,53 @@ public class ExpertAction extends BaseAction implements ModelDriven<Expert> {
 
 	// 根据id修改专家的信息
 	public String update() {
-		List<Majors> majors = majorsService.selectMajors();
-		List<Unit> unit = unitService.selectUnit();
-		List<Title> title = titleService.selectTitle();
-		for (int i = 0; i < majors.size(); i++) {
-			if (majors.get(i).getMaj_majorName().equals(majorName)) {
-				expert.setEx_major(majors.get(i));
+		Expert experts = (Expert) session.get("experts");
+		if(experts.getEx_userName().equals(expert.getEx_userName())){
+			Majors major = majorsService.checkById(majorid);
+			expert.setEx_major(major);
+			Unit units = unitService.checkById(unitid);
+			expert.setEx_unit(units);
+			Title titles = titleService.checkById(titleid);
+			expert.setEx_title(titles);
+			boolean sign = expertService.updateExpert(expert);
+			if (sign) {
+				request.put("message", "修改成功");
+			} else {
+				request.put("message", "修改失败");
 			}
-		}
-		for (int i = 0; i < unit.size(); i++) {
-			if (unit.get(i).getUn_unitName().equals(unitName)) {
-				expert.setEx_unit(unit.get(i));
-			}
-		}
-		for (int i = 0; i < title.size(); i++) {
-			if (title.get(i).getTi_titleName().equals(titleName)) {
-				expert.setEx_title(title.get(i));
-			}
-		}
-		boolean sign = expertService.updateExpert(expert);
-		if (sign) {
-			request.put("message", "修改成功");
 		} else {
-			request.put("message", "修改失败");
+			boolean allsign = true;
+			List<Manager> list = managerService.getAllAdmain();
+			List<Expert> elist = expertService.getSomeExpert(experts);
+			for (int i = 0; i < elist.size(); i++) {
+				if (elist.get(i).getEx_userName().equals(expert.getEx_userName())) {
+					allsign = false;
+					break;
+				} else {
+					for (int j = 0; j < list.size(); j++) {
+						if (list.get(j).getMa_userName().equals(expert.getEx_userName())) {
+							allsign = false;
+							break;
+						}
+					}
+				}
+			}
+			if (allsign) {
+				Majors major = majorsService.checkById(majorid);
+				expert.setEx_major(major);
+				Unit units = unitService.checkById(unitid);
+				expert.setEx_unit(units);
+				Title titles = titleService.checkById(titleid);
+				expert.setEx_title(titles);
+				boolean sign = expertService.updateExpert(expert);
+				if (sign) {
+					request.put("message", "修改成功");
+				} else {
+					request.put("message", "修改失败");
+				}
+			} else {
+				request.put("message", "用户名重复，请重新添加");
+			}
 		}
 		return select();
 	}
@@ -180,28 +195,28 @@ public class ExpertAction extends BaseAction implements ModelDriven<Expert> {
 		this.page = page;
 	}
 
-	public String getUnitName() {
-		return unitName;
+	public int getMajorid() {
+		return majorid;
 	}
 
-	public void setUnitName(String unitName) {
-		this.unitName = unitName;
+	public void setMajorid(int majorid) {
+		this.majorid = majorid;
 	}
 
-	public String getMajorName() {
-		return majorName;
+	public int getTitleid() {
+		return titleid;
 	}
 
-	public void setMajorName(String majorName) {
-		this.majorName = majorName;
+	public void setTitleid(int titleid) {
+		this.titleid = titleid;
 	}
 
-	public String getTitleName() {
-		return titleName;
+	public int getUnitid() {
+		return unitid;
 	}
 
-	public void setTitleName(String titleName) {
-		this.titleName = titleName;
+	public void setUnitid(int unitid) {
+		this.unitid = unitid;
 	}
 
 	@Override

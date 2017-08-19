@@ -8,6 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+<center>${message}</center>
+<div style="margin-left: 60%; height: 30px; margin-top: 1%;">
+			<form action="${rootPath}user/Expert_select" method="post">
+				<select name="ask"
+					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
+					<option value="pa_name">姓名</option>
+				</select> <input
+					style="border-radius: 7px; background-color: #F0F0F0; height: 25px; width: 30%;"
+					type="text" name="inquiry" required="required"> <input
+					style="background-color: #82C0E9;border-radius: 7px;" type="submit" value="查询">
+			</form>
+	</div>
 <table border="1" cecellspacing="0">
 		<thead>
 			<tr>

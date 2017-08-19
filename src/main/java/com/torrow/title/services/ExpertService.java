@@ -37,4 +37,7 @@ public interface ExpertService {
 
 	//根据ID删除专家
 	public boolean deletExpert(int ex_id);
+	
+	//得到除了修改的专家之外的所有专家
+	public List<Expert> getSomeExpert(Expert experts);
 }

@@ -79,5 +79,12 @@ public class ExpertDao extends BaseDao<Expert> implements ExpertService {
 		return sign;
 	}
 
+	@Override
+	public List<Expert> getSomeExpert(Expert experts) {
+		String username = experts.getEx_userName();
+		String hql = "from Expert where ex_userName!='"+username+"'";
+		return getEntityList(hql);
+	}
+
 	
 }
