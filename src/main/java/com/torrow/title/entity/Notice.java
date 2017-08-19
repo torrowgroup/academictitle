@@ -37,14 +37,18 @@ public class Notice {
 	@JoinColumn(name="ma_id")
 	private Manager no_manager; //发布人，关联管理员
 	@Column(length=20)
-	private String issueData;//发布时间
-	public Notice(int no_id, String no_head, String no_content, Manager no_manager, String issueData) {
+	private String no_issueData;//发布时间
+	@Column(length=255)
+	private String no_spare; //备用
+	public Notice(int no_id, String no_head, String no_content, Manager no_manager, String no_issueData,
+			String no_spare) {
 		super();
 		this.no_id = no_id;
 		this.no_head = no_head;
 		this.no_content = no_content;
 		this.no_manager = no_manager;
-		this.issueData = issueData;
+		this.no_issueData = no_issueData;
+		this.no_spare = no_spare;
 	}
 	public Notice() {
 		super();
@@ -73,18 +77,22 @@ public class Notice {
 	public final void setNo_manager(Manager no_manager) {
 		this.no_manager = no_manager;
 	}
-	public final String getIssueData() {
-		return issueData;
+	public final String getNo_issueData() {
+		return no_issueData;
 	}
-	public final void setIssueData(String issueData) {
-		this.issueData = issueData;
+	public final void setNo_issueData(String no_issueData) {
+		this.no_issueData = no_issueData;
+	}
+	public final String getNo_spare() {
+		return no_spare;
+	}
+	public final void setNo_spare(String no_spare) {
+		this.no_spare = no_spare;
 	}
 	@Override
 	public String toString() {
 		return "Notice [no_id=" + no_id + ", no_head=" + no_head + ", no_content=" + no_content + ", no_manager="
-				+ no_manager + ", issueData=" + issueData + "]";
+				+ no_manager + ", no_issueData=" + no_issueData + ", no_spare=" + no_spare + "]";
 	}
-	
-	
 	
 }
