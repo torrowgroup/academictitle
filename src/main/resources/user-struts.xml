@@ -20,5 +20,10 @@
 			<result name="add">/WEB-INF/user/addexpert.jsp</result>
 			<result name="update">/WEB-INF/user/updateexpert.jsp</result>
 		</action>
+		<action name="Participator_*" method="{1}" class="com.torrow.title.action.user.ParticipatorAction">
+			<result name="select">/WEB-INF/user/selectparticipator.jsp</result>
+			<result name="add">/WEB-INF/user/addparticipator.jsp</result>
+			<result name="update">/WEB-INF/user/updateparticipator.jsp</result>
+		</action>
 	</package>
 </struts>

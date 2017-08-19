@@ -31,13 +31,16 @@ public interface ManagerService {
 	//根据ID获取管理员的信息
 	public Manager selectManager(int ma_id);
 	
-	//获取所有的管理员信息，用于添加账号的对比
-	public List<Manager> getAllManager();
+	//获取除去修改的所有的管理员信息，用于修改账号的对比
+	public List<Manager> getAllManager(Manager admain);
 	
 	//更改管理员信息
 	public boolean updateManager(Manager manager);
 
 	//删除管理员信息
 	public boolean deletManager(int ma_id);
+	
+	//获取所有的管理员信息，用于添加账号的对比
+	public List<Manager> getAllAdmain();
 	
 }

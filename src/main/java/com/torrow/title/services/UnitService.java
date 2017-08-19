@@ -25,6 +25,9 @@ public interface UnitService {
 	public boolean deleteById(int id);
 
 	//查看所有单位信息，用于添加专家
-	public List<Unit> selectUnit();
+	public List<Unit> selectUnit();//张金高用
+	//张金高
+	//由单位名称得到单位对象
+	public Unit getByName(String unitName);
 
 }

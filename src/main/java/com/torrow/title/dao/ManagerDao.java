@@ -63,8 +63,10 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 	}
 
 	@Override
-	public List<Manager> getAllManager() {
-		return selectAll();
+	public List<Manager> getAllManager(Manager admain) {
+		String username = admain.getMa_userName();
+		String hql = "from Manager where ma_userName!='"+username+"'";
+		return getEntityList(hql);
 	}
 
 	@Override
@@ -83,6 +85,11 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 			sign = false;
 		}
 		return sign;
+	}
+
+	@Override
+	public List<Manager> getAllAdmain() {
+		return selectAll();
 	}
 
 }

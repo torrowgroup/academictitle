@@ -45,7 +45,7 @@ public class Expert {
 	@JoinColumn(name="ti_id")
 	private Title ex_title; //关联职称
 	@Column(length=20)
-	private String ex_education; //学历
+	private String ex_education; //学历,本科，硕士，博士，博士后
 	@Column(length=255)
 	private String ex_spare; //备用
 	
