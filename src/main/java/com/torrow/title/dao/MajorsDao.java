@@ -37,6 +37,11 @@ public class MajorsDao extends BaseDao<Majors> implements MajorsService {
 	}
 
 	@Override
+	public List<Majors> selectMajors() {
+		return selectAll();
+	}
+	
+	@Override
 	public boolean add(Majors majors) {
 			return this.saveEntity(majors);
 	}

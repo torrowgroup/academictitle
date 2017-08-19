@@ -2,7 +2,7 @@ package com.torrow.title.services;
 
 import com.torrow.title.entity.Title;
 import com.torrow.title.util.PageCut;
-
+import java.util.List;
 public interface TitleService {
 	
 	//查看所有职称
@@ -15,5 +15,8 @@ public interface TitleService {
 	public Title checkById(int id);
 	//根据ID删除
 	public boolean deleteById(int id);
+
+	//查询出所有职称，用于添加专家
+	public List<Title> selectTitle();
 
 }

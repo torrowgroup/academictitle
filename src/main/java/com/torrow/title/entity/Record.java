@@ -55,6 +55,14 @@ public class Record {
 		super();
 	}
 
+	//这个构造方法用于修改评议记录
+	public Record(String re_unfm,int re_educate, int re_scientific, int re_morality) {
+		this.re_unfm = re_unfm;
+		this.re_educate = re_educate;
+		this.re_scientific = re_scientific;
+		this.re_morality = re_morality;
+	}
+
 	public Record(Discuss re_discuss, int re_id, Participator re_participator, Expert re_expert, String re_unfm,
 			int re_educate, int re_scientific, int re_morality, int re_score, String re_spare) {
 		super();

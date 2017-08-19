@@ -21,8 +21,9 @@
 		<summary>职称管理</summary>
 		<a href="${rootPath}setting/TitleManage_view" target="mainiframe">查看职称</a><br> 
 		<a href="${rootPath}setting/Transfer_addTitle" target="mainiframe">添加职称</a><br>     
+
 		<a href="${rootPath}user/Manager_relay" target="in">添加管理员</a><br>
-		<a href="${rootPath}user/Manager_select" target="in">添加管理员</a><br>
+		<a href="${rootPath}user/Manager_select?ask=all" target="in">添加管理员</a><br>
      </details>
      <details  style="width:200px">
 		<summary>评议要求管理</summary>

@@ -3,6 +3,7 @@ package com.torrow.title.services;
 import com.torrow.title.entity.Majors;
 import com.torrow.title.entity.Unit;
 import com.torrow.title.util.PageCut;
+import java.util.List;
 
 /**
  * 
@@ -22,5 +23,8 @@ public interface UnitService {
 	public Unit checkById(int id);
 	//以部门ID删除
 	public boolean deleteById(int id);
+
+	//查看所有单位信息，用于添加专家
+	public List<Unit> selectUnit();
 
 }

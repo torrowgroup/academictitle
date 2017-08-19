@@ -13,22 +13,24 @@
 	<table border="1">
 		<tr>
 			<td>参评人</td>
+			<td>申报职称</td>
 			<td>熟悉程度</td>
 			<td>教育</td>
 			<td>科研</td>
 			<td>师德</td>
-			<td>总分</td>
+			<td>评分</td>
 			<td>操作</td>
 		</tr>
 		<c:forEach items="${alreadyDiscuss}" var="alreadyDiscuss">
 			<tr>
 				<td>${alreadyDiscuss.re_participator.pa_name}</td>
+				<td>${alreadyDiscuss.re_participator.pa_title.ti_titleName}</td>
 				<td>${alreadyDiscuss.re_unfm}</td>
 				<td>${alreadyDiscuss.re_educate}</td>
 				<td>${alreadyDiscuss.re_scientific}</td>
 				<td>${alreadyDiscuss.re_morality}</td>
 				<td>${alreadyDiscuss.re_score}</td>
-				<td><a href="">修改</a></td>
+				<td><a href="${rootPath}expert/ExpertDiscussAction_toUpdateRecord?re_id=${alreadyDiscuss.re_id}">修改</a></td>
 			</tr>
 		</c:forEach>
 	</table>
