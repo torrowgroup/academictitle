@@ -18,6 +18,7 @@ import com.torrow.title.util.PageCut;
  */
 public interface ManagerService {
 
+	//张金高
 	// 管理员登录
 	public Manager login(String userName, String password);
 

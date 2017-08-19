@@ -15,6 +15,7 @@ public interface MajorsService {
 
 	//查询所有专业信息，用于添加专家
 	public List<Majors> selectMajors();
+	
 	public PageCut<Majors> checkAll( int currentPage,int pageSize);//wqj 查看所有专业
 
 	public boolean add(Majors majors);//wqj 添加专业

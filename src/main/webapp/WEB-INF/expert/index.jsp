@@ -13,7 +13,7 @@
 	<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss" target="mainFrame">已评</a>
 </details>
 <details>
-	<summary><a href="">查看通知</a></summary>
+	<summary><a href="${rootPath}expert/ExpertNotice_allNotice">查看通知</a></summary>
 </details>
 <details>
 	<summary>个人中心</summary>

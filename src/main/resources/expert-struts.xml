@@ -15,6 +15,10 @@
 			<result name="toDiscuss">/WEB-INF/expert/discuss.jsp</result>
 			<result name="toUpdateRecord">/WEB-INF/expert/updatediscuss.jsp</result>
 		</action>
+		
+		<action name="ExpertNotice_*" method="{1}" class="com.torrow.title.action.expert.ExpertNoticeAction">
+		
+		</action>
 	</package>
 
 </struts>

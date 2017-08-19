@@ -15,6 +15,7 @@ import com.torrow.title.services.DiscussService;
 import com.torrow.title.services.ExpertService;
 import com.torrow.title.services.MajorsService;
 import com.torrow.title.services.ManagerService;
+import com.torrow.title.services.NoticeService;
 import com.torrow.title.services.ParticipatorService;
 import com.torrow.title.services.RecordService;
 import com.torrow.title.services.RequireService;
@@ -49,6 +50,8 @@ public class BaseAction extends ActionSupport implements SessionAware, RequestAw
 	protected TitleService titleService;// 调用TitleService接口
 	@Resource
 	protected UnitService unitService;// 调用UnitService接口
+	@Resource
+	protected NoticeService noticeService;//调用NoticeService接口
 
 	protected HttpServletResponse getResponse() {
 		return ServletActionContext.getResponse();
