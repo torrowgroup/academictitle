@@ -17,5 +17,11 @@ public interface RecordService {
 	public List<Record> getAllRecord();
 	//得到该参评人的所有评议记录
 	public List<Record> getByParticipatorId(int pa_id);
+	//保存评议记录
+	public void save(Record record);
+	//根据评议记录得到评议记录
+	public Record getByRecordId(int re_id);
+	//修改评议记录
+	public void updateRecord(Record record);
 
 }

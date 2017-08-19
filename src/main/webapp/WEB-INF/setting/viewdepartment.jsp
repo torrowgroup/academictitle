@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>部门管理</title>
+<title>专业管理</title>
 <style >
 
 .pag {
@@ -30,10 +30,10 @@
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
-					<td>${item.maj_id}</td>
-					<td>${item.maj_majorName}</td>
-					<td><a href="${rootPath}setting/MajorsManage_update?majorId=item.id">修改</a>
-						<a href="${rootPath}setting/MajorsManage_delete?majorId=item.id">删除</a>
+					<td>${item.un_id}</td>
+					<td>${item.un_unitName}</td>
+					<td><a href="${rootPath}setting/Transfer_updateUnit?unitId=${item.un_id}">修改</a>
+						<a href="${rootPath}setting/DepartmentManage_delete?unitId=${item.un_id}">删除</a>
 					</td>
 				</tr>
 			</c:forEach>

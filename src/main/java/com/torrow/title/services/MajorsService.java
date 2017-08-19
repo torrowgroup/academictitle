@@ -13,11 +13,25 @@ import com.torrow.title.util.PageCut;
  */
 public interface MajorsService {
 
-	//查询特定的专业信息，用于添加专家,maliming
-	public List<Majors> selectMajors();
+	
+	//查询所有专业信息，用于添加专家，黎明用
+	public List<Majors> selectMajors();//张金高用
 	
 	public PageCut<Majors> checkAll( int currentPage,int pageSize);//wqj 查看所有专业
 
 	public boolean add(Majors majors);//wqj 添加专业
+	//张金高
+	//由专业名称得到专业对象
+	public Majors getByName(String majorName);
+
+	public List<Majors> checkAll();
+
+	public boolean update(Majors majors);
+
+	public  Majors checkById(int id);
+
+	public boolean deleteById(int id);
+
+	
 
 }

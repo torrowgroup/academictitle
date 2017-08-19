@@ -13,7 +13,19 @@
 			<result name="getAlreadyDiscuss">/WEB-INF/expert/alreadydiscuss.jsp</result>
 			<result name="getNoDiscuss">/WEB-INF/expert/nodiscuss.jsp</result>
 			<result name="toDiscuss">/WEB-INF/expert/discuss.jsp</result>
+			<result name="toUpdateRecord">/WEB-INF/expert/updatediscuss.jsp</result>
 		</action>
+		
+		<action name="ExpertNotice_*" method="{1}" class="com.torrow.title.action.expert.ExpertNoticeAction">
+			<result name="allNotice">/WEB-INF/expert/viewnotice.jsp</result>
+			<result name="noticeDetail">/WEB-INF/expert/noticedetail.jsp</result>
+		</action>
+
+		<action name="ExpertPersonal_*" method="{1}" class="com.torrow.title.action.expert.ExpertPersonalAction">
+			<result name="getMyself">/WEB-INF/expert/myself.jsp</result>
+			<result name="updateMyself">/WEB-INF/expert/myself.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

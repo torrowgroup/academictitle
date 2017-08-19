@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,6 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<form action="${rootPath}setting/MajorsManage_add" method="post">
+	<label>请选择职称</label>
+	<select name="req.typeName" class="select"> 
+ 			<c:forEach items="${reqlist}" var="item">
+ 	           <option value="${item.ti_id}">${item.ti_titleName}</option> 
+         	</c:forEach> 
+ 	</select><br>
+		<lable>教学方面：</lable>
+		<input type="text"  name="req.re_educate" placeholder="请输入专业名称" ><br>
+		<lable>科研方面：</lable>
+		<input type="text"  name="req.re_scientific" placeholder="请输入专业名称" ><br>
+		<lable>师德方面：</lable>
+		<input type="text"  name=req.re_morality" placeholder="请输入专业名称" ><br>
+		 <input type="submit" value="提交">
+	</form>
 </body>
 </html>
