@@ -21,8 +21,8 @@
 		<summary>职称管理</summary>
 		<a href="${path}/setting/TitleManage_view" target="in">查看职称</a><br> 
 		<a href="${path}/setting/TitleManage_add" target="in">添加职称</a><br>
-		<a href="${rootPath}user/Manager_relay" target="in">添加管理员</a><br>
-		<a href="${rootPath}user/Manager_select?ask=all" target="in">添加管理员</a><br>
+		<a href="${rootPath}user/Expert_relay" target="in">添加管理员</a><br>
+		<a href="${rootPath}user/Expert_select?ask=all" target="in">添加管理员</a><br>
      </details>
 </body>
 <iframe id="ifr" width="1500px" height="600px" style="margin-left:100px; margin-top:-60px;"  name="mainiframe"></iframe>

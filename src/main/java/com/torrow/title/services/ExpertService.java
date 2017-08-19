@@ -23,4 +23,16 @@ public interface ExpertService {
 	
 	//查询所有的专家，分页
 	public PageCut<Expert> getExpert(int page, int pageSize, String ask, String inquiry);
+	
+	//添加专家的信息
+	public boolean addExpert(Expert expert);
+	
+	//得到修改专家的信息
+	public Expert selectEcpert(int ex_id);
+	
+	//修改专家信息
+	public boolean updateExpert(Expert expert);
+
+	//根据ID删除专家
+	public boolean deletExpert(int ex_id);
 }

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
 import com.torrow.title.entity.Expert;
-import com.torrow.title.entity.Manager;
 import com.torrow.title.services.ExpertService;
 import com.torrow.title.util.PageCut;
 
@@ -49,6 +48,35 @@ public class ExpertDao extends BaseDao<Expert> implements ExpertService {
 		PageCut<Expert> pc = new PageCut<Expert>(page, pageSize, count);
 		pc.setData(this.getEntityLimitList(selecthql, (page - 1) * pageSize, pageSize));
 		return pc;
+	}
+
+	@Override
+	public boolean addExpert(Expert expert) {
+		return saveEntity(expert);
+	}
+
+	@Override
+	public Expert selectEcpert(int ex_id) {
+		String hql = "from Expert where ex_id='"+ex_id+"'";
+		return (Expert) uniqueResult(hql);
+	}
+
+	@Override
+	public boolean updateExpert(Expert expert) {
+		return updateEntity(expert);
+	}
+
+	@Override
+	public boolean deletExpert(int ex_id) {
+		boolean sign = false;
+		String hql = "delete from Expert where ex_id='" + ex_id + "'";
+		int mark = this.executeUpdate(hql);
+		if (mark == 1) {
+			sign = true;
+		} else {
+			sign = false;
+		}
+		return sign;
 	}
 
 	

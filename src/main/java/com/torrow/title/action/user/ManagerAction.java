@@ -39,7 +39,7 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 	// 添加管理员
 	public String add() {
 		boolean allsign = true;
-		List<Manager> list = managerService.getAllManager();
+		List<Manager> list = managerService.getAllAdmain();
 		List<Expert> elist = expertService.getAlllExpert();
 		for (int i = 0; i < list.size(); i++) {
 			if (list.get(i).getMa_userName().equals(manager.getMa_userName())) {
@@ -71,16 +71,47 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 	public String toUpdate() {
 		Manager admain = managerService.selectManager(manager.getMa_id());
 		request.put("messagenews", admain);
+		session.put("admain", admain);
 		return "update";
 	}
 
 	// 修改管理员
 	public String update() {
-		boolean sign = managerService.updateManager(manager);
-		if (sign) {
-			request.put("message", "修改成功");
+		boolean allsign = true;
+		Manager admain = (Manager) session.get("admain");
+		if(admain.getMa_userName().equals(manager.getMa_userName())){
+			boolean sign = managerService.updateManager(manager);
+			if (sign) {
+				request.put("message", "修改成功");
+			} else {
+				request.put("message", "修改失败");
+			}
 		} else {
-			request.put("message", "修改失败");
+			List<Manager> list = managerService.getAllManager(admain);
+			List<Expert> elist = expertService.getAlllExpert();
+			for (int i = 0; i < list.size(); i++) {
+				if (list.get(i).getMa_userName().equals(manager.getMa_userName())) {
+					allsign = false;
+					break;
+				} else {
+					for (int j = 0; j < elist.size(); j++) {
+						if (elist.get(j).getEx_userName().equals(manager.getMa_userName())) {
+							allsign = false;
+							break;
+						}
+					}
+				}
+			}
+			if (allsign) {
+				boolean sign = managerService.updateManager(manager);
+				if (sign) {
+					request.put("message", "修改成功");
+				} else {
+					request.put("message", "修改失败");
+				}
+			} else {
+				request.put("message", "用户名重复，请重新修改");
+			}
 		}
 		return select();
 	}
@@ -95,7 +126,6 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 		}
 		return select();
 	}
-	
 
 	public int getPage() {
 		return page;
