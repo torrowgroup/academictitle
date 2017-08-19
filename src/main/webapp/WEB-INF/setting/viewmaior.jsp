@@ -32,8 +32,8 @@
 				<tr>
 					<td>${item.maj_id}</td>
 					<td>${item.maj_majorName}</td>
-					<td><a href="${rootPath}setting/MajorsManage_update?majorId=item.id">修改</a>
-						<a href="${rootPath}setting/MajorsManage_delete?majorId=item.id">删除</a>
+					<td><a href="${rootPath}setting/Transfer_updateMajors?majorsId=${item.maj_id}">修改</a>
+						<a href="${rootPath}setting/MajorsManage_delete?majorsId=${item.maj_id}">删除</a>
 					</td>
 				</tr>
 			</c:forEach>

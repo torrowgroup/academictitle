@@ -23,4 +23,14 @@ public interface MajorsService {
 	//由专业名称得到专业对象
 	public Majors getByName(String majorName);
 
+	public List<Majors> checkAll();
+
+	public boolean update(Majors majors);
+
+	public  Majors checkById(int id);
+
+	public boolean deleteById(int id);
+
+	
+
 }

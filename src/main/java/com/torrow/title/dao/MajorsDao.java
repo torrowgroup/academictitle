@@ -28,6 +28,13 @@ public class MajorsDao extends BaseDao<Majors> implements MajorsService {
 		return pc;
 
 	}
+	@Override
+	public List<Majors> checkAll(){
+		List<Majors> list = new ArrayList<Majors>();
+		String hql = "form Majors";
+		list=this.getEntityList(hql);
+		return list;
+	}
 
 	@Override
 	public List<Majors> selectMajors() {
@@ -45,4 +52,31 @@ public class MajorsDao extends BaseDao<Majors> implements MajorsService {
 		return (Majors)this.uniqueResult(hql);
 	}
 			
+	@Override
+	public boolean update(Majors majors) {
+		return this.updateEntity(majors);
+	}
+	@Override
+	public Majors checkById( int id) {
+		String hql = "from Majors  m Where m.maj_id= '"+id+"'";
+		Majors major= (Majors) uniqueResult(hql);
+		return major;
+	}
+		@Override
+		public boolean  deleteById(int id) {
+			boolean sign = false;
+			try {
+			String hql = "delete from Majors  m Where m.maj_id= '"+id+"'";
+			int mark = this.executeUpdate(hql);
+			if (mark == 1) {
+				sign = true;
+			} else {
+				sign = false;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return sign;
+	}
 }

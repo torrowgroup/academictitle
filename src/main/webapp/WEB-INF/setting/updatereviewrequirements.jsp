@@ -7,21 +7,5 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-	<table border="1">
-		<tr>
-			<td>标题</td>
-			<td>${notice.no_head}</td>
-		</tr>
-		<tr>
-			<td>内容</td>
-			<td>${notice.no_content}</td>
-		</tr>
-		<tr>
-			<td>发布时间</td>
-			<td>${notice.no_issueData}</td>
-		</tr>
-	</table>
-</center>
 </body>
 </html>
