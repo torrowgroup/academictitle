@@ -20,14 +20,11 @@ public interface UnitService {
 	//修改部门
 	public boolean update(Unit unit);
 	//以部门ID查询部门
-	public Unit checkById(int id);
+	public Unit checkById(int id);//张金高用
 	//以部门ID删除
 	public boolean deleteById(int id);
 
 	//查看所有单位信息，用于添加专家
 	public List<Unit> selectUnit();//张金高用
-	//张金高
-	//由单位名称得到单位对象
-	public Unit getByName(String unitName);
 
 }

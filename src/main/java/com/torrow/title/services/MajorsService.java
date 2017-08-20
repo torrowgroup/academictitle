@@ -19,15 +19,12 @@ public interface MajorsService {
 	public PageCut<Majors> checkAll( int currentPage,int pageSize);//wqj 查看所有专业
 
 	public boolean add(Majors majors);//wqj 添加专业
-	//张金高
-	//由专业名称得到专业对象
-	public Majors getByName(String majorName);
 
 	public List<Majors> checkAll();
 
 	public boolean update(Majors majors);
 
-	public  Majors checkById(int id);
+	public  Majors checkById(int id);//张金高用
 
 	public boolean deleteById(int id);
 

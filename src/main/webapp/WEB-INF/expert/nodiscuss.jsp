@@ -20,7 +20,7 @@
 			<td>简介</td>
 			<td>操作</td>
 		</tr>
-		<c:forEach items="${noDiscuss}" var="noDiscuss">
+		<c:forEach items="${noDiscuss.data}" var="noDiscuss">
 			<tr>
 				<td>${noDiscuss.pa_name}</td>
 				<td>${noDiscuss.pa_title.ti_titleName}</td>
@@ -34,6 +34,28 @@
 			</tr>
 		</c:forEach>
 	</table>
+	<div class="page" id="div2">
+				<ul class="pagination">
+					<li><a
+						href="${rootPath }expert/ExpertDiscussAction_noDiscuss?page=${noDiscuss.prePage}">上一页</a></li>
+					<c:forEach var="i"
+						begin="${noDiscuss.currentPage-3>0?noDiscuss.currentPage-3:1 }"
+						end="${noDiscuss.currentPage+3>noDiscuss.pageNum?noDiscuss.pageNum:noDiscuss.currentPage+3  }">
+						<c:choose>
+							<c:when test="${i>0 && i == noDiscuss.currentPage}">
+								<li class="active"><a
+									href="${rootPath }expert/ExpertDiscussAction_noDiscuss?page=${i }">${i}</a></li>
+							</c:when>
+							<c:when test="${i>0 && i != noDiscuss.currentPage}">
+								<li><a
+									href="${rootPath }expert/ExpertDiscussAction_noDiscuss?page=${i }">${i}</a></li>
+							</c:when>
+						</c:choose>
+					</c:forEach>
+					<li><a
+						href="${rootPath }expert/ExpertDiscussAction_noDiscuss?page=${noDiscuss.nextPage}">下一页</a></li>
+				</ul>
+			</div>
 </center>
 </body>
 </html>

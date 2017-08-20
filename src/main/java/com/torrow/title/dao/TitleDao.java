@@ -36,9 +36,7 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 		@Override
 		public Title checkById( int id) {
 			String hql = "from Title  t Where t.ti_id= '"+id+"'";
-			System.out.println(hql);
 			Title title= (Title) uniqueResult(hql);
-			System.out.println(title);
 			return title;
 		}
 		@Override
@@ -61,12 +59,6 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 	@Override
 	public List<Title> selectTitle() {
 		return selectAll();
-	}
-
-	@Override
-	public Title getByName(String titleName) {
-		String hql = "from Title t where t.ti_titleName = "+titleName+"";
-		return (Title) this.uniqueResult(hql);
 	}
 
 }

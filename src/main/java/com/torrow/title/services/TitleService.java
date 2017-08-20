@@ -12,14 +12,11 @@ public interface TitleService {
 	//更新职称
 	public  boolean update(Title title);
 	//根据ID查询职称
-	public Title checkById(int id);
+	public Title checkById(int id);//张金高用
 	//根据ID删除
 	public boolean deleteById(int id);
 
 	//查询出所有职称，用于添加专家
 	public List<Title> selectTitle();//张金高用
-	//张金高
-	//由职称名称得到职称对象
-	public Title getByName(String titleName);
 
 }
