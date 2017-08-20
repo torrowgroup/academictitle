@@ -13,7 +13,8 @@ import com.torrow.title.util.PageCut;
  */
 public interface MajorsService {
 
-	//查询所有专业信息，用于添加专家
+	
+	//查询所有专业信息，用于添加专家，黎明用
 	public List<Majors> selectMajors();//张金高用
 	
 	public PageCut<Majors> checkAll( int currentPage,int pageSize);//wqj 查看所有专业

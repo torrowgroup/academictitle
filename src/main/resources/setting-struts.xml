@@ -34,6 +34,7 @@
 			<result name="updateMajors">/WEB-INF/setting/updatemajors.jsp</result>
 			<result name="updateTitle">/WEB-INF/setting/updatetitle.jsp</result>
 			<result name="updateUnit">/WEB-INF/setting/updatedepartment.jsp</result>
+			<result name="updateRequire">/WEB-INF/setting/updatereviewrequirements.jsp</result>
 		</action>
 	</package>
 </struts>
