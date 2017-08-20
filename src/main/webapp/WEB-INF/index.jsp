@@ -19,8 +19,8 @@
      </details>
      <details  style="width:200px">
 		<summary>职称管理</summary>
-		<a href="${path}/setting/TitleManage_view" target="in">查看职称</a><br> 
-		<a href="${path}/setting/TitleManage_add" target="in">添加职称</a><br>
+		<a href="${rootPath}/setting/TitleManage_view" target="mainiframe">查看职称</a><br> 
+		<a href="${rootPath}/setting/TitleManage_add" target="mainiframe">添加职称</a><br>
 		<a href="${rootPath}user/Expert_relay" target="in">添加管理员</a><br>
 		<a href="${rootPath}user/Expert_select?ask=all" target="in">添加管理员</a><br>    	
      </details>

@@ -1,5 +1,7 @@
 package com.torrow.title.services;
 
+import java.util.List;
+
 import com.torrow.title.entity.Require;
 import com.torrow.title.entity.Title;
 import com.torrow.title.util.PageCut;
@@ -30,6 +32,8 @@ public interface RequireService {
 	
 	//wqj查看所有评议
 	public PageCut<Require> checkAll(int currentPage, int pageSize);
+
+	public List<Require> getAllRequire();
 
 
 }
