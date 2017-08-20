@@ -62,10 +62,4 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 		return selectAll();
 	}
 
-	@Override
-	public Title getByName(String titleName) {
-		String hql = "from Title t where t.ti_titleName = "+titleName+"";
-		return (Title) this.uniqueResult(hql);
-	}
-
 }

@@ -60,13 +60,7 @@ public class UnitDao extends BaseDao<Unit> implements UnitService{
 
 	@Override
 	public List<Unit> selectUnit() {
-		return selectAll();
+		return this.selectAll();
 	}
 
-	@Override
-	public Unit getByName(String unitName) {
-		String hql = "from Unit u where u.un_unitName = "+unitName+"";
-		return (Unit) this.uniqueResult(hql);
-	}
- 
 }

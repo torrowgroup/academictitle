@@ -41,19 +41,19 @@
 		<input type="text" name="ex_userName" value="${experts.ex_userName}"><br>
 		<input type="text" name="ex_password" value="${experts.ex_password}"><br>
 		<input type="text" name="ex_name" value="${experts.ex_name}"><br>
-		<select name="majorName" id="maj_majorName">
+		<select name="majorid" id="maj_majorName">
 			<c:forEach items="${majors}" var="item">
-					<option value="${item.maj_majorName}">${item.maj_majorName}</option>
+					<option value="${item.maj_id}">${item.maj_majorName}</option>
 			</c:forEach>
 		</select><br>
-		<select name="unitName" id="un_unitName">
+		<select name="unitid" id="un_unitName">
 			<c:forEach items="${unit}" var="item">
-					<option value="${item.un_unitName}">${item.un_unitName}</option>
+					<option value="${item.un_id}">${item.un_unitName}</option>
 			</c:forEach>
 		</select><br>
-		<select name="titleName" id="ti_titleName">
+		<select name="titleid" id="ti_titleName">
 			<c:forEach items="${title}" var="item">
-					<option value="${item.ti_titleName}">${item.ti_titleName}</option>
+					<option value="${item.ti_id}">${item.ti_titleName}</option>
 			</c:forEach>
 		</select><br>
 		<select name="ex_education">

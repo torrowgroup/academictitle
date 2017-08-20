@@ -22,4 +22,13 @@ public interface ParticipatorService {
 	//得到全部的参评人员,分页
 	public PageCut<Participator> getParticipator(int page, int pageSize, String ask, String inquiry);
 
+	//添加参平人
+	public boolean addParticipator(Participator participator);
+	
+	//修改参评人
+	public boolean updateParticipator(Participator participator);
+	
+	//删除参评人
+	public boolean deletParticipator(int pa_id);
+
 }

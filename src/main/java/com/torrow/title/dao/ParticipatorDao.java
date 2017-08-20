@@ -45,4 +45,27 @@ public class ParticipatorDao extends BaseDao<Participator> implements Participat
 		return pc;
 	}
 
+	@Override
+	public boolean addParticipator(Participator participator) {
+		return saveEntity(participator);
+	}
+
+	@Override
+	public boolean updateParticipator(Participator participator) {
+		return updateEntity(participator);
+	}
+
+	@Override
+	public boolean deletParticipator(int pa_id) {
+		boolean sign = false;
+		String hql = "delete from Participator where pa_id='" + pa_id + "'";
+		int mark = this.executeUpdate(hql);
+		if (mark == 1) {
+			sign = true;
+		} else {
+			sign = false;
+		}
+		return sign;
+	}
+
 }

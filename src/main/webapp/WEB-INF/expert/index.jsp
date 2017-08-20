@@ -10,15 +10,15 @@
 <details>
 	<summary>参评</summary>
 	<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss" target="mainFrame">未评</a><br>
-	<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss" target="mainFrame">已评</a>
+	<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss?inquiry=all" target="mainFrame">已评</a>
 </details>
 <details>
-	<summary><a href="${rootPath}expert/ExpertNotice_allNotice" target="mainFrame">查看通知</a></summary>
+	<summary><a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all" target="mainFrame">查看通知</a></summary>
 </details>
 <details>
 	<summary>个人中心</summary>
 	<a href="${rootPath}expert/ExpertPersonal_myselfMessage" target="mainFrame">个人资料</a><br>
-	<a href="">退出登录</a>	
+	<a href="${rootPath}expert/ExpertPersonal_logOff">退出登录</a>	
 </details>
 <iframe id="ifr" width="1500px" height="500px" name="mainFrame"></iframe>
 </body>

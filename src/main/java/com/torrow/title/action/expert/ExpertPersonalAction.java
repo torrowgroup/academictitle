@@ -23,9 +23,9 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 	 */
 	private static final long serialVersionUID = 1L;
 	private Expert expert;
-	private String majorName;//得到修改后的专业名称
-	private String unitName;//得到修改后的单位名称
-	private String titleName;//得到修改后的职称名称
+	private int majorId;//得到修改后的专业id
+	private int unitId;//得到修改后的单位id
+	private int titleId;//得到修改后的职称id
 	
 	//得到个人信息
 	public String myselfMessage(){
@@ -39,20 +39,30 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 	}
 	//修改个人信息
 	public String updateMyself(){
-		Majors major = majorsService.getByName(majorName);//分别由专业，单位，职称名称得到其对象
-		Unit unit = unitService.getByName(unitName);
-		Title title = titleService.getByName(titleName);
+		Majors major = majorsService.checkById(majorId);//分别由专业，单位，职称id得到其对象
+		Unit unit = unitService.checkById(unitId);
+		Title title = titleService.checkById(titleId);
 		expert.setEx_major(major);
 		expert.setEx_unit(unit);
 		expert.setEx_title(title);
 		if(expertService.updateExpert(expert)){
+			session.put("expert", expert);
 			request.put("message", "修改成功");
 		} else {
 			request.put("message", "修改失败");
 		}
+		myselfMessage();//得到个人信息
 		return "updateMyself";
 	}
-	
+	//退出登录
+	public String logOff(){
+		return "logOff";
+	}
+	//清除登录信息
+	public String out(){
+		session.remove("expert");
+		return "out";
+	}
 	@Override
 	public Expert getModel() {
 		if(expert==null){
@@ -60,23 +70,24 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 		}
 		return expert;
 	}
-	public final String getMajorName() {
-		return majorName;
+	public final int getMajorId() {
+		return majorId;
 	}
-	public final void setMajorName(String majorName) {
-		this.majorName = majorName;
+	public final void setMajorId(int majorId) {
+		this.majorId = majorId;
 	}
-	public final String getUnitName() {
-		return unitName;
+	public final int getTitleId() {
+		return titleId;
 	}
-	public final void setUnitName(String unitName) {
-		this.unitName = unitName;
+	public final void setTitleId(int titleId) {
+		this.titleId = titleId;
 	}
-	public final String getTitleName() {
-		return titleName;
+	public final int getUnitId() {
+		return unitId;
 	}
-	public final void setTitleName(String titleName) {
-		this.titleName = titleName;
+	public final void setUnitId(int unitId) {
+		this.unitId = unitId;
 	}
-
+	
+	
 }

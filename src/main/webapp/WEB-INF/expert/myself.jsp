@@ -9,9 +9,9 @@
 <script type="text/javascript">
 	window.onload = selectMajor;//界面加载后自动调用
 	function selectMajor() {
-		var selectMajors = '${expert.ex_majors.maj_majorName}';//得到该专家的专业，单位，申报职称
-		var selectUnit = '${expert.ex_unit.un_unitName}';
-		var selectTitle = '${expert.ex_title.ti_titleName}';
+		var selectMajors = '${expert.ex_majors.maj_id}';//得到该专家的专业，单位，申报职称
+		var selectUnit = '${expert.ex_unit.un_id}';
+		var selectTitle = '${expert.ex_title.ti_id}';
 		for (var i = 0; i < majors.options.length; i++) {	//对所有专业，单位，职称遍历，选中该专家的对应项
 			if (majors.options[i].value == selectMajors) {
 				majors.options[i].selected = true;
@@ -49,15 +49,15 @@
 				</tr>
 				<tr>
 					<td>姓名</td>
-					<td><input type="text" name="ex_majors"
+					<td><input type="text" name="ex_name"
 						value="${expert.ex_name}" /></td>
 				</tr>
 				<tr>
 					<td>专业</td>
 					<td>
-						<select name="majorName" id="majors">
+						<select name="majorId" id="majors">
 							<c:forEach items="${allMajors}" var="allMajors">
-								<option value="${allMajors.maj_majorName}">${allMajors.maj_majorName}</option>
+								<option value="${allMajors.maj_id}">${allMajors.maj_majorName}</option>
 							</c:forEach>
 						</select>
 					</td>
@@ -65,9 +65,9 @@
 				<tr>
 					<td>单位</td>
 					<td>
-						<select name="unitName" id="unit">
+						<select name="unitId" id="unit">
 							<c:forEach items="${allUnit}" var="allUnit">
-								<option value="${allUnit.un_unitName}">${allUnit.un_unitName}</option>
+								<option value="${allUnit.un_id}">${allUnit.un_unitName}</option>
 							</c:forEach>
 						</select>
 					</td>
@@ -75,9 +75,9 @@
 				<tr>
 					<td>申报职称</td>
 					<td>
-						<select name="titleName" id="title">
+						<select name="titleId" id="title">
 							<c:forEach items="${allTitle}" var="allTitle">
-								<option value="${allTitle.ti_titleName}">${allTitle.ti_titleName}</option>
+								<option value="${allTitle.ti_id}">${allTitle.ti_titleName}</option>
 							</c:forEach>
 						</select>
 					</td>
