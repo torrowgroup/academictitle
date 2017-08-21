@@ -13,6 +13,7 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 	private Manager manager;
 	private String ask;//查询的条件
 	private String inquiry;//查询的内容
+	private String term;
 	// 查看全部管理信息
 	public String select() {
 		if(ask == null&&inquiry == null){
@@ -69,10 +70,15 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 
 	// 根据id获取管理员信息
 	public String toUpdate() {
+		String value = "update";
+		if(term.equals("myself")){
+			manager = (Manager) session.get("manager");
+			value = "updatemyself";
+		}
 		Manager admain = managerService.selectManager(manager.getMa_id());
 		request.put("messagenews", admain);
 		session.put("admain", admain);
-		return "update";
+		return value;
 	}
 
 	// 修改管理员
@@ -118,15 +124,68 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 
 	// 删除管理员
 	public String delet() {
-		boolean sign = managerService.deletManager(manager.getMa_id());
-		if (sign) {
-			request.put("message", "删除成功");
+		Manager nowmanager = (Manager) session.get("manager");
+		if(nowmanager.getMa_id() == manager.getMa_id()){
+			request.put("message", "不能删除自己");
 		} else {
-			request.put("message", "删除失败");
+			boolean sign = managerService.deletManager(manager.getMa_id());
+			if (sign) {
+				request.put("message", "删除成功");
+			} else {
+				request.put("message", "删除失败");
+			}
 		}
 		return select();
 	}
-
+//	public String relayMyself(){
+//		Manager nowmanager = (Manager) session.get("manager");
+//		request.put("messagenews",nowmanager);
+//		Manager admain = managerService.selectManager(manager.getMa_id());
+//		request.put("messagenews", admain);
+//		session.put("admain", admain);
+//		return "updatemyself";
+//	}
+	public String updateMyself(){
+		boolean allsign = true;
+		Manager admain = (Manager) session.get("manager");
+		if(admain.getMa_userName().equals(manager.getMa_userName())){
+			boolean sign = managerService.updateManager(manager);
+			if (sign) {
+				request.put("message", "修改成功");
+			} else {
+				request.put("message", "修改失败");
+			}
+		} else {
+			List<Manager> list = managerService.getAllManager(admain);
+			List<Expert> elist = expertService.getAlllExpert();
+			for (int i = 0; i < list.size(); i++) {
+				if (list.get(i).getMa_userName().equals(manager.getMa_userName())) {
+					allsign = false;
+					break;
+				} else {
+					for (int j = 0; j < elist.size(); j++) {
+						if (elist.get(j).getEx_userName().equals(manager.getMa_userName())) {
+							allsign = false;
+							break;
+						}
+					}
+				}
+			}
+			if (allsign) {
+				boolean sign = managerService.updateManager(manager);
+				if (sign) {
+					request.put("message", "修改成功");
+				} else {
+					request.put("message", "修改失败");
+				}
+			} else {
+				request.put("message", "用户名重复，请重新修改");
+			}
+		}
+		Manager admains = managerService.selectManager(manager.getMa_id());
+		request.put("messagenews", admains);
+		return "updatemyself";
+	}
 	public int getPage() {
 		return page;
 	}
@@ -149,6 +208,14 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 
 	public void setInquiry(String inquiry) {
 		this.inquiry = inquiry;
+	}
+
+	public String getTerm() {
+		return term;
+	}
+
+	public void setTerm(String term) {
+		this.term = term;
 	}
 
 	@Override

@@ -10,6 +10,8 @@
 	<constant name="struts.configuration.xml.reload" value="true" />
 	<constant name="struts.multipart.saveDir" value="/temp"/>
 	<constant name="struts.i18n.encoding" value="utf8"></constant>
+	<!-- 	创建临时文件夹 -->
+	<constant name="struts.multipart.saveDir" value="/temp"/> 
 	<!--引入其他xml文件-->
 	<include file="user-struts.xml"></include>
 	<include file="expert-struts.xml"></include>
