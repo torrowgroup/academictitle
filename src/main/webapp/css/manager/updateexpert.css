@@ -1,0 +1,47 @@
+*{margin:0;padding: 0}
+.wall{
+    width: 30%;
+    height: auto;
+    margin:0 auto;
+    margin-top: 6%
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+form label{
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 50px;
+}
+.a,form select{
+    width: 52%;
+    height: 32px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.btn{
+    padding:3px 15px;
+    border: 2px solid #ccc;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    border-radius:5px;
+    margin-top: 5%;
+    display: inline-block;
+}
+.btn:hover{
+    border: 2px solid #eee;
+    color: #000;
+    background:-webkit-Linear-gradient(#fff,#ccc);
+    background:Linear-gradient(#fff,#ccc);
+}
+
+
+
+
+
+
+
