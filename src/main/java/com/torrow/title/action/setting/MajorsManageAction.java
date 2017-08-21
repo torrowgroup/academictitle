@@ -44,7 +44,7 @@ public class MajorsManageAction extends BaseAction {
 	// 修改专业
 	public String update() {
 		boolean boo = majorsService.update(majors);
-		PageCut<Majors> list = majorsService.checkAll(page, 1);
+		PageCut<Majors> list = majorsService.checkAll(page, 3);
 		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
@@ -52,7 +52,8 @@ public class MajorsManageAction extends BaseAction {
 	}
 	public String delete() {
 		boolean boo = majorsService.deleteById(majorsId);
-		PageCut<Majors> list = majorsService.checkAll(page, 1);
+		PageCut<Majors> list = majorsService.checkAll(page, 3);
+		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
 

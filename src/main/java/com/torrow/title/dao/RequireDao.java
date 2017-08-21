@@ -75,5 +75,8 @@ public class RequireDao extends BaseDao<Require> implements RequireService {
 	public List<Require> getAllRequire() {
 		return selectAll();
 	}
-
+	@Override
+	public boolean updateRequire(Require require) {
+		return updateEntity(require);
+	}
 }

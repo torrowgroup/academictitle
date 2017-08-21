@@ -1,5 +1,7 @@
 package com.torrow.title.action.setting;
 
+import java.util.List;
+
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Require;
 import com.torrow.title.entity.Title;
@@ -38,6 +40,8 @@ public class ReviewRequirementsManageAction extends BaseAction {
 		//查看所有评议要求
 		public String view() {
 			PageCut<Require > list =requireService.checkAll(page, 3);
+			System.out.println(list);
+			request.put("method", "view");
 			request.put("paCut", list);
 			return "view";
 		}
@@ -45,13 +49,15 @@ public class ReviewRequirementsManageAction extends BaseAction {
 		public String add() {
 			Title title=titleService.checkById(titleId);
 			boolean boo =requireService.add(req,title);
-			return "view";
+			request.put("method", "view");
+			return "addReviewRequirements";
 		}
 		// 修改评议要求
 		public String update() {
 			boolean boo = requireService.update(req);
 			PageCut<Require> list = requireService.checkAll(page, 3);
 			request.put("paCut", list);
+			request.put("method", "view");
 			return "view";
 
 		}
@@ -60,9 +66,8 @@ public class ReviewRequirementsManageAction extends BaseAction {
 			boolean boo = requireService.deleteById(requireId);
 			PageCut<Require> list = requireService.checkAll(page, 3);
 			request.put("paCut", list);
+			request.put("method", "view");
 			return "view";
-
-			
 		}
 
 }
