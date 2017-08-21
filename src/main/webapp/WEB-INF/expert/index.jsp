@@ -9,7 +9,7 @@
 <body>
 <details>
 	<summary>参评</summary>
-	<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss" target="mainFrame">未评</a><br>
+	<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss?inquiry=all" target="mainFrame">未评</a><br>
 	<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss?inquiry=all" target="mainFrame">已评</a>
 </details>
 <details>

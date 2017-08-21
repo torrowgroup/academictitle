@@ -8,6 +8,12 @@
 </head>
 <body>
 	<details style="width:200px"> 
+		<summary>评议统计</summary>
+		<a href="${rootPath}setting/Statistics_chooseRank" target="mainiframe">排名</a><br>
+		<a href="${rootPath}setting/Statistics_expertStatistics?inquiry=all" target="mainiframe">专家评议统计</a><br> 
+		<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">参评人评议统计</a>
+     </details>
+	<details style="width:200px"> 
 		<summary>专业管理</summary>
 		<a href="${rootPath}setting/MajorsManage_view" target="mainiframe">查看专业</a><br> 
 		<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">添加专业</a><br>     
