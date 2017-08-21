@@ -1,6 +1,10 @@
 package com.torrow.title.action.setting;
 
+import java.util.Date;
+import java.util.List;
+
 import com.torrow.title.base.BaseAction;
+import com.torrow.title.entity.Manager;
 import com.torrow.title.entity.Notice;
 
 public class NoticeManageAction extends BaseAction {
@@ -26,13 +30,22 @@ public class NoticeManageAction extends BaseAction {
 		this.page = page;
 	}
 public String view() {
-	List<Notice> list= noticeService.getPageCut(curr, pageSize, inquiry)
+	List<Notice> list= (List<Notice>) noticeService.checkAll(page, 5);
+	System.out.println(list);
+	request.put("notice", list);
 	return "view";
 }
 public String delete() {
+	boolean boo=noticeService.deleteById(noticeId);
+	List<Notice> list= (List<Notice>) noticeService.checkAll(page, 5);
+	System.out.println(list);
+	request.put("notice", list);
 	return "view";
 }
 public String add() {
-	return "addNotice";
+	Date date = new Date();
+	
+	boolean boo = noticeService.add(notice,(Manager) session.get("manager"),date);
+	return "addMajors";
 }
 }

@@ -3,11 +3,14 @@
  */
 package com.torrow.title.dao;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
+import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Manager;
 import com.torrow.title.entity.Notice;
 import com.torrow.title.services.NoticeService;
 import com.torrow.title.util.PageCut;
@@ -40,5 +43,37 @@ public class NoticeDao extends BaseDao<Notice> implements NoticeService {
 		pc.setData(this.getEntityLimitList(selectHql, (curr-1)*pageSize, pageSize));
 		return pc;
 	}
+	@Override
+	public PageCut<Notice> checkAll(int currentPage, int pageSize) {
+		String hql = "select count(*) from Notice";
+		int count = ((Long) this.uniqueResult(hql)).intValue();
+		PageCut<Notice> pc = new PageCut<Notice>(currentPage, pageSize, count);
+		pc.setData(this.getEntityLimitList("from Notice", (currentPage - 1) * pageSize, pageSize));
+		return pc;
+
+	}
+	@Override
+	public boolean add(Notice  notice ,Manager manager,Date date) {
+		notice.setNo_manager(manager);
+		notice.setNo_issueData(date);
+		return this.saveEntity(notice);
+	}
+	@Override
+	public boolean  deleteById(int id) {
+		boolean sign = false;
+		try {
+		String hql = "delete from Notice  n Where n.no_id= '"+id+"'";
+		int mark = this.executeUpdate(hql);
+		if (mark == 1) {
+			sign = true;
+		} else {
+			sign = false;
+		}
+
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	return sign;
+}
 	
 }

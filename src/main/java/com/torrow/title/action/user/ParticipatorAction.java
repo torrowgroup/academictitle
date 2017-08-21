@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
+import java.util.UUID;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.struts2.ServletActionContext;
 
@@ -28,9 +32,12 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 	private List<File> file; // 上传文件集合
 	private List<String> fileFileName; // 上传文件名集合
 	private List<String> fileContentType; // 上传文件内容类型集合
-	private int majorid;
-	private int titleid;
-	private int unitid;
+	private int majorid;//专业ID，查询对应的专业对象
+	private int titleid;//职称ID，查询对引得职称
+	private int unitid;//单位ID，查询对应的单位对象
+	
+	
+	private File myFileName;//富文本编辑器上传图片对应的统一文件名称
 
 	// 查看所有的参评人信息
 	public String select() {
@@ -102,13 +109,15 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		request.put("unit", unit);
 		request.put("title", title);
 		request.put("part", part);
+		session.put("part", part);
 		return "update";
 	}
 	//修改信息
 	public String update() throws FileNotFoundException, IOException{
 		boolean sign = false;
 		if (file == null || file.equals("")) {
-			participator.setPa_imageUrl(participator.getPa_imageUrl());
+			Participator parpator = (Participator) session.get("part");
+			participator.setPa_imageUrl(parpator.getPa_imageUrl());
 			Majors major = majorsService.checkById(majorid);
 			Unit units = unitService.checkById(unitid);
 			Title titles = titleService.checkById(titleid);
@@ -147,6 +156,32 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		}
 		return select();
 	}
+	
+	//用于富文本编辑器的图片上传
+		public void uploadImg() throws Exception {
+			HttpServletRequest req2 = ServletActionContext.getRequest();
+			HttpServletResponse res2 = ServletActionContext.getResponse();
+			String name = myFileName.getName();
+			// 提取文件拓展名
+			String fileNameExtension = name.substring(name.indexOf("."), name.length() - 1);
+			// 生成实际存储的真实文件名
+			String realName = UUID.randomUUID().toString() + fileNameExtension;
+			// 图片存放的真实路径
+			String realPath = req2.getServletContext().getRealPath("/uploadImage") + "/" + realName;
+			// 将文件写入指定路径下
+			InputStream in = new FileInputStream(myFileName);
+			File uploadFile = new File(realPath);
+			OutputStream out = new FileOutputStream(uploadFile);
+			byte[] buffer = new byte[1024 * 1024];
+			int length;
+			while ((length = in.read(buffer)) > 0) {
+				out.write(buffer, 0, length);
+			}
+			in.close();
+			out.close();
+			// 返回图片的URL地址
+			res2.getWriter().write(req2.getContextPath() + "/uploadImage/" + realName);
+		}
 	
 	// 执行上传功能
 	private void uploadFile(int i) throws FileNotFoundException, IOException {
@@ -250,6 +285,14 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 
 	public void setUnitid(int unitid) {
 		this.unitid = unitid;
+	}
+
+	public File getMyFileName() {
+		return myFileName;
+	}
+
+	public void setMyFileName(File myFileName) {
+		this.myFileName = myFileName;
 	}
 
 	@Override

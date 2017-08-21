@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}dist/css/wangEditor.min.css">
 </head>
 <body>
 <center>
@@ -21,11 +22,23 @@
 			<td>图片：</td>
 			<td><img alt="加载中" src=""></td>
 		</tr>
-		<tr>
-			<td>简介：</td>
-			<td colspan="9"><textarea rows="2" cols="30">${noDiscuss.pa_introduce}</textarea></td>
-		</tr>
 	</table>
+		<div style="width: 600px; height: 300px;">
+			<lable style="">简介:</lable>
+			<div id="editor" style="width: 100%; height: 250px;"></div>
+				<script type="text/javascript"
+					src="${rootPath}dist/js/lib/jquery-1.10.2.min.js"></script>
+				<script type="text/javascript"
+					src="${rootPath}dist/js/wangEditor.min.js"></script>
+				<script type="text/javascript">
+				    var E = window.wangEditor
+				    var editor = new E('editor')    		 
+				    editor.config.uploadImgUrl = '${rootPath}user/Participator_uploadImg'
+				    editor.config.uploadImgFileName = 'myFileName'
+				    editor.create()
+				    editor.$txt.html('${participator.pa_introduce}')
+    			</script>
+    	</div>
 	<form action="${rootPath}expert/ExpertDiscussAction_discuss" method="post">
 		<input type="hidden" name="pa_id" value="${participator.pa_id}"/>
 		您对参评人专业熟悉程度：

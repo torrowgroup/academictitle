@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
+import com.torrow.title.entity.Discuss;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Notice;
 import com.torrow.title.entity.Record;
@@ -25,11 +26,9 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 		String hql = "select count(*) from Record r where r.re_expert.ex_id = "+expert.getEx_id()+"";
 		String selectHql = "from Record r where r.re_expert.ex_id = "+expert.getEx_id()+"";
 		if(!inquiry.equals("all")){//匹配评议记录的参评人姓名，职称，专家对评议人熟悉程度，总分
-			hql = "select count(*) from Record r where r.re_expert.ex_id = "+expert.getEx_id()+""
-					+ "and (r.re_participator.pa_name like '%"+inquiry+"%' or r.re_participator.pa_title.ti_titleName like '%"+inquiry+"%'"
+			hql += "and (r.re_participator.pa_name like '%"+inquiry+"%' or r.re_participator.pa_title.ti_titleName like '%"+inquiry+"%'"
 							+ "or r.re_unfm like '%"+inquiry+"%' or r.re_score like '%"+inquiry+"%')";
-			selectHql = "from Record r where r.re_expert.ex_id = "+expert.getEx_id()+""
-					+ "and (r.re_participator.pa_name like '%"+inquiry+"%' or r.re_participator.pa_title.ti_titleName like '%"+inquiry+"%'"
+			selectHql += "and (r.re_participator.pa_name like '%"+inquiry+"%' or r.re_participator.pa_title.ti_titleName like '%"+inquiry+"%'"
 					+ "or r.re_unfm like '%"+inquiry+"%' or r.re_score like '%"+inquiry+"%')";	
 		}
 		int count = ((Long) this.uniqueResult(hql)).intValue();
@@ -62,6 +61,26 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 	@Override
 	public void updateRecord(Record record) {
 		this.updateEntity(record);
+	}
+
+	@Override
+	public PageCut<Record> getByDiscussId(int curr, int pageSize, int pa_id) {
+		String hql = "select count(*) from Record r where r.re_discuss.di_id = "+pa_id+"";
+		String selectHql = "from Record r where r.re_discuss.di_id = "+pa_id+"";
+		int count = ((Long) this.uniqueResult(hql)).intValue();
+		PageCut<Record> pc = new PageCut<Record>(curr, pageSize, count);
+		pc.setData(this.getEntityLimitList(selectHql, (curr - 1) * pageSize, pageSize));
+		return pc;
+	}
+
+	@Override
+	public PageCut<Record> getByParticiptorId(int curr, int pageSize, int id) {
+		String hql = "select count(*) from Record r where r.re_participator.pa_id = "+id+"";
+		String selectHql = "from Record r where r.re_participator.pa_id = "+id+"";
+		int count = ((Long) this.uniqueResult(hql)).intValue();
+		PageCut<Record> pc = new PageCut<Record>(curr, pageSize, count);
+		pc.setData(this.getEntityLimitList(selectHql, (curr - 1) * pageSize, pageSize));
+		return pc;
 	}
 
 }

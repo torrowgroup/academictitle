@@ -15,6 +15,8 @@ public interface ParticipatorService {
 	//张金高
 	//得到全部的参评人员
 	public List<Participator> getAllParticipator();
+	//分页，模糊查询
+	public PageCut<Participator> allParticipator(int page, int i, String inquiry);
 	
 	//根据id得到参评人
 	public Participator getParticipatorById(int pa_id);
@@ -30,5 +32,6 @@ public interface ParticipatorService {
 	
 	//删除参评人
 	public boolean deletParticipator(int pa_id);
+
 
 }

@@ -14,6 +14,7 @@
 			<result name="select">/WEB-INF/user/selectmanager.jsp</result>
 			<result name="add">/WEB-INF/user/addmanager.jsp</result>
 			<result name="update">/WEB-INF/user/updatemanager.jsp</result>
+			<result name="updatemyself">/WEB-INF/user/myself.jsp</result>
 		</action>
 		<action name="Expert_*" method="{1}" class="com.torrow.title.action.user.ExpertAction">
 			<result name="select">/WEB-INF/user/selectexpert.jsp</result>
@@ -24,6 +25,10 @@
 			<result name="select">/WEB-INF/user/selectparticipator.jsp</result>
 			<result name="add">/WEB-INF/user/addparticipator.jsp</result>
 			<result name="update">/WEB-INF/user/updateparticipator.jsp</result>
+		</action>
+		<action name="Discuss_*" method="{1}" class="com.torrow.title.action.user.DiscussAction">
+			<result name="select">/WEB-INF/user/selectdiscuss.jsp</result>
+			<result name="update">/WEB-INF/user/updatediscuss.jsp</result>
 		</action>
 	</package>
 </struts>

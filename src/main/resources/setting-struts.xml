@@ -7,9 +7,9 @@
 	<constant name="struts.i18n.encoding" value="utf8"></constant>
 	<constant name="struts.objectFactory" value="spring" />
 	<!-- 专业，单位，职称，评议要求，评审情况等方面的xml -->
-
-	<package name="major" extends="struts-default,json-default"
-		namespace="/setting" strict-method-invocation="false">
+	<!-- 追加统计，张金高 -->
+	
+	<package name="major" extends="struts-default,json-default" namespace="/setting"  strict-method-invocation="false">
 		<!-- 专业管理 -->
 		<action name="MajorsManage_*" method="{1}"
 			class="com.torrow.title.action.setting.MajorsManageAction">
@@ -44,11 +44,23 @@
 			<result name="addReviewRequirements">/WEB-INF/setting/addreviewrequirements.jsp
 			</result>
 			<result name="addUnit">/WEB-INF/setting/adddepartment.jsp</result>
+			<result name="addNotice">/WEB-INF/setting/addnoticejsp</result>
 			<result name="updateMajors">/WEB-INF/setting/updatemajors.jsp</result>
 			<result name="updateTitle">/WEB-INF/setting/updatetitle.jsp</result>
 			<result name="updateUnit">/WEB-INF/setting/updatedepartment.jsp</result>
 			<result name="updateRequire">/WEB-INF/setting/updatereviewrequirements.jsp
 			</result>
 		</action>
+		<!-- 统计,张金高 -->
+		<action name="Statistics_*" method="{1}" class="com.torrow.title.action.setting.StatisticsAction">
+			<result name="rank">/WEB-INF/setting/rank.jsp</result>
+			<result name="chooseRank">/WEB-INF/setting/rank.jsp</result>
+			<result name="discussDetails">/WEB-INF/setting/discussdetails.jsp</result>
+			<result name="expertStatistics">/WEB-INF/setting/expertstatistics.jsp</result>
+			<result name="statistics">/WEB-INF/setting/expertdiscuss.jsp</result>
+			<result name="parStatistics">/WEB-INF/setting/parstatistics.jsp</result>
+			<result name="parDisStatistics">/WEB-INF/setting/pardisstatistics.jsp</result>
+		</action>
+		
 	</package>
 </struts>
