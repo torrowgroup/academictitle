@@ -1,0 +1,34 @@
+*{margin:0;padding: 0}
+.wall{
+    width: 30%;
+    height: auto;
+    margin:0 auto;
+    margin-top: 5%;
+}
+h1{text-align: center;padding-bottom:50px;}
+form label{
+    display: inline-block;
+    line-height: 50px;
+    width: 85px;
+    margin-left: 15%;
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+form input[type="text"],form select{
+    height: 33px;
+    width: 50%;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+form input[type="file"]{margin:30px 0 0 35%;}
+.scroll{
+    width: 70%;
+    height: 35px;
+    margin:20% 0 0 13%;
+}
+.scroll span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
