@@ -86,5 +86,21 @@ public class ExpertDao extends BaseDao<Expert> implements ExpertService {
 		return getEntityList(hql);
 	}
 
+	@Override
+	public PageCut<Expert> allExpert(int curr, int pageSize,String inquiry) {
+		String hql = "select count(*) from Expert e";
+		String selecthql = "from Expert e";
+		if (!inquiry.equals("all")) {//模糊查询，匹配专家姓名，专业，单位，职称
+			hql += " where e.ex_name like '%"+inquiry+"%' or e.ex_majors.maj_majorName like '%"+inquiry+"%'"
+					+ " or e.ex_unit.un_unitName like '%"+inquiry+"%' or e.ex_title.ti_titleName like '%"+inquiry+"%'";
+			selecthql += " where e.ex_name like '%"+inquiry+"%' or e.ex_majors.maj_majorName like '%"+inquiry+"%'"
+					+ " or e.ex_unit.un_unitName like '%"+inquiry+"%' or e.ex_title.ti_titleName like '%"+inquiry+"%'";
+		}
+		int count = ((Long) this.uniqueResult(hql)).intValue();
+		PageCut<Expert> pc = new PageCut<Expert>(curr, pageSize, count);
+		pc.setData(this.getEntityLimitList(selecthql, (curr - 1) * pageSize, pageSize));
+		return pc;
+	}
+
 	
 }

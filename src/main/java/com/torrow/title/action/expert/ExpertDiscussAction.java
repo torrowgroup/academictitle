@@ -29,42 +29,20 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 	private int pa_id; // 得到参评人员id
 	private Record record; // 得到评议记录
 	private int page = 1;//记录页码
-	private String inquiry;//得到查询的内容,匹配评议记录的参评人姓名，职称，专家对评议人熟悉程度，总分
+	private String inquiry;//得到查询的内容
 	
 	// 查看该专家未评的参评人
 	public String noDiscuss() {
-		PageCut<Participator> noDiscussP = noDiscussList(page,2,inquiry);
+		if(inquiry==null){
+			inquiry = (String)session.get("inquiry");
+		}
+		PageCut<Participator> noDiscussP = noDiscussList(page,2,inquiry);//模糊查询List集合，匹配参评人姓名，专业名，单位名，职称名
 		if (noDiscussP.getData().isEmpty()) {
 			request.put("message", "没有未评的参评人");
 		}
+		session.put("inquiry", inquiry);
 		request.put("noDiscuss", noDiscussP);
 		return "getNoDiscuss";
-	}
-	//得到未评的List
-	public PageCut<Participator> noDiscussList(int curr,int pageSize,String inquiry){
-		List<Participator> allParticipator = participatorService.getAllParticipator();
-		List<Record> allRecord = recordService.getAllRecord();
-		Expert expert = (Expert) session.get("expert");
-		for (int i = 0; i < allRecord.size(); i++) {
-			if (allRecord.get(i).getRe_expert().getEx_id() == expert.getEx_id()) {// 如果评议记录里有这个专家的评议记录，就将这次评议记录里的参评人从全部参评人里删除
-				for (int j = 0; j < allParticipator.size(); j++) {
-					if (allParticipator.get(j).getPa_id() == allRecord.get(i).getRe_participator().getPa_id()) {
-						allParticipator.remove(j);
-					}
-				}
-			}
-		}
-		int count = allParticipator.size();//分页总数量等于未评人数
-		PageCut<Participator> pCut = new PageCut<Participator>(curr,pageSize,count);
-		List<Participator> pData = new ArrayList<Participator>(); 
-		for(int i=(curr-1)*pageSize;i<allParticipator.size();i++){//得到当前页的未评人集合，如果未评人不足一页，则跳出
-			pData.add(allParticipator.get(i));
-			if(i==(curr*pageSize-1)){
-				break;
-			}
-		}
-		pCut.setData(pData);
-		return pCut;
 	}
 	
 	// 查看该专家已评的
@@ -190,6 +168,46 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 		return "getAlreadyDiscuss";
 	}
 
+	// 得到未评的List
+	public PageCut<Participator> noDiscussList(int curr, int pageSize, String inquiry) {
+		List<Participator> allParticipator = participatorService.getAllParticipator();
+		List<Record> allRecord = recordService.getAllRecord();
+		Expert expert = (Expert) session.get("expert");
+		for (int i = 0; i < allRecord.size(); i++) {
+			if (allRecord.get(i).getRe_expert().getEx_id() == expert.getEx_id()) {// 如果评议记录里有这个专家的评议记录，就将这次评议记录里的参评人从全部参评人里删除
+				for (int j = 0; j < allParticipator.size(); j++) {
+					if (allParticipator.get(j).getPa_id() == allRecord.get(i).getRe_participator().getPa_id()) {
+						allParticipator.remove(j);
+						j--;
+					}
+				}
+			}
+		}
+		if(!inquiry.equals("all")){//模糊查询List集合，匹配参评人姓名，专业名，单位名，职称名
+			for(int i=0;i<allParticipator.size();i++ ){
+				if((!allParticipator.get(i).getPa_name().contains(inquiry))&&
+						(!allParticipator.get(i).getPa_majors().getMaj_majorName().contains(inquiry))&&
+						(!allParticipator.get(i).getPa_unit().getUn_unitName().contains(inquiry))&&
+						(!allParticipator.get(i).getPa_title().getTi_titleName().contains(inquiry))){
+					allParticipator.remove(i);
+					i--;
+				}
+			}
+		}
+		int count = allParticipator.size();// 分页总数量等于未评人数
+		PageCut<Participator> pCut = new PageCut<Participator>(curr, pageSize, count);
+		List<Participator> pData = new ArrayList<Participator>();
+		for (int i = (curr - 1) * pageSize; i < allParticipator.size(); i++) {// 得到当前页的未评人集合，如果未评人不足一页，则跳出
+			pData.add(allParticipator.get(i));
+			if (i == (curr * pageSize - 1)) {
+				break;
+			}
+		}
+		pCut.setData(pData);
+		return pCut;
+	}
+	
+	
 	public final int getPa_id() {
 		return pa_id;
 	}

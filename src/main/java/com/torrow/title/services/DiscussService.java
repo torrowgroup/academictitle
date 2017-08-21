@@ -14,6 +14,8 @@ import com.torrow.title.util.PageCut;
 public interface DiscussService {
 
 	//张金高
+	//得到评议类排名并分页
+	public PageCut<Discuss> discussPageCut(int curr, int pageSize, String ask, String inquiry) ;
 	//由参评人id得到评议类
 	public Discuss getByParticipatorId(int pa_id);
 	

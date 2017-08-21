@@ -18,7 +18,8 @@ public interface ExpertService {
 	//张金高
 	//专家登录
 	public Expert login(String userName,String password);
-	
+	//查询专家，分页，模糊查询
+	public PageCut<Expert> allExpert(int page, int pageSize,String inquiry);
 	//马黎明
 	//查询所有专家的信息，用于添加账号的对比
 	public List<Expert> getAlllExpert();
