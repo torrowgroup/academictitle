@@ -6,8 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}dist/css/wangEditor.min.css">
 <script type="text/javascript">
-
 	function changeSelected() {
 		var maj_majorName = '${part.pa_majors.maj_majorName}';	//获得后台的要选中的值
 		var un_unitName = '${part.pa_unit.un_unitName}';
@@ -34,10 +34,14 @@
 			      }
 			   }
 		}
+		function modifyContent() {    	
+     	        var content = document.getElementById("content");     	      
+     	        content.value = editor.$txt.html();
+   }
 </script>
 </head>
 <body>
-	<form action="${rootPath}user/Participator_update?pa_id=${part.pa_id}" method="post" enctype="multipart/form-data">
+	<form action="${rootPath}user/Participator_update?pa_id=${part.pa_id}" method="post" enctype="multipart/form-data" onsubmit="modifyContent()">
 		姓名：<input type="text" name="pa_name" value="${part.pa_name}">
 		专业：<select name="majorid"  name="majorid">
 			<c:forEach items="${majors}" var="item">
@@ -58,7 +62,25 @@
 			<marquee behavior="scroll">
 				<p>温馨提示：不可以上传中文名称图片！</p>
 			</marquee>
-		简介：<input name="pa_introduce" value="${part.pa_introduce}"><br>
+				<div class="row">
+				<lable>简介:</lable>
+				<textarea rows="5" cols="35" name="pa_introduce"
+					style="display: none;" id="content"></textarea>
+				<br>
+				<div id="editor" style="width: 100%; height: 400px;"></div>
+				<script type="text/javascript"
+					src="${rootPath}dist/js/lib/jquery-1.10.2.min.js"></script>
+				<script type="text/javascript"
+					src="${rootPath}dist/js/wangEditor.min.js"></script>
+				<script type="text/javascript">
+				    var E = window.wangEditor
+				    var editor = new E('editor')    		 
+				    editor.config.uploadImgUrl = '${rootPath}user/Participator_uploadImg'
+				    editor.config.uploadImgFileName = 'myFileName'
+				    editor.create()
+				    editor.$txt.html('${part.pa_introduce}')
+    			</script>
+			</div><br>
 		<input type="submit" value="提交">
 	</form>
 </body>

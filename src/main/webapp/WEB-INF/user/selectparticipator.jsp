@@ -10,7 +10,7 @@
 <body>
 <center>${message}</center>
 <div style="margin-left: 60%; height: 30px; margin-top: 1%;">
-			<form action="${rootPath}user/Expert_select" method="post">
+			<form action="${rootPath}user/Participator_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
 					<option value="pa_name">姓名</option>
@@ -23,7 +23,7 @@
 <table border="1" cecellspacing="0">
 		<thead>
 			<tr>
-				<td colspan="8">专家信息</td>
+				<td colspan="8">参评人信息</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -46,7 +46,7 @@
 				<td>${item.pa_title.ti_titleName}</td>
 				<td>${item.pa_imageUrl}</td>
 				<td>${item.pa_introduce}</td>
-				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Participator_delet?pa_id=${item.pa_id}">删除</a></td>
+				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}">删除</a></td>
 			</tr>
 		</c:forEach>
 		</tbody>
