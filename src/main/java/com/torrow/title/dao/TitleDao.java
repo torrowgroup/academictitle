@@ -42,6 +42,7 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 		@Override
 		public boolean  deleteById(int id) {
 			boolean sign = false;
+			
 			try {
 				String hql = "delete from Title t Where t.ti_id= '" + id + "'";
 			int mark = this.executeUpdate(hql);
@@ -59,12 +60,6 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 	@Override
 	public List<Title> selectTitle() {
 		return selectAll();
-	}
-
-	@Override
-	public Title getByName(String titleName) {
-		String hql = "from Title t where t.ti_titleName = "+titleName+"";
-		return (Title) this.uniqueResult(hql);
 	}
 
 }

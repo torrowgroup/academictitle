@@ -12,6 +12,7 @@
 		<!-- 专业管理 -->
 		<action name="MajorsManage_*" method="{1}" class="com.torrow.title.action.setting.MajorsManageAction">
 			<result name="view">/WEB-INF/setting/viewmaior.jsp</result>
+			<result name="addMajors">/WEB-INF/setting/addmajors.jsp</result>
 		</action>
 		<!-- 单位管理 -->
 		<action name="DepartmentManage_*" method="{1}" class="com.torrow.title.action.setting.DepartmentManageAction">

@@ -24,6 +24,8 @@
 		<action name="ExpertPersonal_*" method="{1}" class="com.torrow.title.action.expert.ExpertPersonalAction">
 			<result name="getMyself">/WEB-INF/expert/myself.jsp</result>
 			<result name="updateMyself">/WEB-INF/expert/myself.jsp</result>
+			<result name="logOff">/WEB-INF/expert/logoff.jsp</result>
+			<result name="out">/index.jsp</result>
 		</action>
 		
 	</package>

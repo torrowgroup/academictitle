@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
+import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Require;
 import com.torrow.title.entity.Title;
 import com.torrow.title.entity.Unit;
@@ -69,6 +70,10 @@ public class RequireDao extends BaseDao<Require> implements RequireService {
 			e.printStackTrace();
 		}
 		return sign;
+	}
+	@Override
+	public List<Require> getAllRequire() {
+		return selectAll();
 	}
 
 }

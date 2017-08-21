@@ -3,6 +3,7 @@
  */
 package com.torrow.title.action.expert;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.opensymphony.xwork2.ModelDriven;
@@ -12,6 +13,7 @@ import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Record;
 import com.torrow.title.entity.Require;
+import com.torrow.title.util.PageCut;
 
 /**
  * @author 张金高
@@ -26,9 +28,20 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 	private static final long serialVersionUID = 1L;
 	private int pa_id; // 得到参评人员id
 	private Record record; // 得到评议记录
-
+	private int page = 1;//记录页码
+	private String inquiry;//得到查询的内容,匹配评议记录的参评人姓名，职称，专家对评议人熟悉程度，总分
+	
 	// 查看该专家未评的参评人
 	public String noDiscuss() {
+		PageCut<Participator> noDiscussP = noDiscussList(page,2,inquiry);
+		if (noDiscussP.getData().isEmpty()) {
+			request.put("message", "没有未评的参评人");
+		}
+		request.put("noDiscuss", noDiscussP);
+		return "getNoDiscuss";
+	}
+	//得到未评的List
+	public PageCut<Participator> noDiscussList(int curr,int pageSize,String inquiry){
 		List<Participator> allParticipator = participatorService.getAllParticipator();
 		List<Record> allRecord = recordService.getAllRecord();
 		Expert expert = (Expert) session.get("expert");
@@ -41,27 +54,31 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 				}
 			}
 		}
-		if (allParticipator.isEmpty()) {
-			request.put("message", "你没有未评的参评人");
-		}
-		request.put("noDiscuss", allParticipator);
-		return "getNoDiscuss";
-	}
-
-	// 查看该专家已评的
-	public String alreadyDiscuss() {
-		List<Record> allRecord = recordService.getAllRecord();
-		Expert expert = (Expert) session.get("expert"); // 得到登录专家的对象
-		for (int i = 0; i < allRecord.size(); i++) {
-			if (allRecord.get(i).getRe_expert().getEx_id() != expert.getEx_id()) {
-				allRecord.remove(i);
-				i--;
+		int count = allParticipator.size();//分页总数量等于未评人数
+		PageCut<Participator> pCut = new PageCut<Participator>(curr,pageSize,count);
+		List<Participator> pData = new ArrayList<Participator>(); 
+		for(int i=(curr-1)*pageSize;i<allParticipator.size();i++){//得到当前页的未评人集合，如果未评人不足一页，则跳出
+			pData.add(allParticipator.get(i));
+			if(i==(curr*pageSize-1)){
+				break;
 			}
 		}
-		if (allRecord.isEmpty()) {
-			request.put("message", "你还未参与过评议");
+		pCut.setData(pData);
+		return pCut;
+	}
+	
+	// 查看该专家已评的
+	public String alreadyDiscuss() {
+		if(inquiry == null){
+			inquiry = (String)session.get("inquiry");
 		}
-		request.put("alreadyDiscuss", allRecord);
+		Expert expert = (Expert) session.get("expert"); // 得到登录专家的对象
+		PageCut<Record> alreadyDiscuss = recordService.getPageCut(page,2,inquiry,expert);
+		if (alreadyDiscuss.getData().isEmpty()) {
+			request.put("message", "没有评议纪录");
+		}
+		session.put("inquiry", inquiry);
+		request.put("alreadyDiscuss", alreadyDiscuss);
 		return "getAlreadyDiscuss";
 	}
 
@@ -179,6 +196,22 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 
 	public final void setPa_id(int pa_id) {
 		this.pa_id = pa_id;
+	}
+	
+	public final int getPage() {
+		return page;
+	}
+
+	public final void setPage(int page) {
+		this.page = page;
+	}
+
+	public final String getInquiry() {
+		return inquiry;
+	}
+
+	public final void setInquiry(String inquiry) {
+		this.inquiry = inquiry;
 	}
 
 	@Override

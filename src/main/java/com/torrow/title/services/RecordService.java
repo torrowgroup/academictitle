@@ -2,7 +2,9 @@ package com.torrow.title.services;
 
 import java.util.List;
 
+import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Record;
+import com.torrow.title.util.PageCut;
 
 /**
  * 
@@ -13,7 +15,8 @@ import com.torrow.title.entity.Record;
 public interface RecordService {
 
 	//张金高
-	//得到全部参评记录
+	//分页得到全部参评记录,
+	public PageCut<Record> getPageCut(int page, int i, String inquiry,Expert expert);
 	public List<Record> getAllRecord();
 	//得到该参评人的所有评议记录
 	public List<Record> getByParticipatorId(int pa_id);
