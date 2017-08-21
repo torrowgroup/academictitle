@@ -15,7 +15,7 @@ import com.torrow.title.util.PageCut;
 public interface RecordService {
 
 	//张金高
-	//分页得到全部参评记录,根据专家已评的
+	//分页得到参评记录,根据专家已评的
 	public PageCut<Record> getPageCut(int page, int i, String inquiry,Expert expert);
 	//得到全部记录
 	public List<Record> getAllRecord();
@@ -29,5 +29,7 @@ public interface RecordService {
 	public void updateRecord(Record record);
 	//根据评议类id得到评议记录
 	public PageCut<Record> getByDiscussId(int page, int i, int pa_id);
+	//分页，根据参评人id得到评议记录
+	public PageCut<Record> getByParticiptorId(int page, int i, int id);
 
 }

@@ -73,4 +73,14 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 		return pc;
 	}
 
+	@Override
+	public PageCut<Record> getByParticiptorId(int curr, int pageSize, int id) {
+		String hql = "select count(*) from Record r where r.re_participator.pa_id = "+id+"";
+		String selectHql = "from Record r where r.re_participator.pa_id = "+id+"";
+		int count = ((Long) this.uniqueResult(hql)).intValue();
+		PageCut<Record> pc = new PageCut<Record>(curr, pageSize, count);
+		pc.setData(this.getEntityLimitList(selectHql, (curr - 1) * pageSize, pageSize));
+		return pc;
+	}
+
 }

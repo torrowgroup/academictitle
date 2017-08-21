@@ -44,7 +44,9 @@
 			<result name="chooseRank">/WEB-INF/setting/rank.jsp</result>
 			<result name="discussDetails">/WEB-INF/setting/discussdetails.jsp</result>
 			<result name="expertStatistics">/WEB-INF/setting/expertstatistics.jsp</result>
-			<result name="statistics">/WEB-INF/seeting/expertdiscuss.jsp</result>
+			<result name="statistics">/WEB-INF/setting/expertdiscuss.jsp</result>
+			<result name="parStatistics">/WEB-INF/setting/parstatistics.jsp</result>
+			<result name="parDisStatistics">/WEB-INF/setting/pardisstatistics.jsp</result>
 		</action>
 		
 	</package>

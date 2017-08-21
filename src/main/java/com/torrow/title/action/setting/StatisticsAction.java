@@ -10,6 +10,7 @@ import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Discuss;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Record;
 import com.torrow.title.entity.Title;
 import com.torrow.title.entity.Unit;
@@ -26,7 +27,7 @@ public class StatisticsAction extends BaseAction {
 	private int page = 1;
 	private String ask; //得到查询条件
 	private String inquiry;//得到查询内容,查看评议详情时是评议类id，
-	private int id; //对某个专家评议统计时的专家id
+	private int id; //对某个专家评议统计时的专家id,参评人统计方法中的参评人id
 	
 	//选择排名方式
 	public String chooseRank(){
@@ -86,17 +87,47 @@ public class StatisticsAction extends BaseAction {
 		if(inquiry == null){
 			inquiry = (String)session.get("inquiry");
 		}
-		Expert expert = new Expert(); 
+		Expert expert = new Expert();
+		if(id==0){
+			id=(int)session.get("id");
+		}
 		expert.setEx_id(id);
 		PageCut<Record> expertDiscuss = recordService.getPageCut(page,2,inquiry,expert);
 		if (expertDiscuss.getData().isEmpty()) {
 			request.put("message", "没有评议纪录");
 		}
 		session.put("inquiry", inquiry);
+		session.put("id", id);
 		request.put("expertDiscuss", expertDiscuss);
 		return "statistics";
 	}
 	
+	//得到参评人，进行参评人统计
+	public String parStatistics(){
+		if(inquiry==null){
+			inquiry = (String)session.get("inquiry");
+		}
+		PageCut<Participator> pCut = participatorService.allParticipator(page, 2,inquiry);
+		if (pCut.getData().isEmpty()) {
+			request.put("message", "没有参评人");
+		}
+		request.put("allParticipator", pCut);
+		session.put("inquiry", inquiry);
+		return "parStatistics";
+	}
+	//得到参评人被谁评过
+	public String parDisStatistics(){
+		if(id==0){
+			id=(int)session.get("id");
+		}
+		PageCut<Record> pCut = recordService.getByParticiptorId(page,2,id);
+		if(pCut.getData().isEmpty()){
+			request.put("message","没有评议记录");
+		}
+		request.put("parRecord", pCut);
+		session.put("id", id);
+		return "parDisStatistics";
+	}
 	public final String getAsk() {
 		return ask;
 	}

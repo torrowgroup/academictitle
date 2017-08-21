@@ -21,7 +21,6 @@
 				<td>科研</td>
 				<td>师德</td>
 				<td>评分</td>
-				<td>操作</td>
 			</tr>
 			<c:forEach items="${expertDiscuss.data}" var="expertDiscuss">
 				<tr>
@@ -32,30 +31,29 @@
 					<td>${expertDiscuss.re_scientific}</td>
 					<td>${expertDiscuss.re_morality}</td>
 					<td>${expertDiscuss.re_score}</td>
-					<td><a href="${rootPath}expert/ExpertDiscussAction_toUpdateRecord?re_id=${expertDiscuss.re_id}">修改</a></td>
 				</tr>
 			</c:forEach>
 		</table>
 		<div class="page" id="div2">
 				<ul class="pagination">
 					<li><a
-						href="${rootPath }expert/ExpertDiscussAction_alreadyDiscuss?page=${alreadyDiscuss.prePage}">上一页</a></li>
+						href="${rootPath }setting/Statistics_statistics?page=${expertDiscuss.prePage}">上一页</a></li>
 					<c:forEach var="i"
-						begin="${alreadyDiscuss.currentPage-3>0?alreadyDiscuss.currentPage-3:1 }"
-						end="${alreadyDiscuss.currentPage+3>alreadyDiscuss.pageNum?alreadyDiscuss.pageNum:alreadyDiscuss.currentPage+3  }">
+						begin="${expertDiscuss.currentPage-3>0?expertDiscuss.currentPage-3:1 }"
+						end="${expertDiscuss.currentPage+3>expertDiscuss.pageNum?expertDiscuss.pageNum:expertDiscuss.currentPage+3  }">
 						<c:choose>
-							<c:when test="${i>0 && i == alreadyDiscuss.currentPage}">
+							<c:when test="${i>0 && i == expertDiscuss.currentPage}">
 								<li class="active"><a
-									href="${rootPath }expert/ExpertDiscussAction_alreadyDiscuss?page=${i }">${i}</a></li>
+									href="${rootPath }setting/Statistics_statistics?page=${i }">${i}</a></li>
 							</c:when>
-							<c:when test="${i>0 && i != alreadyDiscuss.currentPage}">
+							<c:when test="${i>0 && i != expertDiscuss.currentPage}">
 								<li><a
-									href="${rootPath }expert/ExpertDiscussAction_alreadyDiscuss?page=${i }">${i}</a></li>
+									href="${rootPath }setting/Statistics_statistics?spage=${i }">${i}</a></li>
 							</c:when>
 						</c:choose>
 					</c:forEach>
 					<li><a
-						href="${rootPath }expert/ExpertDiscussAction_alreadyDiscuss?page=${alreadyDiscuss.nextPage}">下一页</a></li>
+						href="${rootPath }setting/Statistics_statistics?page=${expertDiscuss.nextPage}">下一页</a></li>
 				</ul>
 			</div>
 	</c:if>
