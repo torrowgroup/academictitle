@@ -68,4 +68,20 @@ public class ParticipatorDao extends BaseDao<Participator> implements Participat
 		return sign;
 	}
 
+	@Override
+	public PageCut<Participator> allParticipator(int curr, int pageSize, String inquiry) {
+		String hql = "select count(*) from Participator p ";
+		String selecthql = "from Participator p ";
+		if (!inquiry.equals("all")) {//匹配参评人姓名，专业，单位，申报职称
+			hql += " where p.pa_name like '%"+inquiry+"%' or p.pa_majors.maj_majorName like '%"+inquiry+"%'"
+					+ " or p.pa_unit.un_unitName like '%"+inquiry+"%' or p.pa_title.ti_titleName like '%"+inquiry+"%'";
+			selecthql += " where p.pa_name like '%"+inquiry+"%' or p.pa_majors.maj_majorName like '%"+inquiry+"%'"
+					+ " or p.pa_unit.un_unitName like '%"+inquiry+"%' or p.pa_title.ti_titleName like '%"+inquiry+"%'";
+		}
+		int count = ((Long) this.uniqueResult(hql)).intValue();
+		PageCut<Participator> pc = new PageCut<Participator>(curr, pageSize, count);
+		pc.setData(this.getEntityLimitList(selecthql, (curr - 1) * pageSize, pageSize));
+		return pc;
+	}
+
 }

@@ -19,6 +19,11 @@
 	<center>
 		<c:if test="${fn:length(allExpert.data) > 0 }">
 	<table border="1" cecellspacing="0">
+		<thead>
+			<tr>
+				<td colspan="8">专家信息</td>
+			</tr>
+		</thead>
 		<tbody>
 			<tr>
 				<td>姓名</td>
