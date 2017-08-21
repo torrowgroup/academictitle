@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div>${Message}</div>
 	<form action="${rootPath}setting/MajorsManage_add" method="post">
 		<lable>专业名称：</lable>
 		<input type="text"  name="majors.maj_majorName" placeholder="请输入专业名称" ><br>

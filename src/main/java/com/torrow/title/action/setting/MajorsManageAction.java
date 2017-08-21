@@ -24,6 +24,7 @@ public class MajorsManageAction extends BaseAction {
 	// 查看所有专业
 	public String view() {
 		PageCut<Majors> list = majorsService.checkAll(page, 3);
+		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
 
@@ -32,13 +33,19 @@ public class MajorsManageAction extends BaseAction {
 	// 添加专业
 	public String add() {
 		boolean boo = majorsService.add(majors);
-		return "view";
+		if(boo) {
+			request.put("Message","专业添加成功");
+		}else {
+			request.put("Message", "已有该专业，添加失败");
+		}
+		return "addMajors";
 	}
 
 	// 修改专业
 	public String update() {
 		boolean boo = majorsService.update(majors);
 		PageCut<Majors> list = majorsService.checkAll(page, 1);
+		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
 

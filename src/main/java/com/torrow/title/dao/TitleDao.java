@@ -42,6 +42,7 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 		@Override
 		public boolean  deleteById(int id) {
 			boolean sign = false;
+			
 			try {
 				String hql = "delete from Title t Where t.ti_id= '" + id + "'";
 			int mark = this.executeUpdate(hql);
