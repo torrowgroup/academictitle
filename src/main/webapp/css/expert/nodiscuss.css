@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.wall{
+    height: auto;
+    width: 50%;
+    margin:0 auto;
+    margin-top:15%;
+}
+.right{
+    height: 50px;
+    float: right;
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    color: #000;
+    vertical-align: middle;
+}
+.right input[type="text"]{
+    height: 30px;
+    width:190px;
+    vertical-align: middle;}
+table{
+    width: 100%;
+    height:100px;
+    border-color: #ccc;
+}
+table th{
+    height: 45px;
+    background-color: #eee;
+    text-align: center;
+}
+table td{
+    height: 40px;
+    text-align: center;
+}
+textarea{
+    height: 99%;
+    width: 99%;
+   border: 0;
+}
+.page{
+    margin:15% 0 0 38%;
+}
+
