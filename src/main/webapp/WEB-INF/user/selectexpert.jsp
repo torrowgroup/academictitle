@@ -7,9 +7,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/manager/selectexpert.css">
+    <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/bootstrap.css">
+    <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
-<body>
-	<center>${message}</center>
+<body>	
 <div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 			<form action="${rootPath}user/Expert_select" method="post">
 				<select name="ask"
@@ -24,7 +27,9 @@
 			</form>
 	</div>
 	<c:if test="${fn:length(messagenews.data) > 0 }">
-	<table border="1" cecellspacing="0">
+	 <div class="wall">
+	 <center>${message}</center>
+	<table border="1" cellspacing="0">
 		<thead>
 			<tr>
 				<td colspan="9">专家信息</td>
@@ -57,8 +62,8 @@
 		</c:forEach>
 		</tbody>
 	</table>
-	<div>
-			<ul >
+	<div class="page">
+			<ul class="pagination">
 				<li><a
 					href="${rootPath}user/Expert_select?page=${messagenews.prePage}">上一页</a></li>
 				<c:forEach var="i" begin="${messagenews.currentPage-3>0?messagenews.currentPage-3:1 }"

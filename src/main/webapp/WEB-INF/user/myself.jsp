@@ -5,14 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/manager/updatemanager.css">
 </head>
 <body>
-	<center>${message}</center>
-	<form action="${rootPath}user/Manager_updateMyself?ma_id=${messagenews.ma_id}" method="post">
-		账号：<input type="text" name="ma_userName" value="${messagenews.ma_userName}"><br>
-		密码：<input type="text" name="ma_password" value="${messagenews.ma_password}"><br>
-		姓名：<input type="text" name="ma_name" value="${messagenews.ma_name}"><br>
-		<input type="submit" value="修改">
-	</form>
+	<div class="header">
+		<center>${message}</center>
+		<form action="${rootPath}user/Manager_updateMyself?ma_id=${messagenews.ma_id}" method="post">
+			<label>账号：</label><input type="text" class="a" name="ma_userName" value="${messagenews.ma_userName}"><br>
+			<label>密码：</label><input type="text" class="a" name="ma_password" value="${messagenews.ma_password}"><br>
+			<label>姓名：</label><input type="text" class="a" name="ma_name" value="${messagenews.ma_name}"><br>
+			<input type="submit" class="b" value="修改">
+		</form>
+	</div>
 </body>
 </html>
