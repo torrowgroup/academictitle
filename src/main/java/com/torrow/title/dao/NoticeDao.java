@@ -54,7 +54,7 @@ public class NoticeDao extends BaseDao<Notice> implements NoticeService {
 	}
 	@Override
 	public boolean add(Notice  notice ,String userName,Date date) {
-		notice.setNo_managerName(userName);
+		notice.setNo_managerName(userName); 
 		notice.setNo_issueData(date);
 		return this.saveEntity(notice);
 	}
