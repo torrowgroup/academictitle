@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="${rootPath}setting/TitleManage_update" method="post">
+<form action="${rootPath}setting/TitleManage_add" method="post">
 		<lable>职称名称：</lable>
 		<input type="text"  name="title.ti_titleName" value="${title.ti_titleName}"" ><br>
 		 <input type="submit" value="提交">

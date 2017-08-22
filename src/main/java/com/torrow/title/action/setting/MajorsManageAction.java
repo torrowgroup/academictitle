@@ -32,11 +32,23 @@ public class MajorsManageAction extends BaseAction {
 
 	// 添加专业
 	public String add() {
-		boolean boo = majorsService.add(majors);
-		if(boo) {
-			request.put("Message","专业添加成功");
-		}else {
-			request.put("Message", "已有该专业，添加失败");
+		boolean allsign = true;
+		List<Majors> list = majorsService.selectMajors();
+		for(int i = 0;i < list.size(); i++){
+			if (list.get(i).getMaj_majorName().equals(majors.getMaj_majorName())) {
+				allsign = false;
+				break;
+			}
+		}
+		if (allsign) {
+			boolean boo = majorsService.add(majors);
+			if(boo) {
+				request.put("Message","专业添加成功");
+			}else {
+				request.put("Message", "添加失败");
+			}
+		} else {
+			request.put("Message","已有该专业");
 		}
 		return "addMajors";
 	}

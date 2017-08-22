@@ -9,7 +9,7 @@
 <style >
 
 .pag {
-	float: right;
+	float: left;
 	margin-top: 30px;
 	margin-right: 0px;
 }
@@ -24,7 +24,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>专业ID</td>
+				<td>专业编号</td>
 				<td>专业名称</td>
 				<td>操作</td>
 			</tr>

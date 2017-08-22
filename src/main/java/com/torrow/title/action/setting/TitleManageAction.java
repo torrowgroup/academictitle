@@ -21,7 +21,24 @@ public class TitleManageAction extends BaseAction {
 	}
 
 	public String add() {
-		boolean bo = titleService.add(title);
+		boolean allsign = true;
+		List<Title> list = titleService.selectTitle();
+		for(int i = 0;i<list.size();i++){
+			if (list.get(i).getTi_titleName().equals(title.getTi_titleName())) {
+				allsign = false;
+				break;
+			}
+		}
+		if(allsign){
+			boolean bo = titleService.add(title);
+			if(bo) {
+				request.put("Message","添加成功");
+			}else {
+				request.put("Message", "添加失败");
+			}
+		} else {
+			request.put("Message", "已有该职称");
+		}
 		request.put("method", "view");
 		return "addTitle";
 	}
