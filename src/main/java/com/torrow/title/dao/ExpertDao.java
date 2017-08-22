@@ -19,7 +19,7 @@ public class ExpertDao extends BaseDao<Expert> implements ExpertService {
 
 	@Override
 	public Expert login(String userName, String password) {
-		String hql = "from Expert e where e.ex_userName = "+userName+" ";
+		String hql = "from Expert e where e.ex_userName = '"+userName+"'";
 		Expert expert = (Expert)this.uniqueResult(hql);
 		if(expert!=null&&expert.getEx_password().equals(password)){
 			return expert;

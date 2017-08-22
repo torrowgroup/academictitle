@@ -40,5 +40,11 @@ public class NoticeDao extends BaseDao<Notice> implements NoticeService {
 		pc.setData(this.getEntityLimitList(selectHql, (curr-1)*pageSize, pageSize));
 		return pc;
 	}
+
+	@Override
+	public Notice getNewNotice() {
+		String hql = "from Notice where no_id = (select max(no_id) from Notice)";
+		return (Notice)this.uniqueResult(hql);
+	}
 	
 }

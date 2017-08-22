@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+form{
+    width: 30%;
+    margin:0 auto;
+    margin-top: 7%;
+}
+form label{
+    width: 28%;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height:50px;
+    vertical-align: middle;
+    text-align: right;
+}
+.in,form select{
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+.btn{
+    width: 80px;
+    height: 35px;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 40%;
+    font-size: 16px;
+
+}
+.btn:hover{
+   background-color: #eee;
+}
