@@ -49,7 +49,7 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		}
 		PageCut<Participator> pCut = participatorService.getParticipator(page, 4, ask, inquiry);
 		if (pCut.getData().size() == 0) {
-			request.put("message", "无此专家");
+			request.put("message", "无参评人");
 		}
 		request.put("messagenews", pCut);
 		session.put("ask", ask);
