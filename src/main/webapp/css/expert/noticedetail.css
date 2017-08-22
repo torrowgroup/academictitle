@@ -1,0 +1,28 @@
+*{margin:0;padding: 0;text-decoration: none;box-sizing:border-box;}
+table{
+    width: 40%;
+    height: 150px;
+    margin:0 auto;
+    margin-top: 15%;
+    border-radius: 5px;
+}
+textarea{
+    width: 99%;
+    height:99%;
+    text-align: left;
+    margin-top: 2px;
+    border: 0;
+}
+table td{
+    text-align: center;
+}
+table th{
+    font-size: 22px;
+    background-color: #eee
+}
+.font{
+    font-size: 22px;
+    font-weight: bold;
+    width: 28%;
+    background-color: #eee
+}

@@ -1,0 +1,27 @@
+*{margin:0;padding: 0}
+.top{
+    height: 200px;
+    width:40%;
+    margin:0 auto;
+    margin-top: 12%;
+}
+table{
+    border-color: #999;
+    text-align: center;
+    margin:0 auto;
+    background-color: #eee;
+}
+caption{
+    padding-bottom: 15px;
+}
+table td{
+    padding:10px 25px;
+}
+.center{text-align: center;
+         font-size: 22px;
+         font-weight: bold;
+         padding-bottom: 20px;}
+.page{
+    margin-left:35%;
+    margin-top: 20%;
+}

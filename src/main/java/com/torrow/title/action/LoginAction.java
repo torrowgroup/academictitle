@@ -7,6 +7,7 @@ package com.torrow.title.action;
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Manager;
+import com.torrow.title.entity.Notice;
 
 /**
  * @author zjg
@@ -30,6 +31,8 @@ public class LoginAction extends BaseAction{
 			session.put("manager", manager);
 			return "managerIndex";
 		} else if(expert!=null) {
+			Notice noticeNew = noticeService.getNewNotice();
+			request.put("noticeNew", noticeNew);
 			session.put("expert", expert);
 			return "expertIndex";
 		}

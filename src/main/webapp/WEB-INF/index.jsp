@@ -51,7 +51,7 @@
       <details style="width:200px" >
 		<summary>通知管理</summary>
 		<a href="${rootPath}setting/NoticeManage_view" target="mainiframe">查看通知</a><br> 
-		<a href="${rootPath}setting/Transfer_addUnit" target="mainiframe">添加单位</a><br>     
+		<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a><br>     
      </details>
      <details  style="width:200px">
 		<summary>个人中心</summary>

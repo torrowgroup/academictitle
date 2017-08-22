@@ -53,8 +53,8 @@ public class NoticeDao extends BaseDao<Notice> implements NoticeService {
 
 	}
 	@Override
-	public boolean add(Notice  notice ,Manager manager,Date date) {
-		notice.setNo_manager(manager);
+	public boolean add(Notice  notice ,String userName,Date date) {
+		notice.setNo_managerName(userName);
 		notice.setNo_issueData(date);
 		return this.saveEntity(notice);
 	}
@@ -75,5 +75,11 @@ public class NoticeDao extends BaseDao<Notice> implements NoticeService {
 	}
 	return sign;
 }
+
+	@Override
+	public Notice getNewNotice() {
+		String hql = "from Notice where no_id = (select max(no_id) from Notice)";
+		return (Notice)this.uniqueResult(hql);
+	}
 	
 }

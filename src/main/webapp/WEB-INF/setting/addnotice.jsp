@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>${Message}</div>
-	<form action="${rootPath}setting/NOticeManage_add" method="post">
+	<form action="${rootPath}setting/NoticeManage_add" method="post">
 		<lable>通知名称：</lable>
 		<input type="text" name="notice.no_head" placeholder="请输入通知名称"><br>
 		<lable>通知内容：</lable>

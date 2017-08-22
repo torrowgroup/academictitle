@@ -1,12 +1,6 @@
-/**
- * 
- */
 package com.torrow.title.services;
-
 import java.util.List;
 import java.util.Date;
-
-import com.torrow.title.entity.Manager;
 import com.torrow.title.entity.Notice;
 import com.torrow.title.util.PageCut;
 
@@ -24,8 +18,10 @@ public interface NoticeService {
 	//分页查询所有通知
 	public PageCut<Notice> checkAll(int currentPage, int pageSize);
 	//添加通知
-	public boolean add(Notice notice, Manager manager,Date date);
+	public boolean add(Notice notice, String uaerName,Date date);
 	//根据ID删除通知
 	public boolean deleteById(int id);
+	//得到最新一条通知
+	public Notice getNewNotice();
 	
 }
