@@ -32,18 +32,20 @@ public void setPage(int page) {
 	//查看所有部门
 	public String view() {
 		PageCut<Unit> list = unitService.checkAll(page, 3);
+		request.put("Method", "view");
 		request.put("paCut", list);
 		return "view";
 	}
 	//添加部门
 	public String add() {
 		boolean boo = unitService.add(unit);
-		return "view";
+		return "addUnit";
 	}
 	// 修改部门
 	public String update() {
 		boolean boo = unitService.update(unit);
 		PageCut<Unit> list = unitService.checkAll(page, 3);
+		request.put("Method", "view");
 		request.put("paCut", list);
 		return "view";
 
@@ -52,6 +54,7 @@ public void setPage(int page) {
 	public String delete() {
 		boolean boo = unitService.deleteById(unitId);
 		PageCut<Unit> list = unitService.checkAll(page, 3);
+		request.put("Method", "view");
 		request.put("paCut", list);
 		return "view";
 

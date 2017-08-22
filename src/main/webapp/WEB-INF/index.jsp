@@ -41,12 +41,17 @@
      <details  style="width:200px">
 		<summary>职称管理</summary>
 		<a href="${rootPath}/setting/TitleManage_view" target="mainiframe">查看职称</a><br> 
-		<a href="${rootPath}/setting/TitleManage_add" target="mainiframe">添加职称</a><br>
+		<a href="${rootPath}/setting/Transfer_addTitle" target="mainiframe">添加职称</a><br>
      </details>
      <details  style="width:200px">
 		<summary>评议要求管理</summary>
 		<a href="${rootPath}setting/ReviewRequirementsManage_view" target="mainiframe">查看评议要求</a><br> 
 		<a href="${rootPath}setting/Transfer_addReviewRequirements" target="mainiframe">添加评议要求</a><br>     
+     </details>
+      <details style="width:200px" >
+		<summary>通知管理</summary>
+		<a href="${rootPath}setting/NoticeManage_view" target="mainiframe">查看通知</a><br> 
+		<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a><br>     
      </details>
      <details  style="width:200px">
 		<summary>个人中心</summary>

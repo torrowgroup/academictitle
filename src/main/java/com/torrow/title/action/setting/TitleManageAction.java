@@ -16,14 +16,14 @@ public class TitleManageAction extends BaseAction {
 	public String view() {
 		PageCut<Title> list = titleService.checkAll(page, 3);
 		request.put("paCut", list);
+		request.put("method", "view");
 		return "view";
 	}
 
 	public String add() {
-		System.out.println(title);
 		boolean bo = titleService.add(title);
-		System.out.println(bo);
-		return "view";
+		request.put("method", "view");
+		return "addTitle";
 	}
 
 	// 修改职称
@@ -47,8 +47,11 @@ public class TitleManageAction extends BaseAction {
 		for (int i = 0; i < allRequire.size(); i++) {
 			if (allRequire.get(i).getRe_title().getTi_id() == titleId) {
 				allRequire.get(i).setRe_title(null);
+				boolean bo = titleService.deleteTitle(allRequire.get(i).getRe_title());
+				requireService.updateRequire(allRequire.get(i));
 			}
 		}
+		
 		boolean boo = titleService.deleteById(titleId);
 		PageCut<Title> list = titleService.checkAll(page, 3);
 		request.put("paCut", list);
