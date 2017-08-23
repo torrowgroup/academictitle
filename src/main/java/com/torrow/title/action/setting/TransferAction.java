@@ -63,6 +63,10 @@ public class TransferAction extends BaseAction {
 	public String addUnit() {
 		return "addUnit";
 	}
+	public String addNotice() {
+		System.out.println("执行Add");
+		return "addNotice";
+	}
 
 	public String updateMajors() {
 		Majors majors = majorsService.checkById(majorsId);

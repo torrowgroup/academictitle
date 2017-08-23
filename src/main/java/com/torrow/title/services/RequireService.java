@@ -34,6 +34,9 @@ public interface RequireService {
 	public PageCut<Require> checkAll(int currentPage, int pageSize);
 
 	public List<Require> getAllRequire();
+	//更新数据库表
+	public boolean updateRequire(Require require);
+	
 
 
 }

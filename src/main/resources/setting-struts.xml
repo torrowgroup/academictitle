@@ -11,32 +11,50 @@
 	
 	<package name="major" extends="struts-default,json-default" namespace="/setting"  strict-method-invocation="false">
 		<!-- 专业管理 -->
-		<action name="MajorsManage_*" method="{1}" class="com.torrow.title.action.setting.MajorsManageAction">
+		<action name="MajorsManage_*" method="{1}"
+			class="com.torrow.title.action.setting.MajorsManageAction">
 			<result name="view">/WEB-INF/setting/viewmaior.jsp</result>
 			<result name="addMajors">/WEB-INF/setting/addmajors.jsp</result>
 		</action>
 		<!-- 单位管理 -->
-		<action name="DepartmentManage_*" method="{1}" class="com.torrow.title.action.setting.DepartmentManageAction">
+		<action name="DepartmentManage_*" method="{1}"
+			class="com.torrow.title.action.setting.DepartmentManageAction">
 			<result name="view">/WEB-INF/setting/viewdepartment.jsp</result>
+			<result name="addUnit">/WEB-INF/setting/adddepartment.jsp</result>
 		</action>
 		<!-- 职称管理 -->
-		<action name="TitleManage_*" method="{1}" class="com.torrow.title.action.setting.TitleManageAction">
+		<action name="TitleManage_*" method="{1}"
+			class="com.torrow.title.action.setting.TitleManageAction">
 			<result name="view">/WEB-INF/setting/viewtitle.jsp</result>
+			<result name="addTitle">/WEB-INF/setting/addtitle.jsp</result>
 		</action>
 		<!-- 评议要求管理 -->
-		<action name="ReviewRequirementsManage_*" method="{1}" class="com.torrow.title.action.setting.ReviewRequirementsManageAction">
-			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp</result>
+		<action name="ReviewRequirementsManage_*" method="{1}"
+			class="com.torrow.title.action.setting.ReviewRequirementsManageAction">
+			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp
+			</result>
+			<result name="addReviewRequirements">/WEB-INF/setting/addreviewrequirements.jsp
+			</result>
+		</action>
+		<!-- 通知管理 -->
+		<action name="NoticeManage_*" method="{1}"
+			class="com.torrow.title.action.setting.NoticeManageAction">
+			<result name="view">/WEB-INF/setting/viewnotice.jsp</result>
+			<result name="addNotice">/WEB-INF/setting/addnotice.jsp</result>
 		</action>
 		<!-- jsp中转 -->
-		<action name="Transfer_*" method="{1}" class="com.torrow.title.action.setting.TransferAction">
+		<action name="Transfer_*" method="{1}"
+			class="com.torrow.title.action.setting.TransferAction">
 			<result name="addMajors">/WEB-INF/setting/addmajors.jsp</result>
 			<result name="addTitle">/WEB-INF/setting/addtitle.jsp</result>
 			<result name="addReviewRequirements">/WEB-INF/setting/addreviewrequirements.jsp</result>
 			<result name="addUnit">/WEB-INF/setting/adddepartment.jsp</result>
+			<result name="addNotice">/WEB-INF/setting/addnotice.jsp</result>
 			<result name="updateMajors">/WEB-INF/setting/updatemajors.jsp</result>
 			<result name="updateTitle">/WEB-INF/setting/updatetitle.jsp</result>
 			<result name="updateUnit">/WEB-INF/setting/updatedepartment.jsp</result>
-			<result name="updateRequire">/WEB-INF/setting/updatereviewrequirements.jsp</result>
+			<result name="updateRequire">/WEB-INF/setting/updatereviewrequirements.jsp
+			</result>
 		</action>
 		<!-- 统计,张金高 -->
 		<action name="Statistics_*" method="{1}" class="com.torrow.title.action.setting.StatisticsAction">

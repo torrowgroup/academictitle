@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
+import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Title;
 import com.torrow.title.services.TitleService;
 import com.torrow.title.util.PageCut;
@@ -60,6 +61,14 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 	@Override
 	public List<Title> selectTitle() {
 		return selectAll();
+	}
+	@Override
+	public boolean updateTitle(Title title) {
+		return updateEntity(title);
+	}
+	@Override
+	public boolean deleteTitle(Title title) {
+		return this.deleteEntity(title);
 	}
 
 }

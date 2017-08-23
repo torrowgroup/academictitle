@@ -7,6 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="${rootPath}css/manager/selectParticipator.css">
+    <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/bootstrap.css">
+    <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
 <center>${message}</center>
@@ -21,6 +25,7 @@
 					style="background-color: #82C0E9;border-radius: 7px;" type="submit" value="查询">
 			</form>
 	</div>
+	<div class="wall">
 <c:if test="${fn:length(messagenews.data) > 0 }">
 <table border="1" cecellspacing="0">
 		<thead>
@@ -53,8 +58,8 @@
 		</c:forEach>
 		</tbody>
 	</table>
-	<div>
-			<ul >
+	<div class="page">
+			<ul class="pagination">
 				<li><a
 					href="${rootPath}user/Participator_select?page=${messagenews.prePage}">上一页</a></li>
 				<c:forEach var="i" begin="${messagenews.currentPage-3>0?messagenews.currentPage-3:1 }"
@@ -77,5 +82,6 @@
 			</ul>
 		</div>
 	</c:if>
+	</div>
 </body>
 </html>

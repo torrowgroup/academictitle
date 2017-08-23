@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}dist/css/wangEditor.min.css">
+<link rel="stylesheet" type="text/css" href="${rootPath}css/manager/updateParticipator.css">
 <script type="text/javascript">
 	function changeSelected() {
 		var maj_majorName = '${part.pa_majors.maj_majorName}';	//获得后台的要选中的值
@@ -41,27 +42,25 @@
 </script>
 </head>
 <body>
+  <div class="wall">
 	<form action="${rootPath}user/Participator_update?pa_id=${part.pa_id}" method="post" enctype="multipart/form-data" onsubmit="modifyContent()">
-		姓名：<input type="text" name="pa_name" value="${part.pa_name}">
-		专业：<select name="majorid"  name="majorid">
+		 <label>姓名：</label><input type="text" name="pa_name" value="${part.pa_name}">
+		<label>专业： </label><select name="majorid"  name="majorid">
 			<c:forEach items="${majors}" var="item">
 					<option value="${item.maj_id}">${item.maj_majorName}</option>
 			</c:forEach>
 		</select><br>
-		单位：<select name="unitid" name="unitid">
+		<label>单位： </label><select name="unitid" name="unitid">
 			<c:forEach items="${unit}" var="item">
 					<option value="${item.un_id}">${item.un_unitName}</option>
 			</c:forEach>
 		</select>
-		职称：<select name="titleid" name="titleid">
+		<label>职称： </label><select name="titleid" name="titleid">
 			<c:forEach items="${title}" var="item">
 					<option value="${item.ti_id}">${item.ti_titleName}</option>
 			</c:forEach>
 		</select><br>
 		<input type="file" name="file" class="file" accept="image/*" value="选择图片"><br>
-			<marquee behavior="scroll">
-				<p>温馨提示：不可以上传中文名称图片！</p>
-			</marquee>
 				<div class="row">
 				<lable>简介:</lable>
 				<textarea rows="5" cols="35" name="pa_introduce"
@@ -83,5 +82,9 @@
 			</div><br>
 		<input type="submit" value="提交">
 	</form>
+	 <div class="scroll">
+            <marquee><span>温馨提示：</span>不可以上传中文名称的图片!</marquee>
+        </div>
+  </div>
 </body>
 </html>

@@ -61,7 +61,7 @@
         editor.create()    
     </script>
 			</div><br>
-            <input type="submit" value="提交">
+            <input class="btn" type="submit" value="提交">
         </form>
         <div class="scroll">
             <marquee><span>温馨提示：</span>不可以上传中文名称的图片!</marquee>

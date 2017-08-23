@@ -18,5 +18,9 @@ public interface TitleService {
 
 	//查询出所有职称，用于添加专家
 	public List<Title> selectTitle();//张金高用
+	//更新数据库表
+	public boolean updateTitle(Title title);
+	//删除一个对象
+	public boolean deleteTitle(Title title);
 
 }

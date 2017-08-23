@@ -34,8 +34,8 @@
 					<td>${item.re_title.ti_titleName}</td>
 					<td>${item.re_educate}</td>
 					<td>${item.re_scientific}</td>
-					<td><a href="${rootPath}setting/Transfer_updateRequire?majorId=item.id">修改</a>
-							<%-- <a href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">删除</a> --%>
+					<td><a href="${rootPath}setting/Transfer_updateRequire?requireId=${item.re_id}">修改</a>
+							 <a href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">删除</a> 
 					</td>
 				</tr>
 			</c:forEach>
@@ -43,21 +43,21 @@
 	</table>
 	<div class="pag">
 		<ul class="pagination">
-			<li><a href="?page=${paCut.prePage}">上一页</a></li>
+			<li><a href="${rootPath}setting/ReviewRequirementsManage_${method}?page=${paCut.prePage}">上一页</a></li>
 			<c:forEach var="i"
 				begin="${paCut.currentPage-3>0?paCut.currentPage-3:1 }"
 				end="${paCut.currentPage+3>paCut.pageNum?paCut.pageNum:paCut.currentPage+3  }">
 				<c:choose>
 					<c:when test="${i>0 && i == paCut.currentPage &&i<=3}">
-						<li class="active"><a href="?page=${i}">${i}</a></li>
+						<li class="active"><a href="${rootPath}setting/ReviewRequirementsManage_${method}?page=${i}">${i}</a></li>
 					</c:when>
 
 					<c:when test="${i>0 && i != paCut.currentPage &&i<=3}">
-						<li><a href="?page=${i}">${i}</a></li>
+						<li><a href="${rootPath}setting/ReviewRequirementsManage_${method}?page=${i}">${i}</a></li>
 					</c:when>
 				</c:choose>
 			</c:forEach> 
-			<li><a href="?page=${paCut.nextPage}">下一页</a></li>
+			<li><a href="${rootPath}setting/ReviewRequirementsManage_${method}?page=${paCut.nextPage}">下一页</a></li>
 		</ul>
 	</div>
 </body>
