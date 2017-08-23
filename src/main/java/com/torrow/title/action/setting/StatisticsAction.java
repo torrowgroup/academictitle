@@ -128,6 +128,19 @@ public class StatisticsAction extends BaseAction {
 		session.put("id", id);
 		return "parDisStatistics";
 	}
+	//清空评议记录，评议，及参评人
+	public String empty(){
+		boolean emptyRecord = recordService.emptyRecord();
+		boolean emptyDiscuss = discussService.emptyDiscuss();
+		boolean emptyParticipator = participatorService.emptyParticipator();
+		if(emptyDiscuss&&emptyRecord&&emptyParticipator){
+			request.put("message", "清空评议记录和参评人成功");
+		} else {
+			request.put("message", "清空评议记录和参评人成功");
+		}
+		return "rank";
+	}
+	
 	public final String getAsk() {
 		return ask;
 	}

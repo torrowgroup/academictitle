@@ -1,0 +1,62 @@
+ body{
+ 	text-align: center;
+ 	background: url(../../images/expertindex.jpg);
+ }
+ li{
+ 	list-style: none;
+ }
+ .box {
+    display: inline-block;
+    *display: inline;
+    width: 990px;
+    height: 448px;
+    margin:0 auto;
+    margin-top:120px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    position: relative;
+    *zoom: 1;
+    
+}
+.left{
+	position: absolute;
+	left:-50px;
+	top:-10px;
+}
+.right{
+	position: absolute;
+	left:950px;
+	top:-10px;
+}
+
+.box:before {
+    -webkit-transform: skew(-15deg) rotate(-2deg);
+    -moz-transform: skew(-15deg) rotate(-2deg);
+    transform: skew(-15deg) rotate(-2deg);
+    left: 25px;
+    background: #fafafa;
+}
+.box:after {
+    -webkit-transform: skew(15deg) rotate(2deg);
+    -moz-transform: skew(15deg) rotate(2deg);
+    transform: skew(15deg) rotate(2deg);
+    right: 22px;
+    background: #fafafa;
+}
+
+.box:before, .box:after {
+    width: 70%;
+    height: 55%;
+    content: ' ';    
+    -webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);  
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;        
+}
+ 
+		 

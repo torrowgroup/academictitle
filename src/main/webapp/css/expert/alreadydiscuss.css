@@ -1,27 +1,50 @@
 *{margin:0;padding: 0}
 .top{
-    height: 200px;
-    width:40%;
+    height: auto;
+    width:60%;
     margin:0 auto;
-    margin-top: 12%;
+    margin-top: 0%;
+}
+.back{
+	 margin-top:2%;
+	 margin-left:10%;                
+	 width: 100px;
+}
+.form{
+	width:260px;
+    height: 30px;
+  	margin-left:55%;
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    color: #000;
+    vertical-align: middle;
 }
 table{
     border-color: #999;
     text-align: center;
     margin:0 auto;
+    width:100%;
     background-color: #eee;
 }
 caption{
     padding-bottom: 15px;
 }
+table th{
+	height:45px;
+	background-color:#eee;
+	text-align:center;
+}
 table td{
-    padding:10px 25px;
+    height:45px;
 }
 .center{text-align: center;
          font-size: 22px;
          font-weight: bold;
          padding-bottom: 20px;}
 .page{
-    margin-left:35%;
-    margin-top: 20%;
+   
+    margin-top: 15%;
 }

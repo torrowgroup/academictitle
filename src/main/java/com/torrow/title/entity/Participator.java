@@ -30,6 +30,8 @@ public class Participator {
 	private int pa_id;
 	@Column(length=11)
 	private String pa_name; //参评人姓名
+	@Column(length=30)
+	private String pa_email; //邮箱,必填项
 	@OneToOne
 	@JoinColumn(name="maj_id")
 	private Majors pa_majors; //关联专业
@@ -46,11 +48,12 @@ public class Participator {
 	@Column(length=255)
 	private String pa_spare; //备用
 	
-	public Participator(int pa_id, String pa_name, Majors pa_majors, Unit pa_unit, Title pa_title, String pa_imageUrl,
-			String pa_introduce, String pa_spare) {
+	public Participator(int pa_id, String pa_name,String pa_email,  Majors pa_majors, Unit pa_unit, Title pa_title, String pa_imageUrl,
+			String pa_introduce,String pa_spare) {
 		super();
 		this.pa_id = pa_id;
 		this.pa_name = pa_name;
+		this.pa_email = pa_email;
 		this.pa_majors = pa_majors;
 		this.pa_unit = pa_unit;
 		this.pa_title = pa_title;
@@ -109,9 +112,16 @@ public class Participator {
 	public final void setPa_spare(String pa_spare) {
 		this.pa_spare = pa_spare;
 	}
+	
+	public final String getPa_email() {
+		return pa_email;
+	}
+	public final void setPa_email(String pa_email) {
+		this.pa_email = pa_email;
+	}
 	@Override
 	public String toString() {
-		return "Participator [pa_id=" + pa_id + ", pa_name=" + pa_name + ", pa_majors=" + pa_majors + ", pa_unit="
+		return "Participator [pa_id=" + pa_id + ", pa_name=" + pa_name + ",pa_email="+pa_email+", pa_majors=" + pa_majors + ", pa_unit="
 				+ pa_unit + ", pa_title=" + pa_title + ", pa_imageUrl=" + pa_imageUrl + ", pa_introduce=" + pa_introduce
 				+ ", pa_spare=" + pa_spare + "]";
 	}

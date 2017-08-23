@@ -31,5 +31,7 @@ public interface RecordService {
 	public PageCut<Record> getByDiscussId(int page, int i, int pa_id);
 	//分页，根据参评人id得到评议记录
 	public PageCut<Record> getByParticiptorId(int page, int i, int id);
+	//清空评议表
+	public boolean emptyRecord();
 
 }
