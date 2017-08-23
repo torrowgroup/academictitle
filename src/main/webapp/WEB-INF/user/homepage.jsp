@@ -65,13 +65,14 @@
             </tr>
             <tr>
                 <td width="60"></td>
-                <td height="40"><a href="#" style="padding-left:6px">参评人</a></td>
-                 <td><a href="#" style="padding-left:12px">专家</a></td>
-                <td><a href="#" style="padding-left:6px">管理员</a></td>
-                 <td><a href="#" style="padding-left:12px">专业</a></td>
-                <td><a href="#" style="padding-left:12px">职称</a></td>
-               <td><a href="#" style="padding-left:12px">单位</a></td>
-                <td><a href="#">评议要求</a></td>
+                <td height="40"><a href="${rootPath}user/Participator_select?ask=all" target="mainiframe" style="padding-left:6px">参评人</a></td>
+                 <td><a href="${rootPath}user/Expert_select?ask=all" target="mainiframe" style="padding-left:12px">专家</a></td>
+                <td><a href="${rootPath}user/Manager_select?ask=all" target="mainiframe" style="padding-left:6px">管理员</a></td>
+                 <td><a href="${rootPath}setting/MajorsManage_view"  target="mainiframe" style="padding-left:12px">专业</a></td>
+                <td><a href="${rootPath}/setting/TitleManage_view" target="mainiframe" style="padding-left:12px">职称</a></td>
+               <td><a href="${rootPath}setting/Transfer_addUnit" target="mainiframe" style="padding-left:12px">单位</a></td>
+                <td><a href="${rootPath}setting/ReviewRequirementsManage_view" target="mainiframe">评议要求</a></td>
+                
             </tr>
         </table>
     </div>

@@ -18,6 +18,7 @@
                    <li><a href="${rootPath}setting/Statistics_expertStatistics?inquiry=all" target="mainiframe">专家评议统计</a></li>
                    <li><a href="${rootPath}setting/Statistics_parStatistics?inquiry=all" target="mainiframe">参评人评议统计</a></li>
                    <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe">通知公告</a></li>
+                   <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe" >通知公告</a></li>
                    <li>
                       <a href="${rootPath}user/Manager_toUpdate?term=myself" target="mainiframe">个人中心</a>
                       <a href="#" style="font-size:10px"> [退出]</a>

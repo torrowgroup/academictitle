@@ -1,15 +1,21 @@
-table{
+.top{
+    width: 40%;
     margin:0;
     padding: 0;
-    width: 40%;
     margin:0 auto;
-    border-color: #ccc;
     margin-top: 10%;
 }
-caption{
+table{
+    width: 100%;
+    border-color: #999;
+    margin-top: 3%;
+    text-align: center;
+}
+p{
     font-size: 24px;
     font-weight: bold;
     padding-bottom:30px;
+    text-align: center;
 }
 table th{
     text-align: center;
@@ -17,6 +23,6 @@ table th{
     background-color: #eee;
 }
 table td{
-    text-align: center;
     height: 45px;
+    position: relative;
 }
