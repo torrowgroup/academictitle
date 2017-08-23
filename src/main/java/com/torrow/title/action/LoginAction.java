@@ -38,8 +38,8 @@ public class LoginAction extends BaseAction{
 					someTitle.remove(i);
 					i--;
 				}
-				session.put("someTitle", someTitle);
-				session.put("someNotice", someNotice);
+//				session.put("someTitle", someTitle);
+//				session.put("someNotice", someNotice);
 				session.put("manager", manager);
 				return "managerIndex";
 			} else if(expert!=null) {

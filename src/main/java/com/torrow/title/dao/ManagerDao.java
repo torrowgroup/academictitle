@@ -92,10 +92,4 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 		return selectAll();
 	}
 
-	@Override
-	public void ssss() {
-		String hql= "truncate table t_manager";
-		executeSQL(hql);
-	}
-
 }

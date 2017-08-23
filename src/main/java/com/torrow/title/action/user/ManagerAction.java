@@ -6,6 +6,8 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Manager;
+import com.torrow.title.entity.Notice;
+import com.torrow.title.entity.Title;
 import com.torrow.title.util.PageCut;
 
 public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
@@ -38,7 +40,14 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 	}
 
 	public String relayHomePage(){
-		managerService.ssss();
+		List<Notice> someNotice = noticeService.getNewNotice();//降序得到6条通知
+		List<Title> someTitle = titleService.selectTitle();//得到全部职称取6条职称
+		for(int i=5;i<someTitle.size();i++){
+			someTitle.remove(i);
+			i--;
+		}
+		request.put("someTitle", someTitle);
+		request.put("someNotice", someNotice);
 		return "homepage";
 	}
 	// 添加管理员

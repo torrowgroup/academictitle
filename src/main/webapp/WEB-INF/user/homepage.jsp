@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -83,48 +84,15 @@
                     <a style="font-size:12px;float:right" href="#">+更多</a>
                 </div>
                 <div class="info-text">
-                    <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
+                <c:forEach items="${someNotice}" var="items">
+                	<div class="title-txt">
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
+                             <a href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${items.no_id}">${items.no_head}</a>
                         </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
+                        <div class="titie-w"><font style="color:#f30">${items.no_issueData}</font>
                         </div>
                     </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
-                        </div>
-                    </div>
+                </c:forEach>
                 </div>
             </div>
             <div class="box1">
@@ -133,48 +101,13 @@
                     <a style="font-size:12px;float:right" href="#">+更多</a>
                 </div>
                <div class="info-text">
-                    <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
+               <c:forEach items="${someTitle}" var="items">
+               		<div class="title-txt">
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
+                             <a href="">关于${items.ti_titleName}的评议要求</a>
                         </div>
                     </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
-                        </div>
-                    </div>
+               </c:forEach>
                 </div>
             </div>
             <div class="box1">
@@ -184,45 +117,33 @@
                 </div>
                 <div class="info-text">
                     <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
+                             <a href="#">1.要求公平公正</a>
                         </div>
                     </div>
                      <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
+                             <a href="#">2.要求实事求是</a>
                         </div>
                     </div>
                      <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
                              <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
                         </div>
                     </div>
                      <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
                              <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
                         </div>
                     </div>
                      <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
                              <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font style="color:#f30">[08:21]</font>
                         </div>
                     </div>
                      <div class="title-txt">
-                        <div class="titie-b"><img src="img/point.jpg">
+                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
                              <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                        <div class="titie-w"><font>[08:21]</font>
                         </div>
                     </div>
                 </div>
@@ -232,7 +153,7 @@
      <div class="wrap">
         <div class="footer-top">
               <div class="foot-l">
-                  <img src="img/bg-8.png" style="margin-left:-2px;">
+                  <img src="${rootPath}images/bg-8.png" style="margin-left:-2px;">
               </div>  
               <div class="foot-m">
                    <div class="center">
@@ -249,7 +170,7 @@
              </div>
              <div class="f-l">
                  <h4>服务中心</h4>
-                 <p>政策咨询：<span style="color:#f30">【点击查看各专业联系方式】</span><br>
+                 <p>政策咨询：<span style="color:#f30">联系方式:15601266895</span><br>
                     在线问答：http://www.hist.edu.cn/<br>绑定微信:18738357910
                  </p>
              </div>

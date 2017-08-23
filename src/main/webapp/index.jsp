@@ -16,8 +16,9 @@
      </div>
      <div class="box2">
        <input type="text" class="input1" placeholder="密码" name="passWord" id="inputPassword" style="width: 296px">
-     </div>
+     </div> 	
      <div class="box3">
+       <div> ${message}</div>
        <div class="login">
          <input type="submit" value="登录" class="btn">
        </div>
