@@ -37,6 +37,10 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 		return "add";
 	}
 
+	public String relayHomePage(){
+		managerService.ssss();
+		return "homepage";
+	}
 	// 添加管理员
 	public String add() {
 		boolean allsign = true;

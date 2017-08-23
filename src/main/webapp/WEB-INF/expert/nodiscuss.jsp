@@ -18,7 +18,7 @@
 			<form action="${rootPath}expert/ExpertDiscussAction_noDiscuss"
 				method="post">
 				<input type="text" name="inquiry" placeholder="姓名/专业/单位/职称">
-				<input class="btn" type="button" value="查询">
+				<input class="btn" type="submit" value="查询">
 			</form>
 		</div>
 		<table border="1" cellspacing="0">
