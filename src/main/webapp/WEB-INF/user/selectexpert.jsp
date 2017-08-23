@@ -13,7 +13,7 @@
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-<a href="${rootPath}user/Expert_relay" target="mainiframe">添加专家</a>	
+<a class="font" href="${rootPath}user/Expert_relay" target="mainiframe">添加专家</a>	
 <div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 			<form action="${rootPath}user/Expert_select" method="post">
 				<select name="ask"
@@ -32,21 +32,19 @@
 	 <center>${message}</center>
 	<table border="1" cellspacing="0">
 		<thead>
-			<tr>
-				<td colspan="9">专家信息</td>
-			</tr>
+			<caption>专家信息</caption>
 		</thead>
 		<tbody>
 			<tr>
-				<td>编号</td>
-				<td>账号</td>
-				<td>密码</td>
-				<td>姓名</td>
-				<td>专业</td>
-				<td>单位</td>
-				<td>职称</td>
-				<td>学历</td>
-				<td>操作</td>
+				<th>编号</th>
+				<th>账号</th>
+				<th>密码</th>
+				<th>姓名</th>
+				<th>专业</th>
+				<th>单位</th>
+				<th>职称</th>
+				<th>学历</th>
+				<th>操作</th>
 			</tr>
 		<c:forEach items="${messagenews.data}" var="item">
 			<tr>
