@@ -113,4 +113,18 @@ public class DiscussDao extends BaseDao<Discuss> implements DiscussService {
 		return pc;
 	}
 
+	@Override
+	public boolean emptyDiscuss() {
+		List<Discuss> allDiscuss = this.selectAll();
+		boolean boo = true;
+		for(int i=0;i<allDiscuss.size();i++){
+			boo = this.deleteEntity(allDiscuss.get(i));
+			if(!boo){
+				return false;
+			}
+			i--;
+		}
+		return boo;
+	}
+
 }

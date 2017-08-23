@@ -17,6 +17,8 @@ public interface ParticipatorService {
 	public List<Participator> getAllParticipator();
 	//分页，模糊查询
 	public PageCut<Participator> allParticipator(int page, int i, String inquiry);
+	//清空评议人员
+	public boolean emptyParticipator();
 	
 	//根据id得到参评人
 	public Participator getParticipatorById(int pa_id);
