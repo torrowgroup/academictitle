@@ -101,33 +101,7 @@ public class StatisticsAction extends BaseAction {
 		request.put("expertDiscuss", expertDiscuss);
 		return "statistics";
 	}
-	
-	//得到参评人，进行参评人统计
-	public String parStatistics(){
-		if(inquiry==null){
-			inquiry = (String)session.get("inquiry");
-		}
-		PageCut<Participator> pCut = participatorService.allParticipator(page, 2,inquiry);
-		if (pCut.getData().isEmpty()) {
-			request.put("message", "没有参评人");
-		}
-		request.put("allParticipator", pCut);
-		session.put("inquiry", inquiry);
-		return "parStatistics";
-	}
-	//得到参评人被谁评过
-	public String parDisStatistics(){
-		if(id==0){
-			id=(int)session.get("id");
-		}
-		PageCut<Record> pCut = recordService.getByParticiptorId(page,2,id);
-		if(pCut.getData().isEmpty()){
-			request.put("message","没有评议记录");
-		}
-		request.put("parRecord", pCut);
-		session.put("id", id);
-		return "parDisStatistics";
-	}
+
 	//清空评议记录，评议，及参评人
 	public String empty(){
 		boolean emptyRecord = recordService.emptyRecord();

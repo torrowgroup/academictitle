@@ -7,6 +7,9 @@
 <title>职称评审系统</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/index.css">
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/public.css">
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/bootstrap.css">
+<script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
 	<marquee behavior="scroll">
@@ -15,7 +18,15 @@
 	<div class="box" style="margin-top:55px;">
 		<img src="${rootPath}images/nail-1.gif" class="left"> <img
 			src="${rootPath}images/nail-2.gif" class="right">
-		<div class="text">职称评审系统</div>
+		<div class="text">
+			职称评审系统
+			<span>
+			  <i>欢迎${expert.ex_name}登录</i>
+			  <a href="${rootPath}expert/ExpertPersonal_logOff" title="退出登录" >
+               <img src="${rootPath}images/logout.jpeg" height="20px;" width="20px;"/>
+             </a>
+           </span>
+		</div>
 		<div class="content">
 			<!-- 查看通知开始 -->
 			<a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all">查看通知</a><br>

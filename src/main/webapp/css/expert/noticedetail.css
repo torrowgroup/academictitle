@@ -4,16 +4,17 @@ i{font-style: normal;}
     width: 45%;
     height: auto;
     margin: 0 auto;
-    margin-top: 8%
+/*     margin-top: 1% */
 }
 .top-l{
     width: 100%;
     height: 35px;
-    margin-bottom: 20px;
+/*     margin-left: */
+    margin-bottom: 40px;
 }
 .top-l span{
     font-size: 22px;
-    font-weight: bold;   
+    font-weight: bold;
     display: inline-block;
      padding-left:40px;
      padding-right: 10px;
@@ -29,6 +30,11 @@ i{font-style: normal;}
     font-size: 22px;
     font-weight: bold;
 }
+.back{
+	 margin-top:2%;
+	 margin-left:10%;
+	 width: 100px;
+}
 .aa{
     width: 500px;
     height: 220px;
@@ -38,7 +44,11 @@ i{font-style: normal;}
    margin-left: 10px;
 }
 #time{
-    position: absolute;
+	margin-top:2%;
+	margin-left:60%;
+	font-size:14px;
+	color:gray;
+/*     position: absolute; */
     right:25px;
     bottom: 10px;
 }

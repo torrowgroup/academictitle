@@ -6,6 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/setting/discussdetails.css">
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/bootstrap.css">
+<script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
 	<center>

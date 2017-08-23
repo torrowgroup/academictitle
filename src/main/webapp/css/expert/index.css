@@ -1,6 +1,6 @@
 
 .text{
-	width: 100%;
+	width: 90%;
 	height: 55px;
 	line-height: 55px;
     color: #1b90e0;
@@ -10,7 +10,14 @@
     text-align: left;
     margin-top:20px;
 } 
- 
+ .text span{
+   float:right;
+ }
+ .text span a,.text span i{
+   font-size:14px;
+   text-decoration:none;
+   color:#999;
+ }
 .content{
 	width: 25%;
 	height: 110px;
