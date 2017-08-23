@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,6 +21,8 @@
         <form action="${rootPath}user/Participator_add" method="post" enctype="multipart/form-data" onsubmit="modifyContent()">
             <label>姓名:</label>
             <input type="text" name="pa_name"><br>
+             <label>邮箱:</label>
+            <input type="email" name="pa_email"><br>
             <label>专业:</label>
             <select name="majorid">
                 <c:forEach items="${majors}" var="item">

@@ -70,9 +70,8 @@
                 <td><a href="${rootPath}user/Manager_select?ask=all" target="mainiframe" style="padding-left:6px">管理员</a></td>
                  <td><a href="${rootPath}setting/MajorsManage_view"  target="mainiframe" style="padding-left:12px">专业</a></td>
                 <td><a href="${rootPath}/setting/TitleManage_view" target="mainiframe" style="padding-left:12px">职称</a></td>
-               <td><a href="${rootPath}setting/Transfer_addUnit" target="mainiframe" style="padding-left:12px">单位</a></td>
+               <td><a href="${rootPath}setting/DepartmentManage_view" target="mainiframe" style="padding-left:12px">单位</a></td>
                 <td><a href="${rootPath}setting/ReviewRequirementsManage_view" target="mainiframe">评议要求</a></td>
-                
             </tr>
         </table>
     </div>
