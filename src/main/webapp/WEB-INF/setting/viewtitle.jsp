@@ -15,6 +15,11 @@
 </style>
 </head>
 <body>
+	<a href="${rootPath}/setting/Transfer_addTitle" target="mainiframe">添加职称</a><br>
+  <form action="${rootPath}setting/TitleManage_searchTitle" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="titleName" placeholder="请输入所要查询职称名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
 	<table>
 		<thead>
 			<tr>

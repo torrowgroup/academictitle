@@ -74,4 +74,10 @@ public class MajorsDao extends BaseDao<Majors> implements MajorsService {
 		}
 		return sign;
 	}
+		@Override
+		public Majors checkMajorsName( String majorsName) {
+			String hql = "from Majors  m Where m.maj_majorName= '"+majorsName+"'";
+			Majors major= (Majors) uniqueResult(hql);
+			return major;
+		}
 }

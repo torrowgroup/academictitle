@@ -15,6 +15,7 @@
 </style>
 </head>
 <body>
+<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a>
 	<table>
 		<thead>
 			<tr>
@@ -24,7 +25,6 @@
 		<tbody>
 			<tr>
 				<td>通知名称</td>
-				<td>通知内容</td>
 				<td>通知时间</td>
 				<td>发布人</td>
 				<td>操作</td>
@@ -32,10 +32,10 @@
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
 					<td>${item.no_head}</td>
-					<td>${item.no_content}</td>
 					<td>${item.no_issueData}</td>
 					<td>${item.no_managerName}</td>
 						<td><a href="${rootPath}setting/NoticeManage_delete?noticeId=${item.no_id}">删除</a>
+						<td><a href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${item.no_id}">查看详情</a>
 					</td>
 				</tr>
 			</c:forEach>

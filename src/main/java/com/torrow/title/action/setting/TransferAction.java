@@ -1,3 +1,6 @@
+
+
+
 package com.torrow.title.action.setting;
 
 import java.util.List;
@@ -56,6 +59,7 @@ public class TransferAction extends BaseAction {
 
 	public String addReviewRequirements() {
 		List list = titleService.selectTitle();
+		session.put("reqlist", list);
 		request.put("reqlist", list);
 		return "addReviewRequirements";
 	}
@@ -64,7 +68,6 @@ public class TransferAction extends BaseAction {
 		return "addUnit";
 	}
 	public String addNotice() {
-		System.out.println("执行Add");
 		return "addNotice";
 	}
 
@@ -86,6 +89,7 @@ public class TransferAction extends BaseAction {
 	public String updateRequire() {
 		Require req = requireService.checkById(requireId);
 		request.put("req",req);
+		session.put("title", req.getRe_title());
 		return "updateRequire";
 		
 	}

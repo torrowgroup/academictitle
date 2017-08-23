@@ -26,5 +26,6 @@ public interface UnitService {
 
 	//查看所有单位信息，用于添加专家
 	public List<Unit> selectUnit();//张金高用
+	public Unit checkUnitName(String unitName);
 
 }

@@ -1,0 +1,43 @@
+.top{
+    margin:0;
+    padding:0;
+    width: 40%;
+    margin: 0 auto;
+}
+.right{
+    width: auto;
+    height: 40px;
+    margin-top: 18%;
+    float: right;
+}
+.right input[type="text"]{
+    width: 200px;
+}
+.right input[type="button"]{
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius:5px; 
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table caption{
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    padding-bottom: 20px;
+    text-align: center;
+}
+table th{
+    height: 45px;
+    text-align: center;
+    background-color: #eee;
+}
+table td{
+    height: 42px;
+    position: relative;
+}
+.page{
+    margin:20% 0 0 35% 
+}

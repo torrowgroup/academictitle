@@ -34,17 +34,17 @@ public class LoginAction extends BaseAction {
 			return "managerIndex";
 		} else if (expert != null) {
 			List<Notice> someNotice = noticeService.getNewNotice();
-			if(someNotice.size()>0){
+			if (someNotice.size() > 0) {
 				Notice noticeNew = someNotice.get(0);// 得到最新一条通知
 				request.put("noticeNew", noticeNew);
+				session.put("expert", expert);
+				return "expertIndex";
 			}
-			session.put("expert", expert);
-			return "expertIndex";
 		}
 		request.put("message", "用户名或密码输入错误");
 		return LOGIN;
 	}
-	
+
 	public String getUserName() {
 		return userName;
 	}

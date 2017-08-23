@@ -16,6 +16,12 @@
 </style>
 </head>
 <body>
+<td>${Message}</td>
+<a href="${rootPath}setting/Transfer_addUnit" target="mainiframe">添加单位</a>
+  <form action="${rootPath}setting/DepartmentManage_searchUnit" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="unitName" placeholder="请输入所要查询部门名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
 	<table>
 		<thead>
 			<tr>

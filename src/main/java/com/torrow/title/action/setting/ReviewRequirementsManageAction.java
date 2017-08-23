@@ -12,6 +12,14 @@ public class ReviewRequirementsManageAction extends BaseAction {
 	private Require req;
 	private int requireId;//评议ID
 	private int titleId;
+	private String titleName;
+	
+	public String getTitleName() {
+		return titleName;
+	}
+	public void setTitleName(String titleName) {
+		this.titleName = titleName;
+	}
 	public int getTitleId() {
 		return titleId;
 	}
@@ -40,7 +48,6 @@ public class ReviewRequirementsManageAction extends BaseAction {
 		//查看所有评议要求
 		public String view() {
 			PageCut<Require > list =requireService.checkAll(page, 3);
-			System.out.println(list);
 			request.put("method", "view");
 			request.put("paCut", list);
 			return "view";
@@ -48,13 +55,22 @@ public class ReviewRequirementsManageAction extends BaseAction {
 		//添加评议要求
 		public String add() {
 			Title title=titleService.checkById(titleId);
-			boolean boo =requireService.add(req,title);
-			request.put("method", "view");
-			return "addReviewRequirements";
+			List<Title> list = titleService.getAll();
+			for(int i=0;i<list.size();i++) {
+				if(list.get(i).getTi_id()==title.getTi_id()) {
+					request.put("Message", "已有该职称相关评议");
+				}else {
+					boolean boo =requireService.add(req,title);
+					request.put("Message", "该职称评议要求调节价成功");
+					request.put("reqlist", session.get("reqlist"));
+					return "addReviewRequirements";
+				}
+			}
+			return "addRrequire";
 		}
 		// 修改评议要求
 		public String update() {
-			boolean boo = requireService.update(req);
+			boolean boo = requireService.update(req,(Title) session.get("title"));
 			PageCut<Require> list = requireService.checkAll(page, 3);
 			request.put("paCut", list);
 			request.put("method", "view");
@@ -68,6 +84,15 @@ public class ReviewRequirementsManageAction extends BaseAction {
 			request.put("paCut", list);
 			request.put("method", "view");
 			return "view";
+		}
+		public String searchRequire() {
+			Require require = requireService.checkByTitleName(titleName);
+			if(require!=null) {
+				request.put("require", require);
+			}else {
+				request.put("Message", "暂无该职称相关评审信息");
+			}
+			return  "searchRequire";
 		}
 
 }

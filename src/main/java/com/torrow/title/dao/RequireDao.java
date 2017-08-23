@@ -43,7 +43,8 @@ public class RequireDao extends BaseDao<Require> implements RequireService {
 	}
 
 	@Override
-	public boolean update(Require require) {
+	public boolean update(Require require ,Title title) {
+		require.setRe_title(title);
 		return this.updateEntity(require);
 	}
 
@@ -78,5 +79,17 @@ public class RequireDao extends BaseDao<Require> implements RequireService {
 	@Override
 	public boolean updateRequire(Require require) {
 		return updateEntity(require);
+	}
+	@Override
+	public Require checkByTitleName(String titleName) {
+		String hql = "from Title t Where t.ti_titleName= '"+titleName+"'";
+		System.out.println(hql);
+		Title title= (Title) uniqueResult(hql);
+		System.out.println(title+"22222");
+		String hql1 = "from Require r Where r.re_title.ti_titleName= '"+titleName+"'";
+		System.out.println(hql1);
+		Require require = (Require)uniqueResult(hql1);
+		System.out.println(require+"33333");
+		return require;
 	}
 }

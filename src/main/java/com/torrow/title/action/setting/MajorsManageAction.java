@@ -9,7 +9,16 @@ import com.torrow.title.util.PageCut;
 public class MajorsManageAction extends BaseAction {
 	private Majors majors;
 	private int majorsId;
+	private String majorsName;
 	
+
+	public String getMajorsName() {
+		return majorsName;
+	}
+
+	public void setMajorsName(String majorsName) {
+		this.majorsName = majorsName;
+	}
 
 	public int getMajorsId() {
 		return majorsId;
@@ -71,7 +80,16 @@ public class MajorsManageAction extends BaseAction {
 
 		
 	}
-
+	public String searchMajors() {
+		Majors majors = majorsService.checkMajorsName(majorsName);
+		if(majors!=null) {
+		request.put("majors", majors);
+		}else{
+			request.put("Message", "暂无该专业");
+		}
+			return "searchMajors";
+		}
+	
 	public Majors getMajors() {
 		return majors;
 	}

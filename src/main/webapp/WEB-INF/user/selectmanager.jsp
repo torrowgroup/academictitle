@@ -14,6 +14,7 @@
 </head>
 <body>
 <center>${message}</center>
+<a href="${rootPath}user/Manager_relay" target="mainiframe">添加管理员</a>
 <div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 			<form action="${rootPath}user/Manager_select" method="post">
 				<select name="ask"

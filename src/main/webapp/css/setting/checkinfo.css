@@ -1,0 +1,38 @@
+*{margin:0;padding:0;text-decoration: none;}
+.top{
+    width: 40%;
+    height: auto;
+    margin:0 auto;
+    margin-top: 10%;
+}
+.txt{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+table{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+}
+.colspan{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #eee;
+}
+table th{
+    font-size: 20px;
+    text-align: center;
+    background-color: #eee;
+    height: 48px;
+}
+table td{
+    height: 43px;
+    position: relative;
+}
+table td a:hover{text-decoration: none;}
+.page{
+   margin: 20% 0 0 38%;
+}

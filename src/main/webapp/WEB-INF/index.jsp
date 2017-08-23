@@ -14,20 +14,20 @@
            <div class="nav">
                <ul class="ul0">
                    <li style="margin-left:42px"><a href="${rootPath}user/Manager_relayHomePage" target="mainiframe">首页</a></li>
-                   <li><a href="#">评议排名</a></li>
-                   <li><a href="#">评议统计</a></li>
-                   <li><a href="#">通知公告</a></li>
-                   <li><a href="#">资料下载</a></li>
-                   <li><a href="#">信箱</a></li>
+                   <li><a href="${rootPath}setting/Statistics_chooseRank" target="mainiframe">评议排名</a></li>
+                   <li><a href="${rootPath}setting/Statistics_expertStatistics?inquiry=all" target="mainiframe">专家评议统计</a></li>
+                   <li><a href="${rootPath}setting/Statistics_parStatistics?inquiry=all" target="mainiframe">参评人评议统计</a></li>
+                   <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe">通知公告</a></li>
+                   <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe" >通知公告</a></li>
                    <li>
-                      <a href="#">个人中心</a>
+                      <a href="${rootPath}user/Manager_toUpdate?term=myself" target="mainiframe">个人中心</a>
                       <a href="#" style="font-size:10px"> [退出]</a>
                    </li>
                </ul>
            </div> 
         </div>
     </div>
-    	<iframe id="ifr" width="1519px" height="1000px" style="margin-top:0px;"  name="mainiframe"></iframe>
+    	<iframe id="ifr" width="1519px" height="1000px" style="margin-top:0px;"  name="mainiframe" src="${rootPath}user/Manager_relayHomePage"></iframe>
 </body>
 <script type="text/javascript" src="${rootPath}js/index0.js"></script>
 </html>

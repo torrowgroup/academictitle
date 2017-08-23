@@ -1,0 +1,35 @@
+form{
+    margin:0;
+    padding:0;
+    width: 30%;
+    margin:0 auto;
+    margin-top: 10%;
+}
+form label{
+    width: 140px;
+    line-height: 60px;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block;
+}
+form input[type="text"]{
+    height: 35px;
+    width: 55%;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+form input[type="button"]{
+    width: 80px;
+    height: 35px;
+    border:2px solid #ccc;
+    background-color: transparent;
+    border-radius:5px;
+    margin:8% 0 0 38%;
+}
+form input[type="button"]:hover{
+    border:2px solid #999;
+    background:Linear-gradient(#fff,#ccc)
+}

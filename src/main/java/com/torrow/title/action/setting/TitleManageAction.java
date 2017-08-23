@@ -11,6 +11,15 @@ import com.torrow.title.util.PageCut;
 public class TitleManageAction extends BaseAction {
 	private Title title;
 	private int titleId;
+	private String titleName;
+	public String getTitleName() {
+		return titleName;
+	}
+
+	public void setTitleName(String titleName) {
+		this.titleName = titleName;
+	}
+
 	int page = 1;// 当前第几页
 
 	public String view() {
@@ -26,7 +35,7 @@ public class TitleManageAction extends BaseAction {
 		for(int i = 0;i<list.size();i++){
 			if (list.get(i).getTi_titleName().equals(title.getTi_titleName())) {
 				allsign = false;
-				break;
+				break; 
 			}
 		}
 		if(allsign){
@@ -48,6 +57,7 @@ public class TitleManageAction extends BaseAction {
 		boolean boo = titleService.update(title);
 		PageCut<Title> list = titleService.checkAll(page, 3);
 		request.put("paCut", list);
+		request.put("method", "view");
 		return "view";
 
 	}
@@ -74,6 +84,16 @@ public class TitleManageAction extends BaseAction {
 		request.put("paCut", list);
 		return "view";
 
+	}
+	public String searchTitle() {
+		Title title =titleService.getTitle(titleName);
+		if(title!=null) {
+		request.put("title", title);
+		}else {
+			request.put("Message", "暂无该职称");
+		}
+		return "searchTitle";
+		
 	}
 	public int getTitleId() {
 		return titleId;

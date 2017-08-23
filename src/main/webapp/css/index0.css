@@ -146,8 +146,7 @@ img{cursor: pointer;}
 .titie-b a{color: #7d7d7d}
 .titie-b a:hover{color:rgb(2,130,56)}
 .title-txt .titie-w{
-  float: right;
-  margin-right: 5px;
+  float: lift;
   line-height: 25px;
 }
 .footer-top{
