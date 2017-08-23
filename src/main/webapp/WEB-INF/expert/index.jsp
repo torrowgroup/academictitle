@@ -4,20 +4,70 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>评职称</title>
-<link rel="stylesheet" type="text/css" href="${rootPath}css/index.css">
+<title>职称评审系统</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/index.css">
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/public.css">
 </head>
 <body>
-<marquee behavior="scroll">
+	<marquee behavior="scroll">
 				<p>${noticeNew.no_content}</p>
-			</marquee>
-	<center>		
-		<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss?inquiry=all" target="mainFrame">未评</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss?inquiry=all" target="mainFrame">已评</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all" target="mainFrame">查看通知</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="${rootPath}expert/ExpertPersonal_myselfMessage" target="mainFrame">个人中心</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="${rootPath}expert/ExpertPersonal_logOff">退出</a>
-	</center>
-<iframe id="ifr" width="1500px" height="500px" name="mainFrame"></iframe>
+	</marquee>
+	<div class="box" style="margin-top:55px;">
+		<img src="${rootPath}images/nail-1.gif" class="left"> <img
+			src="${rootPath}images/nail-2.gif" class="right">
+		<div class="text">职称评审系统</div>
+		<div class="content">
+			<!-- 查看通知开始 -->
+			<a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all">查看通知</a><br>
+		</div>
+		<!-- 查看通知结束 -->
+		<div class="content">
+			<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss?inquiry=all">未评人员</a><br>
+		</div>
+		<div class="content">
+			<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss?inquiry=all">已评人员</a><br>
+		</div>
+		<div class="content">
+			<a href="${rootPath}expert/ExpertPersonal_myselfMessage">个人中心</a><br>
+		</div>
+		<div class="content">
+			<!-- 评审政策内容开始 -->
+			<a href="">评审政策</a><br>
+			<div class="bot">
+				<span style="float: left; margin-left: 30px"><img
+					src="${rootPath}images/dot-2.png">公开&nbsp;&nbsp;公平&nbsp;&nbsp;公正</span><br>
+				<span style="float: left; margin-left: 30px"><img
+					src="${rootPath}images/dot-2.png">根据自己对参评人专业熟悉程度，合理做出评审</span><br> <span
+					style="float: left; margin-left: 30px"><img
+					src="${rootPath}images/dot-2.png">根据通知时间完成评审</span><br>
+			</div>
+		</div>
+		<!-- 评审政策内容结束 -->
+
+		<div class="content" style="width: 28%">
+			<a href="">帮助中心</a><br>
+			<div class="bot">
+
+				<span style="float: left; margin-left: 30px"><img
+					src="${rootPath}images/dot-2.png">电话：400-456-4895</span><br> <span
+					style="float: left; margin-left: 30px"><img
+					src="${rootPath}images/dot-2.png">手机：15560098856</span><br> <span
+					style="float: left; margin-left: 30px"><img
+					src="${rootPath}images/dot-2.png">邮箱：266845555@qq.com</span><br>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+<!-- <marquee behavior="scroll"> -->
+<%-- 				<p>${noticeNew.no_content}</p> --%>
+<!-- 			</marquee> -->
+<!-- 	<center>		 -->
+<%-- 		<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss?inquiry=all" target="mainFrame">未评</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
+<%-- 		<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss?inquiry=all" target="mainFrame">已评</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
+<%-- 		<a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all" target="mainFrame">查看通知</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
+<%-- 		<a href="${rootPath}expert/ExpertPersonal_myselfMessage" target="mainFrame">个人中心</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
+<%-- 		<a href="${rootPath}expert/ExpertPersonal_logOff">退出</a> --%>
+<!-- 	</center> -->
+<!-- </body> -->
+<!-- </html> -->

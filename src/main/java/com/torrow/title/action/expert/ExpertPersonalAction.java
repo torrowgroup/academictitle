@@ -54,6 +54,10 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 		myselfMessage();//得到个人信息
 		return "updateMyself";
 	}
+	//回到首页
+	public String back(){
+		return "back";
+	}
 	//退出登录
 	public String logOff(){
 		return "logOff";

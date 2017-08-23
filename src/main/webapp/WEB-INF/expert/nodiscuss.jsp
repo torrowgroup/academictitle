@@ -5,21 +5,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>未评人员</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/nodiscuss.css">
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert//bootstrap.css">
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/public.css">
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
+<div class="box">
+		<img src="${rootPath}images/nail-1.gif" class="left"> <img
+			src="${rootPath}images/nail-2.gif" class="right">
 	<center>${message }</center>
+		<div class="back"><<<a href="${rootPath}expert/ExpertPersonal_back">返回首页</a></div>
 	<div class="wall">
-		<div class="right">
+		<div class="rightform">
 			<form action="${rootPath}expert/ExpertDiscussAction_noDiscuss"
 				method="post">
 				<input type="text" name="inquiry" placeholder="姓名/专业/单位/职称">
 				<input class="btn" type="button" value="查询">
-			</form>
+			</form>`
 		</div>
 		<table border="1" cellspacing="0">
 			<tr>
@@ -37,7 +42,7 @@
 					<td>${noDiscuss.pa_title.ti_titleName}</td>
 					<td>${noDiscuss.pa_unit.un_unitName}</td>
 					<td>${noDiscuss.pa_majors.maj_majorName}</td>
-					<td><img alt="加载中" src=""></td>
+					<td><img alt="加载中" src="${rootPath}uploadImage/${noDiscuss.pa_imageUrl}"></td>
 					<td style="padding-top: 3px"><textarea>${noDiscuss.pa_introduce}</textarea>
 					</td>
 					<td><a
@@ -64,6 +69,7 @@
 				<li><a href="${rootPath }expert/ExpertDiscussAction_noDiscuss?page=${noDiscuss.nextPage}">下一页</a></li>
 			</ul>
 		</div>
+	</div>
 	</div>
 </body>
 </html>

@@ -6,40 +6,46 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>查看通知</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/viewnotice.css">
+    <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/bootstrap.css">
+    <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-	<center>
-		${message}
-		<c:if test="${fn:length(pCut.data) > 0 }">
-			<form action="${rootPath}expert/ExpertNotice_allNotice" method="post">
-				<input type="text" name="inquiry" placeholder="输入想要查询的内容" /> <input
-					type="submit" value="查询" />
-			</form>
-			<table border="1">
-				<tr>
-					<td>标题</td>
-					<td>发布时间</td>
-					<td>操作</td>
-				</tr>
-				<c:forEach items="${pCut.data}" var="allNotice">
-					<tr>
-						<td>${allNotice.no_head}</td>
-						<td>${allNotice.no_issueData}</td>
-						<td><a
-							href="${rootPath}expert/ExpertNotice_noticeDetail?no_id=${allNotice.no_id}">查看详情</a></td>
-					</tr>
-				</c:forEach>
-			</table>
-			<div class="page" id="div2">
+  <div class="top">
+  <c:if test="${fn:length(pCut.data) > 0 }">
+      <div class="right">
+            <input type="text" placeholder=" 输入你要查询的内容">
+            <input class="btn" type="button" value="查询">
+      </div>
+      <table border="1" cellspacing="0">
+        <tr>
+            <th>标题</th>
+            <th>发布时间</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td style="padding-top:3px;">
+                <textarea>
+                    
+                </textarea>
+            </td>
+            <td>2017/8/19</td>
+            <td>
+                <a href="#">查看详情</a>
+            </td>
+        </tr>
+     </table>
+      			<div class="page" id="div2">
 				<ul class="pagination">
 					<li><a
 						href="${rootPath }expert/ExpertNotice_allNotice?page=${pCut.prePage}">上一页</a></li>
 					<c:forEach var="i"
-						begin="${pCut.currentPage-3>0?pCut.currentPage-3:1 }"
-						end="${pCut.currentPage+3>pCut.pageNum?pCut.pageNum:pCut.currentPage+3  }">
+ 						begin="${pCut.currentPage-3>0?pCut.currentPage-3:1 }"
+ 						end="${pCut.currentPage+3>pCut.pageNum?pCut.pageNum:pCut.currentPage+3  }">
 						<c:choose>
-							<c:when test="${i>0 && i == pCut.currentPage}">
+ 							<c:when test="${i>0 && i == pCut.currentPage}">
 								<li class="active"><a
 									href="${rootPath }expert/ExpertNotice_allNotice?page=${i }">${i}</a></li>
 							</c:when>
@@ -54,6 +60,56 @@
 				</ul>
 			</div>
 		</c:if>
-	</center>
+    </div>
 </body>
 </html>
+
+
+<%-- 	<center> --%>
+<%-- 		${message} --%>
+<%-- 		<c:if test="${fn:length(pCut.data) > 0 }"> --%>
+<%-- 			<form action="${rootPath}expert/ExpertNotice_allNotice" method="post"> --%>
+<!-- 				<input type="text" name="inquiry" placeholder="输入想要查询的内容" /> <input -->
+<!-- 					type="submit" value="查询" /> -->
+<!-- 			</form> -->
+<!-- 			<table border="1"> -->
+<!-- 				<tr> -->
+<!-- 					<td>标题</td> -->
+<!-- 					<td>发布时间</td> -->
+<!-- 					<td>操作</td> -->
+<!-- 				</tr> -->
+<%-- 				<c:forEach items="${pCut.data}" var="allNotice"> --%>
+<!-- 					<tr> -->
+<%-- 						<td>${allNotice.no_head}</td> --%>
+<%-- 						<td>${allNotice.no_issueData}</td> --%>
+<!-- 						<td><a -->
+<%-- 							href="${rootPath}expert/ExpertNotice_noticeDetail?no_id=${allNotice.no_id}">查看详情</a></td> --%>
+<!-- 					</tr> -->
+<%-- 				</c:forEach> --%>
+<!-- 			</table> -->
+<!-- 			<div class="page" id="div2"> -->
+<!-- 				<ul class="pagination"> -->
+<!-- 					<li><a -->
+<%-- 						href="${rootPath }expert/ExpertNotice_allNotice?page=${pCut.prePage}">上一页</a></li> --%>
+<%-- 					<c:forEach var="i" --%>
+<%-- 						begin="${pCut.currentPage-3>0?pCut.currentPage-3:1 }" --%>
+<%-- 						end="${pCut.currentPage+3>pCut.pageNum?pCut.pageNum:pCut.currentPage+3  }"> --%>
+<%-- 						<c:choose> --%>
+<%-- 							<c:when test="${i>0 && i == pCut.currentPage}"> --%>
+<!-- 								<li class="active"><a -->
+<%-- 									href="${rootPath }expert/ExpertNotice_allNotice?page=${i }">${i}</a></li> --%>
+<%-- 							</c:when> --%>
+<%-- 							<c:when test="${i>0 && i != pCut.currentPage}"> --%>
+<!-- 								<li><a -->
+<%-- 									href="${rootPath }expert/ExpertNotice_allNotice?page=${i }">${i}</a></li> --%>
+<%-- 							</c:when> --%>
+<%-- 						</c:choose> --%>
+<%-- 					</c:forEach> --%>
+<!-- 					<li><a -->
+<%-- 						href="${rootPath }expert/ExpertNotice_allNotice?page=${pCut.nextPage}">下一页</a></li> --%>
+<!-- 				</ul> -->
+<!-- 			</div> -->
+<%-- 		</c:if> --%>
+<%-- 	</center> --%>
+<!-- </body> -->
+<!-- </html> -->

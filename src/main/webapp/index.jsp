@@ -4,31 +4,29 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>评职称-登录</title>
+<title>职称审核系统-登录</title>
+ <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-<center>
-	<form action="${rootPath}loginAction_login" method="post">
-		<table>
-			<tr>
-				<td>用户名：</td>
-				<td><input type="text" name="userName" id="inputText"/></td>
-			</tr>
-			<tr>
-				<td>密码</td>
-				<td><input type="text" name="password" id="inputPassword"/></td>
-			</tr>
-			<tr>
-				<td colspan="2">${message}</td>
-			</tr>
-			<tr align="center"> 
-				<td><input type="submit" onclick="goout()" value="登录"/></td>
-				<td><input type="reset" value="重置"/></td>
-			</tr>
-		</table>
-	</form>
-</center>
-</body>
+   <div class="title">河南科技学院职称评审系统</div>
+   <div class="login-box">
+   <form action="${rootPath}loginAction_login" method="post"> 
+     <div class="box1">
+       <input type="text" class="input1" placeholder="帐号" name="userName" id="inputText" style="width: 296px">
+     </div>
+     <div class="box2">
+       <input type="text" class="input1" placeholder="密码" name="passWord" id="inputPassword" style="width: 296px">
+     </div>
+     <div class="box3">
+       <div class="login">
+         <input type="submit" value="登录" class="btn">
+       </div>
+        <div class="reset">
+         <input type="reset" value="重置" class="btn">
+       </div>
+     </div>
+    </form>
+   </div>
 <script>
 	 function $(a){
            return document.getElementById(a);
@@ -45,5 +43,6 @@
          $('inputText').value = '';
          $('inputPassword').value='';
     }
-</script>
+ </script>
+ </body>
 </html>
