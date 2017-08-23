@@ -5,14 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+ <link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
 </head>
 <body>
 <form action="${rootPath}setting/MajorsManage_update" method="post">
-<lable>专业ID：</lable>
+<span>专业ID：</span>
 		<input type="text"  name="majors.maj_id"  value="${majors.maj_id} "  readonly="readonly"  ><br>
-		<lable>专业名称：</lable>
+		<span>专业名称：</span>
 		<input type="text"  name="majors.maj_majorName" value="${majors.maj_majorName}"" ><br>
-		 <input type="submit" value="提交">
+		 <input  class="btn" type="submit" value="提交">
 	</form>
 </body>
 </html>

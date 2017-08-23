@@ -14,7 +14,7 @@
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
+
 	<div class="top">
 		<div class="right">
 			<form action="${rootPath}setting/TitleManage_searchTitle"
@@ -25,20 +25,6 @@
 		</div>
 		<table border="1" cellspacing="0">
 			<caption>职称信息</caption>
-=======
-	<a href="${rootPath}/setting/Transfer_addTitle" target="mainiframe">添加职称</a><br>
-  <form action="${rootPath}setting/TitleManage_searchTitle" method="post"  onsubmit="return check()">
-    <input type="text" class="input1" name="titleName" placeholder="请输入所要查询职称名称">
-    <button class="input2"  >搜&nbsp;索</button>
-    </form>
-	<table>
-		<thead>
-			<tr>
-				<td colspan="3">职称信息</td>
-			</tr>
-		</thead>
-		<tbody>
->>>>>>> 522a3aa8fb380b1a81528d79a64ea6208c0e7158
 			<tr>
 				<th>职称编号</th>
 				<th>职称名称</th>
@@ -48,12 +34,12 @@
 				<tr>
 					<td>${item.ti_id}</td>
 					<td>${item.ti_titleName}</td>
-					<td><a style="position: absolute; left: 25px; top: 8px;"
+					<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
 						href="${rootPath}setting/Transfer_updateTitle?titleId=${ item.ti_id}">
-							<span class="glyphicon glyphicon-pencil"></span>
+							<img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:0px">
 					</a> <a style="position: absolute; right: 25px; top: 8px;"
 						href="${rootPath}setting/TitleManage_delete?titleId=${item.ti_id}">
-							<span class="glyphicon glyphicon-trash"></span>
+							<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
 					</a></td>
 				</tr>
 			</c:forEach>

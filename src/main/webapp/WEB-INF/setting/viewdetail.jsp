@@ -6,34 +6,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>通知管理</title>
-<style >
-.pag {
-	float: right;
-	margin-top: 30px;
-	margin-right: 0px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/setting/infom.css">
+
 </head>
+
 <body>
-	<table>
-		<thead>
-			<tr>
-				<td colspan="4">通知信息</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>通知名称</td>
-				<td>通知详情</td>
-				
-			</tr>
-				<tr>
-					<td>${notice.no_head}</td>
-					<td>${notice.no_content}</td> 
-					
-				</tr>
-		</tbody>
-	</table>
-	
+ <div class="top">
+        <h1>通知信息</h1>
+        <p>通知名称:</p>
+        <textarea id="text1">${notice.no_head}</textarea>
+        <p>通知详情:</p>
+        <textarea id="text2" >${notice.no_content}</textarea>
+    </div>
 </body>
 </html>

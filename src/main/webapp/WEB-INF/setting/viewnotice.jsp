@@ -1,60 +1,66 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>通知管理</title>
-<style >
-.pag {
-	float: right;
-	margin-top: 30px;
-	margin-right: 0px;
-}
-</style>
+<meta charset="UTF-8">
+<title>majorsmanage</title>
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}css/setting/majorsmanage.css">
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}css/setting/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}css/setting/font-awesome.css">
+<script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
+<script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
-<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a>
-	<table>
-		<thead>
-			<tr>
-				<td colspan="4">通知信息</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>通知名称</td>
-				<td>通知时间</td>
-				<td>发布人</td>
-				<td>操作</td>
-			</tr>
-			<c:forEach items="${paCut.data}" var="item">
+	<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a>
+	<div class="top">
+
+		<table border="1" cellspacing="0">
+			<caption>部门信息</caption>
+			<thead>
 				<tr>
-					<td>${item.no_head}</td>
-					<td>${item.no_issueData}</td>
-					<td>${item.no_managerName}</td>
-						<td><a href="${rootPath}setting/NoticeManage_delete?noticeId=${item.no_id}">删除</a>
-						<td><a href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${item.no_id}">查看详情</a>
-					</td>
+					<td colspan="4">通知信息</td>
 				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
-	<div class="pag">
+			</thead>
+			<tbody>
+				<tr>
+					<td>通知名称</td>
+					<td>通知时间</td>
+					<td>发布人</td>
+					<td>操作</td>
+				</tr>
+				<c:forEach items="${paCut.data}" var="item">
+					<tr>
+						<td><a href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${item.no_id}">${item.no_head}</a></td>
+						<td>${item.no_issueData}</td>
+						<td>${item.no_managerName}</td>
+						<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
+							href="${rootPath}setting/NoticeManage_delete?noticeId=${item.no_id}">
+							<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
+						</a> <a style="position: absolute; right: 25px; top: 8px;"
+							href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${item.no_id}">
+								<img src="${rootPath}images/view.png" width="18px" style="float:right">
+						</a></td>
+					</tr>
+				</c:forEach>
+		</table>
+		<div class="page">
 			<ul class="pagination">
 				<li><a href="?page=${paCut.prePage}">上一页</a></li>
-				<c:forEach var="i" begin="${paCut.currentPage-3>0?paCut.currentPage-3:1 }"
+				<c:forEach var="i"
+					begin="${paCut.currentPage-3>0?paCut.currentPage-3:1 }"
 					end="${paCut.currentPage+3>paCut.pageNum?paCut.pageNum:paCut.currentPage+3  }">
 					<c:choose>
 						<c:when test="${i>0 && i == paCut.currentPage &&i<=3}">
-							<li class="active"><a
-								href="?page=${i}">${i}</a></li>
+							<li class="active"><a href="?page=${i}">${i}</a></li>
 						</c:when>
 
 						<c:when test="${i>0 && i != paCut.currentPage &&i<=3}">
-							<li><a
-								href="?page=${i}">${i}</a></li>
+							<li><a href="?page=${i}">${i}</a></li>
 						</c:when>
 					</c:choose>
 				</c:forEach>

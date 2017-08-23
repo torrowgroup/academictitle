@@ -3,35 +3,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>majorsmanage</title>
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}css/setting/majorsmanage.css">
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}css/setting/bootstrap.css">
+<script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
+<script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
-<body>
-<td>${Message }</td>
-<table>
-		<thead>
+
+	<div class="top">
+		<div class="right">
+			<form
+				action="${rootPath}setting/ReviewRequirementsManage_searchRequire"
+				method="post" onsubmit="return check()">
+				<input type="text" name="titleName" placeholder=" 请输入所要查询评议要求相关职称名称">
+				<input type="submit" value="搜索">
+			</form>
+		</div>
+		<table border="1" cellspacing="0">
+			<caption>评议要求信息</caption>
 			<tr>
-				<td colspan="3">评议要求信息</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>职称名称</td>
-				<td>教学方面</td>
-				<td>科研方面</td>
-				<td>师德</td>
-				<td>操作</td>
+				<th>职称名称</th>
+				<th>教学方面</th>
+				<th>科研方面</th>
+				<th>师德</th>
+				<th>操作</th>
 			</tr>
 				<tr>
 					<td>${require.re_title.ti_titleName}</td>
 					<td>${require.re_educate}</td>
 					<td>${require.re_scientific}</td>
 					<td>${require.re_morality}</td>
-					<td><a href="${rootPath}setting/Transfer_updateRequire?requireId=${require.re_id}">修改</a>
-							 <a href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">删除</a> 
-					</td>
+					<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
+						href="${rootPath}setting/Transfer_updateRequire?requireId=${require.re_id}">
+							<img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:0px">
+					</a> <a style="position: absolute; right: 25px; top: 8px;"
+						href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${require.re_id}">
+							<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
+					</a></td>
 				</tr>
-		</tbody>
-	</table>
+		</table>
 </body>
 </html>

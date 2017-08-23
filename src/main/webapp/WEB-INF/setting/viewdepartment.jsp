@@ -16,7 +16,7 @@
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
+
 	<td>${Message}</td>
 	<div class="top">
 		<div class="right">
@@ -28,21 +28,6 @@
 		</div>
 		<table border="1" cellspacing="0">
 			<caption>部门信息</caption>
-=======
-<td>${Message}</td>
-<a href="${rootPath}setting/Transfer_addUnit" target="mainiframe">添加单位</a>
-  <form action="${rootPath}setting/DepartmentManage_searchUnit" method="post"  onsubmit="return check()">
-    <input type="text" class="input1" name="unitName" placeholder="请输入所要查询部门名称">
-    <button class="input2"  >搜&nbsp;索</button>
-    </form>
-	<table>
-		<thead>
-			<tr>
-				<td colspan="3">部门信息</td>
-			</tr>
-		</thead>
-		<tbody>
->>>>>>> 522a3aa8fb380b1a81528d79a64ea6208c0e7158
 			<tr>
 				<th>部门ID</th>
 				<th>部门名称</th>
@@ -52,12 +37,12 @@
 				<tr>
 					<td>${item.un_id}</td>
 					<td>${item.un_unitName}</td>
-					<td><a style="position: absolute; left: 25px; top: 8px;"
+					<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
 						href="${rootPath}setting/Transfer_updateUnit?unitId=${item.un_id}">
-							<span class="glyphicon glyphicon-pencil"></span>
+							<img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:0px">
 					</a> <a style="position: absolute; right: 25px; top: 8px;"
 						href="${rootPath}setting/DepartmentManage_delete?unitId=${item.un_id}">
-							<span class="glyphicon glyphicon-edit"></span>
+							<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
 					</a></td>
 				</tr>
 			</c:forEach>
