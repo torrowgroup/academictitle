@@ -3,7 +3,7 @@
     height: auto;
     width:60%;
     margin:0 auto;
-    margin-top: 0%;
+    margin-top: 2%;
 }
 .back{
 	 margin-top:2%;
@@ -13,6 +13,7 @@
 .form{
 	width:260px;
     height: 30px;
+    margin-top:-5%;
   	margin-left:55%;
 }
 .btn{
@@ -41,8 +42,8 @@ table td{
     height:45px;
 }
 .center{text-align: center;
-         font-size: 22px;
-         font-weight: bold;
+         font-size: 18px;
+/*          font-weight: bold; */
          padding-bottom: 20px;}
 .page{
    
