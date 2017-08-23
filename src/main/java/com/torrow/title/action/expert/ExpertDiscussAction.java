@@ -3,6 +3,8 @@
  */
 package com.torrow.title.action.expert;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -125,9 +127,10 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 				di_averageC = nFScore / (noFamiliarize - 1);
 			}
 		}
-		discussTemp.setDi_averageA(di_averageA);
-		discussTemp.setDi_averageB(di_averageB);
-		discussTemp.setDi_averageC(di_averageC);
+		//保留两位小数
+		discussTemp.setDi_averageA(new BigDecimal(di_averageA).setScale(2, RoundingMode.UP).doubleValue());
+		discussTemp.setDi_averageB(new BigDecimal(di_averageB).setScale(2, RoundingMode.UP).doubleValue());
+		discussTemp.setDi_averageC(new BigDecimal(di_averageC).setScale(2, RoundingMode.UP).doubleValue());
 		return discussTemp;
 	}
 

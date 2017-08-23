@@ -17,9 +17,11 @@ public interface ParticipatorService {
 	public List<Participator> getAllParticipator();
 	//分页，模糊查询
 	public PageCut<Participator> allParticipator(int page, int i, String inquiry);
+	//清空评议人员
+	public boolean emptyParticipator();
 	
 	//根据id得到参评人
-	public Participator getParticipatorById(int pa_id);
+	public Participator getParticipatorById(int pa_id);//张金高用
 	
 	//得到全部的参评人员,分页
 	public PageCut<Participator> getParticipator(int page, int pageSize, String ask, String inquiry);

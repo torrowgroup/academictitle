@@ -84,4 +84,17 @@ public class ParticipatorDao extends BaseDao<Participator> implements Participat
 		return pc;
 	}
 
+	@Override
+	public boolean emptyParticipator() {
+		List<Participator> allParticipator = this.selectAll();
+		boolean boo = true;
+		for(int i=0;i<allParticipator.size();i++){
+			boo = this.deleteEntity(allParticipator.get(i));
+			if(!boo){
+				return false;
+			}
+		}
+		return true;
+	}
+
 }

@@ -83,4 +83,17 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 		return pc;
 	}
 
+	@Override
+	public boolean emptyRecord() {
+		List<Record> allRecord = this.selectAll();
+		boolean boo = true;
+		for(int i=0;i<allRecord.size();i++){
+			boo = this.deleteEntity(allRecord.get(i));
+			if(!boo){
+				return false;
+			}
+		}
+		return boo;
+	}
+
 }

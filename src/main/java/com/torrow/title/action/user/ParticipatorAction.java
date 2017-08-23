@@ -10,6 +10,7 @@ import java.io.OutputStream;
 import java.util.List;
 import java.util.UUID;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,6 +22,7 @@ import com.torrow.title.entity.Majors;
 import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Title;
 import com.torrow.title.entity.Unit;
+import com.torrow.title.util.Email;
 import com.torrow.title.util.PageCut;
 
 public class ParticipatorAction extends BaseAction implements ModelDriven<Participator> {
@@ -156,32 +158,45 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		}
 		return select();
 	}
+	//发送邮件
+	public String sendEmail() throws MessagingException{
+		Participator part = participatorService.getParticipatorById(participator.getPa_id());
+		Email.subject("评审通知")
+        .from("职称评审系统")
+        .to(part.getPa_email())
+        .html(part.getPa_name()+"您好，您参与的评选"+
+        		"<h1 font=red>"+part.getPa_title().getTi_titleName()+"</h1>"+
+        		"经各专家评审，您成功当选，请继续努力工作！")
+        .send();
+		request.put("message","发送成功");
+		return select();
+	}
 	
-	//用于富文本编辑器的图片上传
-		public void uploadImg() throws Exception {
-			HttpServletRequest req2 = ServletActionContext.getRequest();
-			HttpServletResponse res2 = ServletActionContext.getResponse();
-			String name = myFileName.getName();
-			// 提取文件拓展名
-			String fileNameExtension = name.substring(name.indexOf("."), name.length() - 1);
-			// 生成实际存储的真实文件名
-			String realName = UUID.randomUUID().toString() + fileNameExtension;
-			// 图片存放的真实路径
-			String realPath = req2.getServletContext().getRealPath("/uploadImage") + "/" + realName;
-			// 将文件写入指定路径下
-			InputStream in = new FileInputStream(myFileName);
-			File uploadFile = new File(realPath);
-			OutputStream out = new FileOutputStream(uploadFile);
-			byte[] buffer = new byte[1024 * 1024];
-			int length;
-			while ((length = in.read(buffer)) > 0) {
-				out.write(buffer, 0, length);
-			}
-			in.close();
-			out.close();
-			// 返回图片的URL地址
-			res2.getWriter().write(req2.getContextPath() + "/uploadImage/" + realName);
+	// 用于富文本编辑器的图片上传
+	public void uploadImg() throws Exception {
+		HttpServletRequest req2 = ServletActionContext.getRequest();
+		HttpServletResponse res2 = ServletActionContext.getResponse();
+		String name = myFileName.getName();
+		// 提取文件拓展名
+		String fileNameExtension = name.substring(name.indexOf("."), name.length() - 1);
+		// 生成实际存储的真实文件名
+		String realName = UUID.randomUUID().toString() + fileNameExtension;
+		// 图片存放的真实路径
+		String realPath = req2.getServletContext().getRealPath("/uploadImage") + "/" + realName;
+		// 将文件写入指定路径下
+		InputStream in = new FileInputStream(myFileName);
+		File uploadFile = new File(realPath);
+		OutputStream out = new FileOutputStream(uploadFile);
+		byte[] buffer = new byte[1024 * 1024];
+		int length;
+		while ((length = in.read(buffer)) > 0) {
+			out.write(buffer, 0, length);
 		}
+		in.close();
+		out.close();
+		// 返回图片的URL地址
+		res2.getWriter().write(req2.getContextPath() + "/uploadImage/" + realName);
+	}
 	
 	// 执行上传功能
 	private void uploadFile(int i) throws FileNotFoundException, IOException {

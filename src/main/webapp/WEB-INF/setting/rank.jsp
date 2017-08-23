@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<center>${message}</center>
 	<center>
 		选择查看排名方式：
 		<details style="width:200px"> <summary>按职称排名</summary> <c:forEach
@@ -29,7 +29,7 @@
 				href="${rootPath}setting/Statistics_rank?ask=unit&inquiry=${allUnit.un_unitName}">${allUnit.un_unitName}</a>
 			<br>
 		</c:forEach> </details>
-		<a href="">清空评议记录</a>
+		<a href="${rootPath}setting/Statistics_empty">清空评议及参评人</a>
 		<c:if test="${discussRank ne null }">
 			<table>
 				<tr>

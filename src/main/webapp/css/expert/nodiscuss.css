@@ -2,15 +2,25 @@
     margin:0;
     padding: 0;
 }
+.back{
+	 margin-top:2%;
+	 margin-left:10%;
+	 width: 100px;
+}
 .wall{
     height: auto;
-    width: 50%;
+    width: 70%;
     margin:0 auto;
-    margin-top:15%;
+    margin-top:	2%;
 }
 .right{
     height: 50px;
-    float: right;
+/*   	top:200px; */
+}
+.rightform{
+	width:260px;
+    height: 50px;
+  	margin-left:64%;
 }
 .btn{
     width: 60px;

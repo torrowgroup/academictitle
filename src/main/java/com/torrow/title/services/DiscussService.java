@@ -18,6 +18,8 @@ public interface DiscussService {
 	public PageCut<Discuss> discussPageCut(int curr, int pageSize, String ask, String inquiry) ;
 	//由参评人id得到评议类
 	public Discuss getByParticipatorId(int pa_id);
+	//清空评议类
+	public boolean emptyDiscuss();
 	
 	//得到所有的评议类
 	public List<Discuss> getAllDiscuss();

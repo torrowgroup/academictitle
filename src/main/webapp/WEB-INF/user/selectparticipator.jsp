@@ -30,7 +30,7 @@
 <table border="1" cecellspacing="0">
 		<thead>
 			<tr>
-				<td colspan="8">参评人信息</td>
+				<td colspan="9">参评人信息</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -42,6 +42,7 @@
 				<td>职称</td>
 				<td>照片</td>
 				<td>简介</td>
+				<td>评选成功通知</td>
 				<td>操作</td>
 			</tr>
 		<c:forEach items="${messagenews.data}" var="item">
@@ -53,6 +54,7 @@
 				<td>${item.pa_title.ti_titleName}</td>
 				<td>${item.pa_imageUrl}</td>
 				<td>${item.pa_introduce}</td>
+				<td><a href="${rootPath}user/Participator_sendEmail?pa_id=${item.pa_id}">邮件通知</a></td>
 				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}">删除</a></td>
 			</tr>
 		</c:forEach>

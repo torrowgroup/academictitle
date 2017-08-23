@@ -26,7 +26,6 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 	@Override
 	public Manager login(String userName, String password) {
 		String hql = "from Manager m where m.ma_userName = '"+userName+"'";
-		System.out.println(hql);
 		Manager manager = (Manager) this.uniqueResult(hql);
 		if (manager != null && manager.getMa_password().equals(password)) {
 			return manager;
@@ -91,6 +90,12 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 	@Override
 	public List<Manager> getAllAdmain() {
 		return selectAll();
+	}
+
+	@Override
+	public void ssss() {
+		String hql= "truncate table t_manager";
+		executeSQL(hql);
 	}
 
 }
