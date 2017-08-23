@@ -31,7 +31,6 @@
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
 					<td>${item.no_head}</td>
-					<%-- <td>${item.no_content}</td> --%>
 					<td>${item.no_issueData}</td>
 					<td>${item.no_managerName}</td>
 						<td><a href="${rootPath}setting/NoticeManage_delete?noticeId=${item.no_id}">删除</a>

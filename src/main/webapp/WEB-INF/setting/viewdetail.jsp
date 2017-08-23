@@ -25,16 +25,12 @@
 			<tr>
 				<td>通知名称</td>
 				<td>通知详情</td>
-				<td>通知时间</td>
-				<td>发布人</td>
-				<td>操作</td>
+				
 			</tr>
 				<tr>
 					<td>${notice.no_head}</td>
 					<td>${notice.no_content}</td> 
-					<td>${notice.no_issueData}</td>
-					<td>${notice.no_managerName}</td>
-						<td><a href="${rootPath}setting/NoticeManage_delete?noticeId=${notice.no_id}">删除</a>
+					
 				</tr>
 		</tbody>
 	</table>

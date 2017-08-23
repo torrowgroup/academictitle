@@ -30,7 +30,9 @@ table th{
 }
 table td{
     height: 43px;
+    position: relative;
 }
+table td a:hover{text-decoration: none;}
 .page{
    margin: 20% 0 0 38%;
 }
