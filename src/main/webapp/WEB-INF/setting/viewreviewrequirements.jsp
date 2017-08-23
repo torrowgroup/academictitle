@@ -15,6 +15,10 @@
 </style>
 </head>
 <body>
+  <form action="${rootPath}setting/ReviewRequirementsManage_searchRequire" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="titleName" placeholder="请输入所要查询评议要求相关职称名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
 	<table>
 		<thead>
 			<tr>
@@ -34,6 +38,7 @@
 					<td>${item.re_title.ti_titleName}</td>
 					<td>${item.re_educate}</td>
 					<td>${item.re_scientific}</td>
+					<td>${item.re_morality}</td>
 					<td><a href="${rootPath}setting/Transfer_updateRequire?requireId=${item.re_id}">修改</a>
 							 <a href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">删除</a> 
 					</td>

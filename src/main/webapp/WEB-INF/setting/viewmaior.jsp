@@ -9,13 +9,18 @@
 <style >
 
 .pag {
-	float: right;
+	float: left;
 	margin-top: 30px;
 	margin-right: 0px;
 }
 </style>
 </head>
 <body>
+<td>${Message }</td>
+  <form action="${rootPath}setting/MajorsManage_searchMajors" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="majorsName" placeholder="请输入所要查询专业名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
 	<table>
 		<thead>
 			<tr>
@@ -24,7 +29,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>专业ID</td>
+				<td>专业编号</td>
 				<td>专业名称</td>
 				<td>操作</td>
 			</tr>

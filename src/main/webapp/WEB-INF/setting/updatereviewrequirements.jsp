@@ -7,13 +7,14 @@
 <title>Insert title here</title>
 </head>
 <form action="${rootPath}setting/ReviewRequirementsManage_update" method="post">
-	
+	<lable>评议ID：</lable>
+	<input type="text"  name="req.re_id"  value="${req.re_id} " readonly="readonly" ><br>
 		<lable>教学方面：</lable>
-		<input type="text"  name="req.re_educate"  placeholder="${req.re_educate} " ><br>
+		<input type="text"  name="req.re_educate"  value="${req.re_educate} " ><br>
 		<lable>科研方面：</lable>
-		<input type="text"  name="req.re_scientific" placeholder="${req.re_scientific} " ><br>
+		<input type="text"  name="req.re_scientific" value="${req.re_scientific} " ><br>
 		<lable>师德方面：</lable>
-		<input type="text"  name="req.re_morality"  placeholder="${req.re_morality }" ><br>
+		<input type="text"  name="req.re_morality"  value="${req.re_morality }" ><br>
 		 <input type="submit" value="提交">
 	</form>
 <body>

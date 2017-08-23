@@ -22,7 +22,7 @@ public interface RequireService {
 	public boolean add(Require require,Title title);
 
 	// wqj更新评议要求f
-	public boolean update(Require require);
+	public boolean update(Require require,Title title);
 
 	//wqj 通过评议ID查询评议要求
 	public Require checkById(int id);
@@ -36,6 +36,8 @@ public interface RequireService {
 	public List<Require> getAllRequire();
 	//更新数据库表
 	public boolean updateRequire(Require require);
+
+	public Require checkByTitleName(String titleName);
 	
 
 

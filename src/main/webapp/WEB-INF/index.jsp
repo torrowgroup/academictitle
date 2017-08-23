@@ -34,8 +34,8 @@
 		<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">添加专业</a><br>     
      </details>
      <details style="width:200px" >
-		<summary>单位管理</summary>
-		<a href="${rootPath}setting/DepartmentManage_view" target="mainiframe">查看单位</a><br> 
+		<summary>部门管理</summary>
+		<a href="${rootPath}setting/DepartmentManage_view" target="mainiframe">查看部门</a><br> 
 		<a href="${rootPath}setting/Transfer_addUnit" target="mainiframe">添加单位</a><br>     
      </details>
      <details  style="width:200px">

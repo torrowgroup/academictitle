@@ -14,6 +14,7 @@
 		<action name="MajorsManage_*" method="{1}"
 			class="com.torrow.title.action.setting.MajorsManageAction">
 			<result name="view">/WEB-INF/setting/viewmaior.jsp</result>
+			<result name="searchMajors">/WEB-INF/setting/searchmajors.jsp</result>
 			<result name="addMajors">/WEB-INF/setting/addmajors.jsp</result>
 		</action>
 		<!-- 单位管理 -->
@@ -21,26 +22,28 @@
 			class="com.torrow.title.action.setting.DepartmentManageAction">
 			<result name="view">/WEB-INF/setting/viewdepartment.jsp</result>
 			<result name="addUnit">/WEB-INF/setting/adddepartment.jsp</result>
+				<result name="searchUnit">/WEB-INF/setting/searchunit.jsp</result>
 		</action>
 		<!-- 职称管理 -->
 		<action name="TitleManage_*" method="{1}"
 			class="com.torrow.title.action.setting.TitleManageAction">
 			<result name="view">/WEB-INF/setting/viewtitle.jsp</result>
 			<result name="addTitle">/WEB-INF/setting/addtitle.jsp</result>
+				<result name="searchTitle">/WEB-INF/setting/searchtitle.jsp</result>
 		</action>
 		<!-- 评议要求管理 -->
 		<action name="ReviewRequirementsManage_*" method="{1}"
 			class="com.torrow.title.action.setting.ReviewRequirementsManageAction">
-			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp
-			</result>
-			<result name="addReviewRequirements">/WEB-INF/setting/addreviewrequirements.jsp
-			</result>
+			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp</result>
+			<result name="addReviewRequirements">/WEB-INF/setting/addreviewrequirements.jsp</result>
+			<result name="searchRequire">/WEB-INF/setting/searchrequire.jsp</result>
 		</action>
 		<!-- 通知管理 -->
 		<action name="NoticeManage_*" method="{1}"
 			class="com.torrow.title.action.setting.NoticeManageAction">
 			<result name="view">/WEB-INF/setting/viewnotice.jsp</result>
 			<result name="addNotice">/WEB-INF/setting/addnotice.jsp</result>
+			<result name="viewDetail">/WEB-INF/setting/viewdetail.jsp</result>
 		</action>
 		<!-- jsp中转 -->
 		<action name="Transfer_*" method="{1}"

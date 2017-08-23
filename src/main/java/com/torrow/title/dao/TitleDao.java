@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.torrow.title.base.BaseDao;
 import com.torrow.title.entity.Expert;
+import com.torrow.title.entity.Majors;
 import com.torrow.title.entity.Title;
 import com.torrow.title.services.TitleService;
 import com.torrow.title.util.PageCut;
@@ -69,6 +70,16 @@ public class TitleDao extends BaseDao<Title> implements TitleService{
 	@Override
 	public boolean deleteTitle(Title title) {
 		return this.deleteEntity(title);
+	}
+	@Override
+	public List<Title> getAll(){
+		return selectAll();
+	}
+	@Override
+	public Title getTitle(String titleName) {
+		String hql = "from Title t Where t.ti_titleName= '"+titleName+"'";
+		Title title= (Title) uniqueResult(hql);
+		return title;
 	}
 
 }
