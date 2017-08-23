@@ -93,7 +93,6 @@ public class ParticipatorDao extends BaseDao<Participator> implements Participat
 			if(!boo){
 				return false;
 			}
-			i--;
 		}
 		return true;
 	}
