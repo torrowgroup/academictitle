@@ -9,6 +9,7 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Notice;
 import com.torrow.title.entity.Title;
 import com.torrow.title.entity.Unit;
 
@@ -56,6 +57,11 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 	}
 	//回到首页
 	public String back(){
+		List<Notice> someNotice = noticeService.getNewNotice();
+		if(someNotice.size()>0){
+			Notice noticeNew = someNotice.get(0);// 得到最新一条通知
+			request.put("noticeNew", noticeNew);
+		}
 		return "back";
 	}
 	//退出登录

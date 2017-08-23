@@ -4,17 +4,39 @@ body{
 }
 form{
     width: 30%;
-    margin:0 auto;
-    margin-top: 7%;
+    margin-top: 1%;
 }
 form label{
-    width: 28%;
+    width: 30%;
     display: inline-block;
     font-size: 22px;
     font-weight: bold;
     line-height:50px;
     vertical-align: middle;
     text-align: right;
+}
+.form-one{
+	height:200px;
+	margin:50px 0;
+	position:relative;
+	left:120px;
+}
+.form-two{
+	width:320px;
+	height:200px;
+	position:relative;
+	left:400px;
+	top:-260px;
+}
+.position{
+	position:relative;
+	top:-200px;
+	left:220px;
+}
+.back{
+	 margin-top:2%;
+	 margin-left:10%;
+	 width: 100px;
 }
 .in,form select{
     height: 30px;

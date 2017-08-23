@@ -1,15 +1,26 @@
 *{margin:0;padding: 0;text-decoration: none;}
 .top{
-    width: 50%;
+    width: 90%;
     height: auto;
-    margin:0 auto;
-    margin-top: 10%;
+    margin-top: 40px;
 }
 .right{
     height: 50px;
     float: right;
     margin-bottom: 20px;
 }
+.form{
+	width:260px;
+    height: 30px;
+    margin-top:-4%;
+  	margin-left:65%;
+}
+.msg{
+	width=150px;
+	margin:0 auto;
+	margin-top: 2%;
+}
+
 .txt1{
     padding:6px 20px;
     border:2px solid #ccc; 
@@ -24,22 +35,26 @@
 .right input[type="text"]{
     height: 30px;
     width:190px;}
+.back{
+	 margin-top:2%;
+	 margin-left:10%;                
+	 width: 100px;
+}
 .btn{height: 30px;width: 60px;}
 table{
-    width:100%;
+    width:65%;
     height: 110px;
-    margin:0 auto;
+/*     margin:0 auto;*/
+	margin-left:20%;
+    margin-top:2%;
     border-radius: 5px;
-}
-textarea{
-    width: 99%;
-    height:99%;
-    text-align: left;
-    border: 0;
 }
 table th{font-size: 22px;
          background-color: #eee;
          text-align: center;}
+table tr{
+	height: 40px;
+}         
 table td{text-align: center;}
 table td a{color: #000}
 .page{margin:15% 0 0 38%;}
