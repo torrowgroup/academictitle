@@ -27,21 +27,19 @@
 					style="background-color: #82C0E9;border-radius: 7px;" type="submit" value="查询">
 			</form>
 	</div>
-	<div class="header">
+	<div class="header" style="width:85%">
 	<c:if test="${fn:length(messagenews.data) > 0 }">
-	<table cecellspacing="0" border="1">
+	<table cecellspacing="0" border="1" style="width:600px;margin-left:100px">
 		<thead>
-			<tr>
-				<td colspan="5">管理员信息</td>
-			</tr>
+			<caption>管理员信息</caption>
 		</thead>
 		<tbody>
 			<tr>
-				<td>编号</td>
-				<td>用户名</td>
-				<td>密码</td>
-				<td>姓名</td>
-				<td>操作</td>
+				<th>编号</th>
+				<th>用户名</th>
+				<th>密码</th>
+				<th>姓名</th>
+				<th>操作</th>
 			</tr>
 		<c:forEach items="${messagenews.data}" var="item">
 			<tr>

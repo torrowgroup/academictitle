@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -45,6 +45,7 @@
   <div class="wall">
 	<form action="${rootPath}user/Participator_update?pa_id=${part.pa_id}" method="post" enctype="multipart/form-data" onsubmit="modifyContent()">
 		 <label>姓名：</label><input type="text" name="pa_name" value="${part.pa_name}">
+		 <label>邮箱：</label><input type="email" name="pa_email" value="${part.pa_email}">
 		<label>专业： </label><select name="majorid"  name="majorid">
 			<c:forEach items="${majors}" var="item">
 					<option value="${item.maj_id}">${item.maj_majorName}</option>
@@ -61,7 +62,7 @@
 			</c:forEach>
 		</select><br>
 		<input type="file" name="file" class="file" accept="image/*" value="选择图片"><br>
-				<div class="row">
+				<div class="row" style="width: 500px; height: 400px;">
 				<lable>简介:</lable>
 				<textarea rows="5" cols="35" name="pa_introduce"
 					style="display: none;" id="content"></textarea>

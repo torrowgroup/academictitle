@@ -14,7 +14,7 @@
 </head>
 <body>
 <center>${message}</center>
-<a href="${rootPath}user/Participator_relay" target="mainiframe">添加参评人</a>
+<a class="font" href="${rootPath}user/Participator_relay" target="mainiframe">添加参评人</a>
 <div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 			<form action="${rootPath}user/Participator_select" method="post">
 				<select name="ask"
@@ -28,32 +28,32 @@
 	</div>
 	<div class="wall">
 <c:if test="${fn:length(messagenews.data) > 0 }">
-<table border="1" cecellspacing="0">
+<table border="1" cecellspacing="0" >
 		<thead>
-			<tr>
-				<td colspan="9">参评人信息</td>
-			</tr>
+			<caption>参评人信息</caption>
 		</thead>
 		<tbody>
 			<tr>
-				<td>编号</td>	
-				<td>姓名</td>
-				<td>专业</td>
-				<td>单位</td>
-				<td>职称</td>
-				<td>照片</td>
-				<td>简介</td>
-				<td>评选成功通知</td>
-				<td>操作</td>
+				<th>编号</th>	
+				<th>姓名</th>
+				<th>邮箱</th>
+				<th>专业</th>
+				<th>单位</th>
+				<th>职称</th>
+				<th>照片</th>
+				<th>简介</th>
+				<th>评选成功通知</th>
+				<th>操作</th>
 			</tr>
 		<c:forEach items="${messagenews.data}" var="item">
 			<tr>
 				<td>${item.pa_id}</td>
 				<td>${item.pa_name}</td>
+				<td>${item.pa_email}</td>
 				<td>${item.pa_majors.maj_majorName}</td>
 				<td>${item.pa_unit.un_unitName}</td>
 				<td>${item.pa_title.ti_titleName}</td>
-				<td>${item.pa_imageUrl}</td>
+				<td><img src="${rootPath}uploadImg/${item.pa_imageUrl}"></td>
 				<td>${item.pa_introduce}</td>
 				<td><a href="${rootPath}user/Participator_sendEmail?pa_id=${item.pa_id}">邮件通知</a></td>
 				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}">删除</a></td>

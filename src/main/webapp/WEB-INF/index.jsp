@@ -18,7 +18,6 @@
                    <li><a href="${rootPath}setting/Statistics_expertStatistics?inquiry=all" target="mainiframe">专家评议统计</a></li>
                    <li><a href="${rootPath}setting/Statistics_parStatistics?inquiry=all" target="mainiframe">参评人评议统计</a></li>
                    <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe">通知公告</a></li>
-                   <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe" >通知公告</a></li>
                    <li>
                       <a href="${rootPath}user/Manager_toUpdate?term=myself" target="mainiframe">个人中心</a>
                       <a href="#" style="font-size:10px"> [退出]</a>
@@ -27,7 +26,7 @@
            </div> 
         </div>
     </div>
-    	<iframe id="ifr" width="1519px" height="1000px" style="margin-top:0px;"  name="mainiframe" src="${rootPath}user/Manager_relayHomePage"></iframe>
+    	<iframe id="ifr" width="960px" height="1000px" style="margin-left:300px; "  name="mainiframe" src="${rootPath}user/Manager_relayHomePage"></iframe>
 </body>
 <script type="text/javascript" src="${rootPath}js/index0.js"></script>
 </html>
