@@ -87,7 +87,7 @@
                 <c:forEach items="${someNotice}" var="items">
                 	<div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${items.no_id}">${items.no_head}</a>
+                             <a href="${rootPath}setting/NoticeManage_viewDetail?noticeId=${items.no_id}" target="mainiframe">${items.no_head}</a>
                         </div>
                         <div class="titie-w"><font style="color:#f30">${items.no_issueData}</font>
                         </div>

@@ -21,7 +21,7 @@ public interface ParticipatorService {
 	public boolean emptyParticipator();
 	
 	//根据id得到参评人
-	public Participator getParticipatorById(int pa_id);
+	public Participator getParticipatorById(int pa_id);//张金高用
 	
 	//得到全部的参评人员,分页
 	public PageCut<Participator> getParticipator(int page, int pageSize, String ask, String inquiry);

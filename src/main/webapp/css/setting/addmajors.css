@@ -1,0 +1,29 @@
+body{margin: 0;padding:0;}
+form{
+    width: 30%;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+form span{
+    font-size: 20px;
+    font-weight: bold;
+}
+form input{
+    height: 35px;
+    width: 50%;
+    border-radius:5px; 
+    margin-bottom: 50px;
+    padding-left: 5px;
+}
+form a{
+    padding:10px 20px;
+    border: 2px solid #ccc;
+    text-decoration: none;
+    color: #000;
+    margin-left: 35%;
+    border-radius:5px;
+}
+form a:hover{
+    background:Linear-gradient(#fff,#ddd);
+}

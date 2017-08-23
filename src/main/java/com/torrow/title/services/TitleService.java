@@ -22,5 +22,7 @@ public interface TitleService {
 	public boolean updateTitle(Title title);
 	//删除一个对象
 	public boolean deleteTitle(Title title);
+	public List<Title> getAll();
+	public Title getTitle(String titleName);
 
 }

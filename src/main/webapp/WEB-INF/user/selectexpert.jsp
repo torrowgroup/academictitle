@@ -12,7 +12,8 @@
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
-<body>	
+<body>
+<a href="${rootPath}user/Expert_relay" target="mainiframe">添加专家</a>	
 <div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 			<form action="${rootPath}user/Expert_select" method="post">
 				<select name="ask"

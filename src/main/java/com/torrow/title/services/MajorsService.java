@@ -21,13 +21,15 @@ public interface MajorsService {
 
 	public boolean add(Majors majors);//wqj 添加专业
 
-	public List<Majors> checkAll();
+	public List<Majors> checkAll();//wqj 查看所有专业（不分页）
 
-	public boolean update(Majors majors);
+	public boolean update(Majors majors);//wqj更新专业信息
 
 	public  Majors checkById(int id);//张金高用
 
-	public boolean deleteById(int id);
+	public boolean deleteById(int id);//通过ID查询
+
+	public Majors checkMajorsName(String majorsName);//通过专业名称查询
 
 	
 

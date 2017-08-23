@@ -92,7 +92,6 @@ public class RecordDao extends BaseDao<Record> implements RecordService{
 			if(!boo){
 				return false;
 			}
-			i--;
 		}
 		return boo;
 	}

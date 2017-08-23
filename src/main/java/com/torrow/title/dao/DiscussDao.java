@@ -122,7 +122,6 @@ public class DiscussDao extends BaseDao<Discuss> implements DiscussService {
 			if(!boo){
 				return false;
 			}
-			i--;
 		}
 		return boo;
 	}

@@ -50,11 +50,16 @@ public class NoticeManageAction extends BaseAction {
 		return "view";
 	}
 
-public String add() {
-	Date date = new Date();
-	Manager  manager= (Manager) session.get("manager");
-	boolean boo = noticeService.add(notice,manager.getMa_name(),date);
-
-	return "addNotice";
-}
+	public String add() {
+		Date date = new Date();
+		Manager manager = (Manager) session.get("manager");
+		boolean boo = noticeService.add(notice, manager.getMa_name(), date);
+		request.put("Message", "添加通知成功");
+		return "addNotice";
+	}
+	public String viewDetail() {
+		Notice notice = noticeService.getById(noticeId);
+		request.put("notice", notice);
+		return "viewDetail";
+	}
 }

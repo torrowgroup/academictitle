@@ -99,6 +99,7 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 		boolean allsign = true;
 		Manager admain = (Manager) session.get("admain");
 		if(admain.getMa_userName().equals(manager.getMa_userName())){
+			session.put("admain", manager);
 			boolean sign = managerService.updateManager(manager);
 			if (sign) {
 				request.put("message", "修改成功");
@@ -122,6 +123,7 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 				}
 			}
 			if (allsign) {
+				session.put("admain", manager);
 				boolean sign = managerService.updateManager(manager);
 				if (sign) {
 					request.put("message", "修改成功");

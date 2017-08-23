@@ -16,6 +16,12 @@
 </style>
 </head>
 <body>
+<td>${Message }</td>
+<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">添加专业</a>
+  <form action="${rootPath}setting/MajorsManage_searchMajors" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="majorsName" placeholder="请输入所要查询专业名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
 	<table>
 		<thead>
 			<tr>
