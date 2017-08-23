@@ -14,6 +14,7 @@
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 	<td>${Message }</td>
 	<div class="top">
 		<div class="right">
@@ -25,6 +26,21 @@
 		</div>
 		<table border="1" cellspacing="0">
 			<caption>专业信息</caption>
+=======
+<td>${Message }</td>
+<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">添加专业</a>
+  <form action="${rootPath}setting/MajorsManage_searchMajors" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="majorsName" placeholder="请输入所要查询专业名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
+	<table>
+		<thead>
+			<tr>
+				<td colspan="3">专业信息</td>
+			</tr>
+		</thead>
+		<tbody>
+>>>>>>> 522a3aa8fb380b1a81528d79a64ea6208c0e7158
 			<tr>
 				<th>专业编号</th>
 				<th>专业名称</th>

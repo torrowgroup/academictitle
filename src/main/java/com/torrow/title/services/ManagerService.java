@@ -43,6 +43,4 @@ public interface ManagerService {
 	//获取所有的管理员信息，用于添加账号的对比
 	public List<Manager> getAllAdmain();
 
-	public void ssss();
-	
 }

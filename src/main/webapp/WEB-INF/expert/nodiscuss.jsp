@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4	/loose.dtd">
 <html>
 <head>
@@ -16,8 +17,8 @@
 <div class="box">
 		<img src="${rootPath}images/nail-1.gif" class="left"> <img
 			src="${rootPath}images/nail-2.gif" class="right">
-	<center>${message }</center>
 		<div class="back"><<<a href="${rootPath}expert/ExpertPersonal_back">返回首页</a></div>
+		<div>${message }</div>
 	<div class="wall">
 		<div class="rightform">
 			<form action="${rootPath}expert/ExpertDiscussAction_noDiscuss"
@@ -26,6 +27,7 @@
 				<input class="btn" type="submit" value="查询">
 			</form>
 		</div>
+		<c:if test="${fn:length(noDiscuss.data) > 0 }">
 		<table border="1" cellspacing="0">
 			<tr>
 				<th>参评人</th>
@@ -42,7 +44,7 @@
 					<td>${noDiscuss.pa_title.ti_titleName}</td>
 					<td>${noDiscuss.pa_unit.un_unitName}</td>
 					<td>${noDiscuss.pa_majors.maj_majorName}</td>
-					<td><img alt="加载中" src="${rootPath}uploadImage/${noDiscuss.pa_imageUrl}"></td>
+					<td style="width: 100px;"><img height="50px" width="100%" alt="加载中" src="${rootPath}uploadImage/${noDiscuss.pa_imageUrl}"></td>
 					<td style="padding-top: 3px"><textarea>${noDiscuss.pa_introduce}</textarea>
 					</td>
 					<td><a
@@ -69,6 +71,7 @@
 				<li><a href="${rootPath }expert/ExpertDiscussAction_noDiscuss?page=${noDiscuss.nextPage}">下一页</a></li>
 			</ul>
 		</div>
+		</c:if>
 	</div>
 	</div>
 </body>

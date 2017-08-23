@@ -16,6 +16,7 @@
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 	<td>${Message}</td>
 	<div class="top">
 		<div class="right">
@@ -27,6 +28,21 @@
 		</div>
 		<table border="1" cellspacing="0">
 			<caption>部门信息</caption>
+=======
+<td>${Message}</td>
+<a href="${rootPath}setting/Transfer_addUnit" target="mainiframe">添加单位</a>
+  <form action="${rootPath}setting/DepartmentManage_searchUnit" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="unitName" placeholder="请输入所要查询部门名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
+	<table>
+		<thead>
+			<tr>
+				<td colspan="3">部门信息</td>
+			</tr>
+		</thead>
+		<tbody>
+>>>>>>> 522a3aa8fb380b1a81528d79a64ea6208c0e7158
 			<tr>
 				<th>部门ID</th>
 				<th>部门名称</th>

@@ -15,6 +15,7 @@
 </style>
 </head>
 <body>
+<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a>
 	<table>
 		<thead>
 			<tr>

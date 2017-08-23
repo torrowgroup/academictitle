@@ -14,6 +14,7 @@
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 	<div class="top">
 		<div class="right">
 			<form
@@ -25,6 +26,15 @@
 		</div>
 		<table border="1" cellspacing="0">
 			<caption>评议要求信息</caption>
+=======
+<a href="${rootPath}setting/Transfer_addReviewRequirements" target="mainiframe">添加评议要求</a>
+  <form action="${rootPath}setting/ReviewRequirementsManage_searchRequire" method="post"  onsubmit="return check()">
+    <input type="text" class="input1" name="titleName" placeholder="请输入所要查询评议要求相关职称名称">
+    <button class="input2"  >搜&nbsp;索</button>
+    </form>
+	<table>
+		<thead>
+>>>>>>> 522a3aa8fb380b1a81528d79a64ea6208c0e7158
 			<tr>
 				<th>职称名称</th>
 				<th>教学方面</th>

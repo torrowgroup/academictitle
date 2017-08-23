@@ -23,6 +23,7 @@
 		<div class="back">
 			<<<a href="${rootPath}expert/ExpertPersonal_back">返回首页</a>
 		</div>
+		<p class="center">${message }</p>
 	<c:if test="${fn:length(alreadyDiscuss.data) > 0 }">
 		<div class="form">
 			<form action="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss" method="post">
@@ -31,7 +32,6 @@
 			</form>
 		</div>
 		<div class="top">
-			<p class="center">${message }</p>
 			<table border="1" cellspacing="0">
 				<tr>
 					<th>参评人</th>
