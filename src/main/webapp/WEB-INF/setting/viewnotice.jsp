@@ -26,9 +26,7 @@
 }
 </style>
 </head>
-
 <body>
-	<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a>
 	<div class="top">
  <c:if test="${fn:length(paCut.data) > 0 }">
 		<table border="1" cellspacing="0">

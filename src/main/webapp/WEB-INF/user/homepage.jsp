@@ -81,7 +81,7 @@
             <div style="margin:0" class="box1">
                 <div class="info-title">
                     <span>通知公告</span>
-                    <a style="font-size:12px;float:right" href="#">+更多</a>
+                    <a style="font-size:12px;float:right" href="${rootPath}setting/NoticeManage_view" target="mainiframe">+更多</a>
                 </div>
                 <div class="info-text">
                 <c:forEach items="${someNotice}" var="items">
