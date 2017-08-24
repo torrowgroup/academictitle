@@ -75,6 +75,6 @@
 					href="${rootPath}setting/TitleManage_${method}?page=${paCut.nextPage}">下一页</a></li>
 			</ul>
 		</div>
-		</div>
+	</div>
 </body>
 </html>
