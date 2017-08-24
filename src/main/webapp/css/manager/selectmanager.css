@@ -52,3 +52,12 @@ table td{
 .page{
     margin:15% 0 0 35%;
 }
+.font{float:right;
+      margin-right:90px;
+      color:#000;
+      background-color:#82C0E9;
+      padding:3px 5px;
+      border-radius:5px;
+      border:2px solid #ccc;
+      font-size:12px;
+      }

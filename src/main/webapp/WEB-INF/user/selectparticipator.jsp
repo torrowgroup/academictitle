@@ -28,7 +28,7 @@
 	</div>
 	<div class="wall">
 <c:if test="${fn:length(messagenews.data) > 0 }">
-<table border="1" cecellspacing="0" >
+<table border="1" cecellspacing="0" style="width:880px; margin:0 auto" >
 		<thead>
 			<caption>参评人信息</caption>
 		</thead>
@@ -41,7 +41,7 @@
 				<th>单位</th>
 				<th>职称</th>
 				<th>照片</th>
-				<th>简介</th>
+				<th style="width:200px">简介</th>
 				<th>评选成功通知</th>
 				<th>操作</th>
 			</tr>
@@ -53,8 +53,8 @@
 				<td>${item.pa_majors.maj_majorName}</td>
 				<td>${item.pa_unit.un_unitName}</td>
 				<td>${item.pa_title.ti_titleName}</td>
-				<td><img src="${rootPath}uploadImg/${item.pa_imageUrl}"></td>
-				<td>${item.pa_introduce}</td>
+				<td width="100px" height="100px"><img width="100px" height="100px" src="${rootPath}uploadImage/${item.pa_imageUrl}"></td>
+				<td width="100px" height="100px"><textarea rows="20" cols="2">${item.pa_introduce}</textarea></td>
 				<td><a href="${rootPath}user/Participator_sendEmail?pa_id=${item.pa_id}">邮件通知</a></td>
 				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}">删除</a></td>
 			</tr>
