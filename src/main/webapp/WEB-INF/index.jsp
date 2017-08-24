@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-	<link rel="stylesheet" type="text/css" href="${rootPath}css/index0.css">
+	<link rel="stylesheet" type="text/css" href="${rootPath}css/index.css">
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                    <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe">通知公告</a></li>
                    <li>
                       <a href="${rootPath}user/Manager_toUpdate?term=myself" target="mainiframe">个人中心</a>
-                      <a href="#" style="font-size:10px"> [退出]</a>
+                      <a href="${rootPath}user/Manager_logOff" style="font-size:10px"> [退出]</a>
                    </li>
                </ul>
            </div> 

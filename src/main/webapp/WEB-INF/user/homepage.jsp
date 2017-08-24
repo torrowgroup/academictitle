@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>职称评审系统</title>
-	<link rel="stylesheet" type="text/css" href="${rootPath}css/index0.css">
+	<link rel="stylesheet" type="text/css" href="${rootPath}css/index.css">
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>

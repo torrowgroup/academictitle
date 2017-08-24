@@ -201,6 +201,15 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 		request.put("messagenews", admains);
 		return "updatemyself";
 	}
+	//退出登录
+	public String logOff(){
+		return "logOff";
+	}
+	//清除登录信息
+	public String out(){
+		session.remove("manager");
+		return "out";
+	}
 	public int getPage() {
 		return page;
 	}
