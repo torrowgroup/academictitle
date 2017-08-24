@@ -60,34 +60,33 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<div class="page">
-			<ul class="pagination">
-				<li><a
-					href="${rootPath}setting/DepartmentManage_${Method}?page=${paCut.prePage}">上一页</a></li>
-				<c:forEach var="i"
-					begin="${paCut.currentPage-3>0?paCut.currentPage-3:1 }"
-					end="${paCut.currentPage+3>paCut.pageNum?paCut.pageNum:paCut.currentPage+3  }">
-					<c:choose>
-						<c:when test="${i>0 && i == paCut.currentPage}">
-							<li class="active"><a
-								href="${rootPath}setting/DepartmentManage_${Method}?page=${i}">${i}</a></li>
-						</c:when>
+			<div class="page">
+				<ul class="pagination">
+					<li><a
+						href="${rootPath}setting/DepartmentManage_${method}?page=${paCut.prePage}">上一页</a></li>
+					<c:forEach var="i"
+						begin="${paCut.currentPage-3>0?paCut.currentPage-3:1 }"
+						end="${paCut.currentPage+3>paCut.pageNum?paCut.pageNum:paCut.currentPage+3  }">
+						<c:choose>
+							<c:when test="${i>0 && i == paCut.currentPage &&i<=3}">
+								<li class="active"><a
+									href="${rootPath}setting/DepartmentManage_${method}?page=${paCut.prePage}">${i}</a></li>
+							</c:when>
 
-						<c:when test="${i>0 && i != paCut.currentPage}">
-							<li><a
-								href="${rootPath}setting/DepartmentManage_${Method}?page=${i}">${i}</a></li>
-						</c:when>
-					</c:choose>
-				</c:forEach>
-
-				<li><a
-					href="${rootPath}setting/DepartmentManage_${Method}?page=${paCut.nextPage}">下一页</a></li>
-			</ul>
+							<c:when test="${i>0 && i != paCut.currentPage &&i<=3}">
+								<li><a
+									href="${rootPath}setting/DepartmentManage_${method}?page=${paCut.prePage}">${i}</a></li>
+							</c:when>
+						</c:choose>
+					</c:forEach>
+					<li><a
+						href="${rootPath}setting/DepartmentManage_${method}?page=${paCut.prePage}">下一页</a></li>
+				</ul>
+			</div>
 		</div>
-		</div>
-		</c:if>
+</c:if>
 			<div class="side">
-	   <a href="${rootPath}setting/DepartmentManage_view"><img src="${rootPath}images/unit.png" width="100px"></a>
+	   <a href="${rootPath}setting/Transfer_addUnit"	><img src="${rootPath}images/unit.png" width="100px"></a>
 	</div>
 </body>
 </html>

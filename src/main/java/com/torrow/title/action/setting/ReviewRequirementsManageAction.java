@@ -61,7 +61,7 @@ public class ReviewRequirementsManageAction extends BaseAction {
 					request.put("Message", "已有该职称相关评议");
 				}else {
 					boolean boo =requireService.add(req,title);
-					request.put("Message", "该职称评议要求调节价成功");
+					request.put("Message", "该职称评议要求添加成功");
 					request.put("reqlist", session.get("reqlist"));
 					return "addReviewRequirements";
 				}

@@ -83,7 +83,7 @@
 		</div>
 		</c:if>
 			<div class="side">
-	   <a href="#"><img src="${rootPath}images/notice.png" width="18px" style="float:left;margin-left:0px"></a>
+	   <a href="${rootPath}setting/Transfer_addNotice"><img src="${rootPath}images/notice.png" width="100px"></a>
 	</div>
 </body>
 </html>

@@ -22,13 +22,13 @@
 	right:10px;
 	top:40%;
 }
+
 </style>
 </head>
 <body>
 
  <c:if test="${fn:length(paCut.data) > 0 }">
-
-	<td>${Message }</td>
+	<p>${Message }</p>
 	<div class="top" style="width:75%">
 		<div class="right">
 			<form action="${rootPath}setting/MajorsManage_searchMajors"
@@ -39,7 +39,8 @@
 		</div>
 		<table border="1" cellspacing="0" >
 			<caption>专业信息</caption>
-				<th>专业名称</th>
+			<th>专业ID：</th>
+				<th>专业名称：</th>
 				<th>操作</th>
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">

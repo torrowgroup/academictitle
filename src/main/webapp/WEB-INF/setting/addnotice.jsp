@@ -6,19 +6,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
 <title>Insert title here</title>
-</head>
-<script type="text/javascript">
-var oinput1 = document.getElementById("input1");
-oinput1.oninput= function(){
-    var text = oinput1.value;
-    if(text.length>5){
-        alert("只能输入5个字符");
-        oinput1.style.borderColor = "red";
-    }
+<style>
+.tilp{
+  padding-top:50px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+
 }
-</script>
+</style>
+</head>
+
 <body>
-	<div>${Message}</div>
+<div class="tilp">${Message}</div>
 	<form action="${rootPath}setting/NoticeManage_add" method="post">
 		<span>通知名称：</span>
 		<input type="text" id=“input1” name="notice.no_head" placeholder="请输入通知名称" maxlength='20' ><br>
