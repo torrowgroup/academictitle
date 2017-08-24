@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>职称审核系统-登录</title>
- <link rel="stylesheet" type="text/css" href="css/login.css">
+ <link rel="stylesheet" type="text/css" href="${rootPath}css/login.css">
 </head>
 <body>
    <div class="title">河南科技学院职称评审系统</div>

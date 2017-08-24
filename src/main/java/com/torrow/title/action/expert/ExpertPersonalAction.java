@@ -27,6 +27,7 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 	private int majorId;//得到修改后的专业id
 	private int unitId;//得到修改后的单位id
 	private int titleId;//得到修改后的职称id
+	private String sort;//判断用户身份用于退出
 	
 	//得到个人信息
 	public String myselfMessage(){
@@ -97,6 +98,12 @@ public class ExpertPersonalAction extends BaseAction implements ModelDriven<Expe
 	}
 	public final void setUnitId(int unitId) {
 		this.unitId = unitId;
+	}
+	public String getSort() {
+		return sort;
+	}
+	public void setSort(String sort) {
+		this.sort = sort;
 	}
 	
 	

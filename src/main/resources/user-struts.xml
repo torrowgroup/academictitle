@@ -16,6 +16,8 @@
 			<result name="update">/WEB-INF/user/updatemanager.jsp</result>
 			<result name="updatemyself">/WEB-INF/user/myself.jsp</result>
 			<result name="homepage">/WEB-INF/user/homepage.jsp</result>
+			<result name="logOff">/WEB-INF/user/logoff.jsp</result>
+			<result name="out">/index.jsp</result>
 		</action>
 		<action name="Expert_*" method="{1}" class="com.torrow.title.action.user.ExpertAction">
 			<result name="select">/WEB-INF/user/selectexpert.jsp</result>
