@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,8 +13,19 @@
 	href="${rootPath}css/setting/bootstrap.css">
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<style type="text/css">
+  .side{
+	width:100px;
+	height:32px;
+	background-color:rgba(0,0,0,.4);
+	position:fixed;
+	right:10px;
+	top:40%;
+}
+</style>
 </head>
-
+  <c:if test="${fn:length(paCut.data) > 0 }"> 
+<a href="${rootPath}setting/Transfer_addReviewRequirements?requireId=${item.re_id}">as</a>
 	<div class="top">
 		<div class="right">
 			<form
@@ -26,25 +38,26 @@
 		<table border="1" cellspacing="0">
 			<caption>评议要求信息</caption>
 			<tr>
-				<th>职称名称</th>
-				<th>教学方面</th>
-				<th>科研方面</th>
-				<th>师德</th>
-				<th>操作</th>
+				<th width="200px">职称名称</th>
+				<th width="500px">操作</th>
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
-					<td>${item.re_title.ti_titleName}</td>
-					<td>${item.re_educate}</td>
-					<td>${item.re_scientific}</td>
-					<td>${item.re_morality}</td>
-					<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
+					<td><a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">${item.re_title.ti_titleName}</a></td>
+					<td width="150px">
+					<a style="position: absolute; left: 5px; top: 8px;"
+						href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">
+							<img src="${rootPath}images/view.png" width="20px" style="float:left;margin-left:20px">
+					</a>
+					<a style="position: absolute; left: 45px; top: 8px;"
 						href="${rootPath}setting/Transfer_updateRequire?requireId=${item.re_id}">
-							<img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:0px">
-					</a> <a style="position: absolute; right: 25px; top: 8px;"
+							<img src="${rootPath}images/edit.png" width="20px" style="float:left;margin-left:70px">
+					</a> 
+					<a style="position: absolute; right: 25px; top: 8px;"
 						href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">
-							<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
+							<img src="${rootPath}images/delete.png" width="20px" style="float:left;margin-left:0px">
 					</a></td>
+					
 				</tr>
 			</c:forEach>
 		</table>
@@ -71,5 +84,10 @@
 					href="${rootPath}setting/ReviewRequirementsManage_${method}?page=${paCut.nextPage}">下一页</a></li>
 			</ul>
 		</div>
+		</div>
+	</c:if> 
+		<div class="side">
+	   <a href="${rootPath}setting/Transfer_addReviewRequirements"><img src="${rootPath}images/require.png" width="100px"></a>
+	</div>
 </body>
 </html>

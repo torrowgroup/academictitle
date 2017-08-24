@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,9 +15,19 @@
 	href="${rootPath}css/setting/font-awesome.css">
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<style type="text/css">
+  .side{
+	width:100px;
+	height:32px;
+	background-color:rgba(0,0,0,.4);
+	position:fixed;
+	right:10px;
+	top:40%;
+}
+</style>
 </head>
 <body>
-
+ <c:if test="${fn:length(paCut.data) > 0 }">
 	<td>${Message}</td>
 	<div class="top">
 		<div class="right">
@@ -71,5 +82,10 @@
 					href="${rootPath}setting/DepartmentManage_${Method}?page=${paCut.nextPage}">下一页</a></li>
 			</ul>
 		</div>
+		</div>
+		</c:if>
+			<div class="side">
+	   <a href="${rootPath}setting/DepartmentManage_view"><img src="${rootPath}images/unit.png" width="100px"></a>
+	</div>
 </body>
 </html>

@@ -9,10 +9,10 @@
 </head>
 <body>
 <form action="${rootPath}setting/MajorsManage_update" method="post">
-<span>专业ID：</span>
+<span>专业ID  ：</span>
 		<input type="text"  name="majors.maj_id"  value="${majors.maj_id} "  readonly="readonly"  ><br>
 		<span>专业名称：</span>
-		<input type="text"  name="majors.maj_majorName" value="${majors.maj_majorName}"" ><br>
+		<input type="text"  name="majors.maj_majorName" value="${majors.maj_majorName}" maxlength='15' ><br>
 		 <input  class="btn" type="submit" value="提交">
 	</form>
 </body>

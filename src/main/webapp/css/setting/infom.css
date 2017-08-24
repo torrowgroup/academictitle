@@ -8,7 +8,9 @@
     text-align: center;
     margin-top: 4%;
 }
-.top h1{text-align: center;padding-bottom: 30px;}
+.top h1{text-align: center;
+padding-bottom: 30px;
+}
 
 #text1{
     height: 20px;
@@ -18,7 +20,7 @@
 }
 #text2{
     height: 220px;
-    width: 58%;
+    width: 100%;
     border-radius:5px;
     border:2px dashed #ccc;
 }

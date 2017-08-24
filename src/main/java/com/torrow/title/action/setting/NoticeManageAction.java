@@ -51,8 +51,8 @@ public class NoticeManageAction extends BaseAction {
 	}
 
 	public String add() {
-		if(notice.getNo_head()==null) {
-			request.put("Message", "通知添加失败");
+		if(notice.getNo_head().equals("")) {
+			request.put("Message", "通知添加失败,请添加通知头");
 		}else {
 		Date date = new Date();
 		Manager manager = (Manager) session.get("manager");

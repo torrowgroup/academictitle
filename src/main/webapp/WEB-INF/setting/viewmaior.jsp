@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,11 +13,21 @@
 	href="${rootPath}css/setting/bootstrap.css">
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<style type="text/css">
+  .side{
+	width:100px;
+	height:32px;
+	background-color:rgba(0,0,0,.4);
+	position:fixed;
+	right:10px;
+	top:40%;
+}
+</style>
 </head>
 <body>
-
+ <c:if test="${fn:length(paCut.data) > 0 }">
 	<td>${Message }</td>
-	<div class="top">
+	<div class="top" style="width:75%">
 		<div class="right">
 			<form action="${rootPath}setting/MajorsManage_searchMajors"
 				method="post" onsubmit="return check()">
@@ -24,10 +35,10 @@
 				<input type="submit" value="搜索">
 			</form>
 		</div>
-		<table border="1" cellspacing="0">
+		<table border="1" cellspacing="0" >
 			<caption>专业信息</caption>
 			<tr>
-				<th>专业编号</th>
+				<th style="width:200px">专业编号</th>
 				<th>专业名称</th>
 				<th>操作</th>
 			</tr>
@@ -68,6 +79,10 @@
 					href="${rootPath}setting/MajorsManage_${method}?page=${paCut.nextPage}">下一页</a></li>
 			</ul>
 		</div>
+	</div>
+	</c:if>
+	<div class="side">
+	   <a href="${rootPath}setting/Transfer_addMajors"><img src="${rootPath}images/major.png" width="100px" ></a>
 	</div>
 </body>
 </html>

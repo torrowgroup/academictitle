@@ -12,9 +12,8 @@
 	<form action="${rootPath}setting/TitleManage_update" method="post">
 		<span>职称ID：</span> <input type="text" name="title.ti_id"
 			value="${title.ti_id} " readonly="readonly"><br> <span>职称名称：</<span>
-				<input type="text" name="title.ti_titleName"
-				value="${title.ti_titleName}"" ><br> <input class="btn"
-				type="submit" value="提交">
+				<input type="text" name="title.ti_titleName" value="${title.ti_titleName}" maxlength='15'><br> 
+				<input class="btn"type="submit" value="提交">
 	</form>
 </body>
 </html>

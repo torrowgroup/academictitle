@@ -94,5 +94,10 @@ public class ReviewRequirementsManageAction extends BaseAction {
 			}
 			return  "searchRequire";
 		}
+		public String getDetails() {
+			Require require = requireService.checkById(requireId);
+			request.put("require", require);
+			return "getDetails";
+		}
 
 }

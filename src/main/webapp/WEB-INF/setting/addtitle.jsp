@@ -11,7 +11,7 @@
 <td>${Message }</td>
 <form action="${rootPath}setting/TitleManage_add" method="post">
 		<span>职称名称：</span>
-		<input type="text"  name="title.ti_titleName"} placeholder="请输入职称名称"><br>
+		<input type="text"  name="title.ti_titleName"} placeholder="请输入职称名称" maxlength='10s'><br>
 		 <input  class="btn" type="submit" value="提交">
 	</form>
 </body>

@@ -11,7 +11,7 @@
 <div>${Message}</div>
 	<form action="${rootPath}setting/MajorsManage_add" method="post">
 		<span>专业名称：</span>
-		<input type="text"  name="majors.maj_majorName" placeholder="请输入专业名称" ><br>
+		<input type="text"  name="majors.maj_majorName" placeholder="请输入专业名称" maxlength='15'><br>
 		 <input class="btn"  type="submit" value="提交">
 	</form>
 	

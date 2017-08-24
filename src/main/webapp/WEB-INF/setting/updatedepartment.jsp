@@ -13,7 +13,7 @@
 <span>部门ID:</span>
 		<input type="text"  name="unit.un_id"  value="${unit.un_id} "  readonly="readonly"  ><br>
 		<span>部门名称:</span>
-		<input type="text"  name="unit.un_unitName" value="${unit.un_unitName}"" ><br>
+		<input type="text"  name="unit.un_unitName" value="${unit.un_unitName}" maxlength='15'><br>
 		 <input class="btn" type="submit" value="提交">
 	</form>
 </body>
