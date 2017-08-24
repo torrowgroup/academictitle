@@ -14,7 +14,6 @@
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
 	<div class="top">
 		<div class="right">
 			<form action="${rootPath}setting/TitleManage_searchTitle"
@@ -25,12 +24,7 @@
 		</div>
 		<table border="1" cellspacing="0">
 			<caption>职称信息</caption>
-=======
 	<a href="${rootPath}/setting/Transfer_addTitle" target="mainiframe">添加职称</a><br>
-  <form action="${rootPath}setting/TitleManage_searchTitle" method="post"  onsubmit="return check()">
-    <input type="text" class="input1" name="titleName" placeholder="请输入所要查询职称名称">
-    <button class="input2"  >搜&nbsp;索</button>
-    </form>
 	<table>
 		<thead>
 			<tr>
@@ -38,7 +32,6 @@
 			</tr>
 		</thead>
 		<tbody>
->>>>>>> 522a3aa8fb380b1a81528d79a64ea6208c0e7158
 			<tr>
 				<th>职称编号</th>
 				<th>职称名称</th>
@@ -82,6 +75,6 @@
 					href="${rootPath}setting/TitleManage_${method}?page=${paCut.nextPage}">下一页</a></li>
 			</ul>
 		</div>
-		</div>
+	</div>
 </body>
 </html>

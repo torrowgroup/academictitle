@@ -1,9 +1,12 @@
 *{margin:0;padding: 0}
 .wall{
-    width: 30%;
+    width: 35%;
     height: auto;
     margin:0 auto;
     margin-top: 10%;
+}
+form{
+	width: 100%;
 }
 form label{
     display: inline-block;
@@ -14,9 +17,9 @@ form label{
     font-weight: bold;
     vertical-align: middle;
 }
-form input[type="text"],form select{
+form input[type="text"],form select,form input[type="email"]{
     height: 33px;
-    width: 50%;
+    width: 45%;
     border-radius: 5px;
     vertical-align: middle;
 }
