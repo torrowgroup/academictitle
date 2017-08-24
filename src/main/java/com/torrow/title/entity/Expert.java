@@ -29,8 +29,8 @@ public class Expert {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length=11)
 	private int ex_id;
-	@Column(length=11)
-	private String ex_userName; //用户名
+	@Column(length=20)
+	private String ex_userName; //用户名,邮箱
 	@Column(length=11)
 	private String ex_password; //密码
 	@Column(length=11)

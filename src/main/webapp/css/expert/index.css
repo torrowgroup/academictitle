@@ -10,6 +10,13 @@
     text-align: left;
     margin-top:20px;
 } 
+.notice{
+	margin-top:2%;
+	margin-left:16%;
+	width: 1000px;
+	font-size: 20px;
+	font-family: 宋体;
+}
  .text span{
    float:right;
  }

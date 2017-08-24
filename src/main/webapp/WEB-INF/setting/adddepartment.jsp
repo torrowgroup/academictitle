@@ -12,7 +12,7 @@
 	<center>${Message}</center>
 	<form action="${rootPath}setting/DepartmentManage_add" method="post">
 		<span>单位名称:</span>
-		<input type="text"  name="unit.un_unitName" placeholder="请输入单位名称" ><br>
+		<input type="text"  name="unit.un_unitName" placeholder="请输入单位名称" maxlength='15'><br>
 		 <input class="btn" type="submit" value="提交">
 	</form>
 </body>

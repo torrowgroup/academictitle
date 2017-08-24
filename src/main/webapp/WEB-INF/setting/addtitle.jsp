@@ -5,13 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
 </head>
 <body>
 <td>${Message }</td>
 <form action="${rootPath}setting/TitleManage_add" method="post">
-		<lable>职称名称：</lable>
-		<input type="text"  name="title.ti_titleName"} placeholder="请输入职称名称"><br>
-		 <input type="submit" value="提交">
+		<span>职称名称：</span>
+		<input type="text"  name="title.ti_titleName"} placeholder="请输入职称名称" maxlength='10s'><br>
+		 <input  class="btn" type="submit" value="提交">
 	</form>
 </body>
 </html>

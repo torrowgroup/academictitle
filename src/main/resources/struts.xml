@@ -22,6 +22,9 @@
 			<result name="managerIndex">/WEB-INF/index.jsp</result>
 			<result name="expertIndex">/WEB-INF/expert/index.jsp</result>
 			<result name="login">/index.jsp</result>
+			<result name="forgetPassword">/findback.jsp</result>
+			<result name="compareCode">/WEB-INF/comparecode.jsp</result>
+			<result name="resetPassword">/WEB-INF/resetpassword.jsp</result>
 		</action>
 	</package>
 </struts>

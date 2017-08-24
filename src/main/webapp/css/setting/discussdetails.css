@@ -1,7 +1,7 @@
 *{margin:0;padding: 0}
 .top{
     height: auto;
-    width:60%;
+    width:100%;
     margin:0 auto;
     margin-top: 2%;
 }
@@ -26,8 +26,10 @@
 table{
     border-color: #999;
     text-align: center;
-    margin:0 auto;
-    width:50%;
+    margin-top:5%;
+    margin-left:20%;
+/*     margin:0 auto; */
+    width:60%;
     background-color: #eee;
 }
 caption{
@@ -46,6 +48,6 @@ table td{
 /*          font-weight: bold; */
          padding-bottom: 20px;}
 .page{
-   
-    margin-top: 15%;
+   margin-left:50%;
+    margin-top: 5%;
 }

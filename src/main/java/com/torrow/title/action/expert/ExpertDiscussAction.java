@@ -168,6 +168,7 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 		discussService.updateDiscuss(discuss);
 		di_rank(discuss);
 		alreadyDiscuss();// 调用已评方法，到达已评界面
+		request.put("message", "修改成功");
 		return "getAlreadyDiscuss";
 	}
 

@@ -23,8 +23,8 @@ public class Manager {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length=11)
 	private int ma_id;		//编号
-	@Column(length=11)
-	private String ma_userName; //用户名
+	@Column(length=20)
+	private String ma_userName; //用户名,邮箱
 	@Column(length=11)
 	private String ma_password; //密码
 	@Column(length=11)

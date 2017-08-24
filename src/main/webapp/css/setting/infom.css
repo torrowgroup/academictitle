@@ -1,0 +1,36 @@
+
+.top{
+    margin:0;
+    padding:0;
+    width:50%;
+    height: auto;
+    margin:0 auto;
+    text-align: center;
+    margin-top: 4%;
+}
+.top h1{text-align: center;
+padding-bottom: 30px;
+}
+
+#text1{
+    height: 20px;
+    width: 180px;
+    border-radius:5px;
+    border:1px dashed #ccc;
+}
+#text2{
+    height: 220px;
+    width: 100%;
+    border-radius:5px;
+    border:2px dashed #ccc;
+}
+
+
+
+
+
+
+
+
+
+
