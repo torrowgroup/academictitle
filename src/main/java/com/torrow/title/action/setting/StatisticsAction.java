@@ -49,6 +49,9 @@ public class StatisticsAction extends BaseAction {
 			inquiry = new String(inquiry.getBytes("ISO8859-1"), "UTF-8");
 		}
 		PageCut<Discuss> rank = discussService.discussPageCut(page,2,ask,inquiry);
+		if(rank.getData().size()==0){
+			request.put("message", "没有排名信息");
+		}
 		request.put("discussRank", rank);
 		session.put("ask", ask);
 		session.put("inquiry", inquiry);

@@ -13,11 +13,11 @@
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-	<center>${message}</center>
+	<div style="margin-top:2%;text-align: center;">${message}</div>
 	 <div class="wall">
         <div class="list">
             <ul>
-                <span style="padding-left:0;font-size:18px">选择查看排名方式 :</span>
+                <span style="padding-left:0px;font-size:18px">选择查看排名方式 :</span>
                 <li>按职称排名
                    <div class="hide-box">
                        <c:forEach items="${allTitle}" var="allTitle">

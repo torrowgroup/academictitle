@@ -12,9 +12,11 @@
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
+	<div class="notice">
 	<marquee behavior="scroll">
 				<p>${noticeNew.no_content}</p>
 	</marquee>
+	</div>
 	<div class="box" style="margin-top:55px;">
 		<img src="${rootPath}images/nail-1.gif" class="left"> <img
 			src="${rootPath}images/nail-2.gif" class="right">
@@ -45,12 +47,13 @@
 			<!-- 评审政策内容开始 -->
 			<a href="">评审政策</a><br>
 			<div class="bot">
-				<span style="float: left; margin-left: 30px"><img
+				<span style="float: left; margin-left: 26px"><img
 					src="${rootPath}images/dot-2.png">公开&nbsp;&nbsp;公平&nbsp;&nbsp;公正</span><br>
-				<span style="float: left; margin-left: 30px"><img
-					src="${rootPath}images/dot-2.png">根据自己对参评人专业熟悉程度，合理做出评审</span><br> <span
-					style="float: left; margin-left: 30px"><img
-					src="${rootPath}images/dot-2.png">根据通知时间完成评审</span><br>
+				
+				<span style="float: left; margin-left: 26px"><img
+					src="${rootPath}images/dot-2.png">根据通知时间完成评审</span>
+					<span style="float: left; margin-left: 25px;"><img
+					src="${rootPath}images/dot-2.png">根据自己对参评人专业熟悉<br>程度，合理做出评审</span><br>
 			</div>
 		</div>
 		<!-- 评审政策内容结束 -->

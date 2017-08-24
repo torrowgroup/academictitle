@@ -20,6 +20,8 @@ public interface ExpertService {
 	public Expert login(String userName,String password);
 	//查询专家，分页，模糊查询
 	public PageCut<Expert> allExpert(int page, int pageSize,String inquiry);
+	//根据用户名得到专家
+	public Expert getByUserName(String userName);
 	//马黎明
 	//查询所有专家的信息，用于添加账号的对比
 	public List<Expert> getAlllExpert();

@@ -12,18 +12,17 @@
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-	<center>
+	<div class="top">
 		<table border="1">
 			<tr>
-				<td>参评人</td>
-				<td>评议专家</td>
-				<td>申报职称</td>
-				<td>熟悉程度</td>
-				<td>教育</td>
-				<td>科研</td>
-				<td>师德</td>
-				<td>评分</td>
-				<td>操作</td>
+				<th>参评人</th>
+				<th>评议专家</th>
+				<th>申报职称</th>
+				<th>熟悉程度</th>
+				<th>教育</th>
+				<th>科研</th>
+				<th>师德</th>
+				<th>评分</th>
 			</tr>
 			<c:forEach items="${recordList.data}" var="recordList">
 				<tr>
@@ -35,7 +34,6 @@
 					<td>${recordList.re_scientific}</td>
 					<td>${recordList.re_morality}</td>
 					<td>${recordList.re_score}</td>
-					<td><a href="">修改</a></td>
 				</tr>
 			</c:forEach>
 		</table>
@@ -61,7 +59,6 @@
 						href="${rootPath }setting/Statistics_discussDetails?page=${recordList.nextPage}">下一页</a></li>
 				</ul>
 			</div>
-		
-	</center>
+	</div>
 </body>
 </html>

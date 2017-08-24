@@ -1,0 +1,51 @@
+.header{
+    width:85%;
+    height: auto;
+    margin: 0 auto;
+    margin-top:7%;
+}
+.message{
+	margin-top:3%;
+	text-align: center;
+}
+.right{
+    width: auto;
+    height: 35px;
+    float: right;
+    margin-bottom: 20px;
+}
+.right select{
+    border-radius: 5px;
+    color: #999;
+    font-size: 12px;
+    height: 20px;
+}
+.right input{
+    height: 20px;
+    border-radius: 3px;}
+.right a{
+    padding: 1px 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+}
+.right a:hover{
+    text-decoration: none;
+}
+table{
+   text-align: center;
+   width: 70%;
+   margin-top:3%;
+}
+table th{
+    text-align: center;
+    font-size: 17px;
+    background-color: #eee;
+    height: 45px;
+}
+table td{
+    height: 40px;
+}
+.page{
+    margin:15% 0 0 35%;
+}
