@@ -25,7 +25,7 @@
 </style>
 </head>
   <c:if test="${fn:length(paCut.data) > 0 }"> 
-<a href="${rootPath}setting/Transfer_addReviewRequirements?requireId=${item.re_id}">as</a>
+<body>
 	<div class="top">
 		<div class="right">
 			<form

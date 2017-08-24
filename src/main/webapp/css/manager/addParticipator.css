@@ -1,6 +1,6 @@
 *{margin:0;padding: 0}
 .wall{
-    width: 30%;
+    width: 35%;
     height: auto;
     margin:0 auto;
     margin-top: 5%;
@@ -22,6 +22,7 @@ form input[type="text"],form select{
     vertical-align: middle;
 }
 form input[type="file"]{margin:30px 0 0 35%;}
+
 .scroll{
     width: 70%;
     height: 35px;
@@ -31,4 +32,10 @@ form input[type="file"]{margin:30px 0 0 35%;}
     font-weight: bold;
     font-size: 20px;
 }
-
+.btn{
+	width:80px;
+	height:35px;
+	border-radius:5px;
+	border:2px solid #ccc;
+	margin-left:50%;
+}

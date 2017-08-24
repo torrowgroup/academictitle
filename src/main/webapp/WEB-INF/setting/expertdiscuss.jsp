@@ -7,6 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+  <link rel="stylesheet" type="text/css" href="${rootPath }css/setting/expertdiscuss.css">
+    <link rel="stylesheet" type="text/css" href="${rootPath }css/setting/bootstrap.css">
+    <script type="text/javascript" src="${rootPath }js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="${rootPath }js/bootstrap.js"></script>
 </head>
 <body>
 <center>${message }</center>
@@ -14,13 +18,13 @@
 	<c:if test="${fn:length(expertDiscuss.data) > 0 }">
 		<table border="1">
 			<tr>
-				<td>参评人</td>
-				<td>申报职称</td>
-				<td>熟悉程度</td>
-				<td>教育</td>
-				<td>科研</td>
-				<td>师德</td>
-				<td>评分</td>
+				<th>参评人</th>
+				<th>申报职称</th>
+				<th>熟悉程度</th>
+				<th>教育</th>
+				<th>科研</th>
+				<th>师德</th>
+				<th>评分</th>
 			</tr>
 			<c:forEach items="${expertDiscuss.data}" var="expertDiscuss">
 				<tr>

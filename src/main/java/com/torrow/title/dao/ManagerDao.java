@@ -92,4 +92,10 @@ public class ManagerDao extends BaseDao<Manager> implements ManagerService {
 		return selectAll();
 	}
 
+	@Override
+	public Manager getByUserName(String userName) {
+		String hql = "from Manager m where m.ma_userName = '"+userName+"'";
+		return (Manager) this.uniqueResult(hql);
+	}
+
 }

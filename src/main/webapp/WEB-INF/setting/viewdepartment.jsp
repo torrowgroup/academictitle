@@ -27,7 +27,9 @@
 </style>
 </head>
 <body>
+
  <c:if test="${fn:length(paCut.data) > 0 }">
+
 	<td>${Message}</td>
 	<div class="top">
 		<div class="right">

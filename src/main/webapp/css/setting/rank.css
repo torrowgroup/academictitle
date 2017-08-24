@@ -1,9 +1,10 @@
 *{margin:0;padding: 0;list-style: none;box-sizing:border-box;}
 .wall{
-    width:40%;
+    width:80%;
     height: auto;
     margin:0 auto;
-    margin-top: 8%;
+    margin-top: 6%;
+    margin-left:13%;
 }
 .list{
    width:100%;
@@ -18,8 +19,8 @@
 .list li,.list span{
     float: left;
     line-height: 30px;
-    font-weight: bold;
-    padding: 5px 5px;
+/*     font-weight: bold; */
+    padding: 7px 30px;
     margin-right: 5px;
     position: relative;
     border-radius:3px; 
@@ -27,14 +28,15 @@
 }
 .list li{ background-color: #eee;}
 .hide-box{
-    width:90%;
-    height: 100px;
+    width:100%;
+    height: auto;
     margin:0 auto;
     position: absolute;
     border: 2px solid #ccc;
     background-color: #fff;
     display: none;
-    top: 41px;
+    top: 45px;
+    left:0px;
     border-radius:5px; 
     box-shadow: 0 0 10px rgba(0,0,0,.2)
 }
@@ -52,7 +54,7 @@ table{
     margin-top: 50px;  
 }
 table th{
-    font-size: 20px;
+    font-size: 16px;
     height: 50px;
     text-align: center;
     background-color: #eee;

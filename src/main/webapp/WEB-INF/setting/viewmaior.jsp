@@ -25,7 +25,9 @@
 </style>
 </head>
 <body>
+
  <c:if test="${fn:length(paCut.data) > 0 }">
+
 	<td>${Message }</td>
 	<div class="top" style="width:75%">
 		<div class="right">
@@ -37,8 +39,6 @@
 		</div>
 		<table border="1" cellspacing="0" >
 			<caption>专业信息</caption>
-			<tr>
-				<th style="width:200px">专业编号</th>
 				<th>专业名称</th>
 				<th>操作</th>
 			</tr>

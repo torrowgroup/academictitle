@@ -1,0 +1,53 @@
+*{margin:0;padding: 0}
+.top{
+    height: auto;
+    width:100%;
+    margin:0 auto;
+    margin-top: 2%;
+}
+.back{
+	 margin-top:2%;
+	 margin-left:10%;                
+	 width: 100px;
+}
+.form{
+	width:260px;
+    height: 30px;
+    margin-top:-5%;
+  	margin-left:55%;
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    color: #000;
+    vertical-align: middle;
+}
+table{
+    border-color: #999;
+    text-align: center;
+    margin-top:5%;
+    margin-left:20%;
+/*     margin:0 auto; */
+    width:60%;
+    background-color: #eee;
+}
+caption{
+    padding-bottom: 15px;
+}
+table th{
+	height:45px;
+	background-color:#eee;
+	text-align:center;
+}
+table td{
+    height:45px;
+}
+.center{text-align: center;
+         font-size: 18px;
+/*          font-weight: bold; */
+         padding-bottom: 20px;}
+.page{
+   margin-left:50%;
+    margin-top: 5%;
+}

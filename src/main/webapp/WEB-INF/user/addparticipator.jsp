@@ -22,7 +22,7 @@
             <label>姓名:</label>
             <input type="text" name="pa_name"><br>
              <label>邮箱:</label>
-            <input type="email" name="pa_email"><br>
+            <input type="email" name="pa_email" style="border-radius:5px;height:33px;"><br>
             <label>专业:</label>
             <select name="majorid">
                 <c:forEach items="${majors}" var="item">

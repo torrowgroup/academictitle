@@ -21,6 +21,8 @@ public interface ManagerService {
 	//张金高
 	// 管理员登录
 	public Manager login(String userName, String password);
+	//根据用户名得到管理员
+	public Manager getByUserName(String userName);
 
 	// 查看管理员，分页 马黎明
 	public PageCut<Manager> getManager(int page, int pageSize, String ask, String inquiry);

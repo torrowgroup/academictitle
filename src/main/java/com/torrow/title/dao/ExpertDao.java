@@ -102,5 +102,11 @@ public class ExpertDao extends BaseDao<Expert> implements ExpertService {
 		return pc;
 	}
 
+	@Override
+	public Expert getByUserName(String userName) {
+		String hql = "from Expert e where e.ex_userName = '"+userName+"'";
+		return (Expert)this.uniqueResult(hql);
+	}
+
 	
 }

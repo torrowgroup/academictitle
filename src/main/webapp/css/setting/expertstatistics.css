@@ -4,6 +4,10 @@
     margin: 0 auto;
     margin-top:7%;
 }
+.message{
+	margin-top:3%;
+	text-align: center;
+}
 .right{
     width: auto;
     height: 35px;
@@ -29,20 +33,13 @@
     text-decoration: none;
 }
 table{
-    text-align: center;
-   
-}
-table caption{
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 20px;
+   text-align: center;
+   width: 70%;
+   margin-top:3%;
 }
 table th{
     text-align: center;
-    font-size: 20px;
-    
+    font-size: 17px;
     background-color: #eee;
     height: 45px;
 }
@@ -52,12 +49,3 @@ table td{
 .page{
     margin:15% 0 0 35%;
 }
-.font{float:right;
-      margin-right:90px;
-      color:#000;
-      background-color:#82C0E9;
-      padding:3px 5px;
-      border-radius:5px;
-      border:2px solid #ccc;
-      font-size:12px;
-      }

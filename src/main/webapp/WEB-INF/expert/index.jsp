@@ -7,15 +7,28 @@
 <title>职称评审系统</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/index.css">
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/public.css">
+<link rel="stylesheet" type="text/css" href="${rootPath}css/expert/bootstrap.css">
+<script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
+	<div class="notice">
 	<marquee behavior="scroll">
 				<p>${noticeNew.no_content}</p>
 	</marquee>
+	</div>
 	<div class="box" style="margin-top:55px;">
 		<img src="${rootPath}images/nail-1.gif" class="left"> <img
 			src="${rootPath}images/nail-2.gif" class="right">
-		<div class="text">职称评审系统</div>
+		<div class="text">
+			职称评审系统
+			<span>
+			  <i>欢迎${expert.ex_name}登录</i>
+			  <a href="${rootPath}expert/ExpertPersonal_logOff" title="退出登录" >
+               <img src="${rootPath}images/logout.jpeg" height="20px;" width="20px;"/>
+             </a>
+           </span>
+		</div>
 		<div class="content">
 			<!-- 查看通知开始 -->
 			<a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all">查看通知</a><br>
@@ -34,12 +47,13 @@
 			<!-- 评审政策内容开始 -->
 			<a href="">评审政策</a><br>
 			<div class="bot">
-				<span style="float: left; margin-left: 30px"><img
+				<span style="float: left; margin-left: 26px"><img
 					src="${rootPath}images/dot-2.png">公开&nbsp;&nbsp;公平&nbsp;&nbsp;公正</span><br>
-				<span style="float: left; margin-left: 30px"><img
-					src="${rootPath}images/dot-2.png">根据自己对参评人专业熟悉程度，合理做出评审</span><br> <span
-					style="float: left; margin-left: 30px"><img
-					src="${rootPath}images/dot-2.png">根据通知时间完成评审</span><br>
+				
+				<span style="float: left; margin-left: 26px"><img
+					src="${rootPath}images/dot-2.png">根据通知时间完成评审</span>
+					<span style="float: left; margin-left: 25px;"><img
+					src="${rootPath}images/dot-2.png">根据自己对参评人专业熟悉<br>程度，合理做出评审</span><br>
 			</div>
 		</div>
 		<!-- 评审政策内容结束 -->

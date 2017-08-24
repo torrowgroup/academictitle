@@ -35,33 +35,33 @@
 			<caption>专家信息</caption>
 		</thead>
 		<tbody>
-			<tr>
-				<th>编号</th>
-				<th>账号</th>
-				<th>密码</th>
-				<th>姓名</th>
-				<th>专业</th>
-				<th>单位</th>
-				<th>职称</th>
-				<th>学历</th>
-				<th>操作</th>
-			</tr>
-		<c:forEach items="${messagenews.data}" var="item">
-			<tr>
-				<td>${item.ex_id}</td>
-				<td>${item.ex_userName}</td>
-				<td>${item.ex_password}</td>
-				<td>${item.ex_name}</td>
-				<td>${item.ex_majors.maj_majorName}</td>
-				<td>${item.ex_unit.un_unitName}</td>
-				<td>${item.ex_title.ti_titleName}</td>
-				<td>${item.ex_education}</td>
-				<td><a href="${rootPath}user/Expert_toUpdate?ex_id=${item.ex_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Expert_delet?ex_id=${item.ex_id}">删除</a></td>
-			</tr>
-		</c:forEach>
+				<tr>
+					<th>编号</th>
+					<th>账号</th>
+					<th>密码</th>
+					<th>姓名</th>
+					<th>专业</th>
+					<th>单位</th>
+					<th>职称</th>
+					<th>学历</th>
+					<th>操作</th>
+				</tr>
+			<c:forEach items="${messagenews.data}" var="item">
+				<tr>
+					<td>${item.ex_id}</td>
+					<td>${item.ex_userName}</td>
+					<td>${item.ex_password}</td>
+					<td>${item.ex_name}</td>
+					<td>${item.ex_majors.maj_majorName}</td>
+					<td>${item.ex_unit.un_unitName}</td>
+					<td>${item.ex_title.ti_titleName}</td>
+					<td>${item.ex_education}</td>
+					<td><a href="${rootPath}user/Expert_toUpdate?ex_id=${item.ex_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Expert_delet?ex_id=${item.ex_id}">删除</a></td>
+				</tr>
+			</c:forEach>
 		</tbody>
 	</table>
-	<div class="page">
+		<div class="page">
 			<ul class="pagination">
 				<li><a
 					href="${rootPath}user/Expert_select?page=${messagenews.prePage}">上一页</a></li>
@@ -71,12 +71,12 @@
 					<c:choose>
 						<c:when test="${i>0 && i == messagenews.currentPage}">
 							<li class="active"><a
-								href="${rootPath}user/Expert_select?page=${i }">${i}</a></li>
+								href="${rootPath}user/Expert_select?page=${i}">${i}</a></li>
 						</c:when>
 
 						<c:when test="${i>0 && i != postPS.currentPage}">
 							<li><a
-								href="${rootPath}user/Expert_select?page=${i }">${i}</a></li>
+								href="${rootPath}user/Expert_select?page=${i}">${i}</a></li>
 						</c:when>
 					</c:choose>
 				</c:forEach>
@@ -84,6 +84,7 @@
 					href="${rootPath}user/Expert_select?page=${messagenews.nextPage}">下一页</a></li>
 			</ul>
 		</div>
-	</c:if>
+	</div>	
+</c:if>
 </body>
 </html>
