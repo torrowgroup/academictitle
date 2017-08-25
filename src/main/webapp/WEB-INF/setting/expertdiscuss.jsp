@@ -13,7 +13,7 @@
     <script type="text/javascript" src="${rootPath }js/bootstrap.js"></script>
 </head>
 <body>
-<center>${message }</center>
+<div class="message">${message}</div>
 <center>
 	<c:if test="${fn:length(expertDiscuss.data) > 0 }">
 		<table border="1">
@@ -52,7 +52,7 @@
 							</c:when>
 							<c:when test="${i>0 && i != expertDiscuss.currentPage}">
 								<li><a
-									href="${rootPath }setting/Statistics_statistics?spage=${i }">${i}</a></li>
+									href="${rootPath }setting/Statistics_statistics?page=${i }">${i}</a></li>
 							</c:when>
 						</c:choose>
 					</c:forEach>

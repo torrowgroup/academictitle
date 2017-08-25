@@ -11,8 +11,6 @@
 	href="${rootPath}css/setting/majorsmanage.css">
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}css/setting/bootstrap.css">
-<link rel="stylesheet" type="text/css"
-	href="${rootPath}css/setting/font-awesome.css">
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 <style type="text/css">
@@ -27,21 +25,15 @@
 </style>
 </head>
 <body>
-	<div class="top">
+	<div class="top" style="width:85%">
  <c:if test="${fn:length(paCut.data) > 0 }">
 		<table border="1" cellspacing="0">
 			<caption>通知信息</caption>
-			<thead>
 				<tr>
-					<td colspan="4">通知信息</td>
-				</tr>
-			</thead>
-			
-				<tr>
-					<td>通知名称</td>
-					<td>通知时间</td>
-					<td>发布人</td>
-					<td>操作</td>
+					<th width="300px">通知名称</th>
+					<th width="200px">通知时间</th>
+					<th width="180px">发布人</th>
+					<th width="100px">操作</th>
 				</tr>
 			
 				<c:forEach items="${paCut.data}" var="item">

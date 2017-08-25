@@ -13,6 +13,7 @@
   text-align:center;
   font-family:"华文行楷","微软雅黑";
   text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+  class="tilp"
 }
 </style>
 </head>

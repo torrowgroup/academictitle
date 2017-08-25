@@ -34,6 +34,7 @@ public interface ParticipatorService {
 	
 	//删除参评人
 	public boolean deletParticipator(int pa_id);
+	public List<Participator> getAll();
 
 
 }

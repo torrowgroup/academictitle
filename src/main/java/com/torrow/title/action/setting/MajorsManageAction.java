@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Participator;
 import com.torrow.title.util.PageCut;
 
 public class MajorsManageAction extends BaseAction {
@@ -41,6 +42,9 @@ public class MajorsManageAction extends BaseAction {
 
 	// 添加专业
 	public String add() {
+		if(majors.getMaj_majorName().equals("")) {
+			request.put("Message", "添加失败");
+		}else {
 		boolean allsign = true;
 		List<Majors> list = majorsService.selectMajors();
 		for(int i = 0;i < list.size(); i++){
@@ -59,6 +63,8 @@ public class MajorsManageAction extends BaseAction {
 		} else {
 			request.put("Message","已有该专业");
 		}
+		}
+		
 		return "addMajors";
 	}
 
@@ -72,6 +78,13 @@ public class MajorsManageAction extends BaseAction {
 
 	}
 	public String delete() {
+		List<Participator> allParticipator = participatorService.getAll();
+		for(int i=0;i<allParticipator.size();i++) {
+			if(allParticipator.get(i).getPa_majors().getMaj_id()==majorsId) {
+				allParticipator.get(i).setPa_majors(null);
+				participatorService.updateParticipator(allParticipator.get(i));
+			}
+		}
 		boolean boo = majorsService.deleteById(majorsId);
 		PageCut<Majors> list = majorsService.checkAll(page, 6);
 		request.put("method", "view");
@@ -86,6 +99,7 @@ public class MajorsManageAction extends BaseAction {
 		request.put("majors", majors);
 		}else{
 			request.put("Message", "暂无该专业");
+
 		}
 			return "searchMajors";
 		}

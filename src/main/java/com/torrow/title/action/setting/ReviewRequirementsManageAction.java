@@ -57,16 +57,16 @@ public class ReviewRequirementsManageAction extends BaseAction {
 			Title title=titleService.checkById(titleId);
 			List<Title> list = titleService.getAll();
 			for(int i=0;i<list.size();i++) {
-				if(list.get(i).getTi_id()==title.getTi_id()) {
+				if(list.get(i).getTi_titleName().equals(title.getTi_titleName())) {
 					request.put("Message", "已有该职称相关评议");
+					break;
 				}else {
 					boolean boo =requireService.add(req,title);
 					request.put("Message", "该职称评议要求添加成功");
 					request.put("reqlist", session.get("reqlist"));
-					return "addReviewRequirements";
 				}
 			}
-			return "addRrequire";
+			return "addReviewRequirements";
 		}
 		// 修改评议要求
 		public String update() {

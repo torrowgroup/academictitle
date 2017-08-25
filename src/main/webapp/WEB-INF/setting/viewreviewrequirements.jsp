@@ -40,7 +40,7 @@
 				<caption>评议要求信息</caption>
 				<tr>
 					<th width="200px">职称名称</th>
-					<th width="500px">操作</th>
+					<th width="250px">操作</th>
 				</tr>
 				<c:forEach items="${paCut.data}" var="item">
 					<tr>

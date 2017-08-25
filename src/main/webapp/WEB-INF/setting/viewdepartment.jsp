@@ -35,15 +35,15 @@
 		<div class="right">
 			<form action="${rootPath}setting/DepartmentManage_searchUnit"
 				method="post" onsubmit="return check()">
-				<input type="text" name="unitName" placeholder=" 请输入所要查询部门名称">
+				<input type="text" name="unitName" placeholder=" 请输入所要查询单位名称">
 				<input type="submit" value="搜索">
 			</form>
 		</div>
 		<table border="1" cellspacing="0">
-			<caption>部门信息</caption>
+			<caption>单位信息</caption>
 			<tr>
-				<th>部门ID</th>
-				<th>部门名称</th>
+				<th>单位ID</th>
+				<th>单位名称</th>
 				<th>操作</th>
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
