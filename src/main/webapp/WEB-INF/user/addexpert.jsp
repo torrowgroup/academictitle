@@ -10,14 +10,14 @@
 </head>
 <body>
 <div class="wall">
-        <h1>${message}</h1>
+        <h3>${message}</h3>
         <form action="${rootPath}user/Expert_add" method="post">
             <label>账号:</label>
-            <input type="text" name="ex_userName"><br>
+            <input type="text" name="ex_userName" required><br>
             <label>密码:</label>
-            <input type="text" name="ex_password"><br>
+            <input type="text" name="ex_password" required><br>
             <label>姓名:</label>
-            <input type="text" name="ex_name"><br>
+            <input type="text" name="ex_name" required><br>
             <label>专业:</label>
             <select name="majorid">
                 <c:forEach items="${majors}" var="item">
@@ -49,31 +49,5 @@
             <input class="btn" type="submit" value="提交">
         </form>
     </div>
-
-
-<%-- <center>${message}</center> --%>
-<%-- 	<form action="${rootPath}user/Expert_add" method="post"> --%>
-<!-- 		账号：<input type="text" name="ex_userName"><br> -->
-<!-- 		密码：<input type="text" name="ex_password"><br> -->
-<!-- 		姓名：<input type="text" name="ex_name"><br> -->
-<!-- 		专业：<select name="majorid"> -->
-<%-- 			<c:forEach items="${majors}" var="item"> --%>
-<%-- 					<option value="${item.maj_id}">${item.maj_majorName}</option> --%>
-<%-- 			</c:forEach> --%>
-<!-- 		</select><br> -->
-<!-- 		单位：<select name="unitid"> -->
-<%-- 			<c:forEach items="${unit}" var="item"> --%>
-<%-- 					<option value="${item.un_id}">${item.un_unitName}</option> --%>
-<%-- 			</c:forEach> --%>
-<!-- 		</select><br> -->
-<!-- 		职称：<select name="titleid"> -->
-<%-- 			<c:forEach items="${title}" var="item"> --%>
-<%-- 					<option value="${item.ti_id}">${item.ti_titleName}</option> --%>
-<%-- 			</c:forEach> --%>
-<!-- 		</select><br> -->
-<!-- 		学历：<select name="education"> -->
-<!-- 		</select><br> -->
-<!-- 		<input type="submit" value="提交"> -->
-<!-- 	</form> -->
 </body>
 </html>
