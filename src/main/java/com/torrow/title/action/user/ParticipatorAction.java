@@ -85,6 +85,9 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 			participator.setPa_majors(major);
 			participator.setPa_unit(units);
 			participator.setPa_title(titles);
+			if(participator.getPa_introduce().equals("<p><br></p>")){
+				participator.setPa_introduce("此参评人无简介");
+			}
 			boolean sign = participatorService.addParticipator(participator);
 			if (sign) {
 				request.put("message", "添加成功");
@@ -117,6 +120,9 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 	//修改信息
 	public String update() throws FileNotFoundException, IOException{
 		boolean sign = false;
+		if(participator.getPa_introduce().equals("<p><br></p>")){
+			participator.setPa_introduce("此参评人无简介");
+		}
 		if (file == null || file.equals("")) {
 			Participator parpator = (Participator) session.get("part");
 			participator.setPa_imageUrl(parpator.getPa_imageUrl());
@@ -229,7 +235,14 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 			ex.printStackTrace();
 		}
 	}
-
+	//预览
+	public String openNewview(){
+		Participator part = participatorService.getParticipatorById(participator.getPa_id());
+		part.setPa_introduce(part.getPa_introduce().replace("'", "\""));
+		request.put("part", part);
+		return "newview";
+	}
+	
 	public int getPage() {
 		return page;
 	}

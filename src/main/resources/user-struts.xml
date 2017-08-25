@@ -28,6 +28,7 @@
 			<result name="select">/WEB-INF/user/selectparticipator.jsp</result>
 			<result name="add">/WEB-INF/user/addparticipator.jsp</result>
 			<result name="update">/WEB-INF/user/updateparticipator.jsp</result>
+			<result name="newview">/WEB-INF/user/newview.jsp</result>
 		</action>
 		<action name="Discuss_*" method="{1}" class="com.torrow.title.action.user.DiscussAction">
 			<result name="select">/WEB-INF/user/selectdiscuss.jsp</result>

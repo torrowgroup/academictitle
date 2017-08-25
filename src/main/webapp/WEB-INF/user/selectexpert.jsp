@@ -13,8 +13,9 @@
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-<a class="font" href="${rootPath}user/Expert_relay" target="mainiframe">添加专家</a>	
-<div style="margin-left: 60%; height: 30px; margin-top: 1%;">
+<center>${message}</center>
+<div style="margin-left: 60%; height: 30px; margin-top: 5%;">
+<a class="font" href="${rootPath}user/Expert_relay" target="mainiframe">添加专家</a>
 			<form action="${rootPath}user/Expert_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
@@ -29,7 +30,6 @@
 	</div>
 	<c:if test="${fn:length(messagenews.data) > 0 }">
 	 <div class="wall">
-	 <center>${message}</center>
 	<table border="1" cellspacing="0">
 		<thead>
 			<caption>专家信息</caption>
@@ -44,7 +44,7 @@
 					<th>单位</th>
 					<th>职称</th>
 					<th>学历</th>
-					<th>操作</th>
+					<th style="width:60px">操作</th>
 				</tr>
 			<c:forEach items="${messagenews.data}" var="item">
 				<tr>
@@ -56,7 +56,7 @@
 					<td>${item.ex_unit.un_unitName}</td>
 					<td>${item.ex_title.ti_titleName}</td>
 					<td>${item.ex_education}</td>
-					<td><a href="${rootPath}user/Expert_toUpdate?ex_id=${item.ex_id}">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Expert_delet?ex_id=${item.ex_id}">删除</a></td>
+					<td><a href="${rootPath}user/Expert_toUpdate?ex_id=${item.ex_id}"><img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:5px"></a><a href="${rootPath}user/Expert_delet?ex_id=${item.ex_id}"><img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:10px"></a></td>
 				</tr>
 			</c:forEach>
 		</tbody>

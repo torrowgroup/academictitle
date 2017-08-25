@@ -10,14 +10,14 @@
 </head>
 <body>
 <div class="header">
-        <h1>${message}</h1>
+        <h3>${message}</h3>
         <form action="${rootPath}user/Manager_add" method="post">
             <label>账号：</label>
-            <input class="in" type="email" name="ma_userName"><br>
+            <input class="in" type="email" name="ma_userName" required><br>
             <label>密码：</label >
-            <input class="in" type="text" name="ma_password"><br>
+            <input class="in" type="text" name="ma_password" required><br>
             <label>姓名：</label>
-            <input class="in" type="text" name="ma_name"><br>
+            <input class="in" type="text" name="ma_name" required><br>
            	<input class="btn" type="submit" value="提交">
         </form>
     </div>
