@@ -31,7 +31,7 @@
 					<div class="form-group">
 						<label for="email" class="sr-only">Email</label> 
 						<input type="email" name="userName" class="form-control" id="email" placeholder="Your email"
-							autocomplete="off">
+							autocomplete="off" require="require">
 					</div>
 					<div class="form-group">
 						<p>90秒后自动关闭界面</p>

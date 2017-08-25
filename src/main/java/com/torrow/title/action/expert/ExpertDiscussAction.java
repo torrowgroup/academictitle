@@ -38,9 +38,9 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 		if(inquiry==null){
 			inquiry = (String)session.get("inquiry");
 		}
-		PageCut<Participator> noDiscussP = noDiscussList(page,2,inquiry);//模糊查询List集合，匹配参评人姓名，专业名，单位名，职称名
+		PageCut<Participator> noDiscussP = noDiscussList(page,4,inquiry);//模糊查询List集合，匹配参评人姓名，专业名，单位名，职称名
 		if (noDiscussP.getData().isEmpty()) {
-			request.put("message", "没有未评的参评人");
+			request.put("message", "查询不到未评的参评人");
 		}
 		session.put("inquiry", inquiry);
 		request.put("noDiscuss", noDiscussP);
@@ -53,7 +53,7 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 			inquiry = (String)session.get("inquiry");
 		}
 		Expert expert = (Expert) session.get("expert"); // 得到登录专家的对象
-		PageCut<Record> alreadyDiscuss = recordService.getPageCut(page,2,inquiry,expert);
+		PageCut<Record> alreadyDiscuss = recordService.getPageCut(page,4,inquiry,expert);
 		if (alreadyDiscuss.getData().isEmpty()) {
 			request.put("message", "没有评议纪录");
 		}
