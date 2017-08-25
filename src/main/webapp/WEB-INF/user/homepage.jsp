@@ -5,8 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-	<link rel="stylesheet" type="text/css" href="${rootPath}css/index0.css">
+<title>职称评审系统</title>
+	<link rel="stylesheet" type="text/css" href="${rootPath}css/index.css">
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 </head>
 <body>
@@ -81,7 +81,7 @@
             <div style="margin:0" class="box1">
                 <div class="info-title">
                     <span>通知公告</span>
-                    <a style="font-size:12px;float:right" href="#">+更多</a>
+                    <a style="font-size:12px;float:right" href="${rootPath}setting/NoticeManage_view" target="mainiframe">+更多</a>
                 </div>
                 <div class="info-text">
                 <c:forEach items="${someNotice}" var="items">
@@ -98,13 +98,13 @@
             <div class="box1">
                 <div class="info-title">
                     <span>职称相关</span>
-                    <a style="font-size:12px;float:right" href="#">+更多</a>
+                    <a  href="${rootPath}setting/ReviewRequirementsManage_view" style="font-size:12px;float:right" >+更多</a>
                 </div>
                <div class="info-text">
                <c:forEach items="${someTitle}" var="items">
                		<div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="">关于${items.ti_titleName}的评议要求</a>
+                             <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">关于${items.ti_titleName}的评议要求</a>
                         </div>
                     </div>
                </c:forEach>
@@ -128,7 +128,7 @@
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
+                             <a href="#">豫职改办〔2016〕37号关于新乡市员继续教育有关问题的通知齐市专业技术人</a>
                         </div>
                     </div>
                      <div class="title-txt">

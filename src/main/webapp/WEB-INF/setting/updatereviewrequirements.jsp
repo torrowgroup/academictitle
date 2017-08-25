@@ -5,17 +5,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+ <link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
 </head>
 <form action="${rootPath}setting/ReviewRequirementsManage_update" method="post">
-	<lable>评议ID：</lable>
+	<span>评议ID：</span>
 	<input type="text"  name="req.re_id"  value="${req.re_id} " readonly="readonly" ><br>
-		<lable>教学方面：</lable>
+		<span>教学方面：</span>
 		<input type="text"  name="req.re_educate"  value="${req.re_educate} " ><br>
-		<lable>科研方面：</lable>
+		<span>科研方面：</span>
 		<input type="text"  name="req.re_scientific" value="${req.re_scientific} " ><br>
-		<lable>师德方面：</lable>
+		<span>师德方面：</span>
 		<input type="text"  name="req.re_morality"  value="${req.re_morality }" ><br>
-		 <input type="submit" value="提交">
+		 <input class="btn" type="submit" value="提交">
 	</form>
 <body>
 </body>

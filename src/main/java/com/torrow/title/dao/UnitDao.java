@@ -18,7 +18,7 @@ import com.torrow.title.util.PageCut;
 public class UnitDao extends BaseDao<Unit> implements UnitService{
 	@Override
 	public PageCut<Unit> checkAll(int currentPage, int pageSize) {
-		String hql = "select count(*) from Majors";
+		String hql = "select count(*) from Unit";
 		int count = ((Long) this.uniqueResult(hql)).intValue();
 		PageCut<Unit> pc = new PageCut<Unit>(currentPage, pageSize, count);
 		pc.setData(this.getEntityLimitList("from Unit", (currentPage - 1) * pageSize, pageSize));

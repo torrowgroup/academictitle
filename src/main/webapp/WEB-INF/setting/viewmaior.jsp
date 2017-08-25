@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,10 +13,23 @@
 	href="${rootPath}css/setting/bootstrap.css">
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
+<style type="text/css">
+  .side{
+	width:100px;
+	height:32px;
+	background-color:rgba(0,0,0,.4);
+	position:fixed;
+	right:10px;
+	top:40%;
+}
+
+</style>
 </head>
 <body>
-	<td>${Message }</td>
-	<div class="top">
+
+ <c:if test="${fn:length(paCut.data) > 0 }">
+	<p>${Message }</p>
+	<div class="top" style="width:75%">
 		<div class="right">
 			<form action="${rootPath}setting/MajorsManage_searchMajors"
 				method="post" onsubmit="return check()">
@@ -23,32 +37,22 @@
 				<input type="submit" value="搜索">
 			</form>
 		</div>
-		<table border="1" cellspacing="0">
+		<table border="1" cellspacing="0" >
 			<caption>专业信息</caption>
-<td>${Message }</td>
-<a href="${rootPath}setting/Transfer_addMajors" target="mainiframe">添加专业</a>
-	<table>
-		<thead>
-			<tr>
-				<td colspan="3">专业信息</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th>专业编号</th>
-				<th>专业名称</th>
+			<th>专业ID：</th>
+				<th>专业名称：</th>
 				<th>操作</th>
 			</tr>
 			<c:forEach items="${paCut.data}" var="item">
 				<tr>
 					<td>${item.maj_id}</td>
 					<td>${item.maj_majorName}</td>
-					<td><a style="position: absolute; left: 25px; top: 8px;"
+					<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
 						href="${rootPath}setting/Transfer_updateMajors?majorsId=${item.maj_id}"">
-							<span class="glyphicon glyphicon-pencil"></span>
+							<img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:0px">
 					</a> <a style="position: absolute; right: 25px; top: 8px;"
 						href="${rootPath}setting/MajorsManage_delete?majorsId=${item.maj_id}">
-							<span class="glyphicon glyphicon-trash"></span>
+						<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
 					</a></td>
 				</tr>
 			</c:forEach>
@@ -76,6 +80,10 @@
 					href="${rootPath}setting/MajorsManage_${method}?page=${paCut.nextPage}">下一页</a></li>
 			</ul>
 		</div>
+	</div>
+	</c:if>
+	<div class="side">
+	   <a href="${rootPath}setting/Transfer_addMajors"><img src="${rootPath}images/major.png" width="100px" ></a>
 	</div>
 </body>
 </html>

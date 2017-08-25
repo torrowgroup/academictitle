@@ -7,12 +7,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
+<style>
+.tilp{
+  padding-top:50px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+}
+</style>
 </head>
 <body>
-	<center>${Message}</center>
+<div class="tilp">${Message}</div>
 	<form action="${rootPath}setting/DepartmentManage_add" method="post">
 		<span>单位名称:</span>
-		<input type="text"  name="unit.un_unitName" placeholder="请输入单位名称" ><br>
+		<input type="text"  name="unit.un_unitName" placeholder="请输入单位名称" maxlength='15'><br>
 		 <input class="btn" type="submit" value="提交">
 	</form>
 </body>

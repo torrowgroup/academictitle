@@ -6,22 +6,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
+<style>
+.tilp{
+  padding-top:50px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+
+}
+</style>
 </head>
 <body>
+<div class="tilp">${Message}</div>
 	<form action="${rootPath}setting/ReviewRequirementsManage_add" method="post">
-	<label>请选择职称</label>
+	<span>请选择职称</span>
 	<select name="titleId" class="select"> 
  			<c:forEach items="${reqlist}" var="item">
  	           <option value="${item.ti_id}">${item.ti_titleName}</option> 
          	</c:forEach> 
  	</select><br><br>
-		<lable>教学方面：</lable>
+		<span>教学方面：</span>
 		<input type="text"  name="req.re_educate" placeholder="请输入教学要求标准" ><br>
-		<lable>科研方面：</lable>
+		<span>科研方面：</span>
 		<input type="text"  name="req.re_scientific" placeholder="请输入科研要求标准" ><br>
-		<lable>师德方面：</lable>
+		<span>师德方面：</span>
 		<input type="text"  name="req.re_morality"  placeholder="请输入专业要求标准" ><br>
-		 <input type="submit" value="提交">
+		 <input class="btn"  type="submit" value="提交">
 	</form>
 </body>
 </html>

@@ -23,7 +23,7 @@ public class TitleManageAction extends BaseAction {
 	int page = 1;// 当前第几页
 
 	public String view() {
-		PageCut<Title> list = titleService.checkAll(page, 3);
+		PageCut<Title> list = titleService.checkAll(page, 6);
 		request.put("paCut", list);
 		request.put("method", "view");
 		return "view";
@@ -55,7 +55,7 @@ public class TitleManageAction extends BaseAction {
 	// 修改职称
 	public String update() {
 		boolean boo = titleService.update(title);
-		PageCut<Title> list = titleService.checkAll(page, 3);
+		PageCut<Title> list = titleService.checkAll(page, 6);
 		request.put("paCut", list);
 		request.put("method", "view");
 		return "view";
@@ -80,7 +80,7 @@ public class TitleManageAction extends BaseAction {
 		}
 		
 		boolean boo = titleService.deleteById(titleId);
-		PageCut<Title> list = titleService.checkAll(page, 3);
+		PageCut<Title> list = titleService.checkAll(page, 6);
 		request.put("paCut", list);
 		return "view";
 

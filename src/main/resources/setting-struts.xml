@@ -37,6 +37,7 @@
 			<result name="view">/WEB-INF/setting/viewreviewrequirements.jsp</result>
 			<result name="addReviewRequirements">/WEB-INF/setting/addreviewrequirements.jsp</result>
 			<result name="searchRequire">/WEB-INF/setting/searchrequire.jsp</result>
+			<result name="getDetails">/WEB-INF/setting/viewrequiredetails.jsp</result>
 		</action>
 		<!-- 通知管理 -->
 		<action name="NoticeManage_*" method="{1}"

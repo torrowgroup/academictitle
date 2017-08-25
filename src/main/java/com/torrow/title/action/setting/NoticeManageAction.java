@@ -38,23 +38,27 @@ public class NoticeManageAction extends BaseAction {
 	}
 
 	public String view() {
-		PageCut<Notice> list = noticeService.checkAll(page, 5);
+		PageCut<Notice> list = noticeService.checkAll(page, 6);
 		request.put("paCut", list);
 		return "view";
 	}
 
 	public String delete() {
 		boolean boo = noticeService.deleteById(noticeId);
-		PageCut<Notice> list = noticeService.checkAll(page, 5);
+		PageCut<Notice> list = noticeService.checkAll(page, 6);
 		request.put("paCut", list);
 		return "view";
 	}
 
 	public String add() {
+		if(notice.getNo_head().equals("")) {
+			request.put("Message", "通知添加失败,请添加通知头");
+		}else {
 		Date date = new Date();
 		Manager manager = (Manager) session.get("manager");
 		boolean boo = noticeService.add(notice, manager.getMa_name(), date);
 		request.put("Message", "添加通知成功");
+		}
 		return "addNotice";
 	}
 	public String viewDetail() {
