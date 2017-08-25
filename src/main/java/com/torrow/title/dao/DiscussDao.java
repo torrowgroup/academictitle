@@ -109,7 +109,7 @@ public class DiscussDao extends BaseDao<Discuss> implements DiscussService {
 		}
 		int count = ((Long) this.uniqueResult(hql)).intValue();
 		PageCut<Discuss> pc = new PageCut<Discuss>(curr, pageSize, count);
-		pc.setData(this.getEntityLimitList(selectHql, (curr - 1) * pageSize, pageSize));
+		pc.setData(this.getEntityLimitList(selectHql, (curr-1)*pageSize, pageSize));
 		return pc;
 	}
 

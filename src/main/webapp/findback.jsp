@@ -19,19 +19,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
-
-
 				<!-- Start Sign In Form -->
 				<form action="${rootPath}loginAction_forgetPassword" class="fh5co-form animate-box">
 					<h2>Forgot Password</h2>
-					<span>${message}</span>
+					<span style="color:red;">${message}</span>
 					<div class="form-group">
 						<div class="alert alert-success" role="alert">Your email will receive the verification code</div>
 					</div>
 					<div class="form-group">
 						<label for="email" class="sr-only">Email</label> 
 						<input type="email" name="userName" class="form-control" id="email" placeholder="Your email"
-							autocomplete="off" require="require">
+							autocomplete="off" required>
 					</div>
 					<div class="form-group">
 						<p>90秒后自动关闭界面</p>

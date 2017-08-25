@@ -52,7 +52,7 @@
 							</c:when>
 							<c:when test="${i>0 && i != expertDiscuss.currentPage}">
 								<li><a
-									href="${rootPath }setting/Statistics_statistics?spage=${i }">${i}</a></li>
+									href="${rootPath }setting/Statistics_statistics?page=${i }">${i}</a></li>
 							</c:when>
 						</c:choose>
 					</c:forEach>
