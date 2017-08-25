@@ -12,13 +12,13 @@
 #text1{
 width:270px;
 height:50px;
-font-size:30px;
+font-size:25px;
 font-weight:bold;
 }
 #text2{
 width:100%;
-height:130px;
-font-size:26px;
+height:110px;
+font-size:16px;
 }
 .top{width:85%}
 .top p{
@@ -32,7 +32,7 @@ font-size:26px;
  <div class="top">
         <h1>评 议 信 息</h1>
         <p>评议职称:</p>
-        <textarea id="text1" readonly="readonly">${require.re_title.ti_titleName}</textarea>
+        <textarea id="text1" readonly="readonly" style="letter-spacing : 20px;">${require.re_title.ti_titleName}</textarea>
         <p>师 德 方 面:</p>
         <textarea id="text2" readonly="readonly">${require.re_morality}</textarea>
         <p>教 学 方 面:</p>

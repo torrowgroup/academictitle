@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Majors;
+import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Unit;
 import com.torrow.title.util.PageCut;
 
@@ -46,7 +47,7 @@ public class DepartmentManageAction extends BaseAction {
 		this.page = page;
 	}
 
-	// 查看所有部门
+	// 查看所有单位
 	public String view() {
 		PageCut<Unit> list = unitService.checkAll(page, 6);
 		request.put("method", "view");
@@ -54,31 +55,35 @@ public class DepartmentManageAction extends BaseAction {
 		return "view";
 	}
 
-	// 添加部门
+	// 添加单位
 	public String add() {
-		boolean allsign = true;
-		List<Unit> list = unitService.selectUnit();
-		for (int i = 0; i < list.size(); i++) {
-			if (list.get(i).getUn_unitName().equals(unit.getUn_unitName())) {
-				allsign = false;
-				break;
-			}
-		}
-		if (allsign) {
-			boolean boo = unitService.add(unit);
-			if (boo) {
-				request.put("Message", "添加成功");
-			} else {
-				request.put("Message", "添加失败");
-			}
+		if (unit.getUn_unitName().equals("")) {
+			request.put("Message", "添加失败");
 		} else {
-			request.put("Message", "已有该单位");
+			boolean allsign = true;
+			List<Unit> list = unitService.selectUnit();
+			for (int i = 0; i < list.size(); i++) {
+				if (list.get(i).getUn_unitName().equals(unit.getUn_unitName())) {
+					allsign = false;
+					break;
+				}
+			}
+			if (allsign) {
+				boolean boo = unitService.add(unit);
+				if (boo) {
+					request.put("Message", "添加成功");
+				} else {
+					request.put("Message", "添加失败");
+				}
+			} else {
+				request.put("Message", "已有该单位");
+			}
 		}
 
 		return "addUnit";
 	}
 
-	// 修改部门
+	// 修改单位
 	public String update() {
 		boolean boo = unitService.update(unit);
 		PageCut<Unit> list = unitService.checkAll(page, 6);
@@ -88,8 +93,15 @@ public class DepartmentManageAction extends BaseAction {
 
 	}
 
-	// 删除部门
+	// 删除单位
 	public String delete() {
+		List<Participator> allParticipator = participatorService.getAll();
+		for(int i=0;i<allParticipator.size();i++) {
+			if(allParticipator.get(i).getPa_unit().getUn_id()==unitId) {
+				allParticipator.get(i).setPa_unit(null);
+				participatorService.updateParticipator(allParticipator.get(i));
+			}
+		}
 		boolean boo = unitService.deleteById(unitId);
 		PageCut<Unit> list = unitService.checkAll(page, 6);
 		request.put("method", "view");
@@ -99,10 +111,10 @@ public class DepartmentManageAction extends BaseAction {
 
 	public String searchUnit() {
 		Unit unit = unitService.checkUnitName(unitName);
-		if(unit!=null) {
+		if (unit != null) {
 			request.put("unit", unit);
-		}else {
-			request.put("Message", "暂无该部门");
+		} else {
+			request.put("Message", "暂无该单位");
 		}
 		return "searchUnit";
 	}

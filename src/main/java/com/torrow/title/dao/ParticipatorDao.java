@@ -96,5 +96,10 @@ public class ParticipatorDao extends BaseDao<Participator> implements Participat
 		}
 		return true;
 	}
+	@Override
+	public List<Participator> getAll(){
+		return selectAll();
+		
+	}
 
 }
