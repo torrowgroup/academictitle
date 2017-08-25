@@ -115,6 +115,7 @@ public class StatisticsAction extends BaseAction {
 		} else {
 			request.put("message", "清空评议记录和参评人成功");
 		}
+		chooseRank();
 		return "rank";
 	}
 	

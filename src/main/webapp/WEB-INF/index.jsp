@@ -16,8 +16,8 @@
                    <li style="margin-left:42px"><a href="${rootPath}user/Manager_relayHomePage" target="mainiframe">首页</a></li>
                    <li><a href="${rootPath}setting/Statistics_chooseRank" target="mainiframe">评议排名</a></li>
                    <li><a href="${rootPath}setting/Statistics_expertStatistics?inquiry=all" target="mainiframe">专家评议统计</a></li>
-                   <li><a href="${rootPath}setting/Statistics_parStatistics?inquiry=all" target="mainiframe">参评人评议统计</a></li>
                    <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe">通知公告</a></li>
+                   <li><a href=" http://www.hist.edu.cn/jgsz/xxsz.htm" target="_blank">教学机构</a></li>
                    <li>
                       <a href="${rootPath}user/Manager_toUpdate?term=myself" target="mainiframe">个人中心</a>
                       <a href="${rootPath}user/Manager_logOff" style="font-size:10px"> [退出]</a>

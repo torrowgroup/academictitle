@@ -30,7 +30,7 @@ public class ExpertNoticeAction extends BaseAction implements ModelDriven<Notice
 		if(inquiry==null){
 			inquiry = (String)session.get("inquiry");
 		}
-		PageCut<Notice> pCut=noticeService.getPageCut(page,2,inquiry);
+		PageCut<Notice> pCut=noticeService.getPageCut(page,4,inquiry);
 		if(pCut.getData().isEmpty()){
 			request.put("message", "没有发布通知");
 		}

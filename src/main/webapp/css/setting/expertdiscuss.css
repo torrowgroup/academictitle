@@ -16,3 +16,7 @@ table td{
     height: 42px;
 }
 .page{margin: 9% 0 0 45%}
+.message{
+	margin-top:3%;
+	text-align: center;
+}

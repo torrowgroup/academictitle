@@ -46,7 +46,7 @@ public class LoginAction extends BaseAction {
 				return "expertIndex";
 			}
 		}
-		request.put("message", "用户名或密码输入错误");
+		request.put("message", "邮箱或密码输入错误");
 		return LOGIN;
 	}
 	//找回密码

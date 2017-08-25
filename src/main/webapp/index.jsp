@@ -8,6 +8,7 @@
  <link rel="stylesheet" type="text/css" href="${rootPath}css/login.css">
 </head>
 <body>
+<!-- 	<div class="bg"></div> -->
    <div class="title">河南科技学院职称评审系统</div>
    <div class="login-box">
    <form action="${rootPath}loginAction_login" method="post"> 
@@ -18,29 +19,20 @@
        <input type="password" class="input1" placeholder="密码" name="passWord"  required="required" style="width: 296px">
      </div>
      <div class="box3">
-     	<div>${message}</div>
+     	<div class="message">${message}</div>
        <div class="login">
          <input type="submit" value="登录"class="btn">
+         <div class="forget">
+     			<a href="" onclick="windowStart()" style="color:gray;">忘记密码</a>
+     		</div>
        </div>
         <div class="reset">
          <input type="reset" value="重置" class="btn">
+       		
        </div>
      </div>
     </form>
-    	<div class="forget">
-     		<a href="" onclick="windowStart()" style="color:gray;">忘记密码</a>
-     	</div>
-   </div>
-  <script type="text/javascript">
- 	function windowStart() {
- 		 var urlNewPage = "findback.jsp";//打开的新网页的地址是 
- 		 var nameNewPage = "newWindow";//打开的新网页的名字是 newWindow
- 		 var heightNewPage = "600";//打开的新网页的高度
- 		 var widthNewPage = "560"; //打开的新网页的宽度
- 		 var optionsForNewPage = "top=210,left=650,width=" + widthNewPage + ",height=" + heightNewPage;
- 		 //打开
- 		 var winObj = window.open(urlNewPage, nameNewPage, optionsForNewPage,"_self");
-}
- </script>
+</div>
+<script type="text/javascript" src="${rootPath}js/forgetpassword.js"></script>
  </body>
 </html>

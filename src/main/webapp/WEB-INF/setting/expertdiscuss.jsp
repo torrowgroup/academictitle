@@ -13,7 +13,7 @@
     <script type="text/javascript" src="${rootPath }js/bootstrap.js"></script>
 </head>
 <body>
-<center>${message }</center>
+<div class="message">${message}</div>
 <center>
 	<c:if test="${fn:length(expertDiscuss.data) > 0 }">
 		<table border="1">

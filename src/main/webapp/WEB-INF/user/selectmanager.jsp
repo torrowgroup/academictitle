@@ -14,8 +14,8 @@
 </head>
 <body>
 <center>${message}</center>
+<div style="margin-left: 55%; height: 30px; margin-top: 5%;">
 <a class="font" href="${rootPath}user/Manager_relay" target="mainiframe">添加管理员</a>
-<div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 			<form action="${rootPath}user/Manager_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
@@ -39,7 +39,7 @@
 				<th>用户名</th>
 				<th>密码</th>
 				<th>姓名</th>
-				<th>操作</th>
+				<th style="width:60px">操作</th>
 			</tr>
 		<c:forEach items="${messagenews.data}" var="item">
 			<tr>
@@ -47,7 +47,7 @@
 				<td>${item.ma_userName}</td>
 				<td>${item.ma_password}</td>
 				<td>${item.ma_name}</td>
-				<td><a href="${rootPath}user/Manager_toUpdate?ma_id=${item.ma_id}&term=update">修改</a>&nbsp;&nbsp;&nbsp;<a href="${rootPath}user/Manager_delet?ma_id=${item.ma_id}">删除</a></td>
+				<td><a href="${rootPath}user/Manager_toUpdate?ma_id=${item.ma_id}&term=update"><img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:5px"></a><a href="${rootPath}user/Manager_delet?ma_id=${item.ma_id}"><img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:10px"></a></td>
 			</tr>
 		</c:forEach>
 		</tbody>
