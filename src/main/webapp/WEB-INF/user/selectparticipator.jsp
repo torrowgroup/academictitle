@@ -45,7 +45,7 @@
 				<th>单位</th>
 				<th>职称</th>
 				<th>照片</th>
-				<th style="width:50px">简介</th>
+				<th style="width:80px">简介</th>
 				<th>通知</th>
 				<th style="width:60px">操作</th>
 			</tr>
@@ -58,7 +58,7 @@
 				<td>${item.pa_title.ti_titleName}</td>
 				<td width="60px" height="50px"><img width="100%" height="50px" src="${rootPath}uploadImage/${item.pa_imageUrl}"></td>
 				<td><button id="target" onclick="opennews(${item.pa_id})"
-										style="border-radius: 5px; width: 100%; background-color: #82C0E9;">预览</button></td>
+										style="border-radius: 5px; width: 80%; background-color: #82C0E9;">预览</button></td>
 				<td><a href="${rootPath}user/Participator_sendEmail?pa_id=${item.pa_id}">邮件通知</a></td>
 				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}"><img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:5px"></a><a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}">
 					<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:10px"></a></td>

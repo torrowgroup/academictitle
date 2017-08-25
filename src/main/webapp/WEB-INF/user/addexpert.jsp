@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +12,8 @@
 <div class="wall">
         <h3>${message}</h3>
         <form action="${rootPath}user/Expert_add" method="post">
-            <label>账号:</label>
-            <input type="text" name="ex_userName" required><br>
+            <label>邮箱:</label>
+            <input type="email" name="ex_userName" required style="border-radius:5px;margin-left:15px;height:33px;width:150px;"><br>
             <label>密码:</label>
             <input type="text" name="ex_password" required><br>
             <label>姓名:</label>
@@ -37,7 +37,7 @@
 				</c:forEach>
             </select><br>
             <label>学历:</label>
-            <select name="education">
+            <select name="ex_education">
                	<option value="本科">本科</option>
 				<option value="研究生">研究生</option>
 				<option value="硕士">硕士</option>

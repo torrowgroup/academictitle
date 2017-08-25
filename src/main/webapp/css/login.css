@@ -10,7 +10,6 @@ body{
 	position:absolute;
 	width:100%;
 	height:600px;
-	background:red;
 	z-index:999;
 }
 .forget{

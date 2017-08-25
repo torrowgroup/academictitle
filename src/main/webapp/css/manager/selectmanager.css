@@ -41,8 +41,6 @@ table caption{
 }
 table th{
     text-align: center;
-    font-size: 20px;
-    
     background-color: #eee;
     height: 45px;
 }

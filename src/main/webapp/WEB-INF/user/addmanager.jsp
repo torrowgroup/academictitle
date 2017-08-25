@@ -12,7 +12,7 @@
 <div class="header">
         <h3>${message}</h3>
         <form action="${rootPath}user/Manager_add" method="post">
-            <label>账号：</label>
+            <label>邮箱：</label>
             <input class="in" type="email" name="ma_userName" required><br>
             <label>密码：</label >
             <input class="in" type="text" name="ma_password" required><br>
