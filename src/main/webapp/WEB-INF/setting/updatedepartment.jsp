@@ -10,9 +10,9 @@
 <body>
 	<div class="top">
 <form action="${rootPath}setting/DepartmentManage_update" method="post">
-<span>部门ID:</span>
+<span>单位ID:</span>
 		<input type="text"  name="unit.un_id"  value="${unit.un_id} "  readonly="readonly"  ><br>
-		<span>部门名称:</span>
+		<span>单位名称:</span>
 		<input type="text"  name="unit.un_unitName" value="${unit.un_unitName}" maxlength='15'><br>
 		 <input class="btn" type="submit" value="提交">
 	</form>

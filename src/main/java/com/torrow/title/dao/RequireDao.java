@@ -82,14 +82,8 @@ public class RequireDao extends BaseDao<Require> implements RequireService {
 	}
 	@Override
 	public Require checkByTitleName(String titleName) {
-		String hql = "from Title t Where t.ti_titleName= '"+titleName+"'";
-		System.out.println(hql);
-		Title title= (Title) uniqueResult(hql);
-		System.out.println(title+"22222");
-		String hql1 = "from Require r Where r.re_title.ti_titleName= '"+titleName+"'";
-		System.out.println(hql1);
-		Require require = (Require)uniqueResult(hql1);
-		System.out.println(require+"33333");
+		String hql= "from Require r Where r.re_title.ti_titleName= '"+titleName+"'";
+		Require require = (Require)uniqueResult(hql);
 		return require;
 	}
 }

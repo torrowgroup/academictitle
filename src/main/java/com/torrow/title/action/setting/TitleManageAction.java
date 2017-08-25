@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Expert;
+import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Require;
 import com.torrow.title.entity.Title;
 import com.torrow.title.util.PageCut;
@@ -30,6 +31,9 @@ public class TitleManageAction extends BaseAction {
 	}
 
 	public String add() {
+		if(title.getTi_titleName().equals("")) {
+			request.put("Message", "添加失败");
+		}else {
 		boolean allsign = true;
 		List<Title> list = titleService.selectTitle();
 		for(int i = 0;i<list.size();i++){
@@ -49,6 +53,7 @@ public class TitleManageAction extends BaseAction {
 			request.put("Message", "已有该职称");
 		}
 		request.put("method", "view");
+		}
 		return "addTitle";
 	}
 
@@ -72,13 +77,20 @@ public class TitleManageAction extends BaseAction {
 		}
 		List<Require> allRequire = requireService.getAllRequire();
 		for (int i = 0; i < allRequire.size(); i++) {
+			System.out.println(allRequire.get(i).getRe_title());
+			System.out.println(titleId);
 			if (allRequire.get(i).getRe_title().getTi_id() == titleId) {
 				allRequire.get(i).setRe_title(null);
-				boolean bo = titleService.deleteTitle(allRequire.get(i).getRe_title());
 				requireService.updateRequire(allRequire.get(i));
 			}
 		}
-		
+		List<Participator> allParticipator = participatorService.getAll();
+		for(int i=0;i<allParticipator.size();i++) {
+			if(allParticipator.get(i).getPa_title().getTi_id()==titleId) {
+				allParticipator.get(i).setPa_title(null);
+				participatorService.updateParticipator(allParticipator.get(i));
+			}
+		}
 		boolean boo = titleService.deleteById(titleId);
 		PageCut<Title> list = titleService.checkAll(page, 6);
 		request.put("paCut", list);
