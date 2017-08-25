@@ -48,8 +48,8 @@ public class DepartmentManageAction extends BaseAction {
 
 	// 查看所有部门
 	public String view() {
-		PageCut<Unit> list = unitService.checkAll(page, 3);
-		request.put("Method", "view");
+		PageCut<Unit> list = unitService.checkAll(page, 6);
+		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
 	}
@@ -81,8 +81,8 @@ public class DepartmentManageAction extends BaseAction {
 	// 修改部门
 	public String update() {
 		boolean boo = unitService.update(unit);
-		PageCut<Unit> list = unitService.checkAll(page, 3);
-		request.put("Method", "view");
+		PageCut<Unit> list = unitService.checkAll(page, 6);
+		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
 
@@ -91,8 +91,8 @@ public class DepartmentManageAction extends BaseAction {
 	// 删除部门
 	public String delete() {
 		boolean boo = unitService.deleteById(unitId);
-		PageCut<Unit> list = unitService.checkAll(page, 3);
-		request.put("Method", "view");
+		PageCut<Unit> list = unitService.checkAll(page, 6);
+		request.put("method", "view");
 		request.put("paCut", list);
 		return "view";
 	}

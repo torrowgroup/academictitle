@@ -26,9 +26,7 @@
 }
 </style>
 </head>
-
 <body>
-	<a href="${rootPath}setting/Transfer_addNotice" target="mainiframe">添加通知</a>
 	<div class="top">
  <c:if test="${fn:length(paCut.data) > 0 }">
 		<table border="1" cellspacing="0">
@@ -83,7 +81,7 @@
 		</div>
 		</c:if>
 			<div class="side">
-	   <a href="#"><img src="${rootPath}images/notice.png" width="18px" style="float:left;margin-left:0px"></a>
+	   <a href="${rootPath}setting/Transfer_addNotice"><img src="${rootPath}images/notice.png" width="100px"></a>
 	</div>
 </body>
 </html>

@@ -47,7 +47,7 @@ public class ReviewRequirementsManageAction extends BaseAction {
 	}
 		//查看所有评议要求
 		public String view() {
-			PageCut<Require > list =requireService.checkAll(page, 3);
+			PageCut<Require > list =requireService.checkAll(page, 6);
 			request.put("method", "view");
 			request.put("paCut", list);
 			return "view";
@@ -61,7 +61,7 @@ public class ReviewRequirementsManageAction extends BaseAction {
 					request.put("Message", "已有该职称相关评议");
 				}else {
 					boolean boo =requireService.add(req,title);
-					request.put("Message", "该职称评议要求调节价成功");
+					request.put("Message", "该职称评议要求添加成功");
 					request.put("reqlist", session.get("reqlist"));
 					return "addReviewRequirements";
 				}
@@ -71,7 +71,7 @@ public class ReviewRequirementsManageAction extends BaseAction {
 		// 修改评议要求
 		public String update() {
 			boolean boo = requireService.update(req,(Title) session.get("title"));
-			PageCut<Require> list = requireService.checkAll(page, 3);
+			PageCut<Require> list = requireService.checkAll(page, 6);
 			request.put("paCut", list);
 			request.put("method", "view");
 			return "view";
@@ -80,7 +80,7 @@ public class ReviewRequirementsManageAction extends BaseAction {
 		//删除评议要求
 		public String delete() {
 			boolean boo = requireService.deleteById(requireId);
-			PageCut<Require> list = requireService.checkAll(page, 3);
+			PageCut<Require> list = requireService.checkAll(page, 6);
 			request.put("paCut", list);
 			request.put("method", "view");
 			return "view";

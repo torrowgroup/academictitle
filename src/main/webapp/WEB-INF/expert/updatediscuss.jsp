@@ -18,7 +18,7 @@
 		<img src="${rootPath}images/nail-1.gif" class="left"> <img
 			src="${rootPath}images/nail-2.gif" class="right">
 		<div class="back">
-			<<<a href="${rootPath}expert/ExpertPersonal_back">返回首页</a>
+			<<<a href="#" onclick="JavaScript:history.back(-1);">返回上一级</a>
 		</div>
 		<div class="wall">
 			<div class="w-left">

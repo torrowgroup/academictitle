@@ -38,14 +38,14 @@ public class NoticeManageAction extends BaseAction {
 	}
 
 	public String view() {
-		PageCut<Notice> list = noticeService.checkAll(page, 5);
+		PageCut<Notice> list = noticeService.checkAll(page, 6);
 		request.put("paCut", list);
 		return "view";
 	}
 
 	public String delete() {
 		boolean boo = noticeService.deleteById(noticeId);
-		PageCut<Notice> list = noticeService.checkAll(page, 5);
+		PageCut<Notice> list = noticeService.checkAll(page, 6);
 		request.put("paCut", list);
 		return "view";
 	}
