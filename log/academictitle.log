@@ -1,0 +1,1697 @@
+[INFO][2017-08-25 11:18:33,797][com.opensymphony.xwork2.config.ConfigurationManager]Detected container provider [Struts XML configuration provider (struts.xml)] needs to be reloaded. Reloading all providers.
+[INFO][2017-08-25 11:18:33,848][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 11:18:33,886][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 11:18:33,931][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 11:18:33,933][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 11:18:33,933][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 11:18:33,934][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 11:18:33,934][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 11:18:33,934][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 11:18:33,934][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 11:18:33,935][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 11:18:33,937][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 11:18:33,939][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 11:18:33,942][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 11:18:33,942][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 11:18:33,944][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 11:18:33,946][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 11:18:33,946][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 11:18:33,946][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 11:18:33,946][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 11:18:33,946][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 11:18:33,947][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 11:18:33,949][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 11:18:33,949][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 11:18:33,949][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 11:18:33,949][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 11:18:33,950][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 11:18:33,952][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 11:18:33,952][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 11:18:33,954][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 11:18:33,957][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 11:18:33,958][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-25 11:27:23,188][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-25 11:27:23,342][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Aug 25 11:27:23 CST 2017]; root of context hierarchy
+[INFO][2017-08-25 11:27:23,391][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-25 11:27:24,028][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-25 11:27:24,036][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-25 11:27:24,566][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-25 11:27:24,574][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-25 11:27:24,578][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-25 11:27:24,580][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-25 11:27:25,061][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-25 11:27:25,073][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-25 11:27:25,292][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-25 11:27:25,314][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-25 11:27:25,621][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-25 11:27:25,622][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-25 11:27:25,625][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-25 11:27:25,651][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-25 11:27:25,652][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-25 11:27:25,652][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-25 11:27:25,652][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-25 11:27:25,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-25 11:27:25,664][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-25 11:27:25,665][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 11:27:25,665][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 11:27:25,676][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-25 11:27:25,676][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-25 11:27:25,676][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 11:27:25,677][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 11:27:25,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-25 11:27:25,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-25 11:27:25,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 11:27:25,688][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 11:27:25,700][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-25 11:27:25,700][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-25 11:27:25,700][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 11:27:25,700][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 11:27:25,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-25 11:27:25,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-25 11:27:25,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-25 11:27:25,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-25 11:27:25,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-25 11:27:25,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-25 11:27:25,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 11:27:25,723][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 11:27:25,746][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-25 11:27:25,747][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-25 11:27:25,747][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-25 11:27:25,747][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-25 11:27:25,760][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-25 11:27:25,761][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-25 11:27:25,761][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 11:27:25,761][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 11:27:25,772][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-25 11:27:25,772][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-25 11:27:25,772][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 11:27:25,772][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 11:27:25,774][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-25 11:27:25,870][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@a8ee5af] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-25 11:27:26,044][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2855 ms
+[INFO][2017-08-25 11:27:26,721][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 11:27:26,873][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 11:27:26,984][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 11:27:26,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 11:27:26,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 11:27:26,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 11:27:26,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 11:27:26,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 11:27:26,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 11:27:26,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 11:27:26,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 11:27:26,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 11:27:26,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 11:27:26,993][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 11:27:26,994][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 11:27:26,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 11:27:26,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 11:27:26,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 11:27:26,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 11:27:26,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 11:27:26,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 11:27:27,011][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 11:27:27,012][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 11:27:27,012][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-25 14:19:05,292][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-25 14:19:05,401][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Aug 25 14:19:05 CST 2017]; root of context hierarchy
+[INFO][2017-08-25 14:19:05,454][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-25 14:19:06,156][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-25 14:19:06,184][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-25 14:19:07,081][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-25 14:19:07,096][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-25 14:19:07,099][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-25 14:19:07,101][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-25 14:19:07,840][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-25 14:19:07,862][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-25 14:19:08,165][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-25 14:19:08,177][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-25 14:19:08,630][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-25 14:19:08,630][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-25 14:19:08,634][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-25 14:19:08,690][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-25 14:19:08,690][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-25 14:19:08,690][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-25 14:19:08,690][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-25 14:19:08,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-25 14:19:08,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-25 14:19:08,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 14:19:08,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 14:19:08,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-25 14:19:08,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-25 14:19:08,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 14:19:08,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 14:19:08,764][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-25 14:19:08,764][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-25 14:19:08,764][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 14:19:08,764][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 14:19:08,811][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-25 14:19:08,811][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-25 14:19:08,811][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 14:19:08,811][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 14:19:08,826][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-25 14:19:08,827][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-25 14:19:08,827][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-25 14:19:08,827][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-25 14:19:08,847][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-25 14:19:08,847][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-25 14:19:08,847][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 14:19:08,847][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 14:19:08,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-25 14:19:08,876][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-25 14:19:08,876][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-25 14:19:08,876][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-25 14:19:08,895][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-25 14:19:08,895][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-25 14:19:08,895][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 14:19:08,895][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 14:19:08,915][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-25 14:19:08,915][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-25 14:19:08,915][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 14:19:08,916][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 14:19:08,920][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-25 14:19:09,121][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@66581386] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-25 14:19:09,425][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4132 ms
+[INFO][2017-08-25 14:19:10,070][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 14:19:10,217][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 14:19:10,270][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 14:19:10,275][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 14:19:10,275][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 14:19:10,277][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 14:19:10,278][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 14:19:10,278][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 14:19:10,278][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 14:19:10,279][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 14:19:10,279][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 14:19:10,279][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 14:19:10,279][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 14:19:10,279][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 14:19:10,279][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 14:19:10,280][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 14:19:10,282][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 14:19:10,282][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 14:19:10,282][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 14:19:10,282][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 14:19:10,283][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 14:19:10,283][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 14:19:10,284][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 14:19:10,304][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 14:19:10,305][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 14:19:10,305][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-25 15:35:39,574][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-25 15:35:39,721][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Aug 25 15:35:39 CST 2017]; root of context hierarchy
+[INFO][2017-08-25 15:35:39,783][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-25 15:35:40,787][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-25 15:35:40,796][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-25 15:35:41,606][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-25 15:35:41,614][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-25 15:35:41,618][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-25 15:35:41,621][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-25 15:35:42,814][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-25 15:35:42,845][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-25 15:35:43,353][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-25 15:35:43,375][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-25 15:35:43,834][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-25 15:35:43,834][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-25 15:35:43,841][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-25 15:35:43,882][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-25 15:35:43,882][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-25 15:35:43,883][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-25 15:35:43,883][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-25 15:35:43,909][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-25 15:35:43,909][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-25 15:35:43,909][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 15:35:43,909][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 15:35:43,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-25 15:35:43,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-25 15:35:43,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:35:43,942][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:35:43,975][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-25 15:35:43,975][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-25 15:35:43,975][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:35:43,975][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:35:44,011][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-25 15:35:44,011][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-25 15:35:44,012][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:35:44,012][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:35:44,033][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-25 15:35:44,034][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-25 15:35:44,034][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-25 15:35:44,034][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-25 15:35:44,059][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-25 15:35:44,059][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-25 15:35:44,059][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 15:35:44,060][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 15:35:44,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-25 15:35:44,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-25 15:35:44,077][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-25 15:35:44,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-25 15:35:44,108][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-25 15:35:44,108][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-25 15:35:44,108][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:35:44,108][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:35:44,124][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-25 15:35:44,124][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-25 15:35:44,124][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:35:44,124][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:35:44,126][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-25 15:35:44,273][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@3fb40007] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-25 15:35:44,497][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4922 ms
+[INFO][2017-08-25 15:35:44,902][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 15:35:45,331][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 15:35:45,412][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 15:35:45,418][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 15:35:45,418][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 15:35:45,418][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 15:35:45,419][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 15:35:45,419][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 15:35:45,419][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 15:35:45,419][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 15:35:45,420][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 15:35:45,420][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 15:35:45,420][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 15:35:45,420][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 15:35:45,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 15:35:45,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 15:35:45,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 15:35:45,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 15:35:45,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 15:35:45,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 15:35:45,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 15:35:45,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 15:35:45,423][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 15:35:45,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 15:35:45,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 15:35:45,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 15:35:45,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 15:35:45,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 15:35:45,427][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 15:35:45,427][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 15:35:45,427][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 15:35:45,427][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 15:35:45,427][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 15:35:45,430][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 15:35:45,430][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 15:35:45,430][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 15:35:45,431][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 15:35:45,462][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 15:35:45,462][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 15:35:45,462][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-25 15:40:52,659][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-25 15:40:52,806][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Aug 25 15:40:52 CST 2017]; root of context hierarchy
+[INFO][2017-08-25 15:40:52,855][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-25 15:40:53,522][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-25 15:40:53,531][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-25 15:40:54,112][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-25 15:40:54,121][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-25 15:40:54,124][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-25 15:40:54,127][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-25 15:40:54,698][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-25 15:40:54,718][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-25 15:40:54,962][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-25 15:40:54,975][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-25 15:40:55,262][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-25 15:40:55,263][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-25 15:40:55,268][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-25 15:40:55,295][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-25 15:40:55,295][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-25 15:40:55,295][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-25 15:40:55,295][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-25 15:40:55,310][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-25 15:40:55,310][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-25 15:40:55,310][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 15:40:55,310][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 15:40:55,327][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-25 15:40:55,327][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-25 15:40:55,327][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:40:55,327][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:40:55,343][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-25 15:40:55,343][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-25 15:40:55,344][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:40:55,344][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:40:55,365][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-25 15:40:55,365][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-25 15:40:55,365][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:40:55,365][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:40:55,392][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-25 15:40:55,392][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-25 15:40:55,393][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-25 15:40:55,393][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-25 15:40:55,410][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-25 15:40:55,411][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-25 15:40:55,411][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 15:40:55,411][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 15:40:55,426][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-25 15:40:55,426][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-25 15:40:55,427][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-25 15:40:55,427][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-25 15:40:55,441][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-25 15:40:55,441][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-25 15:40:55,441][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:40:55,441][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:40:55,459][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-25 15:40:55,459][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-25 15:40:55,459][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:40:55,459][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:40:55,461][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-25 15:40:55,558][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@8873db2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-25 15:40:55,809][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3148 ms
+[INFO][2017-08-25 15:40:56,747][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 15:40:56,902][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 15:40:56,982][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 15:40:56,987][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 15:40:56,987][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 15:40:56,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 15:40:56,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 15:40:56,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 15:40:56,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 15:40:56,988][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 15:40:56,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 15:40:56,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 15:40:56,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 15:40:56,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 15:40:56,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 15:40:56,989][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 15:40:56,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 15:40:56,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 15:40:56,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 15:40:56,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 15:40:56,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 15:40:56,990][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 15:40:56,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 15:40:56,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 15:40:56,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 15:40:56,991][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 15:40:56,992][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 15:40:56,993][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 15:40:56,993][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 15:40:56,995][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 15:40:56,996][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 15:40:56,996][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 15:40:56,996][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 15:40:56,996][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 15:40:56,996][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 15:40:56,997][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 15:40:56,997][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 15:40:56,997][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 15:40:56,997][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 15:40:56,997][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 15:40:56,998][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 15:40:56,998][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 15:40:56,998][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 15:40:57,056][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 15:40:57,057][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 15:40:57,057][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[ERROR][2017-08-25 15:42:02,337][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:369)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 're_id' not found on type com.torrow.title.entity.Title
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspx_meth_c_005fforEach_005f1(homepage_jsp.java:395)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspService(homepage_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 84 more
+[ERROR][2017-08-25 15:42:04,817][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:369)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 're_id' not found on type com.torrow.title.entity.Title
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspx_meth_c_005fforEach_005f1(homepage_jsp.java:395)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspService(homepage_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 84 more
+[ERROR][2017-08-25 15:42:25,457][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:369)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 're_id' not found on type com.torrow.title.entity.Title
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspx_meth_c_005fforEach_005f1(homepage_jsp.java:395)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspService(homepage_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 84 more
+[ERROR][2017-08-25 15:42:26,938][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:369)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 're_id' not found on type com.torrow.title.entity.Title
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspx_meth_c_005fforEach_005f1(homepage_jsp.java:395)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspService(homepage_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 84 more
+[INFO][2017-08-25 15:43:08,705][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-25 15:43:08,930][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Aug 25 15:43:08 CST 2017]; root of context hierarchy
+[INFO][2017-08-25 15:43:09,035][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-25 15:43:09,700][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-25 15:43:09,710][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-25 15:43:10,451][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-25 15:43:10,469][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-25 15:43:10,473][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-25 15:43:10,475][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-25 15:43:11,249][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-25 15:43:11,271][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-25 15:43:11,515][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-25 15:43:11,526][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-25 15:43:12,207][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-25 15:43:12,207][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-25 15:43:12,211][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-25 15:43:12,252][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-25 15:43:12,253][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-25 15:43:12,253][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-25 15:43:12,253][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-25 15:43:12,274][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-25 15:43:12,274][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-25 15:43:12,274][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 15:43:12,275][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 15:43:12,290][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-25 15:43:12,290][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-25 15:43:12,290][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:43:12,290][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:43:12,454][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-25 15:43:12,454][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-25 15:43:12,455][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:43:12,455][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:43:12,495][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-25 15:43:12,495][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-25 15:43:12,496][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:43:12,496][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:43:12,541][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-25 15:43:12,541][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-25 15:43:12,542][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-25 15:43:12,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-25 15:43:12,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-25 15:43:12,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-25 15:43:12,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 15:43:12,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 15:43:12,613][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-25 15:43:12,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-25 15:43:12,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-25 15:43:12,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-25 15:43:12,628][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-25 15:43:12,628][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-25 15:43:12,628][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:43:12,629][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:43:12,643][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-25 15:43:12,643][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-25 15:43:12,643][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 15:43:12,644][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 15:43:12,645][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-25 15:43:12,846][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@259af7e1] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-25 15:43:13,213][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4507 ms
+[INFO][2017-08-25 15:43:14,219][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 15:43:14,398][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 15:43:14,475][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 15:43:14,479][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 15:43:14,479][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 15:43:14,480][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 15:43:14,481][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 15:43:14,482][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 15:43:14,482][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 15:43:14,482][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 15:43:14,482][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 15:43:14,486][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 15:43:14,486][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 15:43:14,486][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 15:43:14,486][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 15:43:14,487][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 15:43:14,488][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 15:43:14,489][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 15:43:14,490][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 15:43:14,490][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 15:43:14,490][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 15:43:14,490][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 15:43:14,490][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 15:43:14,490][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 15:43:14,491][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 15:43:14,491][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 15:43:14,491][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 15:43:14,491][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 15:43:14,491][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 15:43:14,491][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 15:43:14,492][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 15:43:14,509][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 15:43:14,510][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 15:43:14,510][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[ERROR][2017-08-25 15:44:14,929][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:369)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 're_id' not found on type com.torrow.title.entity.Title
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspx_meth_c_005fforEach_005f1(homepage_jsp.java:395)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspService(homepage_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 84 more
+[ERROR][2017-08-25 15:46:36,513][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/user/homepage.jsp at line 107
+
+104:                <c:forEach items="${someTitle}" var="items">
+105:                		<div class="title-txt">
+106:                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
+107:                              <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.ti_titleName}的评议要求</a>
+108:                         </div>
+109:                     </div>
+110:                </c:forEach>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:369)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 're_id' not found on type com.torrow.title.entity.Title
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspx_meth_c_005fforEach_005f1(homepage_jsp.java:395)
+	at org.apache.jsp.WEB_002dINF.user.homepage_jsp._jspService(homepage_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 84 more
+[INFO][2017-08-25 17:02:14,325][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-25 17:02:14,452][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Aug 25 17:02:14 CST 2017]; root of context hierarchy
+[INFO][2017-08-25 17:02:14,498][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-25 17:02:15,007][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-25 17:02:15,015][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-25 17:02:15,723][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-25 17:02:15,738][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-25 17:02:15,743][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-25 17:02:15,747][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-25 17:02:16,504][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-25 17:02:16,514][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-25 17:02:16,694][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-25 17:02:16,703][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-25 17:02:16,968][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-25 17:02:16,968][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-25 17:02:16,971][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-25 17:02:17,027][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-25 17:02:17,027][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-25 17:02:17,028][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-25 17:02:17,028][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-25 17:02:17,040][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-25 17:02:17,040][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-25 17:02:17,040][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 17:02:17,040][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-25 17:02:17,051][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-25 17:02:17,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-25 17:02:17,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 17:02:17,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 17:02:17,064][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-25 17:02:17,064][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-25 17:02:17,064][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 17:02:17,064][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 17:02:17,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-25 17:02:17,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-25 17:02:17,081][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 17:02:17,082][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 17:02:17,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-25 17:02:17,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-25 17:02:17,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-25 17:02:17,148][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-25 17:02:17,160][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-25 17:02:17,160][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-25 17:02:17,161][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 17:02:17,161][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-25 17:02:17,180][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-25 17:02:17,181][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-25 17:02:17,181][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-25 17:02:17,181][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-25 17:02:17,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-25 17:02:17,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-25 17:02:17,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 17:02:17,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 17:02:17,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-25 17:02:17,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-25 17:02:17,219][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-25 17:02:17,219][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-25 17:02:17,221][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-25 17:02:17,323][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@5253ef1a] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-25 17:02:17,551][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3225 ms
+[INFO][2017-08-25 17:02:18,208][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-25 17:02:18,311][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-25 17:02:18,387][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-25 17:02:18,394][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-25 17:02:18,394][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-25 17:02:18,394][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-25 17:02:18,394][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-25 17:02:18,394][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-25 17:02:18,394][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-25 17:02:18,395][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-25 17:02:18,396][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-25 17:02:18,396][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-25 17:02:18,396][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-25 17:02:18,397][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-25 17:02:18,399][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-25 17:02:18,400][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-25 17:02:18,401][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-25 17:02:18,401][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-25 17:02:18,401][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-25 17:02:18,404][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-25 17:02:18,405][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-25 17:02:18,405][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-25 17:02:18,425][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-25 17:02:18,426][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-25 17:02:18,426][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[WARN][2017-08-25 17:32:44,468][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:33:29,710][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:33:58,685][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:34:12,917][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:34:17,382][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:34:22,102][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:34:55,023][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:35:01,030][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:38:19,996][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN][2017-08-25 17:47:01,124][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/setting/Transfper_updateRequire?requireId=12
+There is no Action mapped for namespace [/setting] and action name [Transfper_updateRequire] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)

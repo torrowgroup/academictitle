@@ -104,7 +104,7 @@
                <c:forEach items="${someTitle}" var="items">
                		<div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">关于${items.ti_titleName}的评议要求</a>
+                             <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.ti_id}">关于${items.ti_titleName}的评议要求</a>
                         </div>
                     </div>
                </c:forEach>
