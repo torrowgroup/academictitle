@@ -22,14 +22,23 @@
 		</div>
 		<div class="wall">
 			<div class="w-left">
-				<span>参评人:</span> <i>${record.re_participator.pa_name}</i><br> <span>申报职称:</span>
-				<i>${record.re_participator.pa_title.ti_titleName}</i><br> <span>专业:</span>
-				<i>${record.re_participator.pa_majors.maj_majorName}</i><br> <span>单位:</span>
-				<i>${particirecord.re_participatorpator.pa_unit.un_unitName}</i><br> <span>图片:</span>
-				<i><img id="pic"
-					src="${rootPath}uploadImage/${record.re_participator.pa_imageUrl}" alt="加载中"></i><br>
-				<span>简介:</span>
-				<textarea readonly="readonly">${record.re_participator.pa_introduce}</textarea>
+				<div class="top">
+					<span>简介&nbsp;<img height="15px;" width="15px;" alt=" " src="${rootPath}images/up.jpg"></span>
+				</div>
+				<div class="main">
+					<div class="view">
+						<span>参评人:</span> <i>${record.re_participator.pa_name}</i><br> <span>申报职称:</span>
+						<i>${record.re_participator.pa_title.ti_titleName}</i><br> <span>专业:</span>
+						<i>${record.re_participator.pa_majors.maj_majorName}</i><br> <span>单位:</span>
+						<i>${record.re_participator.pa_unit.un_unitName}</i><br> <span>图片:</span>
+						<i><img id="pic"
+							src="${rootPath}uploadImage/${record.re_participator.pa_imageUrl}"
+							alt="加载中"></i><br>
+					</div>
+					<div class="hidden">
+						<textarea readonly="readonly" style="resize: none">${record.re_participator.pa_introduce}</textarea>
+					</div>
+				</div>
 			</div>
 			<div class="w-right">
 				<form action="${rootPath}expert/ExpertDiscussAction_updateRecord" method="post">
@@ -72,49 +81,3 @@
 	</div>
 </body>
 </html>
-
-<%-- <center> --%>
-<!-- 	<table> -->
-<!-- 		<tr> -->
-<!-- 			<td>参评人：</td> -->
-<%-- 			<td>${record.re_participator.pa_name}</td> --%>
-<!-- 			<td>申报职称：</td> -->
-<%-- 			<td>${record.re_participator.pa_title.ti_titleName}</td> --%>
-<!-- 			<td>专业：</td> -->
-<%-- 			<td>${record.re_participator.pa_majors.maj_majorName}</td> --%>
-<!-- 			<td>单位：</td> -->
-<%-- 			<td>${record.re_participator.pa_unit.un_unitName}</td> --%>
-<!-- 			<td>图片：</td> -->
-<!-- 			<td><img alt="加载中" src=""></td> -->
-<!-- 		</tr> -->
-<!-- 		<tr> -->
-<!-- 			<td>简介：</td> -->
-<%-- 			<td colspan="9"><textarea rows="2" cols="30">${record.re_participator.pa_introduce}</textarea></td> --%>
-<!-- 		</tr> -->
-<!-- 	</table> -->
-<%-- 	<form action="${rootPath}expert/ExpertDiscussAction_updateRecord" method="post"> --%>
-<%-- 		<input type="hidden" name="re_id" value="${record.re_id}"/> --%>
-<!-- 		您对参评人专业熟悉程度： -->
-<%-- 		<input type="radio" name="re_unfm" <c:if test="${record.re_unfm eq 'A'}">checked="checked"</c:if> value="A" >熟悉 --%>
-<%-- 		<input type="radio" name="re_unfm" <c:if test="${record.re_unfm eq 'B'}">checked="checked"</c:if> value="B">比较熟悉 --%>
-<%-- 		<input type="radio" name="re_unfm" <c:if test="${record.re_unfm eq 'C'}">checked="checked"</c:if> value="C">不太熟悉<br> --%>
-<%-- 		教育：${require.re_educate}<br> --%>
-<%-- 		<input type="radio" name="re_educate" <c:if test="${record.re_educate eq '30'}">checked="checked"</c:if> value="30">优 --%>
-<%-- 		<input type="radio" name="re_educate" <c:if test="${record.re_educate eq '20'}">checked="checked"</c:if> value="20">良 --%>
-<%-- 		<input type="radio" name="re_educate" <c:if test="${record.re_educate eq '10'}">checked="checked"</c:if> value="10">中 --%>
-<%-- 		<input type="radio" name="re_educate" <c:if test="${record.re_educate eq '0'}">checked="checked"</c:if> value="0">差<br> --%>
-<%-- 		科研：${require.re_scientific}<br> --%>
-<%-- 		<input type="radio" name="re_scientific" <c:if test="${record.re_scientific eq '30'}">checked="checked"</c:if> value="30">优 --%>
-<%-- 		<input type="radio" name="re_scientific" <c:if test="${record.re_scientific eq '20'}">checked="checked"</c:if> value="20">良 --%>
-<%-- 		<input type="radio" name="re_scientific" <c:if test="${record.re_scientific eq '10'}">checked="checked"</c:if> value="10">中 --%>
-<%-- 		<input type="radio" name="re_scientific" <c:if test="${record.re_scientific eq '0'}">checked="checked"</c:if> value="0">差<br> --%>
-<%-- 		师德：${require.re_morality}<br> --%>
-<%-- 		<input type="radio" name="re_morality" <c:if test="${record.re_morality eq '30'}">checked="checked"</c:if> value="30">优 --%>
-<%-- 		<input type="radio" name="re_morality" <c:if test="${record.re_morality eq '20'}">checked="checked"</c:if> value="20">良 --%>
-<%-- 		<input type="radio" name="re_morality" <c:if test="${record.re_morality eq '10'}">checked="checked"</c:if> value="10">中 --%>
-<%-- 		<input type="radio" name="re_morality" <c:if test="${record.re_morality eq '0'}">checked="checked"</c:if> value="0">差<br> --%>
-<!-- 		<input type="submit" value="确定修改"/> -->
-<!-- 	</form> -->
-<%-- </center> --%>
-<!-- </body> -->
-<!-- </html> -->

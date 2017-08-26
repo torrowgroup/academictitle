@@ -44,6 +44,7 @@
 				</c:forEach>
             </select>
             <br>
+            <label>图片:</label>
             <input type="file" name="file" class="file" accept="image/*" value="选择图片">
             <div class="suyuan" style="width: 600px; height: 310px;">
 				<lable style="margin-left:0%;">简介：</lable>
