@@ -11,21 +11,34 @@
     <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/bootstrap.css">
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
+    <style>
+		.tilp{
+		  padding-top:20px;
+		  font-size:26px;
+		  text-align:center;
+		  font-family:"华文行楷","微软雅黑";
+		  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+		
+		}
+	</style>
 </head>
 <body>
-<center>${message}</center>
-<div style="margin-left: 60%; height: 30px; margin-top: 5%;">
+<div class="tilp">${message}${news}</div>
+<div style="margin-left: 55%; height: 30px; margin-top: 5%;">
 <a class="font" href="${rootPath}user/Expert_relay" target="mainiframe">添加专家</a>
 			<form action="${rootPath}user/Expert_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
 					<option value="ex_userName">账号</option>
 					<option value="ex_name">姓名</option>
+					<option value="ex_majors.maj_majorName">专业</option>
+					<option value="ex_unit.un_unitName">单位</option>
+					<option value="ex_title.ti_titleName">职称</option>
 					<option value="ex_education">学历</option>
 				</select> <input
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px; width: 30%;"
 					type="text" name="inquiry" required="required"> <input
-					style="background-color: #82C0E9;border-radius: 7px;" type="submit" value="查询">
+					style="background-color: #82C0E9;border-radius: 7px;width:50px;height: 30px;" type="submit" value="查询">
 			</form>
 	</div>
 	<c:if test="${fn:length(messagenews.data) > 0 }">

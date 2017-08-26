@@ -11,9 +11,19 @@
     <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/selectmanager.css">
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
+    <style>
+		.tilp{
+		  padding-top:20px;
+		  font-size:26px;
+		  text-align:center;
+		  font-family:"华文行楷","微软雅黑";
+		  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+		
+		}
+	</style>
 </head>
 <body>
-<center>${message}</center>
+<div class="tilp">${message}</div>
 <div style="margin-left: 55%; height: 30px; margin-top: 5%;">
 <a class="font" href="${rootPath}user/Manager_relay" target="mainiframe">添加管理员</a>
 			<form action="${rootPath}user/Manager_select" method="post">
@@ -24,7 +34,7 @@
 				</select> <input
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px; width: 30%;"
 					type="text" name="inquiry" required="required"> <input
-					style="background-color: #82C0E9;border-radius: 7px;" type="submit" value="查询">
+					style="background-color: #82C0E9;border-radius: 7px;width:50px;height: 30px;" type="submit" value="查询">
 			</form>
 	</div>
 	<div class="header" style="width:85%">
@@ -36,7 +46,7 @@
 		<tbody>
 			<tr>
 				<th>编号</th>
-				<th>用户名</th>
+				<th>账号</th>
 				<th>密码</th>
 				<th>姓名</th>
 				<th style="width:60px">操作</th>

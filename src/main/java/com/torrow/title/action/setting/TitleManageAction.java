@@ -13,6 +13,7 @@ public class TitleManageAction extends BaseAction {
 	private Title title;
 	private int titleId;
 	private String titleName;
+	int page = 1;// 当前第几页
 	public String getTitleName() {
 		return titleName;
 	}
@@ -21,7 +22,7 @@ public class TitleManageAction extends BaseAction {
 		this.titleName = titleName;
 	}
 
-	int page = 1;// 当前第几页
+	
 
 	public String view() {
 		PageCut<Title> list = titleService.checkAll(page, 6);
@@ -59,6 +60,16 @@ public class TitleManageAction extends BaseAction {
 
 	// 修改职称
 	public String update() {
+		List<Title> allTitle = titleService.getAll();
+		for(int i=0;i<allTitle.size();i++) {
+			if(allTitle.get(i).getTi_titleName().equals(title.getTi_titleName())) {
+				request.put("Message", "修改失败");
+				PageCut<Title> list = titleService.checkAll(page, 6);
+				request.put("paCut", list);
+				request.put("method", "view");
+				return "view";
+			}
+		}
 		boolean boo = titleService.update(title);
 		PageCut<Title> list = titleService.checkAll(page, 6);
 		request.put("paCut", list);

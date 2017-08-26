@@ -85,6 +85,16 @@ public class DepartmentManageAction extends BaseAction {
 
 	// 修改单位
 	public String update() {
+		List<Unit> allUnit = unitService.selectUnit();
+		for(int i=0;i<allUnit.size();i++) {
+			if(allUnit.get(i).getUn_unitName().equals(unit.getUn_unitName())) {
+				request.put("Message", "修改失败");
+				PageCut<Unit> list = unitService.checkAll(page, 6);
+				request.put("method", "view");
+				request.put("paCut", list);
+				return "view";
+			}
+		}
 		boolean boo = unitService.update(unit);
 		PageCut<Unit> list = unitService.checkAll(page, 6);
 		request.put("method", "view");

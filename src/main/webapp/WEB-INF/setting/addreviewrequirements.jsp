@@ -16,23 +16,42 @@
   text-shadow: 3px 3px 6px rgba(0,0,0,.4);
 
 }
+.select{
+height: 33px;
+    width: 90%;
+    border-radius: 5px;
+    vertical-align: middle;
+   
+}
+#text2{
+    height: 110px;
+    width: 800px;
+    margin-left:-250px;
+    border-radius:5px;
+    border:2px dashed #ccc;
+ 
+}
+span{
+margin-left:100px;;
+}
+
 </style>
 </head>
 <body>
 <div class="tilp">${Message}</div>
 	<form action="${rootPath}setting/ReviewRequirementsManage_add" method="post">
-	<span>请选择职称</span>
+	<span style="margin-left:100px;">选择职称：</span>
 	<select name="titleId" class="select"> 
  			<c:forEach items="${reqlist}" var="item">
  	           <option value="${item.ti_id}">${item.ti_titleName}</option> 
-         	</c:forEach> 
- 	</select><br><br>
+         	</c:forEach>
+ 	</select><br><br><br>
 		<span>教学方面：</span>
-		<input type="text"  name="req.re_educate" placeholder="请输入教学要求标准" ><br>
+		<textarea id="text2"  type="text"  name="req.re_educate" placeholder="请输入教学要求标准" ></textarea><br>
 		<span>科研方面：</span>
-		<input type="text"  name="req.re_scientific" placeholder="请输入科研要求标准" ><br>
+		<textarea id="text2"  type="text"  name="req.re_scientific" placeholder="请输入科研要求标准" ></textarea><br>
 		<span>师德方面：</span>
-		<input type="text"  name="req.re_morality"  placeholder="请输入专业要求标准" ><br>
+		<textarea id="text2"  type="text"  name="req.re_morality"  placeholder="请输入专业要求标准" ></textarea><br>
 		 <input class="btn"  type="submit" value="提交">
 	</form>
 </body>

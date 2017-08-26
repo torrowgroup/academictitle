@@ -22,7 +22,9 @@ public interface TitleService {
 	public boolean updateTitle(Title title);
 	//删除一个对象
 	public boolean deleteTitle(Title title);
+	//wqj获取所有职称不分页
 	public List<Title> getAll();
+	//wqj根据名称查询
 	public Title getTitle(String titleName);
 
 }

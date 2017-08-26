@@ -22,10 +22,18 @@
 	right: 10px;
 	top: 40%;
 }
+.tilp{
+  padding-top:50px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+  }
 </style>
 </head>
-<c:if test="${fn:length(paCut.data) > 0 }">
 	<body>
+	<div class="tilp">${Message}</div>
+	<c:if test="${fn:length(paCut.data) > 0 }">
 		<div class="top">
 			<div class="right">
 				<form
@@ -40,7 +48,7 @@
 				<caption>评议要求信息</caption>
 				<tr>
 					<th width="200px">职称名称</th>
-					<th width="250px">操作</th>
+					<th width="100px">操作</th>
 				</tr>
 				<c:forEach items="${paCut.data}" var="item">
 					<tr>
@@ -51,7 +59,7 @@
 							href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">
 								<img src="${rootPath}images/view.png" width="20px"
 								style="float: left; margin-left: 20px">
-						</a> <a style="position: absolute; left: 45px; top: 8px;"
+						</a> <a style="position: absolute; left: 18px; top: 8px;"
 							href="${rootPath}setting/Transfer_updateRequire?requireId=${item.re_id}">
 								<img src="${rootPath}images/edit.png" width="20px"
 								style="float: left; margin-left: 70px">

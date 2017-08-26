@@ -64,9 +64,20 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		List<Majors> majors = majorsService.selectMajors();
 		List<Unit> unit = unitService.selectUnit();
 		List<Title> title = titleService.selectTitle();
-		request.put("majors", majors);
-		request.put("unit", unit);
-		request.put("title", title);
+		if (majors.size()==0) {
+			request.put("news", "并且无专业");
+			return select();
+		} else if (unit.size()==0) {
+			request.put("news", "并且无单位");
+			return select();
+		} else if(title.size()==0){
+			request.put("news", "并且无职称");
+			return select();
+		} else {
+			request.put("majors", majors);
+			request.put("unit", unit);
+			request.put("title", title);
+		}
 		return "add";
 	}
 
@@ -156,6 +167,11 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 	
 	//删除参评人
 	public String delete(){
+		String path =  ServletActionContext.getRequest().getRealPath("uploadImage")+"/"+participator.getPa_imageUrl();
+		File files=new File(path);
+	         if (files.exists()) {
+	        	 files.delete();
+	         }
 		boolean sign = participatorService.deletParticipator(participator.getPa_id());
 		if (sign) {
 			request.put("message", "删除成功");
