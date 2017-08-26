@@ -37,7 +37,6 @@ public class Email {
 	private static Session     session;
     private static MimeMessage msg;
     private static String      user;
-
     private String text;
     private String html;
     private List<MimeBodyPart> attachments = new ArrayList<MimeBodyPart>();

@@ -68,8 +68,6 @@ public class ReviewRequirementsManageAction extends BaseAction {
 	public String add() {
 		List<Require> list = requireService.getAllRequire();
 		for (int i = 0; i < list.size(); i++) {
-			System.out.println(list.get(i).getRe_title().getTi_id());
-			System.out.println(titleId);
 			if (list.get(i).getRe_title().getTi_id() == titleId) {
 				request.put("Message", "已有该职称相关评议");
 				return "addReviewRequirements";

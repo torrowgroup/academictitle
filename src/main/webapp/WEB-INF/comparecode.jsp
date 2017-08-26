@@ -22,7 +22,7 @@
 				<!-- Start Sign In Form -->
 				<form action="${rootPath}loginAction_compareCode" class="fh5co-form animate-box" method="post">
 					<h2>Forgot Password</h2>
-					<span>${message}</span>
+					<span style="color:red;">${message}</span>
 					<div class="form-group">
 						<div class="alert alert-success" role="alert">Your email has been send</div>
 					</div>

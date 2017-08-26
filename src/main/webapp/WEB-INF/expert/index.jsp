@@ -73,15 +73,3 @@
 	</div>
 </body>
 </html>
-<!-- <marquee behavior="scroll"> -->
-<%-- 				<p>${noticeNew.no_content}</p> --%>
-<!-- 			</marquee> -->
-<!-- 	<center>		 -->
-<%-- 		<a href="${rootPath}expert/ExpertDiscussAction_noDiscuss?inquiry=all" target="mainFrame">未评</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
-<%-- 		<a href="${rootPath}expert/ExpertDiscussAction_alreadyDiscuss?inquiry=all" target="mainFrame">已评</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
-<%-- 		<a href="${rootPath}expert/ExpertNotice_allNotice?inquiry=all" target="mainFrame">查看通知</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
-<%-- 		<a href="${rootPath}expert/ExpertPersonal_myselfMessage" target="mainFrame">个人中心</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --%>
-<%-- 		<a href="${rootPath}expert/ExpertPersonal_logOff">退出</a> --%>
-<!-- 	</center> -->
-<!-- </body> -->
-<!-- </html> -->
