@@ -25,7 +25,7 @@
 			<span>
 			  <i>欢迎${expert.ex_name}登录</i>
 			  <a href="${rootPath}expert/ExpertPersonal_logOff" title="退出登录" >
-               <img src="${rootPath}images/logout.jpeg" height="20px;" width="20px;"/>
+               <img src="${rootPath}images/logout.jpeg" height="20px;" width="20px;"/><span style="font-size:8px;padding-top:5px;">[退出]</span>
              </a>
            </span>
 		</div>
@@ -50,10 +50,10 @@
 				<span style="float: left; margin-left: 26px"><img
 					src="${rootPath}images/dot-2.png">公开&nbsp;&nbsp;公平&nbsp;&nbsp;公正</span><br>
 				
-				<span style="float: left; margin-left: 26px"><img
-					src="${rootPath}images/dot-2.png">根据通知时间完成评审</span>
+				<span style="float: left; margin-left: 25px"><img
+					src="${rootPath}images/dot-2.png">参加评审的专家必须准确把握<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标准和条件,给出客观的评价</span>
 					<span style="float: left; margin-left: 25px;"><img
-					src="${rootPath}images/dot-2.png">根据自己对参评人专业熟悉<br>程度，合理做出评审</span><br>
+					src="${rootPath}images/dot-2.png">根据通知时间按时按质评审</span><br>
 			</div>
 		</div>
 		<!-- 评审政策内容结束 -->

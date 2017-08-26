@@ -55,30 +55,29 @@
             </select>
             <br>
             <label>图片:</label>
-            <input type="file" name="file" class="file" accept="image/*" value="选择图片">
-            <div class="suyuan" style="width: 600px; height: 310px;">
-				<lable style="margin-left:0%;">简介：</lable>
+            <input type="file" name="file" class="file" accept="image/*" value="选择图片" title="不可上传中文图片">
+            <div class="scroll">
+            	<marquee><span>温馨提示：</span>不可以上传中文名称的图片!</marquee>
+        	</div>
+            <div class="row" >
+				<span class="label">简介</span>
 				<textarea rows="5" cols="100" name="pa_introduce"
 					style="display: none;" id="content"></textarea>
 				<br>
 				<div id="editor" style="width: 100%; height: 310px;"></div>
 				<script type="text/javascript"
 					src="${rootPath}dist/js/lib/jquery-1.10.2.min.js"></script>
-				<script type="text/javascript"
-					src="${rootPath}dist/js/wangEditor.min.js"></script>
+				<script type="text/javascript" src="${rootPath}dist/js/wangEditor.min.js"></script>
 				<script type="text/javascript">
-        var E = window.wangEditor
-        var editor = new E('editor')    		 
-     	editor.config.uploadImgUrl = '${rootPath}user/Participator_uploadImg'
-     	editor.config.uploadImgFileName = 'myFileName'
-        editor.create()    
-    </script>
+			        var E = window.wangEditor
+			        var editor = new E('editor')    		 
+			     	editor.config.uploadImgUrl = '${rootPath}user/Participator_uploadImg'
+			     	editor.config.uploadImgFileName = 'myFileName'
+			        editor.create()    
+			    </script>
 			</div><br>
             <input class="btn" type="submit" value="提交">
         </form>
-        <div class="scroll">
-            <marquee><span>温馨提示：</span>不可以上传中文名称的图片!</marquee>
-        </div>
     </div>
 </body>
 </html>

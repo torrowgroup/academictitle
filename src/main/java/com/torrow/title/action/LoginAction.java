@@ -27,13 +27,13 @@ public class LoginAction extends BaseAction {
 	private static final long serialVersionUID = 1L;
 
 	private String userName;// 用户名
-	private String passWord;// 密码
+	private String password;// 密码
 	private String code; //验证码
 
 	// 专家和管理员登录
 	public String login() {
-		Manager manager = managerService.login(userName, passWord);
-		Expert expert = expertService.login(userName, passWord);
+		Manager manager = managerService.login(userName, password);
+		Expert expert = expertService.login(userName, password);
 		if (manager != null) { // 如果用户为管理员，跳转到管理员界面
 			session.put("manager", manager);
 			return "managerIndex";
@@ -42,9 +42,9 @@ public class LoginAction extends BaseAction {
 			if (someNotice.size() > 0) {
 				Notice noticeNew = someNotice.get(0);// 得到最新一条通知
 				request.put("noticeNew", noticeNew);
-				session.put("expert", expert);
-				return "expertIndex";
 			}
+			session.put("expert", expert);
+			return "expertIndex";
 		}
 		request.put("message", "邮箱或密码输入错误");
 		return LOGIN;
@@ -71,8 +71,7 @@ public class LoginAction extends BaseAction {
 				.text(userName+"您好，欢迎您使用职称评审系统，您的验证码是"+code)
 				.send();
 			} catch (MessagingException e) {
-				request.put("message", "邮箱格式不正确");
-				System.out.println("邮箱格式不正确");
+				request.put("message", "发送失败，邮箱不存在");
 			}
 			session.put("code",code);
 		}else {
@@ -97,10 +96,10 @@ public class LoginAction extends BaseAction {
 		Manager manager = (Manager) session.get("backManager");
 		Expert expert = (Expert) session.get("backExpert");
 		if(manager!=null){
-			manager.setMa_password(passWord);
+			manager.setMa_password(password);
 			managerService.updateManager(manager);
 		} else {
-			expert.setEx_password(passWord);
+			expert.setEx_password(password);
 			expertService.updateExpert(expert);
 		}
 		try {
@@ -123,12 +122,12 @@ public class LoginAction extends BaseAction {
 		this.userName = userName;
 	}
 
-	public String getPassWord() {
-		return passWord;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassWord(String passWord) {
-		this.passWord = passWord;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public final String getCode() {
 		return code;
