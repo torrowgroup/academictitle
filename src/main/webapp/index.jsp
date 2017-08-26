@@ -8,10 +8,7 @@
  <link rel="stylesheet" type="text/css" href="${rootPath}css/login.css">
 </head>
 <body>
-<<<<<<< HEAD
-=======
 <!-- 	<div class="bg"></div> -->
->>>>>>> bd2ea6e4abcd08f43071ca2af263e1b1a35f1969
    <div class="title">河南科技学院职称评审系统</div>
    <div class="login-box">
    <form action="${rootPath}loginAction_login" method="post"> 

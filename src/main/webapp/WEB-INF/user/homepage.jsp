@@ -101,10 +101,10 @@
                     <a  href="${rootPath}setting/ReviewRequirementsManage_view" style="font-size:12px;float:right" >+更多</a>
                 </div>
                <div class="info-text">
-               <c:forEach items="${someTitle}" var="items">
+               <c:forEach items="${require}" var="items">
                		<div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">关于${items.ti_titleName}的评议要求</a>
+                             <a href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${items.re_id}">关于${items.re_title.ti_titleName}的评议要求</a>
                         </div>
                     </div>
                </c:forEach>
@@ -170,7 +170,7 @@
              </div>
              <div class="f-l">
                  <h4>服务中心</h4>
-                 <p>政策咨询：<span style="color:#f30">联系方式:15601266895</span><br>
+                 <p>政策咨询：<span style="color:#f30">15601266895</span><br>
                     在线问答：http://www.hist.edu.cn/<br>绑定微信:18738357910
                  </p>
              </div>
