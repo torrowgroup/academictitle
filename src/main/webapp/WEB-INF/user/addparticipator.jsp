@@ -14,10 +14,20 @@
      	        content.value = editor.$txt.html();
    }
 </script>
+<style>
+.tilp{
+  padding-top:20px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+
+}
+</style>
 </head>
 <body>
+<div class="tilp">${message}</div>
 <div class="wall">
-        <h3>${message}</h3>
         <form action="${rootPath}user/Participator_add" method="post" enctype="multipart/form-data" onsubmit="modifyContent()">
             <label>姓名:</label>
             <input type="text" name="pa_name" required><br>

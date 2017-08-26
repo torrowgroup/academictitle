@@ -70,25 +70,29 @@ public class TitleManageAction extends BaseAction {
 	public String delete() {
 		List<Expert> allExpert = expertService.getAlllExpert();
 		for (int i = 0; i < allExpert.size(); i++) {
+			if(allExpert.get(i).getEx_title()!=null) {
 			if (allExpert.get(i).getEx_title().getTi_id() == titleId) {
 				allExpert.get(i).setEx_title(null);
 				expertService.updateExpert(allExpert.get(i));
 			}
+			}
 		}
 		List<Require> allRequire = requireService.getAllRequire();
 		for (int i = 0; i < allRequire.size(); i++) {
-			System.out.println(allRequire.get(i).getRe_title());
-			System.out.println(titleId);
+			if(allRequire.get(i).getRe_title()!=null) {
 			if (allRequire.get(i).getRe_title().getTi_id() == titleId) {
 				allRequire.get(i).setRe_title(null);
 				requireService.updateRequire(allRequire.get(i));
 			}
+			}
 		}
 		List<Participator> allParticipator = participatorService.getAll();
 		for(int i=0;i<allParticipator.size();i++) {
+			if(allParticipator.get(i).getPa_title()!=null) {
 			if(allParticipator.get(i).getPa_title().getTi_id()==titleId) {
 				allParticipator.get(i).setPa_title(null);
 				participatorService.updateParticipator(allParticipator.get(i));
+			}
 			}
 		}
 		boolean boo = titleService.deleteById(titleId);

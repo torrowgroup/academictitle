@@ -11,9 +11,9 @@
 <body>
   <div class="header">
 	<form action="${rootPath}user/Manager_update?ma_id=${messagenews.ma_id}" method="post">
-		<label>账号：</label><input class="a" type="email" name="ma_userName" value="${messagenews.ma_userName}" placeholder="请输入邮箱"><br>
-		<label>密码：</label><input class="a" type="text" name="ma_password" value="${messagenews.ma_password}"><br>
-		<label>姓名：</label><input class="a" type="text" name="ma_name" value="${messagenews.ma_name}"><br>
+		<label>邮箱：</label><input class="a" type="email" name="ma_userName" value="${messagenews.ma_userName}" placeholder="请输入邮箱" required><br>
+		<label>密码：</label><input class="a" type="text" name="ma_password" value="${messagenews.ma_password}" required><br>
+		<label>姓名：</label><input class="a" type="text" name="ma_name" value="${messagenews.ma_name}" required><br>
 		<input class="b" type="submit" value="修改">
 	</form>
   </div>

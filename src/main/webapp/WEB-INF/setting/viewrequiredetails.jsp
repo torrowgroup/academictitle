@@ -32,13 +32,13 @@ font-size:16px;
  <div class="top">
         <h1>评 议 信 息</h1>
         <p>评议职称:</p>
-        <textarea id="text1" readonly="readonly" style="letter-spacing : 20px;">${require.re_title.ti_titleName}</textarea>
+        <textarea id="text1" readonly="readonly" style="letter-spacing : 20px;" style="resize:none">${require.re_title.ti_titleName}</textarea>
         <p>师 德 方 面:</p>
-        <textarea id="text2" readonly="readonly">${require.re_morality}</textarea>
+        <textarea id="text2" readonly="readonly" style="resize:none"> ${require.re_morality}</textarea>
         <p>教 学 方 面:</p>
-        <textarea id="text2"readonly="readonly">${require.re_educate}</textarea>
+        <textarea id="text2"readonly="readonly" style="resize:none">${require.re_educate}</textarea>
         <p>科 研 方 面:</p>
-        <textarea id="text2"readonly="readonly">${require.re_scientific}</textarea>
+        <textarea id="text2"readonly="readonly" style="resize:none">${require.re_scientific}</textarea>
     </div>
 </body>
 </html>

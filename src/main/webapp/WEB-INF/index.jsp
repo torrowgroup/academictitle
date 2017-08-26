@@ -13,7 +13,7 @@
         <div class="wrap bg">
            <div class="nav">
                <ul class="ul0">
-                   <li style="margin-left:42px"><a href="${rootPath}user/Manager_relayHomePage" target="mainiframe">首页</a></li>
+                   <li style="margin-left:120px"><a href="${rootPath}user/Manager_relayHomePage" target="mainiframe">首页</a></li>
                    <li><a href="${rootPath}setting/Statistics_chooseRank" target="mainiframe">评议排名</a></li>
                    <li><a href="${rootPath}setting/Statistics_expertStatistics?inquiry=all" target="mainiframe">专家评议统计</a></li>
                    <li><a href="${rootPath}setting/NoticeManage_view" target="mainiframe">通知公告</a></li>

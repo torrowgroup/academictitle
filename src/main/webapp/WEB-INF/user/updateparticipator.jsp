@@ -44,16 +44,12 @@
 </script>
 </head>
 <body>
-	<div class="wall">
-		<form action="${rootPath}user/Participator_update?pa_id=${part.pa_id}"
-			method="post" enctype="multipart/form-data"
-			onsubmit="modifyContent()">
-			<label>姓名：</label><input type="text" name="pa_name"
-				value="${part.pa_name}"> <label>邮箱：</label><input
-				type="email" name="pa_email" value="${part.pa_email}"
-				style="border-radius: 5px; height: 33px;"> <label>专业：
-			</label><select name="majorid" name="majorid">
-				<c:forEach items="${majors}" var="item">
+  <div class="wall">
+	<form action="${rootPath}user/Participator_update?pa_id=${part.pa_id}" method="post" enctype="multipart/form-data" onsubmit="modifyContent()">
+		 <label>姓名：</label><input type="text" name="pa_name" value="${part.pa_name}" required>
+		 <label>邮箱：</label><input type="email" name="pa_email" value="${part.pa_email}" style="border-radius:5px;height:33px;" required>
+		<label>专业： </label><select name="majorid"  name="majorid">
+			<c:forEach items="${majors}" var="item">
 					<option value="${item.maj_id}">${item.maj_majorName}</option>
 				</c:forEach>
 			</select><br> 
