@@ -36,7 +36,7 @@ font-size:16px;
         <p>师 德 方 面:</p>
         <textarea id="text2" readonly="readonly" style="resize:none"> ${require.re_morality}</textarea>
         <p>教 学 方 面:</p>
-        <textarea id="text2"readonly="readonly">${require.re_educate}</textarea>
+        <textarea id="text2"readonly="readonly" style="resize:none">${require.re_educate}</textarea>
         <p>科 研 方 面:</p>
         <textarea id="text2"readonly="readonly" style="resize:none">${require.re_scientific}</textarea>
     </div>

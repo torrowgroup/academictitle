@@ -97,9 +97,11 @@ public class DepartmentManageAction extends BaseAction {
 	public String delete() {
 		List<Participator> allParticipator = participatorService.getAll();
 		for(int i=0;i<allParticipator.size();i++) {
+			if(allParticipator.get(i).getPa_unit()!=null) {
 			if(allParticipator.get(i).getPa_unit().getUn_id()==unitId) {
 				allParticipator.get(i).setPa_unit(null);
 				participatorService.updateParticipator(allParticipator.get(i));
+			}
 			}
 		}
 		boolean boo = unitService.deleteById(unitId);

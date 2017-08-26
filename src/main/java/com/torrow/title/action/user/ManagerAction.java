@@ -7,6 +7,7 @@ import com.torrow.title.base.BaseAction;
 import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Manager;
 import com.torrow.title.entity.Notice;
+import com.torrow.title.entity.Require;
 import com.torrow.title.entity.Title;
 import com.torrow.title.util.PageCut;
 
@@ -41,12 +42,8 @@ public class ManagerAction extends BaseAction implements ModelDriven<Manager> {
 
 	public String relayHomePage(){
 		List<Notice> someNotice = noticeService.getNewNotice();//降序得到6条通知
-		List<Title> someTitle = titleService.selectTitle();//得到全部职称取6条职称
-		for(int i=5;i<someTitle.size();i++){
-			someTitle.remove(i);
-			i--;
-		}
-		request.put("someTitle", someTitle);
+		List<Require> require = requireService.getAllRequire();
+		request.put("require", require);
 		request.put("someNotice", someNotice);
 		return "homepage";
 	}
