@@ -44,9 +44,20 @@ public class ExpertAction extends BaseAction implements ModelDriven<Expert> {
 		List<Majors> majors = majorsService.selectMajors();
 		List<Unit> unit = unitService.selectUnit();
 		List<Title> title = titleService.selectTitle();
-		request.put("majors", majors);
-		request.put("unit", unit);
-		request.put("title", title);
+		if (majors.size()==0) {
+			request.put("news", "并且无专业");
+			return select();
+		} else if (unit.size()==0) {
+			request.put("news", "并且无单位");
+			return select();
+		} else if(title.size()==0){
+			request.put("news", "并且无职称");
+			return select();
+		} else {
+			request.put("majors", majors);
+			request.put("unit", unit);
+			request.put("title", title);
+		}
 		return "add";
 	}
 
