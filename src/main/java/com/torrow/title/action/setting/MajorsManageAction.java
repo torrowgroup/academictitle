@@ -3,6 +3,7 @@ package com.torrow.title.action.setting;
 import java.util.List;
 
 import com.torrow.title.base.BaseAction;
+import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Majors;
 import com.torrow.title.entity.Participator;
 import com.torrow.title.util.PageCut;
@@ -70,6 +71,17 @@ public class MajorsManageAction extends BaseAction {
 
 	// 修改专业
 	public String update() {
+		List<Majors> allMajors = majorsService.checkAll();
+		for(int i=0;i<allMajors.size();i++) {
+			if(allMajors.get(i).getMaj_majorName().equals(majors.getMaj_majorName())) {
+				System.out.println(allMajors.get(i).getMaj_majorName());
+				request.put("Message", "修改失败");
+				PageCut<Majors> list = majorsService.checkAll(page, 6);
+				request.put("method", "view");
+				request.put("paCut", list);
+				return "view";
+			}
+		}
 		boolean boo = majorsService.update(majors);
 		PageCut<Majors> list = majorsService.checkAll(page, 6);
 		request.put("method", "view");
@@ -78,15 +90,22 @@ public class MajorsManageAction extends BaseAction {
 
 	}
 	public String delete() {
-		System.out.println(majorsId+"hijasdohasdif");
 		List<Participator> allParticipator = participatorService.getAll();
-		System.out.println(allParticipator);
 		for(int i=0;i<allParticipator.size();i++) {
-			System.out.println(allParticipator);
 			if(allParticipator.get(i).getPa_majors()!=null) {
 			if(allParticipator.get(i).getPa_majors().getMaj_id()==majorsId) {
 				allParticipator.get(i).setPa_majors(null);
 				participatorService.updateParticipator(allParticipator.get(i));
+			}
+			}
+		}
+		List<Expert> allExport = expertService.getAlllExpert();
+		for(int i=0;i<allExport.size();i++) {
+			System.out.println(allParticipator);
+			if(allExport.get(i).getEx_majors()!=null) {
+			if(allExport.get(i).getEx_majors().getMaj_id()==majorsId) {
+				allExport.get(i).setEx_major(null);
+				expertService.updateExpert(allExport.get(i));
 			}
 			}
 		}

@@ -111,7 +111,6 @@ public class ReviewRequirementsManageAction extends BaseAction {
 
 	public String getDetails() {
 		Require require = requireService.checkById(requireId);
-		System.out.println(require);
 		request.put("require", require);
 		return "getDetails";
 	}
