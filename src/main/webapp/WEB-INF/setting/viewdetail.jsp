@@ -8,16 +8,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>通知管理</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}css/setting/infom.css">
-
 </head>
-
 <body>
  <div class="top">
         <h1>通知信息</h1>
         <p>通知名称:</p>
-        <textarea id="text1">${notice.no_head}</textarea>
+        <textarea id="text1"readonly="readonly">${notice.no_head}</textarea>
         <p>通知详情:</p>
-        <textarea id="text2" >${notice.no_content}</textarea>
+        <textarea id="text2" readonly="readonly" >${notice.no_content}</textarea>
     </div>
 </body>
 </html>

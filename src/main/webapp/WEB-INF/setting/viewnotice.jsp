@@ -22,9 +22,33 @@
 	right:10px;
 	top:40%;
 }
+.tilp{
+  padding-top:50px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+  }
+
 </style>
 </head>
+<script language="javascript">
+window.onload = function() {
+	
+	var array = new Array();
+	<c:forEach items="${paCut.data}" var="t">
+	array.push("${no_id}"); //js中可以使用此标签，将EL表达式中的值push到数组中  
+	</c:forEach>
+	var a = array.length;
+	if (a != 0) {
+		document.getElementById('div1').style.display = 'block';
+	}else{
+		alert("无数据")
+	}
+}
+	</script>
 <body>
+<div class="tilp">${Message}</div>
 	<div class="top" style="width:85%">
  <c:if test="${fn:length(paCut.data) > 0 }">
 		<table border="1" cellspacing="0">

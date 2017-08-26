@@ -19,26 +19,28 @@ public interface RequireService {
 	Require getByTitleId(int ti_id);
 
 	// wqj添加评议要求
-	public boolean add(Require require,Title title);
+	public boolean add(Require require, Title title);
 
 	// wqj更新评议要求f
-	public boolean update(Require require,Title title);
+	public boolean update(Require require, Title title);
 
-	//wqj 通过评议ID查询评议要求
+	// wqj 通过评议ID查询评议要求
 	public Require checkById(int id);
 
-	//wqj 删除评议要求
+	// wqj 删除评议要求
 	public boolean deleteById(int id);
-	
-	//wqj查看所有评议
-	public PageCut<Require> checkAll(int currentPage, int pageSize);
 
+	// wqj查看所有评议
+	public PageCut<Require> checkAll(int currentPage, int pageSize);
+	
+	//获取所有require，不分页
+	
 	public List<Require> getAllRequire();
-	//更新数据库表
+
+	// 更新数据库表
 	public boolean updateRequire(Require require);
 
+	// wqj根据职称查询评议要求
 	public Require checkByTitleName(String titleName);
-	
-
 
 }
