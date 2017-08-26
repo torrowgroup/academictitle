@@ -21,6 +21,14 @@
 	right: 10px;
 	top: 40%;
 }
+.tilp{
+  padding-top:50px;
+  font-size:26px;
+  text-align:center;
+  font-family:"华文行楷","微软雅黑";
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+  }
+
 </style>
 </head>
 <body>
@@ -36,28 +44,30 @@
 			</form>
 		</div>
 		<table border="1" cellspacing="0">
-			<caption>评议要求信息</caption>
-			<tr>
-				<th>职称名称</th>
-				<th>教学方面</th>
-				<th>科研方面</th>
-				<th>师德</th>
-				<th>操作</th>
-			</tr>
+				<caption>评议要求信息</caption>
 				<tr>
-					<td>${require.re_title.ti_titleName}</td>
-					<td>${require.re_educate}</td>
-					<td>${require.re_scientific}</td>
-					<td>${require.re_morality}</td>
-					<td width="120px"><a style="position: absolute; left: 25px; top: 8px;"
-						href="${rootPath}setting/Transfer_updateRequire?requireId=${require.re_id}">
-							<img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:0px">
-					</a> <a style="position: absolute; right: 25px; top: 8px;"
-						href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${require.re_id}">
-							<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:0px">
-					</a></td>
+					<th width="200px">职称名称</th>
+					<th width="250px">操作</th>
 				</tr>
-		</table>
+					<tr>
+						<td><a
+							href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${require.re_id}">${require.re_title.ti_titleName}</a></td>
+						<td width="150px"><a
+							style="position: absolute; left: 5px; top: 8px;"
+							href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${require.re_id}">
+								<img src="${rootPath}images/view.png" width="20px"
+								style="float: left; margin-left: 20px">
+						</a> <a style="position: absolute; left: 45px; top: 8px;"
+							href="${rootPath}setting/Transfer_updateRequire?requireId=${require.re_id}">
+								<img src="${rootPath}images/edit.png" width="20px"
+								style="float: left; margin-left: 70px">
+						</a> <a style="position: absolute; right: 25px; top: 8px;"
+							href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${require.re_id}">
+								<img src="${rootPath}images/delete.png" width="20px"
+								style="float: left; margin-left: 0px">
+						</a></td>
+					</tr>
+			</table>
 		</div>
 		</c:if>
 		<div class="side">

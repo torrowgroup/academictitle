@@ -11,7 +11,7 @@
 	<div class="top">
 <form action="${rootPath}setting/DepartmentManage_update" method="post">
 <span>单位ID:</span>
-		<input type="text"  name="unit.un_id"  value="${unit.un_id} "  readonly="readonly"  ><br>
+		<input type="text"  name="unit.un_id" style="margin-left:18px;"   value="${unit.un_id} "  readonly="readonly"  ><br>
 		<span>单位名称:</span>
 		<input type="text"  name="unit.un_unitName" value="${unit.un_unitName}" maxlength='15'><br>
 		 <input class="btn" type="submit" value="提交">

@@ -41,32 +41,3 @@
     </div>
 	</body>
 </html>
-	
-	
-<!--     <table cellspacing="0"> -->
-<!--         <tr> -->
-<!--             <td class="font">标题</td> -->
-<%--             <td>${notice.no_head}</td> --%>
-<!--         </tr> -->
-<!--         <tr class="text"> -->
-<!--             <td class="font">内容</td> -->
-<!--             <td> -->
-<!--           		<div id="editor" style="width: 100%; height: 250px;"></div> -->
-<!-- 					<script type="text/javascript" -->
-<%-- 						src="${rootPath}dist/js/lib/jquery-1.10.2.min.js"></script> --%>
-<!-- 					<script type="text/javascript" -->
-<%-- 						src="${rootPath}dist/js/wangEditor.min.js"></script> --%>
-<!-- 					<script type="text/javascript"> -->
-<!-- // 	  				    var E = window.wangEditor  -->
-<!-- // 	  				    var editor = new E('editor') -->
-<!-- // 	  				    editor.create()  -->
-<%-- // 	 				    editor.$txt.html('${notice.no_content}') --%>
-<!-- 	     			</script> -->
-<!--             </td> -->
-<!--         </tr> -->
-<!--         <tr> -->
-<!--             <td class="font">发布时间</td> -->
-<%--             <td>${notice.no_issueData}</td> --%>
-<!--         </tr> -->
-<!--     </table> -->
-<!-- </div> -->

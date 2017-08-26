@@ -78,11 +78,16 @@ public class MajorsManageAction extends BaseAction {
 
 	}
 	public String delete() {
+		System.out.println(majorsId+"hijasdohasdif");
 		List<Participator> allParticipator = participatorService.getAll();
+		System.out.println(allParticipator);
 		for(int i=0;i<allParticipator.size();i++) {
+			System.out.println(allParticipator);
+			if(allParticipator.get(i).getPa_majors()!=null) {
 			if(allParticipator.get(i).getPa_majors().getMaj_id()==majorsId) {
 				allParticipator.get(i).setPa_majors(null);
 				participatorService.updateParticipator(allParticipator.get(i));
+			}
 			}
 		}
 		boolean boo = majorsService.deleteById(majorsId);

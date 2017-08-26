@@ -23,7 +23,23 @@ form input[type="text"],form select,form input[type="email"]{
     border-radius: 5px;
     vertical-align: middle;
 }
-form input[type="file"]{margin:30px 0 0 35%;}
+form input[type="file"]{
+	margin:15px 0 0 0%;
+	position: absolute;
+}
+.submit{
+	border-radius: 5px;
+    width: 100px;
+    font-size:17px;
+    margin-top:8%;
+    margin-left:46%;
+    background-color: #82C0E9;
+}
+.row{
+	width: 800px; 
+	height: 400px;
+	margin-left: -67%;
+}
 .scroll{
     width: 70%;
     height: 35px;

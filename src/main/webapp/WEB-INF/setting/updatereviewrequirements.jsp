@@ -8,7 +8,7 @@
  <link rel="stylesheet" type="text/css" href="${rootPath}css/setting/addadress.css">
 </head>
 <form action="${rootPath}setting/ReviewRequirementsManage_update" method="post">
-	<span>评议ID：</span>
+	<span style="margin-right:18px;">评议ID：</span>
 	<input type="text"  name="req.re_id"  value="${req.re_id} " readonly="readonly" ><br>
 		<span>教学方面：</span>
 		<input type="text"  name="req.re_educate"  value="${req.re_educate} " ><br>

@@ -26,7 +26,7 @@
            </div> 
         </div>
     </div>
-    	<iframe id="ifr" width="960px" height="1000px" style="margin-left:300px; "  name="mainiframe" src="${rootPath}user/Manager_relayHomePage"></iframe>
+    	<iframe id="ifr" width="960px" height="1000px" style="margin-left:300px; border:1px solid #ccc;"  name="mainiframe" src="${rootPath}user/Manager_relayHomePage"></iframe>
 </body>
 <script type="text/javascript" src="${rootPath}js/index0.js"></script>
 </html>

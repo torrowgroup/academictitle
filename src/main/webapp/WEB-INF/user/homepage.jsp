@@ -118,33 +118,25 @@
                 <div class="info-text">
                     <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">1.要求公平公正</a>
+                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">2.要求实事求是</a>
+                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">豫职改办〔2016〕37号关于新乡市员继续教育有关问题的通知齐市专业技术人</a>
+                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
+                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">
-                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
-                    </div>
-                     <div class="title-txt">
-                        <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">乌职改办〔2016〕37号关于乌鲁木齐市员继续教育有关问题的通知齐市专业技术人</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -176,7 +168,7 @@
              </div>
              <div class="f-l">
                  <h4>微信公众号</h4>
-                 <p>职称评审系统</p>
+                 <p><img src="${rootPath}images/QRcode.jpg" width="70"></p>
              </div>
          </div>
      </div>
