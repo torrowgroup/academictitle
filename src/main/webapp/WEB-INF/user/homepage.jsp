@@ -162,8 +162,9 @@
              </div>
              <div class="f-l">
                  <h4>服务中心</h4>
-                 <p>政策咨询：<span style="color:#f30">15601266895</span><br>
-                    在线问答：http://www.hist.edu.cn/<br>绑定微信:18738357910
+                 <p>政策咨询：<span>15601266895</span><br>
+                    绑定微信：18738357910<br>
+                     在线问答：http://www.hist.edu.cn/
                  </p>
              </div>
              <div class="f-l">
