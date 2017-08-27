@@ -3,6 +3,7 @@ package com.torrow.title.action.setting;
 import java.util.List;
 
 import com.torrow.title.base.BaseAction;
+import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Majors;
 import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Unit;
@@ -86,8 +87,8 @@ public class DepartmentManageAction extends BaseAction {
 	// 修改单位
 	public String update() {
 		List<Unit> allUnit = unitService.selectUnit();
-		for(int i=0;i<allUnit.size();i++) {
-			if(allUnit.get(i).getUn_unitName().equals(unit.getUn_unitName())) {
+		for (int i = 0; i < allUnit.size(); i++) {
+			if (allUnit.get(i).getUn_unitName().equals(unit.getUn_unitName())) {
 				request.put("Message", "修改失败");
 				PageCut<Unit> list = unitService.checkAll(page, 6);
 				request.put("method", "view");
@@ -106,14 +107,24 @@ public class DepartmentManageAction extends BaseAction {
 	// 删除单位
 	public String delete() {
 		List<Participator> allParticipator = participatorService.getAll();
-		for(int i=0;i<allParticipator.size();i++) {
-			if(allParticipator.get(i).getPa_unit()!=null) {
-			if(allParticipator.get(i).getPa_unit().getUn_id()==unitId) {
-				allParticipator.get(i).setPa_unit(null);
-				participatorService.updateParticipator(allParticipator.get(i));
-			}
+		for (int i = 0; i < allParticipator.size(); i++) {
+			if (allParticipator.get(i).getPa_unit() != null) {
+				if (allParticipator.get(i).getPa_unit().getUn_id() == unitId) {
+					allParticipator.get(i).setPa_unit(null);
+					participatorService.updateParticipator(allParticipator.get(i));
+				}
 			}
 		}
+		List<Expert> allExpert = expertService.getAlllExpert();
+		for (int i = 0; i < allExpert.size(); i++) {
+			if (allExpert.get(i).getEx_unit() != null) {
+				if (allExpert.get(i).getEx_unit().getUn_id() == unitId) {
+					allExpert.get(i).setEx_unit(null);
+					expertService.updateExpert(allExpert.get(i));
+				}
+			}
+		}
+
 		boolean boo = unitService.deleteById(unitId);
 		PageCut<Unit> list = unitService.checkAll(page, 6);
 		request.put("method", "view");
