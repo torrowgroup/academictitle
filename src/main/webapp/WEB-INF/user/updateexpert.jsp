@@ -9,26 +9,26 @@
 <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/updateexpert.css">
 <script type="text/javascript">
 	function changeSelected() {
-		var maj_majorName = '${experts.ex_majors.maj_majorName}';	//获得后台的要选中的值
-		var un_unitName = '${experts.ex_unit.un_unitName}';
-		var ti_titleName = '${experts.ex_title.ti_titleName}';
+		var maj_id = '${experts.ex_majors.maj_id}';	//获得后台的要选中的值
+		var un_id = '${experts.ex_unit.un_id}';
+		var ti_id = '${experts.ex_title.ti_id}';
 		   var majoroptions = document.getElementById("maj_majorName").options;
 		   var unitoptions = document.getElementById("un_unitName").options;
 		   var titleoptions = document.getElementById("ti_titleName").options;
 		   for (i=0; i<majoroptions.length; i++){
-			      if (majoroptions[i].value == maj_majorName)  // 根据option标签的value来进行判断  测试的代码这里是两个等号
+			      if (majoroptions[i].value == maj_id)  // 根据option标签的value来进行判断  测试的代码这里是两个等号
 			      {
 			    	  majoroptions[i].selected = true;
 			      }
 		   }
 		   for (i=0; i<unitoptions.length; i++){
-			      if (unitoptions[i].value == un_unitName)  // 根据option标签的value来进行判断  测试的代码这里是两个等号
+			      if (unitoptions[i].value == un_id)  // 根据option标签的value来进行判断  测试的代码这里是两个等号
 			      {
 			    	  unitoptions[i].selected = true;
 			      }
 			   }
 		   for (i=0; i<titleoptions.length; i++){
-			      if (titleoptions[i].value == ti_titleName)  // 根据option标签的value来进行判断  测试的代码这里是两个等号
+			      if (titleoptions[i].value == ti_id)  // 根据option标签的value来进行判断  测试的代码这里是两个等号
 			      {
 			    	  titleoptions[i].selected = true;
 			      }
@@ -36,7 +36,7 @@
 		}
 </script>
 </head>
-<body>
+<body onload="changeSelected()">
 <div class="wall">
 	<form action="${rootPath}user/Expert_update?ex_id=${experts.ex_id}" method="post">
 		<label>邮箱:</label><input type="email" class="a" name="ex_userName" value="${experts.ex_userName}" required><br>

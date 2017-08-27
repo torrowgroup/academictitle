@@ -15,7 +15,7 @@
        <input type="email" class="input1" placeholder="邮箱"  name="userName" required="required" style="width: 296px">
      </div>
      <div class="box2">
-       <input type="password" class="input1" placeholder="密码" name="passWord"  required="required" style="width: 296px">
+       <input type="password" class="input1" placeholder="密码" name="password"  required="required" style="width: 296px">
      </div>
      <div class="box3">
      	<div class="message">${message}</div>

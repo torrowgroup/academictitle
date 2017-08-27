@@ -64,9 +64,20 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		List<Majors> majors = majorsService.selectMajors();
 		List<Unit> unit = unitService.selectUnit();
 		List<Title> title = titleService.selectTitle();
-		request.put("majors", majors);
-		request.put("unit", unit);
-		request.put("title", title);
+		if (majors.size()==0) {
+			request.put("news", "并且无专业");
+			return select();
+		} else if (unit.size()==0) {
+			request.put("news", "并且无单位");
+			return select();
+		} else if(title.size()==0){
+			request.put("news", "并且无职称");
+			return select();
+		} else {
+			request.put("majors", majors);
+			request.put("unit", unit);
+			request.put("title", title);
+		}
 		return "add";
 	}
 
@@ -156,6 +167,11 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 	
 	//删除参评人
 	public String delete(){
+		String path =  ServletActionContext.getRequest().getRealPath("uploadImage")+"/"+participator.getPa_imageUrl();
+		File files=new File(path);
+	         if (files.exists()) {
+	        	 files.delete();
+	         }
 		boolean sign = participatorService.deletParticipator(participator.getPa_id());
 		if (sign) {
 			request.put("message", "删除成功");
@@ -165,15 +181,19 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 		return select();
 	}
 	//发送邮件
-	public String sendEmail() throws MessagingException{
+	public String sendEmail(){
 		Participator part = participatorService.getParticipatorById(participator.getPa_id());
-		Email.subject("评审通知")
-        .from("职称评审系统")
-        .to(part.getPa_email())
-        .html(part.getPa_name()+"您好，您参与的评选"+
-        		"<h1 font=red>"+part.getPa_title().getTi_titleName()+"</h1>"+
-        		"经各专家评审，您成功当选，请继续努力工作！")
-        .send();
+		try {
+			Email.subject("评审通知")
+			.from("职称评审系统")
+			.to(part.getPa_email())
+			.html(part.getPa_name()+"您好，您参与的评选"+
+					"<h1 font=red>"+part.getPa_title().getTi_titleName()+"</h1>"+
+					"经各专家评审，您成功当选，请继续努力工作！")
+			.send();
+		} catch (MessagingException e) {
+			request.put("message","发送失败，邮箱不存在");
+		}
 		request.put("message","发送成功");
 		return select();
 	}

@@ -15,18 +15,33 @@ form label{
     font-weight: bold;
     vertical-align: middle;
 }
+.label{
+	margin-left:50%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: middle;
+}
 form input[type="text"],form select{
     height: 33px;
     width: 50%;
     border-radius: 5px;
     vertical-align: middle;
 }
-form input[type="file"]{margin:30px 0 0 35%;}
-
+form input[type="file"]{
+	margin:15px 0 0 2px;
+	position: absolute;
+}
+.row{
+	width: 900px; 
+	height: 350px;
+	margin-left: -83%;
+}
 .scroll{
-    width: 70%;
-    height: 35px;
-    margin:20% 0 0 13%;
+    width: 75%;
+    height: 25px;
+    margin:3% 0 0 16%;
 }
 .scroll span{
     font-weight: bold;

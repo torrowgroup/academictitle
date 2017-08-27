@@ -16,19 +16,33 @@
 		window.open("${rootPath}user/Participator_openNewview?pa_id="+id,"newwindow",'height=800,width=600,top=100,left=450,toolbar=no,menubar=no,scrollbars=yes, resizable=no,location=no, status=no')  
     } 
     </script>
+    <style>
+		.tilp{
+		  padding-top:20px;
+		  font-size:26px;
+		  text-align:center;
+		  font-family:"华文行楷","微软雅黑";
+		  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+		
+		}
+	</style>
 </head>
 <body>
-<center>${message}</center>
-<div style="margin-left: 60%; height: 30px; margin-top: 5%;">
+<div class="tilp">${message}${news}</div>
+<div style="margin-left: 55%; height: 30px; margin-top: 5%;">
 <a class="font" href="${rootPath}user/Participator_relay" target="mainiframe">添加参评人</a>
 			<form action="${rootPath}user/Participator_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
 					<option value="pa_name">姓名</option>
+					<option value="pa_email">邮箱</option>
+					<option value="pa_majors.maj_majorName">专业</option>
+					<option value="pa_unit.un_unitName">单位</option>
+					<option value="pa_title.ti_titleName">职称</option>
 				</select> <input
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px; width: 30%;"
 					type="text" name="inquiry" required="required"> <input
-					style="background-color: #82C0E9;border-radius: 7px;" type="submit" value="查询">
+					style="background-color: #82C0E9;border-radius: 7px;width:50px;height: 30px;" type="submit" value="查询">
 			</form>
 	</div>
 	<div class="wall">
@@ -60,7 +74,7 @@
 				<td><button id="target" onclick="opennews(${item.pa_id})"
 										style="border-radius: 5px; width: 80%; background-color: #82C0E9;">预览</button></td>
 				<td><a href="${rootPath}user/Participator_sendEmail?pa_id=${item.pa_id}">邮件通知</a></td>
-				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}"><img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:5px"></a><a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}">
+				<td><a href="${rootPath}user/Participator_toUpdate?pa_id=${item.pa_id}"><img src="${rootPath}images/edit.png" width="18px" style="float:left;margin-left:5px"></a><a href="${rootPath}user/Participator_delete?pa_id=${item.pa_id}&pa_imageUrl=${item.pa_imageUrl}">
 					<img src="${rootPath}images/delete.png" width="18px" style="float:left;margin-left:10px"></a></td>
 			</tr>
 		</c:forEach>

@@ -3,14 +3,18 @@
  */
 package com.torrow.title.entity;
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Type;
 
 /**
  * @author 张金高
@@ -43,7 +47,9 @@ public class Participator {
 	private Title pa_title; //关联职称
 	@Column(length=255)
 	private String pa_imageUrl; //图片地址
-	@Column(length=255)
+	@Basic(fetch = FetchType.LAZY)   
+	@Type(type="text")  
+	@Column(name="pa_introduce", nullable=true) 
 	private String pa_introduce; //简介
 	@Column(length=255)
 	private String pa_spare; //备用
