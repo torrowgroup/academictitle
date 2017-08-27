@@ -1,75 +1,95 @@
-*{margin:0;padding: 0;list-style: none;box-sizing:border-box;}
-.wall{
-    width:80%;
-    height: auto;
-    margin:0 auto;
-    margin-top: 6%;
-    margin-left:13%;
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
 }
-.list{
-   width:100%;
-   height:auto;
-   margin: 0 auto;
+.wall {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 6%;
+	margin-left: 13%;
 }
-.list ul{
-    width: 100%;
-    height: 30px;
-
-}
-.list li,.list span{
-    float: left;
-    line-height: 30px;
-/*     font-weight: bold; */
-    padding: 7px 30px;
-    margin-right: 5px;
-    position: relative;
-    border-radius:3px; 
-   
-}
-.list li{ background-color: #eee;}
-.hide-box{
-    width:100%;
-    height: auto;
-    margin:0 auto;
-    position: absolute;
-    border: 2px solid #ccc;
-    background-color: #fff;
-    display: none;
-    top: 45px;
-    left:0px;
-    border-radius:5px; 
-    box-shadow: 0 0 10px rgba(0,0,0,.2)
-}
-.hide-box a{
-    display: block;
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-}
-.list li:hover{background-color: #eee}
-.list li:hover .hide-box{display: block;}
-table{
-    width: 100%; 
-    text-align: center; 
-    margin-top: 50px;  
-}
-table th{
-    font-size: 16px;
-    height: 50px;
-    text-align: center;
-    background-color: #eee;
-}
-table td{
-    height: 45px;
-}
-.page{
-    margin:15% 0 0 35%;
+.tilp {
+	padding-top: 20px;
+	font-size: 26px;
+	text-align: center;
+	font-family: "华文行楷", "微软雅黑";
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
 }
 
+.list {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
 
+.list ul {
+	width: 100%;
+	height: 30px;
+}
 
+.list li, .list span {
+	float: left;
+	line-height: 30px;
+	/*     font-weight: bold; */
+	padding: 7px 30px;
+	margin-right: 5px;
+	position: relative;
+	border-radius: 3px;
+}
 
+.list li {
+	background-color: #eee;
+}
 
+.hide-box {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	position: absolute;
+	border: 2px solid #ccc;
+	background-color: #fff;
+	display: none;
+	top: 45px;
+	left: 0px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+}
 
+.hide-box a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+}
 
+.list li:hover {
+	background-color: #eee
+}
 
+.list li:hover .hide-box {
+	display: block;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+table th {
+	font-size: 16px;
+	height: 50px;
+	text-align: center;
+	background-color: #eee;
+}
+
+table td {
+	height: 45px;
+}
+
+.page {
+	margin: 15% 0 0 35%;
+}

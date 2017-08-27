@@ -95,6 +95,7 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 		Discuss discussDb = discussService.getByParticipatorId(pa_id);
 		record.setRe_discuss(discussDb);
 		recordService.save(record);
+		request.put("message", "评议成功");
 		noDiscuss(); // 调用未评方法，到未评界面
 		return "getNoDiscuss"; 
 	}

@@ -48,7 +48,7 @@ public class StatisticsAction extends BaseAction {
 		} else {	//不对从session中获取的inquiry转码，否则会出现？？？
 			inquiry = new String(inquiry.getBytes("ISO8859-1"), "UTF-8");
 		}
-		PageCut<Discuss> rank = discussService.discussPageCut(page,2,ask,inquiry);
+		PageCut<Discuss> rank = discussService.discussPageCut(page,4,ask,inquiry);
 		if(rank.getData().size()==0){
 			request.put("message", "没有排名信息");
 		}
@@ -67,7 +67,7 @@ public class StatisticsAction extends BaseAction {
 		} else {
 			pa_id = Integer.parseInt(inquiry);//此时inquiry查询参数是评议类id
 		}
-		PageCut<Record> recordPCut = recordService.getByDiscussId(page,2,pa_id);
+		PageCut<Record> recordPCut = recordService.getByDiscussId(page,4,pa_id);
 		request.put("recordList", recordPCut);
 		session.put("pa_id", pa_id);
 		return "discussDetails";
@@ -77,7 +77,7 @@ public class StatisticsAction extends BaseAction {
 		if(inquiry==null){
 			inquiry = (String)session.get("inquiry");
 		}
-		PageCut<Expert> pCut = expertService.allExpert(page, 2,inquiry);
+		PageCut<Expert> pCut = expertService.allExpert(page, 4,inquiry);
 		if (pCut.getData().size() == 0) {
 			request.put("message", "没有专家");
 		}
@@ -95,7 +95,7 @@ public class StatisticsAction extends BaseAction {
 			id=(int)session.get("id");
 		}
 		expert.setEx_id(id);
-		PageCut<Record> expertDiscuss = recordService.getPageCut(page,2,inquiry,expert);
+		PageCut<Record> expertDiscuss = recordService.getPageCut(page,4,inquiry,expert);
 		if (expertDiscuss.getData().isEmpty()) {
 			request.put("message", "没有评议纪录");
 		}

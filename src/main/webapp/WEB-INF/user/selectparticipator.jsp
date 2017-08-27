@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 	<link rel="stylesheet" type="text/css" href="${rootPath}css/manager/selectParticipator.css">
     <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="${rootPath}css/manager/bootstrap.min.css">
     <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
     <script type="text/javascript">
@@ -23,7 +24,6 @@
 		  text-align:center;
 		  font-family:"华文行楷","微软雅黑";
 		  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
-		
 		}
 	</style>
 </head>
@@ -60,7 +60,7 @@
 				<th>职称</th>
 				<th>照片</th>
 				<th style="width:80px">简介</th>
-				<th>通知</th>
+				<th>成功通知</th>
 				<th style="width:60px">操作</th>
 			</tr>
 		<c:forEach items="${messagenews.data}" var="item">

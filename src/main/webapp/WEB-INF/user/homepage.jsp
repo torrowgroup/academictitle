@@ -123,17 +123,17 @@
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
+                             <a href="#">豫职改办〔2017〕17号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
+                             <a href="#">豫职改办〔2017〕7号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">
                         <div class="titie-b"><img src="${rootPath}images/point.jpg">
-                             <a href="#">豫职改办〔2017〕37号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
+                             <a href="#">豫职改办〔2017〕3号关于新乡市员继续教育,提升教学质量有关问题的通知</a>
                         </div>
                     </div>
                      <div class="title-txt">

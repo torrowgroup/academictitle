@@ -15,7 +15,7 @@
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-	<div class="message">${message}</div>
+	<div class="tilp">${message}</div>
 	<div style="margin-left: 60%; height: 30px; margin-top: 1%;">
 		<form action="${rootPath}setting/Statistics_expertStatistics"
 			method="post">

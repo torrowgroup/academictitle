@@ -64,7 +64,7 @@ public class Email {
      */
     public static Properties SMTP_QQ(boolean debug) {
         Properties props = defaultConfig(debug);
-        props.put("mail.smtp.host", "smtp.qq.com");
+        props.put("mail.smtp.host", "smtp.qq.com");//存储发送邮件服务器的信息
         return props;
     }
 

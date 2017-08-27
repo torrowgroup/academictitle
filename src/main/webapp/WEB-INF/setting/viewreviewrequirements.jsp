@@ -55,18 +55,18 @@
 						<td><a
 							href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">${item.re_title.ti_titleName}</a></td>
 						<td width="150px"><a
-							style="position: absolute; left: 5px; top: 8px;"
+							style="position: absolute; left: 8px; top: 8px;"
 							href="${rootPath}setting/ReviewRequirementsManage_getDetails?requireId=${item.re_id}">
 								<img src="${rootPath}images/view.png" width="20px"
-								style="float: left; margin-left: 20px">
-						</a> <a style="position: absolute; left: 18px; top: 8px;"
+								style="float: left; margin-left: 8px">
+						</a> <a style="position: absolute; left: 50px; top: 8px;"
 							href="${rootPath}setting/Transfer_updateRequire?requireId=${item.re_id}">
 								<img src="${rootPath}images/edit.png" width="20px"
-								style="float: left; margin-left: 70px">
-						</a> <a style="position: absolute; right: 25px; top: 8px;"
+								style="margin-left: 40px">
+						</a> <a style="position: absolute; right: 8px; top: 8px;"
 							href="${rootPath}setting/ReviewRequirementsManage_delete?requireId=${item.re_id}">
 								<img src="${rootPath}images/delete.png" width="20px"
-								style="float: left; margin-left: 0px">
+								style="float: left; margin-left: 8px">
 						</a></td>
 
 					</tr>

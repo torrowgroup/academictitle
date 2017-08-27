@@ -13,7 +13,7 @@
     <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
 <body>
-	<div style="margin-top:2%;text-align: center;">${message}</div>
+	<div class="tilp">${message}</div>
 	 <div class="wall">
         <div class="list">
             <ul>
