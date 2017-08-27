@@ -43,6 +43,16 @@ i{font-style: normal;}
    float: left;
    margin-left: 10px;
 }
+textarea{
+	resize:none;
+	height: 100%;
+	width: 100%;
+}
+.testareadiv{
+	width: 600px;
+	height: 200px;
+	margin-left: -15%;
+}
 #time{
 	margin-top:2%;
 	margin-left:60%;

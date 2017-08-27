@@ -794,3 +794,788 @@ java.lang.NullPointerException
 [INFO][2017-08-26 16:31:38,251][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
 [INFO][2017-08-26 16:31:38,251][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
 [INFO][2017-08-26 16:56:29,336][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sat Aug 26 16:31:34 CST 2017]; root of context hierarchy
+[INFO][2017-08-26 20:43:35,164][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-26 20:43:35,315][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sat Aug 26 20:43:35 CST 2017]; root of context hierarchy
+[INFO][2017-08-26 20:43:35,378][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-26 20:43:36,338][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-26 20:43:36,347][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-26 20:43:36,752][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-26 20:43:36,757][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-26 20:43:36,759][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-26 20:43:36,761][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-26 20:43:37,284][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-26 20:43:37,301][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-26 20:43:37,519][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-26 20:43:37,525][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-26 20:43:37,880][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-26 20:43:37,880][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-26 20:43:37,884][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-26 20:43:37,921][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-26 20:43:37,923][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-26 20:43:37,923][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-26 20:43:37,925][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-26 20:43:37,931][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-26 20:43:37,932][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-26 20:43:37,932][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-26 20:43:37,932][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-26 20:43:37,935][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-26 20:43:37,936][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-26 20:43:37,936][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 20:43:37,936][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 20:43:37,939][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-26 20:43:37,939][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-26 20:43:37,940][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 20:43:37,940][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 20:43:37,943][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-26 20:43:37,944][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-26 20:43:37,944][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 20:43:37,944][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 20:43:37,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-26 20:43:37,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-26 20:43:37,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-26 20:43:37,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-26 20:43:37,952][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-26 20:43:37,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-26 20:43:37,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-26 20:43:37,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-26 20:43:37,956][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-26 20:43:37,956][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-26 20:43:37,957][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-26 20:43:37,957][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-26 20:43:37,960][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-26 20:43:37,960][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-26 20:43:37,960][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 20:43:37,960][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 20:43:37,963][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-26 20:43:37,964][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-26 20:43:37,964][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 20:43:37,964][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 20:43:37,965][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-26 20:43:38,044][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@1e8a013c] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-26 20:43:38,207][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3042 ms
+[INFO][2017-08-26 20:43:38,450][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-26 20:43:38,534][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-26 20:43:38,590][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-26 20:43:38,598][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-26 20:43:38,599][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-26 20:43:38,599][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-26 20:43:38,600][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-26 20:43:38,600][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-26 20:43:38,601][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-26 20:43:38,601][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-26 20:43:38,601][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-26 20:43:38,601][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-26 20:43:38,601][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-26 20:43:38,602][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-26 20:43:38,602][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-26 20:43:38,602][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-26 20:43:38,602][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-26 20:43:38,605][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-26 20:43:38,605][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-26 20:43:38,606][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-26 20:43:38,606][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-26 20:43:38,606][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-26 20:43:38,606][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-26 20:43:38,606][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-26 20:43:38,606][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-26 20:43:38,607][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-26 20:43:38,607][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-26 20:43:38,607][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-26 20:43:38,607][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-26 20:43:38,610][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-26 20:43:38,611][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-26 20:43:38,611][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-26 20:43:38,613][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-26 20:43:38,613][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-26 20:43:38,614][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-26 20:43:38,615][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-26 20:43:38,615][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-26 20:43:38,639][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-26 20:43:38,640][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-26 20:43:38,640][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[WARN][2017-08-26 20:52:43,947][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:43,951][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:44,633][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:44,634][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:45,131][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:45,131][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:45,526][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:45,526][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:45,729][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:45,730][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:45,923][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:45,924][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:46,145][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:46,145][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:47,099][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:47,099][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:48,744][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:48,744][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:49,950][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:49,950][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:50,535][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:50,535][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:54,624][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:54,624][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:55,393][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:55,393][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:52:55,831][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:52:55,831][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:09,903][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:09,903][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:10,593][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:10,593][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:10,927][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:10,927][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:11,127][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:11,127][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:12,312][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:12,312][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:12,531][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:12,531][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:12,731][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:12,731][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:12,951][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:12,951][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:14,254][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:14,254][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:14,499][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:14,499][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:17,295][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:17,295][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:17,580][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:17,580][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:17,893][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:17,893][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:18,084][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:18,085][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:21,496][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:21,496][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:21,727][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:21,727][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:21,919][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:21,919][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:22,177][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:22,177][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:24,084][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:24,084][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:25,491][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:25,491][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:40,077][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:40,077][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:40,317][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:40,317][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:40,562][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:40,562][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:41,412][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:41,412][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:57,417][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:57,417][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[WARN][2017-08-26 20:53:58,391][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 1451, SQLState: 23000
+[ERROR][2017-08-26 20:53:58,391][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Cannot delete or update a parent row: a foreign key constraint fails (`title`.`t_expert`, CONSTRAINT `FK_4c0b2f22tknlum9j0bvoq7ewj` FOREIGN KEY (`un_id`) REFERENCES `t_unit` (`un_id`))
+[INFO][2017-08-26 21:09:23,779][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sat Aug 26 20:43:35 CST 2017]; root of context hierarchy
+[INFO][2017-08-26 21:09:47,934][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-26 21:09:48,060][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sat Aug 26 21:09:48 CST 2017]; root of context hierarchy
+[INFO][2017-08-26 21:09:48,120][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-26 21:09:48,694][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-26 21:09:48,705][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-26 21:09:49,265][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-26 21:09:49,271][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-26 21:09:49,274][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-26 21:09:49,275][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-26 21:09:49,701][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-26 21:09:49,709][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-26 21:09:49,858][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-26 21:09:49,866][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-26 21:09:50,097][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-26 21:09:50,098][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-26 21:09:50,101][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-26 21:09:50,119][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-26 21:09:50,119][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-26 21:09:50,119][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-26 21:09:50,119][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-26 21:09:50,124][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-26 21:09:50,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-26 21:09:50,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-26 21:09:50,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-26 21:09:50,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-26 21:09:50,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-26 21:09:50,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 21:09:50,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 21:09:50,133][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-26 21:09:50,134][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-26 21:09:50,134][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 21:09:50,134][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 21:09:50,137][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-26 21:09:50,138][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-26 21:09:50,138][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 21:09:50,138][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 21:09:50,142][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-26 21:09:50,142][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-26 21:09:50,142][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-26 21:09:50,142][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-26 21:09:50,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-26 21:09:50,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-26 21:09:50,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-26 21:09:50,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-26 21:09:50,154][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-26 21:09:50,154][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-26 21:09:50,154][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-26 21:09:50,154][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-26 21:09:50,159][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-26 21:09:50,159][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-26 21:09:50,159][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 21:09:50,159][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 21:09:50,163][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-26 21:09:50,163][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-26 21:09:50,166][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-26 21:09:50,166][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-26 21:09:50,169][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-26 21:09:50,257][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@bc43924] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-26 21:09:50,478][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2544 ms
+[INFO][2017-08-26 21:09:51,177][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-26 21:09:51,272][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-26 21:09:51,315][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-26 21:09:51,318][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-26 21:09:51,319][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-26 21:09:51,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-26 21:09:51,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-26 21:09:51,323][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-26 21:09:51,324][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-26 21:09:51,342][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-26 21:09:51,342][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-26 21:09:51,343][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[WARN][2017-08-26 21:17:52,956][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]SQL Error: 0, SQLState: 22001
+[ERROR][2017-08-26 21:17:52,957][org.hibernate.engine.jdbc.spi.SqlExceptionHelper]Data truncation: Data too long for column 'pa_introduce' at row 1
+[ERROR][2017-08-26 21:17:52,960][org.apache.struts2.dispatcher.DefaultDispatcherErrorHandler]Exception occurred during processing request: could not execute statement
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:71)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:136)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2975)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3487)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:377)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:214)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:194)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:206)
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:55)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:191)
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:49)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:752)
+	at com.torrow.title.base.BaseDao.saveEntity(BaseDao.java:53)
+	at com.torrow.title.dao.ParticipatorDao.addParticipator(ParticipatorDao.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy41.addParticipator(Unknown Source)
+	at com.torrow.title.action.user.ParticipatorAction.add(ParticipatorAction.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at ognl.OgnlRuntime.invokeMethod(OgnlRuntime.java:891)
+	at ognl.OgnlRuntime.callAppropriateMethod(OgnlRuntime.java:1293)
+	at ognl.ObjectMethodAccessor.callMethod(ObjectMethodAccessor.java:68)
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethodWithDebugInfo(XWorkMethodAccessor.java:117)
+	at com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor.callMethod(XWorkMethodAccessor.java:108)
+	at ognl.OgnlRuntime.callMethod(OgnlRuntime.java:1369)
+	at ognl.ASTMethod.getValueBody(ASTMethod.java:90)
+	at ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at ognl.Ognl.getValue(Ognl.java:494)
+	at ognl.Ognl.getValue(Ognl.java:458)
+	at com.opensymphony.xwork2.ognl.OgnlUtil$2.execute(OgnlUtil.java:309)
+	at com.opensymphony.xwork2.ognl.OgnlUtil.compileAndExecute(OgnlUtil.java:340)
+	at com.opensymphony.xwork2.ognl.OgnlUtil.getValue(OgnlUtil.java:307)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:423)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:287)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:250)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:326)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.torrow.title.filter.ManagerFilter.doFilter(ManagerFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'pa_introduce' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3534)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3468)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1957)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2107)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2648)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2086)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2371)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2289)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2274)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:133)
+	... 128 more
+[INFO][2017-08-26 21:32:32,835][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sat Aug 26 21:09:48 CST 2017]; root of context hierarchy
+[INFO][2017-08-27 08:40:12,311][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-27 08:40:12,447][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Aug 27 08:40:12 CST 2017]; root of context hierarchy
+[INFO][2017-08-27 08:40:12,514][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-27 08:40:13,556][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-27 08:40:13,565][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-27 08:40:14,285][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-27 08:40:14,292][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-27 08:40:14,295][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-27 08:40:14,297][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-27 08:40:14,925][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-27 08:40:14,936][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-27 08:40:15,132][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-27 08:40:15,140][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-27 08:40:15,533][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-27 08:40:15,534][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-27 08:40:15,537][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-27 08:40:15,558][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-27 08:40:15,558][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-27 08:40:15,558][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-27 08:40:15,558][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-27 08:40:15,563][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-27 08:40:15,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-27 08:40:15,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-27 08:40:15,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-27 08:40:15,568][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-27 08:40:15,568][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-27 08:40:15,568][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:40:15,568][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:40:15,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-27 08:40:15,572][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-27 08:40:15,573][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:40:15,573][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:40:15,577][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-27 08:40:15,577][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-27 08:40:15,577][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:40:15,578][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:40:15,582][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-27 08:40:15,582][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-27 08:40:15,583][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-27 08:40:15,583][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-27 08:40:15,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-27 08:40:15,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-27 08:40:15,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-27 08:40:15,598][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-27 08:40:15,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-27 08:40:15,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-27 08:40:15,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-27 08:40:15,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-27 08:40:15,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-27 08:40:15,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-27 08:40:15,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:40:15,615][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:40:15,619][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-27 08:40:15,619][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-27 08:40:15,619][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:40:15,619][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:40:15,621][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-27 08:40:15,721][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@1930d7b3] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-27 08:40:15,993][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3671 ms
+[INFO][2017-08-27 08:40:16,381][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-27 08:40:16,491][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-27 08:40:16,543][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-27 08:40:16,548][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-27 08:40:16,548][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-27 08:40:16,549][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-27 08:40:16,550][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-27 08:40:16,551][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-27 08:40:16,551][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-27 08:40:16,551][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-27 08:40:16,551][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-27 08:40:16,551][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-27 08:40:16,556][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-27 08:40:16,556][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-27 08:40:16,558][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-27 08:40:16,558][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-27 08:40:16,559][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-27 08:40:16,560][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-27 08:40:16,560][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-27 08:40:16,560][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-27 08:40:16,608][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-27 08:40:16,609][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-27 08:40:16,612][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-27 08:46:42,636][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sun Aug 27 08:40:12 CST 2017]; root of context hierarchy
+[INFO][2017-08-27 08:48:19,457][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-27 08:48:19,563][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Aug 27 08:48:19 CST 2017]; root of context hierarchy
+[INFO][2017-08-27 08:48:19,606][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-27 08:48:20,533][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-27 08:48:20,545][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-27 08:48:21,118][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-27 08:48:21,125][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-27 08:48:21,129][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-27 08:48:21,131][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-27 08:48:21,594][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-27 08:48:21,638][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-27 08:48:21,896][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-27 08:48:21,902][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-27 08:48:22,357][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-27 08:48:22,358][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-27 08:48:22,361][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-27 08:48:22,386][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-27 08:48:22,386][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-27 08:48:22,386][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-27 08:48:22,386][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-27 08:48:22,396][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-27 08:48:22,397][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-27 08:48:22,397][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-27 08:48:22,397][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-27 08:48:22,404][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-27 08:48:22,404][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-27 08:48:22,404][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:48:22,404][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:48:22,410][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-27 08:48:22,410][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-27 08:48:22,412][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:48:22,412][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:48:22,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-27 08:48:22,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-27 08:48:22,422][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:48:22,422][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:48:22,432][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-27 08:48:22,433][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-27 08:48:22,433][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-27 08:48:22,433][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-27 08:48:22,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-27 08:48:22,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-27 08:48:22,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-27 08:48:22,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-27 08:48:22,445][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-27 08:48:22,445][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-27 08:48:22,445][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-27 08:48:22,445][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-27 08:48:22,453][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-27 08:48:22,453][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-27 08:48:22,453][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:48:22,453][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:48:22,460][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-27 08:48:22,460][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-27 08:48:22,460][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:48:22,460][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:48:22,461][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-27 08:48:22,581][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@52765334] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-27 08:48:22,805][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3345 ms
+[INFO][2017-08-27 08:48:23,142][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-27 08:48:23,232][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-27 08:48:23,303][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-27 08:48:23,313][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-27 08:48:23,313][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-27 08:48:23,313][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-27 08:48:23,313][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-27 08:48:23,313][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-27 08:48:23,314][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-27 08:48:23,315][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-27 08:48:23,316][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-27 08:48:23,316][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-27 08:48:23,316][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-27 08:48:23,320][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-27 08:48:23,321][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-27 08:48:23,330][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-27 08:48:23,331][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-27 08:48:23,331][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-27 08:48:23,331][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-27 08:48:23,331][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-27 08:48:23,331][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-27 08:48:23,331][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-27 08:48:23,336][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-27 08:48:23,340][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-27 08:48:23,341][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-27 08:48:23,341][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-27 08:48:23,341][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-27 08:48:23,341][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-27 08:48:23,373][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-27 08:48:23,374][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-27 08:48:23,379][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[WARN][2017-08-27 08:48:51,176][org.apache.struts2.dispatcher.Dispatcher]Could not find action or result: /academictitle/uploadImage/
+There is no Action mapped for namespace [/uploadImage] and action name [] associated with context path [/academictitle]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO][2017-08-27 08:49:46,368][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sun Aug 27 08:48:19 CST 2017]; root of context hierarchy
+[INFO][2017-08-27 08:50:00,645][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2017-08-27 08:50:00,787][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Aug 27 08:50:00 CST 2017]; root of context hierarchy
+[INFO][2017-08-27 08:50:00,836][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-08-27 08:50:01,893][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO][2017-08-27 08:50:01,905][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2017-08-27 08:50:02,382][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-08-27 08:50:02,388][org.hibernate.Version]HHH000412: Hibernate Core {4.2.4.Final}
+[INFO][2017-08-27 08:50:02,391][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-08-27 08:50:02,394][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-08-27 08:50:02,880][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-08-27 08:50:02,890][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+[INFO][2017-08-27 08:50:03,042][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-08-27 08:50:03,051][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2017-08-27 08:50:03,338][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-08-27 08:50:03,338][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-08-27 08:50:03,341][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-08-27 08:50:03,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_discuss
+[INFO][2017-08-27 08:50:03,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [di_spare, di_averageb, di_id, di_averagea, di_averagec, di_rank, pa_id]
+[INFO][2017-08-27 08:50:03,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_o43dpyj04txv7o88gjmbc8t2m]
+[INFO][2017-08-27 08:50:03,362][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_o43dpyj04txv7o88gjmbc8t2m, primary]
+[INFO][2017-08-27 08:50:03,377][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_expert
+[INFO][2017-08-27 08:50:03,380][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, ex_password, ex_username, un_id, ti_id, ex_education, ex_spare, maj_id, ex_name]
+[INFO][2017-08-27 08:50:03,383][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-27 08:50:03,385][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_1w4r5owpwmwmr371nbwjs1vl, fk_4c0b2f22tknlum9j0bvoq7ewj, primary, fk_gkwam6i5rscke5ayf5vdnh402]
+[INFO][2017-08-27 08:50:03,398][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_majors
+[INFO][2017-08-27 08:50:03,398][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [maj_majorname, maj_spare, maj_id]
+[INFO][2017-08-27 08:50:03,398][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:50:03,400][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:50:03,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_manager
+[INFO][2017-08-27 08:50:03,408][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ma_username, ma_password, ma_id, ma_name, ma_spare]
+[INFO][2017-08-27 08:50:03,408][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:50:03,408][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:50:03,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_notice
+[INFO][2017-08-27 08:50:03,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [no_managername, no_spare, no_content, no_id, no_head, no_issuedata]
+[INFO][2017-08-27 08:50:03,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:50:03,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:50:03,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_participator
+[INFO][2017-08-27 08:50:03,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [pa_email, un_id, ti_id, pa_name, pa_imageurl, pa_introduce, pa_spare, maj_id, pa_id]
+[INFO][2017-08-27 08:50:03,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9]
+[INFO][2017-08-27 08:50:03,424][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d7qgwuftf6iayfalha4wipcsp, fk_g4is57rxjh0kwvtjp27vak8vc, fk_kxbqnbhjcf3oc196cgave7yo9, primary]
+[INFO][2017-08-27 08:50:03,428][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_record
+[INFO][2017-08-27 08:50:03,429][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ex_id, re_id, re_morality, re_educate, di_id, re_scientific, re_spare, re_score, re_unfm, pa_id]
+[INFO][2017-08-27 08:50:03,429][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-27 08:50:03,429][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_pu5h32pu2oyqbliwdt76ujmfv, fk_98dxcu9bc45li1imf5jjtnv48, primary, fk_8xqmio30bo2q6vntil5i3bo42]
+[INFO][2017-08-27 08:50:03,433][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_require
+[INFO][2017-08-27 08:50:03,434][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [re_id, re_morality, re_educate, ti_id, re_scientific, re_spare]
+[INFO][2017-08-27 08:50:03,434][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_md58jsptfpgf6fte8u1cxwxch]
+[INFO][2017-08-27 08:50:03,434][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_md58jsptfpgf6fte8u1cxwxch, primary]
+[INFO][2017-08-27 08:50:03,438][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_title
+[INFO][2017-08-27 08:50:03,438][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ti_titlename, ti_id, ti_spare]
+[INFO][2017-08-27 08:50:03,438][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:50:03,439][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:50:03,442][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: title.t_unit
+[INFO][2017-08-27 08:50:03,442][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [un_id, un_unitname, un_spare]
+[INFO][2017-08-27 08:50:03,443][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-08-27 08:50:03,443][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-08-27 08:50:03,448][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-08-27 08:50:03,599][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@36987eee] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-08-27 08:50:03,877][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3229 ms
+[INFO][2017-08-27 08:50:04,167][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-default.xml]
+[INFO][2017-08-27 08:50:04,330][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts-plugin.xml]
+[INFO][2017-08-27 08:50:04,410][com.opensymphony.xwork2.config.providers.XmlConfigurationProvider]Parsing configuration file [struts.xml]
+[INFO][2017-08-27 08:50:04,416][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO][2017-08-27 08:50:04,418][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO][2017-08-27 08:50:04,419][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO][2017-08-27 08:50:04,419][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO][2017-08-27 08:50:04,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO][2017-08-27 08:50:04,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO][2017-08-27 08:50:04,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO][2017-08-27 08:50:04,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO][2017-08-27 08:50:04,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO][2017-08-27 08:50:04,421][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO][2017-08-27 08:50:04,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO][2017-08-27 08:50:04,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO][2017-08-27 08:50:04,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO][2017-08-27 08:50:04,422][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO][2017-08-27 08:50:04,424][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO][2017-08-27 08:50:04,425][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO][2017-08-27 08:50:04,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO][2017-08-27 08:50:04,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO][2017-08-27 08:50:04,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO][2017-08-27 08:50:04,426][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO][2017-08-27 08:50:04,432][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO][2017-08-27 08:50:04,433][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO][2017-08-27 08:50:04,434][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO][2017-08-27 08:50:04,434][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO][2017-08-27 08:50:04,434][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO][2017-08-27 08:50:04,434][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO][2017-08-27 08:50:04,434][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO][2017-08-27 08:50:04,435][org.apache.struts2.config.AbstractBeanSelectionProvider]Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO][2017-08-27 08:50:04,457][org.apache.struts2.spring.StrutsSpringObjectFactory]Initializing Struts-Spring integration...
+[INFO][2017-08-27 08:50:04,459][com.opensymphony.xwork2.spring.SpringObjectFactory]Setting autowire strategy to name
+[INFO][2017-08-27 08:50:04,462][org.apache.struts2.spring.StrutsSpringObjectFactory]... initialized Struts-Spring integration successfully
+[INFO][2017-08-27 08:58:51,346][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sun Aug 27 08:50:00 CST 2017]; root of context hierarchy

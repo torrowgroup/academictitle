@@ -3,6 +3,7 @@ package com.torrow.title.action.setting;
 import java.util.List;
 
 import com.torrow.title.base.BaseAction;
+import com.torrow.title.entity.Expert;
 import com.torrow.title.entity.Majors;
 import com.torrow.title.entity.Participator;
 import com.torrow.title.entity.Unit;
@@ -112,6 +113,15 @@ public class DepartmentManageAction extends BaseAction {
 				allParticipator.get(i).setPa_unit(null);
 				participatorService.updateParticipator(allParticipator.get(i));
 			}
+			}
+		}
+		List<Expert>allExpert = expertService.getAlllExpert();
+		for(int i =0;i<allExpert.size();i++) {
+			if(allExpert.get(i).getEx_unit()!=null) {
+				if(allExpert.get(i).getEx_unit().getUn_id()==unitId) {
+					allExpert.get(i).setEx_unit(null);
+					expertService.updateExpert(allExpert.get(i));
+				}
 			}
 		}
 		boolean boo = unitService.deleteById(unitId);

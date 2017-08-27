@@ -29,7 +29,7 @@
 			<form action="${rootPath}user/Manager_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
-					<option value="ma_userName">账号</option>
+					<option value="ma_userName">邮箱</option>
 					<option value="ma_name">姓名</option>
 				</select> <input
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px; width: 30%;"
@@ -46,7 +46,7 @@
 		<tbody>
 			<tr>
 				<th>编号</th>
-				<th>账号</th>
+				<th>邮箱</th>
 				<th>密码</th>
 				<th>姓名</th>
 				<th style="width:60px">操作</th>

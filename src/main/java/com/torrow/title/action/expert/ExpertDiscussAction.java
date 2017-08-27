@@ -73,6 +73,10 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 
 	// 专家对参评人评议
 	public String discuss() {
+		if((record.getRe_unfm()==null)){
+			request.put("message", "没有填写熟悉程度");
+			return toDiscuss();//返回评议界面
+		}
 		Discuss discuss = discussService.getByParticipatorId(pa_id);
 		Participator participator = participatorService.getParticipatorById(pa_id);// 获得参评人
 		record.setRe_expert((Expert) (session.get("expert")));
@@ -92,7 +96,7 @@ public class ExpertDiscussAction extends BaseAction implements ModelDriven<Recor
 		record.setRe_discuss(discussDb);
 		recordService.save(record);
 		noDiscuss(); // 调用未评方法，到未评界面
-		return "getNoDiscuss"; // 调用查看未评方法
+		return "getNoDiscuss"; 
 	}
 
 	// 计算专家给的评分，该专家首次对参评人评议或修改评议记录

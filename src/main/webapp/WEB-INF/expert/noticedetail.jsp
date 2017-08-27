@@ -22,19 +22,9 @@
             <i>${notice.no_head}</i>
         </div>
         <div class="top-m">
-            <p>通知内容:</p>
-<!--             <div class="aa"></div> -->
-              		<div id="editor" style="width: 500px;height: 220px;"></div>
-					<script type="text/javascript"
-						src="${rootPath}dist/js/lib/jquery-1.10.2.min.js"></script>
-					<script type="text/javascript"
-						src="${rootPath}dist/js/wangEditor.min.js"></script>
-					<script type="text/javascript">
- 	  				    var E = window.wangEditor 
- 	  				    var editor = new E('editor')
- 	  				    editor.create() 
- 	 				    editor.$txt.html('${notice.no_content}')
-	     			</script>
+            <div class="testareadiv">
+            	<textarea readonly="readonly" >${notice.no_content}</textarea>
+            </div>
             <span id="time">${notice.no_issueData}</span>
         </div>
     </div>

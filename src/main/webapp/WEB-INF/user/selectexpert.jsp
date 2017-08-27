@@ -29,7 +29,7 @@
 			<form action="${rootPath}user/Expert_select" method="post">
 				<select name="ask"
 					style="border-radius: 7px; background-color: #F0F0F0; height: 25px;">
-					<option value="ex_userName">账号</option>
+					<option value="ex_userName">邮箱</option>
 					<option value="ex_name">姓名</option>
 					<option value="ex_majors.maj_majorName">专业</option>
 					<option value="ex_unit.un_unitName">单位</option>
@@ -50,7 +50,7 @@
 		<tbody>
 				<tr>
 					<th>编号</th>
-					<th>账号</th>
+					<th>邮箱</th>
 					<th>密码</th>
 					<th>姓名</th>
 					<th>专业</th>

@@ -19,6 +19,7 @@
 		<div class="back">
 			<<<a href="#" onclick="JavaScript:history.back(-1);">返回上一级</a>
 		</div>
+		<span style="color:red;">${message}</span>
 		<div class="wall">
 			<div class="w-left">
 				<div class="top">

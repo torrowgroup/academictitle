@@ -25,7 +25,7 @@
 			<span>
 			  <i>欢迎${expert.ex_name}登录</i>
 			  <a href="${rootPath}expert/ExpertPersonal_logOff" title="退出登录" >
-               <img src="${rootPath}images/logout.jpeg" height="20px;" width="20px;"/><span style="font-size:8px;padding-top:5px;">[退出]</span>
+               <img src="${rootPath}images/logout.jpeg" height="20px;" width="20px;"/><span style="font-size:10px;padding-top:7px;">[退出]</span>
              </a>
            </span>
 		</div>

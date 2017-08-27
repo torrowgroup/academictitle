@@ -13,6 +13,7 @@
 	href="${rootPath}css/expert/public.css">
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}css/expert/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
@@ -37,9 +38,9 @@
 					<th>参评人</th>
 					<th>申报职称</th>
 					<th>熟悉程度</th>
-					<th>教育</th>
-					<th>科研</th>
-					<th>师德</th>
+					<th>教育(分)</th>
+					<th>科研(分)</th>
+					<th>师德(分)</th>
 					<th>总分</th>
 					<th>操作</th>
 				</tr>
@@ -53,7 +54,7 @@
 						<td>${alreadyDiscuss.re_morality}</td>
 						<td>${alreadyDiscuss.re_score}</td>
 						<td><a
-							href="${rootPath}expert/ExpertDiscussAction_toUpdateRecord?re_id=${alreadyDiscuss.re_id}">修改</a></td>
+							href="${rootPath}expert/ExpertDiscussAction_toUpdateRecord?re_id=${alreadyDiscuss.re_id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
 					</tr>
 				</c:forEach>
 			</table>

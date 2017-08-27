@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/nodiscuss.css">
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert//bootstrap.css">
 <link rel="stylesheet" type="text/css" href="${rootPath}css/expert/public.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script type="text/javascript" src="${rootPath}js/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="${rootPath}js/bootstrap.js"></script>
 </head>
@@ -48,7 +49,7 @@
 					<td style="padding-top: 3px"><textarea>${noDiscuss.pa_introduce}</textarea>
 					</td>
 					<td><a
-						href="${rootPath}expert/ExpertDiscussAction_toDiscuss?pa_id=${noDiscuss.pa_id}">评议</a></td>
+						href="${rootPath}expert/ExpertDiscussAction_toDiscuss?pa_id=${noDiscuss.pa_id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
 				</tr>
 			</c:forEach>
 		</table>
