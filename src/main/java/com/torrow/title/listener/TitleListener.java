@@ -33,7 +33,7 @@ public class TitleListener implements ServletContextListener {
     	arg0.getServletContext().setAttribute("rootPath",rootPath);
     	//配置邮箱，发送邮件的邮箱，授权码
     	Email email = new Email();
-    	email.config(Email.SMTP_QQ(false), "1763608200@qq.com", "xchigurwcvprjbfe");
+    	email.config(Email.SMTP_QQ(false), "from", "授权码");//from是发送邮件的邮箱地址，授权码是smpt授权码
     }
 	
 }
