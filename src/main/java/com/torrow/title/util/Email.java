@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.torrow.title.util;
 
 import java.io.File;
@@ -34,14 +31,14 @@ import javax.mail.internet.MimeUtility;
  */
 public class Email {
 	
-	private static Session     session;
+	private Session session;
     private static MimeMessage msg;
     private static String      user;
     private String text;
     private String html;
     private List<MimeBodyPart> attachments = new ArrayList<MimeBodyPart>();
 
-    private Email() {
+    public Email() {
     }
 
     public static Properties defaultConfig(Boolean debug) {
@@ -87,13 +84,13 @@ public class Email {
      * @param username email auth username
      * @param password email auth password
      */
-    public static void config(Properties props, final String username, final String password) {
+    public void config(Properties props, final String username, final String password) {
         props.setProperty("username", username);
         props.setProperty("password", password);
         config(props);
     }
 
-    public static void config(Properties props) {
+    public void config(Properties props) {
         final String username = props.getProperty("username");
         final String password = props.getProperty("password");
         user = username;
@@ -281,5 +278,4 @@ public class Email {
         bodyPart.setContent(html, "text/html; charset=utf-8");
         return bodyPart;
     }
-	
 }

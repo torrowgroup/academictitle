@@ -183,8 +183,9 @@ public class ParticipatorAction extends BaseAction implements ModelDriven<Partic
 	//发送邮件
 	public String sendEmail(){
 		Participator part = participatorService.getParticipatorById(participator.getPa_id());
+		Email email = new Email();
 		try {
-			Email.subject("评审通知")
+			email.subject("评审通知")
 			.from("职称评审系统")
 			.to(part.getPa_email())
 			.html(part.getPa_name()+"您好，您参与的评选"+

@@ -28,7 +28,7 @@ public class LoginAction extends BaseAction {
 
 	private String userName;// 用户名
 	private String password;// 密码
-	private String code; //验证码
+	private String code; // 验证码
 
 	// 专家和管理员登录
 	public String login() {
@@ -49,53 +49,56 @@ public class LoginAction extends BaseAction {
 		request.put("message", "邮箱或密码输入错误");
 		return LOGIN;
 	}
-	//找回密码
+
+	// 找回密码
 	public String forgetPassword() {
-		Manager manager = managerService.getByUserName(userName);//根据用户名即邮箱得到对象
+		Manager manager = managerService.getByUserName(userName);// 根据用户名即邮箱得到对象
 		Expert expert = expertService.getByUserName(userName);
-		if(manager!=null||expert!=null){
-			if(manager!=null){ //如果为管理员
+		if (manager != null || expert != null) {
+			if (manager != null) { // 如果为管理员
 				session.put("backManager", manager);
-			} else if(expert!=null) {
+			} else if (expert != null) {
 				session.put("backExpert", expert);
 			}
 			String code = "";
-			for(int i=0;i<6;i++){
-				int c = (int)(Math.random()*9);
-				code +=c;
+			for (int i = 0; i < 6; i++) {
+				int c = (int) (Math.random() * 9);
+				code += c;
 			}
 			try {
 				Email.subject("找回密码")
 				.from("职称评审系统")
 				.to(userName)
-				.text(userName+"您好，欢迎您使用职称评审系统，您的验证码是"+code)
+				.text(userName + "您好，欢迎您使用职称评审系统，您的验证码是" + code)
 				.send();
 			} catch (MessagingException e) {
-				request.put("message", "发送失败，邮箱不存在");
+				request.put("message", "你输入的邮箱不存在");
 			}
-			session.put("code",code);
-		}else {
+			session.put("code", code);
+		} else {
 			request.put("message", "你输入的用户尚未注册");
 			return "forgetPassword";
 		}
 		return "compareCode";
 	}
-	//比较验证码
-	public String compareCode(){
-		String codeUser = (String)session.get("code");
-		if(codeUser.equals(code)){
-			session.remove("code");
+
+	// 比较验证码
+	public String compareCode() {
+		String codeUser = (String) session.get("code");
+		session.remove("code");
+		if (codeUser.equals(code)) {
 			return "resetPassword";
 		} else {
 			request.put("message", "验证失败");
 		}
-		return "compareCode";
+		return "forgetPassword";// 回到输入邮箱界面
 	}
-	//重置密码
-	public String reset(){
+
+	// 重置密码
+	public String reset() {
 		Manager manager = (Manager) session.get("backManager");
 		Expert expert = (Expert) session.get("backExpert");
-		if(manager!=null){
+		if (manager != null) {
 			manager.setMa_password(password);
 			managerService.updateManager(manager);
 		} else {
@@ -103,17 +106,18 @@ public class LoginAction extends BaseAction {
 			expertService.updateExpert(expert);
 		}
 		try {
-			this.getResponse().setContentType("text/html;charset=UTF-8");  
-			this.getResponse().setCharacterEncoding("UTF-8");  
-			PrintWriter out = this.getResponse().getWriter();  
-			out.println( "<script language=\"javascript\">" + "alert(\"修改密码成功\");window.opener=null;window.open('','_self');window.close();</script>");
+			this.getResponse().setContentType("text/html;charset=UTF-8");
+			this.getResponse().setCharacterEncoding("UTF-8");
+			PrintWriter out = this.getResponse().getWriter();
+			out.println("<script language=\"javascript\">"
+					+ "alert(\"修改密码成功\");window.opener=null;window.open('','_self');window.close();</script>");
 			out.close();
-			} catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
-			}
-		return  "resetPassword";
+		}
+		return "resetPassword";
 	}
-	
+
 	public String getUserName() {
 		return userName;
 	}
@@ -129,11 +133,13 @@ public class LoginAction extends BaseAction {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public final String getCode() {
 		return code;
 	}
+
 	public final void setCode(String code) {
 		this.code = code;
 	}
-	
+
 }

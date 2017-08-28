@@ -22,7 +22,7 @@
        <div class="login">
          <input type="submit" value="登录"class="btn">
          <div class="forget">
-     			<a href="" onclick="windowStart()" style="color:gray;">忘记密码</a>
+     			<a href="javascript:windowStart()" style="color:gray;">忘记密码</a>
      		</div>
        </div>
         <div class="reset">
